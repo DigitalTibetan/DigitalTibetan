@@ -2,4 +2,4 @@ format: jb-book
 root: main
 chapters:
 - file: chapter1test.md
-- calc.ipynb
+- file: calc.ipynb
