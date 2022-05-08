@@ -5,4 +5,5 @@ chapters:
   sections:
   - file: docs/mobile_tibetan.md
   - file: docs/computers_tibetan.md
+- file: docs/tibetan_calendar.md
 - file: docs/digital_tibetan_tools.md

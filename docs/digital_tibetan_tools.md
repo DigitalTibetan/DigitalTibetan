@@ -22,9 +22,10 @@ French or Spanish according to the conventions of THL, LotsawaHouse, Rigpa, Padm
 
 - [Perl source-code](https://www.lotsawahouse.org/Static/Lingua-BO-Wylie-dev.zip) by Roger Espel
 
+(calendar_tool)=
 ## Tibetan calendar and special day calculations
 
-The tool calculates the Tibetan calendar according to the Phugpa system for a given Western year, including special days:
+The tool calculates the [Tibetan calendar](tibetan_calendar.md) according to the Phugpa system for a given Western year, including special days:
 
 * [Calendar converter between Tibetan and Western calendars](https://www.lotsawahouse.org/Cgi/phugpa.pl)
 
@@ -32,3 +33,4 @@ The tool calculates the Tibetan calendar according to the Phugpa system for a gi
 
 - [Perl source-code](https://www.lotsawahouse.org/Static/Calendar-Phugpa-dev.zip) by Roger Espel
 - Algorithm is based on [Tibetan calendar mathematics](http://www2.math.uu.se/~svante/papers/calendars/tibet.pdf) by [Svante Janson](https://katalog.uu.se/empInfo?id=XX2949)
+- More information about the [Tibetan calendar](tibetan_calendar.md)
