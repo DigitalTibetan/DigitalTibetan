@@ -1,6 +1,4 @@
 format: jb-book
 root: main
 chapters:
-- file: chapter1test.md
-- file: docs/Subtopic.md
-- file: calc.ipynb
+- file: docs/digital_tibetan_tools.md
