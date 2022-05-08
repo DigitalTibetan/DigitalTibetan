@@ -5,6 +5,8 @@ logo: Images/DigitalTibetanLogo.png
 execute:
   execute_notebooks: force
 
+exclude_pattern: [README.md]
+
 launch_buttons:
   thebe                  : true
   colab_url: "https://colab.research.google.com"
