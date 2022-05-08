@@ -5,6 +5,8 @@ logo: Images/DigitalTibetanLogo.png
 execute:
   execute_notebooks: force
 
+launch_buttons:
+  thebe                  : true
 # Add a bibtex file so that we can create citations
 # bibtex_bibfiles:
 #  - references.bib
