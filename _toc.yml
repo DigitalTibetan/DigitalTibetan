@@ -1,8 +1,8 @@
 format: jb-book
 root: main
 chapters:
-- file: docs/Prepare your device for Tibetan script.md
+- file: docs/devices_tibetan.md
   sections:
-  - file: docs/Prepare your mobile device for Tibetan script.md
-  - file: docs/Prepare your desktop or laptop computer for Tibetan script.md
+  - file: docs/mobile_tibetan.md
+  - file: docs/computers_tibetan.md
 - file: docs/digital_tibetan_tools.md

@@ -8,8 +8,8 @@ The following tool converts between Wylie EWTS (Extended Wylie) and Unicode:
 
 ### References
 
-- [Javascript repository](https://github.com/rogerespel/ewts-js) by Roger Espel.
-- [Python port](https://github.com/OpenPecha-dev/pyewts) by Esukhia
+- [ewts-js Javascript repository](https://github.com/rogerespel/ewts-js) by Roger Espel.
+- [pyewts Python port](https://github.com/OpenPecha-dev/pyewts) by Esukhia
 
 ## Tibetan pronunciation
 
