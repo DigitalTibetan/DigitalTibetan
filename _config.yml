@@ -1,0 +1,10 @@
+# In _config.yml
+title: Digital Tibetan
+author: Digital Tibetan Community
+logo: Images/DigitalTibetanLogo.png
+execute:
+  execute_notebooks: force
+
+# Add a bibtex file so that we can create citations
+# bibtex_bibfiles:
+#  - references.bib

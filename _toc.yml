@@ -1,0 +1,4 @@
+format: jb-book
+root: main
+chapters:
+- file: chapter1test.md
