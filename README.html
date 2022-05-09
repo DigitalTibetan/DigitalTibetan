@@ -200,6 +200,19 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#how-this-works">
+   How this works
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -212,6 +225,19 @@ const thebe_selector_output = ".output, .cell_output"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#how-this-works">
+   How this works
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -220,7 +246,14 @@ const thebe_selector_output = ".output, .cell_output"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="source-repository-for-digitaltibetan">
 <h1>Source repository for DigitalTibetan<a class="headerlink" href="#source-repository-for-digitaltibetan" title="Permalink to this headline">¶</a></h1>
-<p>This repository contains the source-files for <a class="reference external" href="https://digitaltibetan.github.io/DigitalTibetan/">DigitalTibetan</a></p>
+<p>This repository contains the source-files for Digital Tibetan. So to access the actual web-site, look here:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://digitaltibetan.github.io/DigitalTibetan/">Digital Tibetan web site</a></p></li>
+</ul>
+<div class="section" id="how-this-works">
+<h2>How this works<a class="headerlink" href="#how-this-works" title="Permalink to this headline">¶</a></h2>
+<p>This repository contains markdown files (for textual information) and jupyter notebooks (for computational examples) that are automatically converted at each push to the repository using github actions. The result are web pages, accessible at the Digital Tibetan site.</p>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
