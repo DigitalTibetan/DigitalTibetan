@@ -405,6 +405,676 @@ sems nyid
 </div>
 </div>
 </div>
+<p>Let’s say we found an old glossary, and we want to Tibetan and Devanagari to it’s existing transliterations:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="nn">Input In [7],</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;pandas&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sample_glossary</span><span class="o">=</span><span class="s2">&quot;&quot;&quot;Abhiṣeka - dbang bskur</span>
+<span class="s2">Akaniṣṭha - og min</span>
+<span class="s2">Avalokiteśvara - spyan ras gzigs</span>
+<span class="s2">Bhagavān - bcom ldan &#39;das</span>
+<span class="s2">Ḍākinī - mkha&#39; &#39;gro</span>
+<span class="s2">Jñānasattva - ye shes sems dpa&#39;</span>
+<span class="s2">Mahāmudrā - phyag rgya chen po</span>
+<span class="s2">Oḍḍiyāna - o rgyan</span>
+<span class="s2">Samantabhadrī - kun tu bzang mo</span>
+<span class="s2">Tathāgata - de bzhin gshegs pa</span>
+<span class="s2">Yoginī - rnal &#39;byor ma&quot;&quot;&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>First step is to parse this piece of text into Pandas dataframe. Such a dataframe is similar to a spreadsheet table and can be easily transformed.
+The result be saved as CSV or many different other formats.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">iast</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;-&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">sample_glossary</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)]</span>
+<span class="n">wylie</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;-&#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">+</span><span class="s1">&#39; &#39;</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">sample_glossary</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="o">.</span><span class="n">from_dict</span><span class="p">({</span><span class="s1">&#39;Wylie&#39;</span><span class="p">:</span> <span class="n">wylie</span><span class="p">,</span> <span class="s1">&#39;IAST&#39;</span><span class="p">:</span> <span class="n">iast</span><span class="p">})</span>
+<span class="n">df</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-822f2457-7ba5-496b-aeee-e84245e1f216">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Wylie</th>
+      <th>IAST</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>dbang bskur</td>
+      <td>Abhiṣeka</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>og min</td>
+      <td>Akaniṣṭha</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>spyan ras gzigs</td>
+      <td>Avalokiteśvara</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>bcom ldan 'das</td>
+      <td>Bhagavān</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>mkha' 'gro</td>
+      <td>Ḍākinī</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>ye shes sems dpa'</td>
+      <td>Jñānasattva</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>phyag rgya chen po</td>
+      <td>Mahāmudrā</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>o rgyan</td>
+      <td>Oḍḍiyāna</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>kun tu bzang mo</td>
+      <td>Samantabhadrī</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>de bzhin gshegs pa</td>
+      <td>Tathāgata</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>rnal 'byor ma</td>
+      <td>Yoginī</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-822f2457-7ba5-496b-aeee-e84245e1f216')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-822f2457-7ba5-496b-aeee-e84245e1f216 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-822f2457-7ba5-496b-aeee-e84245e1f216');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+</div></div>
+</div>
+<p>Now we can use the converters shown above to add Unicode Tibetan and Devanagari for each entry:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Tibetan&#39;</span><span class="p">]</span><span class="o">=</span><span class="p">[</span><span class="n">converter</span><span class="o">.</span><span class="n">toUnicode</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Wylie&#39;</span><span class="p">]]</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;Devanagari&#39;</span><span class="p">]</span><span class="o">=</span><span class="p">[</span><span class="n">transliterate</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">sanscript</span><span class="o">.</span><span class="n">IAST</span><span class="p">,</span> <span class="n">sanscript</span><span class="o">.</span><span class="n">DEVANAGARI</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;IAST&#39;</span><span class="p">]]</span>
+<span class="n">df</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-1fa8dcea-979e-462a-a95a-b58f9d7c8f60">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Wylie</th>
+      <th>IAST</th>
+      <th>Tibetan</th>
+      <th>Devanagari</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>dbang bskur</td>
+      <td>Abhiṣeka</td>
+      <td>དབང་བསྐུར་</td>
+      <td>अभिषेक</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>og min</td>
+      <td>Akaniṣṭha</td>
+      <td>ཨོག་མིན་</td>
+      <td>अकनिष्ठ</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>spyan ras gzigs</td>
+      <td>Avalokiteśvara</td>
+      <td>སྤྱན་རས་གཟིགས་</td>
+      <td>अवलोकितेश्वर</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>bcom ldan 'das</td>
+      <td>Bhagavān</td>
+      <td>བཅོམ་ལྡན་འདས་</td>
+      <td>भगवान्</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>mkha' 'gro</td>
+      <td>Ḍākinī</td>
+      <td>མཁའ་འགྲོ་</td>
+      <td>Ḍआकिनी</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>ye shes sems dpa'</td>
+      <td>Jñānasattva</td>
+      <td>ཡེ་ཤེས་སེམས་དཔའ་</td>
+      <td>ज्ञानसत्त्व</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>phyag rgya chen po</td>
+      <td>Mahāmudrā</td>
+      <td>ཕྱག་རྒྱ་ཆེན་པོ་</td>
+      <td>महामुद्रा</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>o rgyan</td>
+      <td>Oḍḍiyāna</td>
+      <td>ཨོ་རྒྱན་</td>
+      <td>ओड्डियान</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>kun tu bzang mo</td>
+      <td>Samantabhadrī</td>
+      <td>ཀུན་ཏུ་བཟང་མོ་</td>
+      <td>समन्तभद्री</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>de bzhin gshegs pa</td>
+      <td>Tathāgata</td>
+      <td>དེ་བཞིན་གཤེགས་པ་</td>
+      <td>तथागत</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>rnal 'byor ma</td>
+      <td>Yoginī</td>
+      <td>རྣལ་འབྱོར་མ་</td>
+      <td>योगिनी</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-1fa8dcea-979e-462a-a95a-b58f9d7c8f60')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-1fa8dcea-979e-462a-a95a-b58f9d7c8f60 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-1fa8dcea-979e-462a-a95a-b58f9d7c8f60');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+</div></div>
+</div>
+<p>Let’s use Wikipedia to explain those terms:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">urllib.request</span> <span class="kn">import</span> <span class="n">urlopen</span>
+<span class="kn">from</span> <span class="nn">urllib.parse</span> <span class="kn">import</span> <span class="n">quote</span>
+<span class="kn">import</span> <span class="nn">json</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">wikipedia_summary</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="n">api</span><span class="o">=</span><span class="s2">&quot;https://en.wikipedia.org/w/api.php&quot;</span>
+    <span class="n">esc_query</span><span class="o">=</span><span class="n">quote</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+    <span class="n">query_url</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">api</span><span class="si">}</span><span class="s2">?format=json&amp;action=query&amp;prop=extracts&amp;exintro&amp;explaintext&amp;redirects=1&amp;titles=</span><span class="si">{</span><span class="n">esc_query</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="n">result</span><span class="o">=</span><span class="p">[]</span>
+    <span class="k">with</span> <span class="n">urlopen</span><span class="p">(</span><span class="n">query_url</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">resp</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">verbose</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">resp</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">entry_name</span> <span class="ow">in</span> <span class="n">resp</span><span class="p">[</span><span class="s2">&quot;query&quot;</span><span class="p">][</span><span class="s2">&quot;pages&quot;</span><span class="p">]:</span>
+            <span class="n">entry</span><span class="o">=</span><span class="n">resp</span><span class="p">[</span><span class="s2">&quot;query&quot;</span><span class="p">][</span><span class="s2">&quot;pages&quot;</span><span class="p">][</span><span class="n">entry_name</span><span class="p">]</span>
+            <span class="k">if</span> <span class="s2">&quot;title&quot;</span> <span class="ow">in</span> <span class="n">entry</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="ow">and</span> <span class="s1">&#39;extract&#39;</span> <span class="ow">in</span> <span class="n">entry</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+                <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">entry</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">],</span><span class="n">entry</span><span class="p">[</span><span class="s1">&#39;extract&#39;</span><span class="p">]))</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">result</span><span class="p">)</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span>
+        <span class="n">ans</span><span class="o">=</span><span class="n">result</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+        <span class="k">if</span> <span class="s1">&#39;refer&#39;</span> <span class="ow">in</span> <span class="n">ans</span> <span class="ow">and</span> <span class="s1">&#39;to:&#39;</span> <span class="ow">in</span> <span class="n">ans</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s2">&quot;&quot;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">ans</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Definition&#39;</span><span class="p">]</span><span class="o">=</span><span class="p">[</span><span class="n">wikipedia_summary</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;IAST&#39;</span><span class="p">]]</span>
+<span class="n">df</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-e4e9e4d0-4efa-4640-8832-f8ae782eb35d">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Wylie</th>
+      <th>IAST</th>
+      <th>Tibetan</th>
+      <th>Devanagari</th>
+      <th>Definition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>dbang bskur</td>
+      <td>Abhiṣeka</td>
+      <td>དབང་བསྐུར་</td>
+      <td>अभिषेक</td>
+      <td>Abhisheka (Sanskrit: अभिषेक, romanized: Abhiṣe...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>og min</td>
+      <td>Akaniṣṭha</td>
+      <td>ཨོག་མིན་</td>
+      <td>अकनिष्ठ</td>
+      <td>In classical Buddhist Cosmology, Akaniṣṭha (Pa...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>spyan ras gzigs</td>
+      <td>Avalokiteśvara</td>
+      <td>སྤྱན་རས་གཟིགས་</td>
+      <td>अवलोकितेश्वर</td>
+      <td>In Buddhism, Avalokiteśvara ( Sanskrit: अवलोकि...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>bcom ldan 'das</td>
+      <td>Bhagavān</td>
+      <td>བཅོམ་ལྡན་འདས་</td>
+      <td>भगवान्</td>
+      <td>Bhagavan (Sanskrit: भगवान्, romanized: Bhagavā...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>mkha' 'gro</td>
+      <td>Ḍākinī</td>
+      <td>མཁའ་འགྲོ་</td>
+      <td>Ḍआकिनी</td>
+      <td>A ḍākinī (Sanskrit: डाकिनी; Tibetan: མཁའ་འགྲོ་...</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>ye shes sems dpa'</td>
+      <td>Jñānasattva</td>
+      <td>ཡེ་ཤེས་སེམས་དཔའ་</td>
+      <td>ज्ञानसत्त्व</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>phyag rgya chen po</td>
+      <td>Mahāmudrā</td>
+      <td>ཕྱག་རྒྱ་ཆེན་པོ་</td>
+      <td>महामुद्रा</td>
+      <td>Mahāmudrā (Sanskrit: महामुद्रा, Tibetan: ཕྱག་ཆ...</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>o rgyan</td>
+      <td>Oḍḍiyāna</td>
+      <td>ཨོ་རྒྱན་</td>
+      <td>ओड्डियान</td>
+      <td>Oḍḍiyāna (also: Uḍḍiyāna, Uḍḍāyāna or Udyāna, ...</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>kun tu bzang mo</td>
+      <td>Samantabhadrī</td>
+      <td>ཀུན་ཏུ་བཟང་མོ་</td>
+      <td>समन्तभद्री</td>
+      <td>Samantabhadri (Sanskrit; Devanagari: समन्तभद्र...</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>de bzhin gshegs pa</td>
+      <td>Tathāgata</td>
+      <td>དེ་བཞིན་གཤེགས་པ་</td>
+      <td>तथागत</td>
+      <td>Tathāgata (Pali: [tɐˈtʰaːɡɐtɐ]) is a Pali word...</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>rnal 'byor ma</td>
+      <td>Yoginī</td>
+      <td>རྣལ་འབྱོར་མ་</td>
+      <td>योगिनी</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-e4e9e4d0-4efa-4640-8832-f8ae782eb35d')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-e4e9e4d0-4efa-4640-8832-f8ae782eb35d button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-e4e9e4d0-4efa-4640-8832-f8ae782eb35d');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.max_colwidth&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;Definition&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>In classical Buddhist Cosmology, Akaniṣṭha (Pali: Akaniṭṭha, meaning &quot;Nothing Higher&quot;, &quot;Unsurpassed&quot;) is the highest of the Pure Abodes, and thus the highest of all the form realms. It is the realm where devas like Maheśvara live.
+In Mahayana Buddhism, Akaniṣṭha is also a name for the Pure Land (Buddhafield) of the Buddha Vairocana.
+
+Tibetan Buddhism, Akaniṣṭha (Tib. &#39;og min) often describes three Akaniṣṭhas:
+The Ultimate Akaniṣṭha, the formless state of dharmakaya, the dharmadhatu.
+The Densely Arrayed Akaniṣṭha (Tib. &#39;Og min rgyan stug po bkod pa; Skt. Ghanavyūhakaniṣṭha), or the &quot;Symbolic Akaniṣṭha&quot; which is the realm of  sambhogakaya. &quot;Ghanavyūha Akaniṣṭha&quot;, refers to the pure Saṃbhogakāya Buddha field out of which emanate all Nirmāṇakāya Buddhas and Buddhafields such as Sukhāvati. It is the supreme Buddhafield in which all Buddhas attain Buddhahood. The Saṃbhogakāya Buddha Vajradhara is said to have taught the Vajrayana in the realm of Akaniṣṭha Ghanavyūha.
+The Mundane Akaniṣṭha, which is the highest pure level of the form realm, which is the sphere of nirmanakayas.
+</pre></div>
+</div>
+</div>
+</div>
 </div>
 </div>
 
