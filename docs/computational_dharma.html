@@ -270,8 +270,18 @@ const thebe_selector_output = ".output, .cell_output"
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#conversion-from-wylie-to-unicode-tibetan">
-   Conversion from Wylie to Unicode Tibetan
+  <a class="reference internal nav-link" href="#a-digital-toolset-to-work-with-multiple-language">
+   A digital toolset to work with multiple language
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conversion-between-wylie-and-unicode-tibetan">
+   Conversion between Wylie and Unicode Tibetan
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#let-s-look-at-sanskrit-transliteration-systems">
+   Let’s look at Sanskrit transliteration systems
   </a>
  </li>
 </ul>
@@ -295,8 +305,18 @@ const thebe_selector_output = ".output, .cell_output"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#conversion-from-wylie-to-unicode-tibetan">
-   Conversion from Wylie to Unicode Tibetan
+  <a class="reference internal nav-link" href="#a-digital-toolset-to-work-with-multiple-language">
+   A digital toolset to work with multiple language
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conversion-between-wylie-and-unicode-tibetan">
+   Conversion between Wylie and Unicode Tibetan
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#let-s-look-at-sanskrit-transliteration-systems">
+   Let’s look at Sanskrit transliteration systems
   </a>
  </li>
 </ul>
@@ -311,17 +331,23 @@ const thebe_selector_output = ".output, .cell_output"
   <p><a href="https://colab.research.google.com/github/DigitalTibetan/DigitalTibetan/blob/main/docs/computational_dharma.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></p>
 <div class="tex2jax_ignore mathjax_ignore section" id="computational-dharma-really">
 <h1>Computational dharma, really?<a class="headerlink" href="#computational-dharma-really" title="Permalink to this headline">¶</a></h1>
-<p>some first tests…</p>
-<div class="section" id="conversion-from-wylie-to-unicode-tibetan">
-<h2>Conversion from Wylie to Unicode Tibetan<a class="headerlink" href="#conversion-from-wylie-to-unicode-tibetan" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="a-digital-toolset-to-work-with-multiple-language">
+<h2>A digital toolset to work with multiple language<a class="headerlink" href="#a-digital-toolset-to-work-with-multiple-language" title="Permalink to this headline">¶</a></h2>
+<p>This article just wants to give a quick overview of what’s possible with today’s natural language processing tools. All examples will focus on the Python programming language as an additional tool for working with Tibetan texts.</p>
+<p>There are two ways to read this notebook:</p>
+<ul class="simple">
+<li><p>either treat it as a normal static website, and get an overview what current tools can do,</p></li>
+<li><p>click the button above <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">in</span> <span class="pre">Colab</span></code>. This will open this notebook in a Google colab instance (free), and will allow you to modify and execute the examples without installing any software locally. To execute a command in the notebook, press <code class="docutils literal notranslate"><span class="pre">&lt;Shift&gt;&lt;Enter&gt;</span></code> and the current cell will be executed.</p></li>
+</ul>
+<p>This will be just some first glimpse, more details and explanations will be added in later articles.</p>
+<p>Let’s start with some conversions between Wylie and Unicode Tibetan, using Esukhia’s <a class="reference external" href="https://github.com/OpenPecha-dev/pyewts">pyetws</a> that is a port of earlier work by <a class="reference external" href="https://github.com/rogerespel/ewts-js">Roger Espel</a>.</p>
+</div>
+<div class="section" id="conversion-between-wylie-and-unicode-tibetan">
+<h2>Conversion between Wylie and Unicode Tibetan<a class="headerlink" href="#conversion-between-wylie-and-unicode-tibetan" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip install pyewts
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: pyewts in /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages (0.1.3)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>%%capture
+!pip install pyewts
 </pre></div>
 </div>
 </div>
@@ -336,18 +362,45 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">converter</span><span class="o">=</span><span class="n">pyewts</span><span class="o">.</span><span class="n">pyewts</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">converter</span><span class="o">.</span><span class="n">toUnicode</span><span class="p">(</span><span class="s2">&quot;oM AHhUM:&quot;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">converter</span><span class="o">.</span><span class="n">toWylie</span><span class="p">(</span><span class="s2">&quot;སེམས་ཉིད་&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ཨོཾ་ཨཱཿཧཱུཾ༔
+sems nyid 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="let-s-look-at-sanskrit-transliteration-systems">
+<h2>Let’s look at Sanskrit transliteration systems<a class="headerlink" href="#let-s-look-at-sanskrit-transliteration-systems" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>%%capture
+!pip install indic_transliteration
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">converter</span><span class="o">.</span><span class="n">toUnicode</span><span class="p">(</span><span class="s2">&quot;oM AH hUM:&quot;</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">indic_transliteration</span> <span class="kn">import</span> <span class="n">sanscript</span>
+<span class="kn">from</span> <span class="nn">indic_transliteration.sanscript</span> <span class="kn">import</span> <span class="n">SchemeMap</span><span class="p">,</span> <span class="n">SCHEMES</span><span class="p">,</span> <span class="n">transliterate</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">transliterate</span><span class="p">(</span><span class="s2">&quot;Kālacakra&quot;</span><span class="p">,</span> <span class="n">sanscript</span><span class="o">.</span><span class="n">IAST</span><span class="p">,</span> <span class="n">sanscript</span><span class="o">.</span><span class="n">DEVANAGARI</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ཨོཾ་ཨཱཿ་ཧཱུཾ༔
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;कालचक्र&#39;
 </pre></div>
 </div>
 </div>
