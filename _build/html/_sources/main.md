@@ -13,8 +13,8 @@ An archived version of the old site is still available at [archive.org DigitalTi
 
 Digital Tibetan wants to cater two target audiences:
 
-- Much like the predecessor version of [DigitalTibetan](https://web.archive.org/web/20210502044931/http://www.digitaltibetan.org/index.php/Digital_Tibetan), this site aspires to collect information and How-Tos on how to work with digital Tibetan information within the context of one's own hardware and setup.
-- Additionally the plan is to introduce tools for **computational dharma**, how modern tools inherited from data science can be used to efficiently create personal working environments that support working with, cross-referencing, and transforming large amounts of natural language data related to Tibetan. 
+- Much like the [predecessor version](https://web.archive.org/web/20210502044931/http://www.digitaltibetan.org/index.php/Digital_Tibetan) of DigitalTibetan, this site aspires to collect information and How-Tos on how to work with digital Tibetan information within the context of one's own hardware and setup.
+- Additionally the plan is to introduce tools for [computational dharma](docs/computational_dharma.md), how modern tools inherited from data science can be used to efficiently create personal working environments that support working with, cross-referencing, and transforming large amounts of natural language data related to Tibetan. 
 
 ## Contribution, suggestions and corrections
 

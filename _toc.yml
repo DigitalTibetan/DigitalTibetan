@@ -2,6 +2,7 @@ format: jb-book
 root: main
 chapters:
 - file: docs/devices_tibetan.md
+- file: docs/computational_dharma.md
   sections:
   - file: docs/mobile_tibetan.md
   - file: docs/computers_tibetan.md
