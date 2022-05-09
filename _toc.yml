@@ -6,7 +6,7 @@ chapters:
   sections:
   - file: docs/mobile_tibetan.md
     sections:
-    - file: docs/configuratio_ios.md
+    - file: docs/configuration_ios.md
     - file: docs/configuration_android.md
   - file: docs/computers_tibetan.md
 - file: docs/sanskrit_overview.md
