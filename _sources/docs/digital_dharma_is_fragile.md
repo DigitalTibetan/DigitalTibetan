@@ -1,6 +1,6 @@
 # Digital dharma is extremely fragile
 
-Now that we've looked into all the [exciting opportunities](computational_dharma.md) digital technologies provide, here a few words about the dangers:
+Now that we've looked into all the [exciting opportunities](computational_dharma.ipynb) digital technologies provide, here a few words about the dangers:
 
 ```{image} https://upload.wikimedia.org/wikipedia/commons/7/72/Braque_Family_Triptych_closed_WGA.jpg
 :align: right
