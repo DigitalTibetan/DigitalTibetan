@@ -10,7 +10,7 @@ chapters:
     - file: docs/configuration_ios.md
     - file: docs/apps_ios.md
     - file: docs/configuration_android.md
-    - file: dosc/apps_android.md
+    - file: docs/apps_android.md
   - file: docs/computers_tibetan.md
 - file: docs/sanskrit_overview.md
 - file: docs/tibetan_calendar.md
