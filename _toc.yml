@@ -2,6 +2,7 @@ format: jb-book
 root: main
 chapters:
 - file: docs/computational_dharma.md
+- file: docs/digital_dharma_is_fragile.md
 - file: docs/devices_tibetan.md
   sections:
   - file: docs/mobile_tibetan.md
