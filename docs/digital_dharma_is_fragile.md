@@ -23,7 +23,7 @@ We still have accounts of the culture of Sumer, because those responsible for di
 
 Dharma content is precious. In order to make it possible to maintain it, **separate between _presentation_ and _information_**. If you say: I need to work with this and that tool, because otherwise it looks bad, then you focus on presentation, and this will make preservation much more difficult long term.
 
-Choose the most simple format text format possible for long-term relevant information: an ideal format is human-readable without any additional decoding-tools.
+Choose the most simple text format possible for long-term relevant information: an ideal format is human-readable without any additional decoding-tools.
 
 * For text, an ideal choice for many applications is **markdown**
 * For structured information use comma-separated text **CSV** based tables
@@ -34,7 +34,7 @@ Then, if a more embellished output is required, use tools to convert simple text
 If the resultant object can be considered as an artistic representation of it's own right, use **PDF-A** (Archive PDF) to store the result.
 
 ```{note}
-The source-of-truth for any long-term dharma material needs to be as simple as possible: a text-format like markdown or CSV
+The source-of-truth for any long-term dharma material needs to be as simple as possible: a text-format like markdown or CSV.
 ```
 
 ### Resilience and long-term backups
@@ -44,7 +44,7 @@ Individual humans and small or medium sized organizations **do not have the mean
 Once you've made sure that dharma material that needs to be preserved is stored in a format as simple as possible, backups become essential.
 
 - **Sharing** is a way to use everybody else's computer as backup-device. It's probably the _only_ longterm strategy to make sure information survives.
-- **Powerful partners** are required to increase chances: by working together with as many organizations as possible and sharing freely between them, the resilience for the material to be protected increases
+- **Powerful partners** are required to increase chances: by working together with as many organizations as possible and sharing freely between them, the resilience for the material to be protected increases.
 - **Longterm backups** are only within in reach of very few organizations. Luckily, if you material is in simple text form, free and open, you have access to the most powerful backup facilities currently available: the [github artic code vault](https://archiveprogram.github.com/): store your information as text in github and (if public and open consisting of reasonably small text files), the repository will be put in cold storage within an Arctic code vault.
 
 ```{note}
