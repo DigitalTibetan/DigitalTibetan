@@ -15,7 +15,7 @@ chapters:
 - file: docs/sanskrit_overview.md
 - file: docs/tibetan_calendar.md
 - file: docs/digital_tibetan_tools.md
-  section:
+  sections:
   - file: docs/digital_tibetan_tools_wylie.md
   - file: docs/digital_tibetan_tools_pronunciation.md
   - file: docs/digital_tibetan_tools_calendar.md
