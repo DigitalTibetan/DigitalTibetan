@@ -1,6 +1,10 @@
 # Best Tibetan apps for iOS
 
 A collection of Tibetan apps for iPad and iPhone.
+
+```{note}
+Your favorite app is missing? Comments? Please open an [issue](https://github.com/DigitalTibetan/DigitalTibetan/issues)!
+```
 ## Dictionaries, ready to go
 
 | App | Description | Price | Rating | Privacy |
