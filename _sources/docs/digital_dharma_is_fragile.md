@@ -6,7 +6,7 @@ Now that we've looked into all the [exciting opportunities](computational_dharma
 :align: right
 :width: 320
 ```
-- If you are working on dharma material, and whatever you are doing is just on your computer, shared with a number friends or some small organization of a few 10000 people, then most of this material we be lost with a probability $>99.999 %$ in a few decades. It will be copied, fragmented and corrupted over time. As a result at some point: **The entire work will be gone.**
+- If you are working on dharma material, and whatever you are doing is just on your computer, shared with a number friends or some small organization of a few 10000 people, then most of this material we be lost with a probability $>99.999 \%$ in a few decades. It will be copied, fragmented and corrupted over time. As a result at some point: **The entire work will be gone.**
 - If you rely on proprietary software to store your material (office, databases, cloud-subscriptions, etc.), everything will be gone in less than half a century (at least if you don't have more resources than US government and NASA: Many of the recordings of the space explorations of the 60ties are now inaccessible: neither the machines nor the knowledge is available today to access it). So: **your entire work will be gone.**
 - If you believe in secrecy and restrictions of aspects of your dharma material, rest assured that your work will be secret forever: there cannot be enough thieves to prevent each person involved to lose the material over time. So either be confident to set up your own aural lineage thus propagating from human to human (in this case this is the wrong site for you), or: **your entire work will be gone.**
 
@@ -53,5 +53,5 @@ Carefully evaluate the best possible backup- and distribution strategy for every
 
 #### Image references
 
-* Image "The outer panels of Rogier van der Weyden's Braque Triptych (c. 1452) show the skull of the patron displayed on the inner panels. The bones rest on a brick, a symbol of his former industry and achievement" (Public domain), [wikipedia](https://en.wikipedia.org/wiki/Memento_mori#/media/File:Braque_Family_Triptych_closed_WGA.jpg)
-* Image "Early writing tablet recording the allocation of beer"; 3100-3000 BC (Late Prehistoric period); height: 9.4 cm, width: 6.87 cm; probably from southern Iraq; British Museum (ME 140855). Creative commons) [wikipedia](https://commons.wikimedia.org/wiki/File:Early_writing_tablet_recording_the_allocation_of_beer.jpg). _Your information is more important than a beer list? So what are your plans?_
+* Image "The outer panels of Rogier van der Weyden's Braque Triptych (c. 1452) show the skull of the patron displayed on the inner panels. The bones rest on a brick, a symbol of his former industry and achievement". (Public domain), [wikipedia](https://en.wikipedia.org/wiki/Memento_mori#/media/File:Braque_Family_Triptych_closed_WGA.jpg)
+* Image "Early writing tablet recording the allocation of beer"; 3100-3000 BC (Late Prehistoric period); height: 9.4 cm, width: 6.87 cm; probably from southern Iraq; British Museum (ME 140855). (Creative commons), [wikipedia](https://commons.wikimedia.org/wiki/File:Early_writing_tablet_recording_the_allocation_of_beer.jpg). _Your information is more important than a beer list? So what are your plans?_
