@@ -33,4 +33,6 @@ Now, using the globe (🌐) icon on the on-screen keyboard, you can switch betwe
 
 There are two ways to stack, start from top, and any letter that should be stacked below can be entered by long-press or via `<shift>`. E.g. to enter རྒྱུ, press `ར`, (long-press)`ག`, (long-press)`ཡ`, and `ུ`. Alternatively use `<shift>` instead of long-pressing the letters.
 
+## Next steps
+
 Now you are ready to install some [Tibetan apps](apps_android.md)!
