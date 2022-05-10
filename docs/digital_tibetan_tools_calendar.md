@@ -12,6 +12,11 @@ The tool calculates the Tibetan calendar according to the Phugpa system for a gi
 
 * [Calendar converter between Tibetan and Western calendars](https://www.lotsawahouse.org/Cgi/phugpa.pl)
 
+## Mobile apps
+
+- [iOS calendar apps](ios_calendar_apps)
+- [Android calendar apps](android_calendar_apps)
+
 ## Development
 
 - [Perl source-code](https://www.lotsawahouse.org/Static/Calendar-Phugpa-dev.zip) by Roger Espel

@@ -9,7 +9,7 @@ The Tibetan calendar is derived from the Indian calendar tradition;[^2] but diff
 
 As in Indian calendars,[^1] months are lunar (from new moon to new moon) but numbered according to the corresponding solar months, while days are numbered by the corresponding lunar days. Since these correspondences are not perfect, there are occasionally two months with the same number, in which case the first of them is regarded as a leap month, and occasionally a skipped date or two days with the same date (then the first of them is regarded as a leap day).[^2]
 
-## Tools and software
+## Tools and software and apps
 
 See [Tibetan calendar tools](digital_tibetan_tools_calendar.md)
 
@@ -18,6 +18,6 @@ See [Tibetan calendar tools](digital_tibetan_tools_calendar.md)
 
 ## References
 
-- _[Tibetan calendar mathematics](http://www2.math.uu.se/~svante/papers/calendars/tibet.pdf)_ by [Svante Janson](https://katalog.uu.se/empInfo?id=XX2949) is the original work used as basis for most other publications on the Tibetan calendar. It was also the basis for the implementation of [Tibetan calendar tool](calendar_tool).
+- _[Tibetan calendar mathematics](http://www2.math.uu.se/~svante/papers/calendars/tibet.pdf)_ by [Svante Janson](https://katalog.uu.se/empInfo?id=XX2949) is the original work used as basis for most other publications on the Tibetan calendar. It was also the basis for the implementation of [Tibetan calendar tool](digital_tibetan_tools_calendar).
 - _Kālacakra and the Tibetan Calendar_, Edward Henning (2007). A vast compilation about all information concerning the mathematics, historical and symbolic information on the Tibetan calendar, starting with the first chapter of the kālacakra tantra.
 - _Calendrical Calculations_, Edward M. Reingold & Nachum Dershowitz (2018), Ch. _The Tibetan Calendar_. The most concise description of the Algorithm of the Phugpa calendar in Pseudo-Code. Contains also a Lisp implementation. Refers to both Janson's and Henning's works.
