@@ -11,12 +11,11 @@ As in Indian calendars,[^1] months are lunar (from new moon to new moon) but num
 
 ## Tools and software
 
-- A Perl implementation with interactive web-frontend is available at:  <https://www.lotsawahouse.org/Cgi/phugpa.pl> by Roger Espel.
-- A Lisp implementation is available in _Calendrical Calculations_[^2].
-
+See [Tibetan calendar tools](digital_tibetan_tools_calendar.md)
 
 [^1]: _Calendrical Calculations_, E.M. Reingold & N. Dershowitz (2018), p. 375. 
 [^2]: _[Tibetan calendar mathematics](http://www2.math.uu.se/~svante/papers/calendars/tibet.pdf)_ by [Svante Janson](https://katalog.uu.se/empInfo?id=XX2949)
+
 ## References
 
 - _[Tibetan calendar mathematics](http://www2.math.uu.se/~svante/papers/calendars/tibet.pdf)_ by [Svante Janson](https://katalog.uu.se/empInfo?id=XX2949) is the original work used as basis for most other publications on the Tibetan calendar. It was also the basis for the implementation of [Tibetan calendar tool](calendar_tool).
