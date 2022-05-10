@@ -168,10 +168,32 @@ const thebe_selector_output = ".output, .cell_output"
    The Tibetan calendar
   </a>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="digital_tibetan_tools.html">
    Digital Tibetan Tools
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="digital_tibetan_tools_wylie.html">
+     Digital Tibetan Tools: Conversion between EWTS-Wylie and Unicode
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="digital_tibetan_tools_pronunciation.html">
+     Digital Tibetan Tools: Tibetan pronunciation and phonetics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="digital_tibetan_tools_calendar.html">
+     Digital Tibetan Tools: Tibetan calendar and special day calculations
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -307,33 +329,30 @@ const thebe_selector_output = ".output, .cell_output"
 <h1>The Tibetan calendar<a class="headerlink" href="#the-tibetan-calendar" title="Permalink to this headline">¶</a></h1>
 <blockquote>
 <div><p>The Tibetan system of astronomy and astrology is extremely complex. It takes five years to study and master it at the Astro Division of the Tibetan Medical and Astro Institute in Dharamsala, India. Students learn to calculate everything by hand in the traditional manner, on a wooden board covered with soot upon which one write with a stylus. There is no complete ephemeris compiled in which to look up figures. One of the main aspects of the training is the mathematics involved in all the calculations.
-<em>Alexander Berzin (1986)<a class="footnote-reference brackets" href="#id6" id="id1">1</a></em></p>
+<em>Alexander Berzin (1986)<a class="footnote-reference brackets" href="#id5" id="id1">1</a></em></p>
 </div></blockquote>
 <div class="section" id="origin-and-structure">
 <h2>Origin and structure<a class="headerlink" href="#origin-and-structure" title="Permalink to this headline">¶</a></h2>
-<p>The Tibetan calendar is derived from the Indian calendar tradition;<a class="footnote-reference brackets" href="#id7" id="id2">2</a> but differs significantly in details. The basis for the Tibetan calendar is the Kālacakra Tantra, which was translated from Sanskrit into Tibetan in the 11th century.</p>
-<p>As in Indian calendars,<a class="footnote-reference brackets" href="#id6" id="id3">1</a> months are lunar (from new moon to new moon) but numbered according to the corresponding solar months, while days are numbered by the corresponding lunar days. Since these correspondences are not perfect, there are occasionally two months with the same number, in which case the first of them is regarded as a leap month, and occasionally a skipped date or two days with the same date (then the first of them is regarded as a leap day).<a class="footnote-reference brackets" href="#id7" id="id4">2</a></p>
+<p>The Tibetan calendar is derived from the Indian calendar tradition;<a class="footnote-reference brackets" href="#id6" id="id2">2</a> but differs significantly in details. The basis for the Tibetan calendar is the Kālacakra Tantra, which was translated from Sanskrit into Tibetan in the 11th century.</p>
+<p>As in Indian calendars,<a class="footnote-reference brackets" href="#id5" id="id3">1</a> months are lunar (from new moon to new moon) but numbered according to the corresponding solar months, while days are numbered by the corresponding lunar days. Since these correspondences are not perfect, there are occasionally two months with the same number, in which case the first of them is regarded as a leap month, and occasionally a skipped date or two days with the same date (then the first of them is regarded as a leap day).<a class="footnote-reference brackets" href="#id6" id="id4">2</a></p>
 </div>
 <div class="section" id="tools-and-software">
 <h2>Tools and software<a class="headerlink" href="#tools-and-software" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>A Perl implementation with interactive web-frontend is available at:  <a class="reference external" href="https://www.lotsawahouse.org/Cgi/phugpa.pl">https://www.lotsawahouse.org/Cgi/phugpa.pl</a> by Roger Espel.</p></li>
-<li><p>A Lisp implementation is available in <em>Calendrical Calculations</em><a class="footnote-reference brackets" href="#id7" id="id5">2</a>.</p></li>
-</ul>
+<p>See <a class="reference internal" href="digital_tibetan_tools_calendar.html"><span class="doc std std-doc">Tibetan calendar tools</span></a></p>
 </div>
 <div class="section" id="references">
 <h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p><em><a class="reference external" href="http://www2.math.uu.se/~svante/papers/calendars/tibet.pdf">Tibetan calendar mathematics</a></em> by <a class="reference external" href="https://katalog.uu.se/empInfo?id=XX2949">Svante Janson</a> is the original work used as basis for most other publications on the Tibetan calendar. It was also the basis for the implementation of <a class="reference internal" href="digital_tibetan_tools.html#calendar-tool"><span class="std std-ref">Tibetan calendar tool</span></a>.</p></li>
+<li><p><em><a class="reference external" href="http://www2.math.uu.se/~svante/papers/calendars/tibet.pdf">Tibetan calendar mathematics</a></em> by <a class="reference external" href="https://katalog.uu.se/empInfo?id=XX2949">Svante Janson</a> is the original work used as basis for most other publications on the Tibetan calendar. It was also the basis for the implementation of <span class="xref myst">Tibetan calendar tool</span>.</p></li>
 <li><p><em>Kālacakra and the Tibetan Calendar</em>, Edward Henning (2007). A vast compilation about all information concerning the mathematics, historical and symbolic information on the Tibetan calendar, starting with the first chapter of the kālacakra tantra.</p></li>
 <li><p><em>Calendrical Calculations</em>, Edward M. Reingold &amp; Nachum Dershowitz (2018), Ch. <em>The Tibetan Calendar</em>. The most concise description of the Algorithm of the Phugpa calendar in Pseudo-Code. Contains also a Lisp implementation. Refers to both Janson’s and Henning’s works.</p></li>
 </ul>
 <hr class="footnotes docutils" />
 <dl class="footnote brackets">
-<dt class="label" id="id6"><span class="brackets">1</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id3">2</a>)</span></dt>
+<dt class="label" id="id5"><span class="brackets">1</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id3">2</a>)</span></dt>
 <dd><p><em>Calendrical Calculations</em>, E.M. Reingold &amp; N. Dershowitz (2018), p. 375.</p>
 </dd>
-<dt class="label" id="id7"><span class="brackets">2</span><span class="fn-backref">(<a href="#id2">1</a>,<a href="#id4">2</a>,<a href="#id5">3</a>)</span></dt>
+<dt class="label" id="id6"><span class="brackets">2</span><span class="fn-backref">(<a href="#id2">1</a>,<a href="#id4">2</a>)</span></dt>
 <dd><p><em><a class="reference external" href="http://www2.math.uu.se/~svante/papers/calendars/tibet.pdf">Tibetan calendar mathematics</a></em> by <a class="reference external" href="https://katalog.uu.se/empInfo?id=XX2949">Svante Janson</a></p>
 </dd>
 </dl>

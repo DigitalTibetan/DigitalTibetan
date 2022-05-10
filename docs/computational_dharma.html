@@ -168,10 +168,32 @@ const thebe_selector_output = ".output, .cell_output"
    The Tibetan calendar
   </a>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="digital_tibetan_tools.html">
    Digital Tibetan Tools
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="digital_tibetan_tools_wylie.html">
+     Digital Tibetan Tools: Conversion between EWTS-Wylie and Unicode
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="digital_tibetan_tools_pronunciation.html">
+     Digital Tibetan Tools: Tibetan pronunciation and phonetics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="digital_tibetan_tools_calendar.html">
+     Digital Tibetan Tools: Tibetan calendar and special day calculations
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -275,14 +297,26 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#conversion-between-wylie-and-unicode-tibetan">
-   Conversion between Wylie and Unicode Tibetan
+  <a class="reference internal nav-link" href="#conversion-between-transliteration-systems">
+   Conversion between transliteration systems
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#let-s-look-at-sanskrit-transliteration-systems">
-   Let’s look at Sanskrit transliteration systems
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#conversion-between-wylie-and-unicode-tibetan">
+     Conversion between Wylie and Unicode Tibetan
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sanskrit-transliteration">
+     Sanskrit transliteration
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#transforming-glossaries">
+     Transforming glossaries
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -310,14 +344,26 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#conversion-between-wylie-and-unicode-tibetan">
-   Conversion between Wylie and Unicode Tibetan
+  <a class="reference internal nav-link" href="#conversion-between-transliteration-systems">
+   Conversion between transliteration systems
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#let-s-look-at-sanskrit-transliteration-systems">
-   Let’s look at Sanskrit transliteration systems
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#conversion-between-wylie-and-unicode-tibetan">
+     Conversion between Wylie and Unicode Tibetan
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sanskrit-transliteration">
+     Sanskrit transliteration
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#transforming-glossaries">
+     Transforming glossaries
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -340,10 +386,12 @@ const thebe_selector_output = ".output, .cell_output"
 <li><p>click the button above <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">in</span> <span class="pre">Colab</span></code>. This will open this notebook in a Google colab instance (free), and will allow you to modify and execute the examples without installing any software locally. To execute a command in the notebook, press <code class="docutils literal notranslate"><span class="pre">&lt;Shift&gt;&lt;Enter&gt;</span></code> and the current cell will be executed.</p></li>
 </ul>
 <p>This will be just some first glimpse, more details and explanations will be added in later articles.</p>
-<p>Let’s start with some conversions between Wylie and Unicode Tibetan, using Esukhia’s <a class="reference external" href="https://github.com/OpenPecha-dev/pyewts">pyetws</a> that is a port of earlier work by <a class="reference external" href="https://github.com/rogerespel/ewts-js">Roger Espel</a>.</p>
 </div>
+<div class="section" id="conversion-between-transliteration-systems">
+<h2>Conversion between transliteration systems<a class="headerlink" href="#conversion-between-transliteration-systems" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="conversion-between-wylie-and-unicode-tibetan">
-<h2>Conversion between Wylie and Unicode Tibetan<a class="headerlink" href="#conversion-between-wylie-and-unicode-tibetan" title="Permalink to this headline">¶</a></h2>
+<h3>Conversion between Wylie and Unicode Tibetan<a class="headerlink" href="#conversion-between-wylie-and-unicode-tibetan" title="Permalink to this headline">¶</a></h3>
+<p>Let’s start with some conversions between Wylie and Unicode Tibetan, using Esukhia’s <a class="reference external" href="https://github.com/OpenPecha-dev/pyewts">pyetws</a> that is a port of earlier work by <a class="reference external" href="https://github.com/rogerespel/ewts-js">Roger Espel</a>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>%%capture
@@ -375,8 +423,8 @@ sems nyid
 </div>
 </div>
 </div>
-<div class="section" id="let-s-look-at-sanskrit-transliteration-systems">
-<h2>Let’s look at Sanskrit transliteration systems<a class="headerlink" href="#let-s-look-at-sanskrit-transliteration-systems" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="sanskrit-transliteration">
+<h3>Sanskrit transliteration<a class="headerlink" href="#sanskrit-transliteration" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>%%capture
@@ -405,14 +453,11 @@ sems nyid
 </div>
 </div>
 </div>
-<p>Let’s say we found an old glossary, and we want to Tibetan and Devanagari to it’s existing transliterations:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-</pre></div>
 </div>
-</div>
-</div>
+<div class="section" id="transforming-glossaries">
+<h3>Transforming glossaries<a class="headerlink" href="#transforming-glossaries" title="Permalink to this headline">¶</a></h3>
+<p>Let’s say we found an old glossary, and we want to add
+Tibetan and Devanagari to it’s existing transliterations:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sample_glossary</span><span class="o">=</span><span class="s2">&quot;&quot;&quot;Abhiṣeka - dbang bskur</span>
@@ -432,6 +477,13 @@ sems nyid
 </div>
 <p>First step is to parse this piece of text into Pandas dataframe. Such a dataframe is similar to a spreadsheet table and can be easily transformed.
 The result be saved as CSV or many different other formats.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</pre></div>
+</div>
+</div>
+</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">iast</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;-&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">sample_glossary</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)]</span>
@@ -530,6 +582,7 @@ The result be saved as CSV or many different other formats.</p>
 </table>
 </div></div></div>
 </div>
+<p>We now have a table that consists of IAST transliterated Sanskrit and Wylie encoded Tibetan.</p>
 <p>Now we can use the converters shown above to add Unicode Tibetan and Devanagari for each entry:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -646,7 +699,8 @@ The result be saved as CSV or many different other formats.</p>
 </table>
 </div></div></div>
 </div>
-<p>Let’s use Wikipedia to explain those terms:</p>
+<p>The table now has the unicode renderings for both Tibetan and Devanagari.</p>
+<p>Let’s use Wikipedia to explain those terms: We will use the IAST encoded name (e.g. <code class="docutils literal notranslate"><span class="pre">Akaniṣṭha</span></code>) and do a Wikipedia lookup. If an entry is available, we extract the summary (usually the first paragraph in Wikipedia) as text and add it to our table:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">urllib.request</span> <span class="kn">import</span> <span class="n">urlopen</span>
@@ -658,7 +712,8 @@ The result be saved as CSV or many different other formats.</p>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">wikipedia_summary</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="sd">&#39;&#39;&#39;Get the summary of a wikipedia article with title `query` and return it as text.&#39;&#39;&#39;</span>
+<span class="k">def</span> <span class="nf">wikipedia_summary</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
     <span class="n">api</span><span class="o">=</span><span class="s2">&quot;https://en.wikipedia.org/w/api.php&quot;</span>
     <span class="n">esc_query</span><span class="o">=</span><span class="n">quote</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
     <span class="n">query_url</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">api</span><span class="si">}</span><span class="s2">?format=json&amp;action=query&amp;prop=extracts&amp;exintro&amp;explaintext&amp;redirects=1&amp;titles=</span><span class="si">{</span><span class="n">esc_query</span><span class="si">}</span><span class="s2">&quot;</span>
@@ -809,24 +864,32 @@ The result be saved as CSV or many different other formats.</p>
 </table>
 </div></div></div>
 </div>
+<p>Now our table also contains an explanation for most of the entries. Let’s look at row 1 (the entry for <code class="docutils literal notranslate"><span class="pre">Akaniṣṭha</span></code>)</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.max_colwidth&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;Definition&#39;</span><span class="p">])</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.max_colwidth&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;Definition&#39;</span><span class="p">]))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>In classical Buddhist Cosmology, Akaniṣṭha (Pali: Akaniṭṭha, meaning &quot;Nothing Higher&quot;, &quot;Unsurpassed&quot;) is the highest of the Pure Abodes, and thus the highest of all the form realms. It is the realm where devas like Maheśvara live.
+<div class="output text_html">In classical Buddhist Cosmology, Akaniṣṭha (Pali: Akaniṭṭha, meaning "Nothing Higher", "Unsurpassed") is the highest of the Pure Abodes, and thus the highest of all the form realms. It is the realm where devas like Maheśvara live.
 In Mahayana Buddhism, Akaniṣṭha is also a name for the Pure Land (Buddhafield) of the Buddha Vairocana.
 
-Tibetan Buddhism, Akaniṣṭha (Tib. &#39;og min) often describes three Akaniṣṭhas:
+Tibetan Buddhism, Akaniṣṭha (Tib. 'og min) often describes three Akaniṣṭhas:
 The Ultimate Akaniṣṭha, the formless state of dharmakaya, the dharmadhatu.
-The Densely Arrayed Akaniṣṭha (Tib. &#39;Og min rgyan stug po bkod pa; Skt. Ghanavyūhakaniṣṭha), or the &quot;Symbolic Akaniṣṭha&quot; which is the realm of  sambhogakaya. &quot;Ghanavyūha Akaniṣṭha&quot;, refers to the pure Saṃbhogakāya Buddha field out of which emanate all Nirmāṇakāya Buddhas and Buddhafields such as Sukhāvati. It is the supreme Buddhafield in which all Buddhas attain Buddhahood. The Saṃbhogakāya Buddha Vajradhara is said to have taught the Vajrayana in the realm of Akaniṣṭha Ghanavyūha.
-The Mundane Akaniṣṭha, which is the highest pure level of the form realm, which is the sphere of nirmanakayas.
-</pre></div>
+The Densely Arrayed Akaniṣṭha (Tib. 'Og min rgyan stug po bkod pa; Skt. Ghanavyūhakaniṣṭha), or the "Symbolic Akaniṣṭha" which is the realm of  sambhogakaya. "Ghanavyūha Akaniṣṭha", refers to the pure Saṃbhogakāya Buddha field out of which emanate all Nirmāṇakāya Buddhas and Buddhafields such as Sukhāvati. It is the supreme Buddhafield in which all Buddhas attain Buddhahood. The Saṃbhogakāya Buddha Vajradhara is said to have taught the Vajrayana in the realm of Akaniṣṭha Ghanavyūha.
+The Mundane Akaniṣṭha, which is the highest pure level of the form realm, which is the sphere of nirmanakayas.</div></div>
 </div>
-</div>
+<p>In an upcoming article we will look at:</p>
+<ul class="simple">
+<li><p>how to learn more about the support-technologies like Python and Jupyter Notebooks,</p></li>
+<li><p>how to install the software on a local machine,</p></li>
+<li><p>how to use cloud services like Google Colab or Binder to generate useful output,</p></li>
+<li><p>how to generate dictionaries in different formats,</p></li>
+<li><p>how to generate markdown documents for different applications.</p></li>
+</ul>
 </div>
 </div>
 </div>

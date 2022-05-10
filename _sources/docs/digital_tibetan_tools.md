@@ -1,36 +1,5 @@
 # Digital Tibetan Tools
 
-## Conversion between Wylie and Unicode
-
-The following tool converts between Wylie EWTS (Extended Wylie) and Unicode:
-
-* [Bidirectional online converter between Wylie and Tibetan Unicode](https://www.lotsawahouse.org/Static/tools/ewts.html)
-
-### References
-
-- [ewts-js Javascript repository](https://github.com/rogerespel/ewts-js) by Roger Espel.
-- [pyewts Python port](https://github.com/OpenPecha-dev/pyewts) by Esukhia
-
-## Tibetan pronunciation
-
-This tool automatically determines the pronunciation of a given Tibetan Unicode text that is accessible for speakers of English, German,
-French or Spanish according to the conventions of THL, LotsawaHouse, Rigpa, Padmakara or Lhasey Lotsawa:
-
-* [Tibetan Unicode to phonetics converter that gives the pronunciation for a passage of Tibetan Unicode text](https://www.lotsawahouse.org/Cgi/phonetics.pl)
-
-### References
-
-- [Perl source-code](https://www.lotsawahouse.org/Static/Lingua-BO-Wylie-dev.zip) by Roger Espel
-
-(calendar_tool)=
-## Tibetan calendar and special day calculations
-
-The tool calculates the Tibetan calendar according to the Phugpa system for a given Western year, including special days:
-
-* [Calendar converter between Tibetan and Western calendars](https://www.lotsawahouse.org/Cgi/phugpa.pl)
-
-### References
-
-- [Perl source-code](https://www.lotsawahouse.org/Static/Calendar-Phugpa-dev.zip) by Roger Espel
-- Algorithm is based on [Tibetan calendar mathematics](http://www2.math.uu.se/~svante/papers/calendars/tibet.pdf) by [Svante Janson](https://katalog.uu.se/empInfo?id=XX2949)
-- More information about the [Tibetan calendar](tibetan_calendar.md)
+- [Wylie EWTS conversion](digital_tibetan_tools_wylie.md): Transliteration between the Wylie-EWTS system and Unicode Tibetan.
+- [Tibetan phonetics and pronunciation](digital_tibetan_tools_pronunciation.md): Automatic generation of phonetics for Western language speakers.
+- [Tibetan calendar tools](digital_tibetan_tools_calendar.md): Automatic generation of a Tibetan calendar for a given Western year, including special days for practitioners.

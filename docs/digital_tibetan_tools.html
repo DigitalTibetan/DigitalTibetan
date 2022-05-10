@@ -53,6 +53,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Digital Tibetan Tools: Conversion between EWTS-Wylie and Unicode" href="digital_tibetan_tools_wylie.html" />
     <link rel="prev" title="The Tibetan calendar" href="tibetan_calendar.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -167,10 +168,32 @@ const thebe_selector_output = ".output, .cell_output"
    The Tibetan calendar
   </a>
  </li>
- <li class="toctree-l1 current active">
+ <li class="toctree-l1 current active has-children">
   <a class="current reference internal" href="#">
    Digital Tibetan Tools
   </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="digital_tibetan_tools_wylie.html">
+     Digital Tibetan Tools: Conversion between EWTS-Wylie and Unicode
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="digital_tibetan_tools_pronunciation.html">
+     Digital Tibetan Tools: Tibetan pronunciation and phonetics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="digital_tibetan_tools_calendar.html">
+     Digital Tibetan Tools: Tibetan calendar and special day calculations
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -238,50 +261,6 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#conversion-between-wylie-and-unicode">
-   Conversion between Wylie and Unicode
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#references">
-     References
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#tibetan-pronunciation">
-   Tibetan pronunciation
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id1">
-     References
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#tibetan-calendar-and-special-day-calculations">
-   Tibetan calendar and special day calculations
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id2">
-     References
-    </a>
-   </li>
-  </ul>
- </li>
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -294,50 +273,6 @@ const thebe_selector_output = ".output, .cell_output"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#conversion-between-wylie-and-unicode">
-   Conversion between Wylie and Unicode
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#references">
-     References
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#tibetan-pronunciation">
-   Tibetan pronunciation
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id1">
-     References
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#tibetan-calendar-and-special-day-calculations">
-   Tibetan calendar and special day calculations
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id2">
-     References
-    </a>
-   </li>
-  </ul>
- </li>
-</ul>
-
-                        </nav>
                     </div>
                 </div>
             </div>
@@ -346,48 +281,12 @@ const thebe_selector_output = ".output, .cell_output"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="digital-tibetan-tools">
 <h1>Digital Tibetan Tools<a class="headerlink" href="#digital-tibetan-tools" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="conversion-between-wylie-and-unicode">
-<h2>Conversion between Wylie and Unicode<a class="headerlink" href="#conversion-between-wylie-and-unicode" title="Permalink to this headline">¶</a></h2>
-<p>The following tool converts between Wylie EWTS (Extended Wylie) and Unicode:</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://www.lotsawahouse.org/Static/tools/ewts.html">Bidirectional online converter between Wylie and Tibetan Unicode</a></p></li>
+<li><p><a class="reference internal" href="digital_tibetan_tools_wylie.html"><span class="doc std std-doc">Wylie EWTS conversion</span></a>: Transliteration between the Wylie-EWTS system and Unicode Tibetan.</p></li>
+<li><p><a class="reference internal" href="digital_tibetan_tools_pronunciation.html"><span class="doc std std-doc">Tibetan phonetics and pronunciation</span></a>: Automatic generation of phonetics for Western language speakers.</p></li>
+<li><p><a class="reference internal" href="digital_tibetan_tools_calendar.html"><span class="doc std std-doc">Tibetan calendar tools</span></a>: Automatic generation of a Tibetan calendar for a given Western year, including special days for practitioners.</p></li>
 </ul>
-<div class="section" id="references">
-<h3>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><p><a class="reference external" href="https://github.com/rogerespel/ewts-js">ewts-js Javascript repository</a> by Roger Espel.</p></li>
-<li><p><a class="reference external" href="https://github.com/OpenPecha-dev/pyewts">pyewts Python port</a> by Esukhia</p></li>
-</ul>
-</div>
-</div>
-<div class="section" id="tibetan-pronunciation">
-<h2>Tibetan pronunciation<a class="headerlink" href="#tibetan-pronunciation" title="Permalink to this headline">¶</a></h2>
-<p>This tool automatically determines the pronunciation of a given Tibetan Unicode text that is accessible for speakers of English, German,
-French or Spanish according to the conventions of THL, LotsawaHouse, Rigpa, Padmakara or Lhasey Lotsawa:</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://www.lotsawahouse.org/Cgi/phonetics.pl">Tibetan Unicode to phonetics converter that gives the pronunciation for a passage of Tibetan Unicode text</a></p></li>
-</ul>
-<div class="section" id="id1">
-<h3>References<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><p><a class="reference external" href="https://www.lotsawahouse.org/Static/Lingua-BO-Wylie-dev.zip">Perl source-code</a> by Roger Espel</p></li>
-</ul>
-</div>
-</div>
-<div class="section" id="tibetan-calendar-and-special-day-calculations">
-<span id="calendar-tool"></span><h2>Tibetan calendar and special day calculations<a class="headerlink" href="#tibetan-calendar-and-special-day-calculations" title="Permalink to this headline">¶</a></h2>
-<p>The tool calculates the Tibetan calendar according to the Phugpa system for a given Western year, including special days:</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://www.lotsawahouse.org/Cgi/phugpa.pl">Calendar converter between Tibetan and Western calendars</a></p></li>
-</ul>
-<div class="section" id="id2">
-<h3>References<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><p><a class="reference external" href="https://www.lotsawahouse.org/Static/Calendar-Phugpa-dev.zip">Perl source-code</a> by Roger Espel</p></li>
-<li><p>Algorithm is based on <a class="reference external" href="http://www2.math.uu.se/~svante/papers/calendars/tibet.pdf">Tibetan calendar mathematics</a> by <a class="reference external" href="https://katalog.uu.se/empInfo?id=XX2949">Svante Janson</a></p></li>
-<li><p>More information about the <a class="reference internal" href="tibetan_calendar.html"><span class="doc std std-doc">Tibetan calendar</span></a></p></li>
-</ul>
-</div>
+<div class="toctree-wrapper compound">
 </div>
 </div>
 
@@ -422,6 +321,13 @@ French or Spanish according to the conventions of THL, LotsawaHouse, Rigpa, Padm
             <p class="prev-next-subtitle">previous</p>
             <p class="prev-next-title">The Tibetan calendar</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="digital_tibetan_tools_wylie.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Digital Tibetan Tools: Conversion between EWTS-Wylie and Unicode</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             

@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>How to configure Android mobiles &#8212; Digital Tibetan</title>
+    <title>Digital Tibetan Tools: Conversion between EWTS-Wylie and Unicode &#8212; Digital Tibetan</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -53,8 +53,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Best Tibetan apps for Android" href="apps_android.html" />
-    <link rel="prev" title="Best Tibetan apps for iOS" href="apps_ios.html" />
+    <link rel="next" title="Digital Tibetan Tools: Tibetan pronunciation and phonetics" href="digital_tibetan_tools_pronunciation.html" />
+    <link rel="prev" title="Digital Tibetan Tools" href="digital_tibetan_tools.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -109,26 +109,26 @@ const thebe_selector_output = ".output, .cell_output"
    Digital dharma is extremely fragile
   </a>
  </li>
- <li class="toctree-l1 current active has-children">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="devices_tibetan.html">
    How to prepare your digital devices for Tibetan script
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="current">
-   <li class="toctree-l2 current active has-children">
+  <ul>
+   <li class="toctree-l2 has-children">
     <a class="reference internal" href="mobile_tibetan.html">
      Tibetan and mobile devices
     </a>
-    <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
     <label for="toctree-checkbox-2">
      <i class="fas fa-chevron-down">
      </i>
     </label>
-    <ul class="current">
+    <ul>
      <li class="toctree-l3">
       <a class="reference internal" href="configuration_ios.html">
        How to configure Apple iOS (iPhone, iPad) for Tibetan
@@ -139,8 +139,8 @@ const thebe_selector_output = ".output, .cell_output"
        Best Tibetan apps for iOS
       </a>
      </li>
-     <li class="toctree-l3 current active">
-      <a class="current reference internal" href="#">
+     <li class="toctree-l3">
+      <a class="reference internal" href="configuration_android.html">
        How to configure Android mobiles
       </a>
      </li>
@@ -168,18 +168,18 @@ const thebe_selector_output = ".output, .cell_output"
    The Tibetan calendar
   </a>
  </li>
- <li class="toctree-l1 has-children">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="digital_tibetan_tools.html">
    Digital Tibetan Tools
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
   <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="digital_tibetan_tools_wylie.html">
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Digital Tibetan Tools: Conversion between EWTS-Wylie and Unicode
     </a>
    </li>
@@ -236,7 +236,7 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/docs/configuration_android.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/docs/digital_tibetan_tools_wylie.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -261,6 +261,41 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#online-tool">
+   Online tool
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#programming">
+   Programming
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#python">
+     Python
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#other-implementations">
+     Other implementations
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#references">
+     References
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -268,20 +303,98 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>How to configure Android mobiles</h1>
+                <h1>Digital Tibetan Tools: Conversion between EWTS-Wylie and Unicode</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#online-tool">
+   Online tool
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#programming">
+   Programming
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#python">
+     Python
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#other-implementations">
+     Other implementations
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#references">
+     References
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="how-to-configure-android-mobiles">
-<h1>How to configure Android mobiles<a class="headerlink" href="#how-to-configure-android-mobiles" title="Permalink to this headline">¶</a></h1>
-<p>TBD.</p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="digital-tibetan-tools-conversion-between-ewts-wylie-and-unicode">
+<h1>Digital Tibetan Tools: Conversion between EWTS-Wylie and Unicode<a class="headerlink" href="#digital-tibetan-tools-conversion-between-ewts-wylie-and-unicode" title="Permalink to this headline">¶</a></h1>
+<p>For introduction how EWTS Wylie works, see <a class="reference external" href="https://www.thlib.org/reference/transliteration/teachingewts.pdf">Teaching EWTS</a> by Alexandru Anton-Luca. If you want to learn, how to work with Tibetan computer keyboards, this is a useful resource.</p>
+<a class="reference internal image-reference" href="../_images/ewts_converter.jpg"><img alt="../_images/ewts_converter.jpg" class="align-right" src="../_images/ewts_converter.jpg" style="width: 280px;" /></a>
+<div class="section" id="online-tool">
+<h2>Online tool<a class="headerlink" href="#online-tool" title="Permalink to this headline">¶</a></h2>
+<p>The following tool converts between Wylie EWTS (Extended Wylie) and Tibetan Unicode:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.lotsawahouse.org/Static/tools/ewts.html">Bidirectional online converter between Wylie and Tibetan Unicode</a></p></li>
+</ul>
+</div>
+<div class="section" id="programming">
+<h2>Programming<a class="headerlink" href="#programming" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="python">
+<h3>Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h3>
+<p>Using Esukhia’s <a class="reference external" href="https://github.com/OpenPecha-dev/pyewts">pyewts</a>, install with <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">pyewts</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pyewts</span>
+<span class="n">converter</span><span class="o">=</span><span class="n">pyewts</span><span class="o">.</span><span class="n">pyewts</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">converter</span><span class="o">.</span><span class="n">toUnicode</span><span class="p">(</span><span class="s2">&quot;oM AHhUM:&quot;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">converter</span><span class="o">.</span><span class="n">toWylie</span><span class="p">(</span><span class="s2">&quot;སེམས་ཉིད་&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>ཨོཾ་ཨཱཿཧཱུཾ༔
+sems nyid 
+</pre></div>
+</div>
+<p>For an example jupyter notebook, see: <a class="reference internal" href="computational_dharma.html"><span class="doc std std-doc">computational dharma</span></a></p>
+</div>
+<div class="section" id="other-implementations">
+<h3>Other implementations<a class="headerlink" href="#other-implementations" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.lotsawahouse.org/Static/Lingua-BO-Wylie-dev.zip">Original perl implementation</a> by Roger Espel</p></li>
+<li><p><a class="reference external" href="https://github.com/buda-base/ewts-converter">Java port</a> maintained by the Buda organization</p></li>
+<li><p><a class="reference external" href="https://github.com/rogerespel/ewts-js">ewts-js Javascript repository</a> by Roger Espel.</p></li>
+</ul>
+</div>
+<div class="section" id="references">
+<h3>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/rogerespel/ewts-js">ewts-js Javascript repository</a> by Roger Espel.</p></li>
+<li><p><a class="reference external" href="https://github.com/OpenPecha-dev/pyewts">pyewts Python port</a> by Esukhia</p></li>
+<li><p><a class="reference external" href="https://www.thlib.org/reference/transliteration/teachingewts.pdf">Teaching EWTS</a> by Alexandru Anton-Luca</p></li>
+</ul>
+</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -309,17 +422,17 @@ const thebe_selector_output = ".output, .cell_output"
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="apps_ios.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="digital_tibetan_tools.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Best Tibetan apps for iOS</p>
+            <p class="prev-next-title">Digital Tibetan Tools</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="apps_android.html" title="next page">
+    <a class='right-next' id="next-link" href="digital_tibetan_tools_pronunciation.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Best Tibetan apps for Android</p>
+        <p class="prev-next-title">Digital Tibetan Tools: Tibetan pronunciation and phonetics</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
