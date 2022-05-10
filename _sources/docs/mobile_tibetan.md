@@ -2,7 +2,7 @@
 
 | Mobile device | Displays Tibetan | Tibetan input method | Apps | Comment |
 | :--------- | :---: | :---: | :---: | ----------------------------|
-| Apple iPhone, iPad | + + | + +[^1] | o |Full Tibetan support since iOS 4.21 (2010) |
+| Apple iPhone, iPad | + + | + +[^1] | + |Full Tibetan support since iOS 4.21 (2010) |
 | Google Android | + + | + + | + + + |Full Tibetan support since Android 6.0 (2015) |
 | Amazon Kindle | - -[^2] | - - | - - - | Amazon Kindle support for Tibetan is broken since Kindle OS version 5.9.6 |
 
@@ -19,17 +19,14 @@ Unfortunately most **e-ink ebook readers** are not particularly well suited for 
 
 ## How do I work with Tibetan on my mobile device?
 
+Setup, fonts and Tibetan keyboard:
+
 * [Apple iOS configuration](configuration_ios.md)
 * [Android configuration](configuration_android.md)
 
-## What can I do on the mobile device?
+## Apps
 
-Mobile devices (Android, iOS) are an excellent choice for:
-
-* Tibetan dictionaries
-* Reference- and ebook reading
-
-### App recommendations
+Dictionaries, tools and other apps:
 
 * [Apple iOS apps for Tibetan](apps_ios.md)
 * [Android apps for Tibetan](apps_android.md)
