@@ -31,7 +31,7 @@ Choose the simplest text format possible for long-term relevant _information_: a
 
 Then, if a more embellished output is required, use tools to convert simple text formats into more complex formats. As a last step human editing can be added, but it should be seen like a sand maṇḍala: this will not last.
 
-If the resultant object can be considered as an artistic representation of it's own right, use **PDF-A** (Archive PDF) to store the result.
+If the resultant object can be considered as an artistic representation in it's own right, use **PDF-A** (Archive PDF) to store the result.
 
 ```{note}
 The source-of-truth for any long-term dharma material needs to be as simple as possible: a text-format like markdown or CSV.
