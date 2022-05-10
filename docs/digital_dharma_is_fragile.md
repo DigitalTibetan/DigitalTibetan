@@ -23,13 +23,13 @@ We still have accounts of the culture of Sumer, because those responsible for di
 
 Dharma content is precious. In order to make it possible to maintain it, **separate between _presentation_ and _information_**. If you say: I need to work with this and that tool, because otherwise it looks bad, then you focus on _presentation_, and this will make preservation much more difficult long term.
 
-Choose the most simple text format possible for long-term relevant _information_: an ideal format is human-readable without any additional app, service, software or other decoding-tools.
+Choose the simplest text format possible for long-term relevant _information_: an ideal format is human-readable without any additional app, service, software or other decoding-tools.
 
 - For text, an ideal choice for many applications is **markdown**
 - For structured information use comma-separated text **CSV** based tables
 - XML, JSON and similar formats are suitable too, but at a cost of lower direct human accessibility.
 
-Then, if a more embellished output is required, use tools to convert simple text formats into more complex formats. As a last step human editing can be added, but it should be seen like a sand mandala: this will not last.
+Then, if a more embellished output is required, use tools to convert simple text formats into more complex formats. As a last step human editing can be added, but it should be seen like a sand maṇḍala: this will not last.
 
 If the resultant object can be considered as an artistic representation of it's own right, use **PDF-A** (Archive PDF) to store the result.
 
@@ -44,7 +44,7 @@ Individual humans and small or medium sized organizations **do not have the mean
 Once you've made sure that dharma material that needs to be preserved is stored in a format as simple as possible, the _information_ in it's simplest format, backups become essential.
 
 - **Sharing** is a way to use everybody else's computer as backup-device. It's probably the _only_ longterm strategy to make sure information survives. What needs to be shared is the essential _information_, the source of truth. Sharing of any resultant _presentation_ is good, but not a means for ensuring longevity of the _information_.
-- **Powerful partners** are required to increase chances: by working together with as many organizations as possible and sharing _information_ freely between them, the resilience for the material to be protected increases.
+- **Powerful partners** are required to increase the odds of survival: by working together with as many organizations as possible and sharing _information_ freely between them, the resilience for the material to be protected increases.
 - **Longterm backups** are only within in reach of very few organizations. Luckily, if you material is in simple text form, free and open, you have access to the most powerful backup facilities currently available: the [github artic code vault](https://archiveprogram.github.com/): store your _information_ as text in github and (if public and open consisting of reasonably small text files), the repository will be put in cold storage within an Arctic code vault.
 
 ```{note}
