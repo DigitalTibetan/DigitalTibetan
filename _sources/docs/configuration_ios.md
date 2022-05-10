@@ -53,3 +53,7 @@ Usage of the hardware keyboard is very similar to macOS.
 
 * Use the globe-key (🌐) to switch between Tibetan-Wylie and other input methods. Alternatively (e.g. for keyboards without the globe-key), you can specify the CAPS-LOCK key to switch between input methods (see `settings`, `hardware-keyboard`).
 * Stacking works according to the EWTS-Rules: Use '+' to force stacking (e.g. for Sanskrit).
+
+## Next steps
+
+Now you're ready to install some [Tibetan apps](apps_ios.md)!
