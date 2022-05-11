@@ -27,4 +27,4 @@ This site is based on a [github repository](https://github.com/DigitalTibetan/Di
 - [Getting started: how to setup your devices for working with Tibetan](docs/devices_tibetan.md)
 - [The Tibetan calendar](docs/tibetan_calendar.md)
 - [On the fragility of digital information](docs/digital_dharma_is_fragile.md)
-- [Digital Tibetan Tools](docs/digital_tibetan_tools.md) (Wylie<->Unicode conversion, Tibetan pronunciation tools, Tibetan calendar tools)
+- [Digital Tibetan Tools](docs/digital_tibetan_tools.md) (Wylie ↔ Tibetan Unicode conversion, Tibetan phonetics tools, Tibetan calendar tools)
