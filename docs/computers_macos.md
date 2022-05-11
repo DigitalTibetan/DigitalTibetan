@@ -45,6 +45,14 @@ You should now be able to either select the current keyboard by hotkey, or by cl
 :width: 480
 ```
 
+For an overview how Tibetan is transliterated as Wylie, checkout [Wikipedia Wylie transliteration](https://en.wikipedia.org/wiki/Wylie_transliteration).
+
+Some easy examples with `Tibetan - Wylie` keyboard enabled:
+
+- to type སེམས་ཅན་ཐམས་ཅད།, type `sems can thams cad/`
+- to type རྒྱུ་, simply type `rgyu `
+- གཡུ is `g.yu`, གྱུ is `gyu`.
+
 Since macOS Wylie input method is Wylie in name-only, it makes sense to activate the `Show Keyboard Viewer` in the input selector menu-bar icon.
 
 The `Caps lock` key makes Sanskrit and special symbols available, while the `=` key supports non-standard stacking.
@@ -67,7 +75,14 @@ after selcting `caps-lock`, `=`, and `caps-lock`:
 ```{image} Images/macos_keyboard_viewer_caps_=_caps.jpg
 :width: 320
 ```
-So currently, to type ཌྜྷི, one types `<caps lock> d = d = <caps lock> h i`. Not _quite_ the standard way to do things...
+
+Some examples:
+
+- So currently, to type ཌྜྷི, one types `<caps lock> d = d = <caps lock> h i`. 
+- ༄༅།  ། is `<caps lock> 2 3 <caps lock> / <caps lock> <space> <space> <caps lock> /`
+- ཨོཾ་ཨཱཿཧཱུཾ༔ is `o <caps lock> m <caps lock> <space> <caps lock> ah <caps lock> h <caps lock> um :`
+
+Not _quite_ the standard way to do things...
 
 Apple is working on a bug-report...
 
