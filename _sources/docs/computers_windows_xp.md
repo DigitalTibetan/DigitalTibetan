@@ -8,11 +8,14 @@ Windows XP is a very old operating system, no longer supported by Microsoft. If 
 
 ### Enabling complex script support
 
-Microsoft Windows XP supports complex scripts, the feature to correctly display Tibetan stacks, only with Microsoft Office 2003 SP1 and later. However it is possible to install support for Tibetan complex scripts for all applications (e.g. Web browsers and OpenOffice).
+Microsoft Windows XP only supports complex scripts, the feature required to correctly display Tibetan stacks, with Microsoft Office 2003 SP1 and later installed. However it is possible to install support for Tibetan complex scripts for all applications (e.g. Web browsers and OpenOffice).
 
 An excellent description how to update Windows XP can be found at the [National Library of Bhutan](https://web.archive.org/web/20200123024135/http://library.gov.bt/IT/uniscribe.html) (archived version). (The description is for Dzongkha, but works for Tibetan too.)
 
-A direct download-link for the required Windows XP DLL is provided by the library here: [USP10.DLL installer](http://www.library.gov.bt/IT/InstallUsp10Only.zip).
+```{important}
+A direct download-link for the required Windows XP DLL is provided by the Bhutan National Library here: [USP10.DLL installer](http://www.library.gov.bt/IT/InstallUsp10Only.zip).
+```
+
 ## Installing Unicode fonts
 
 Simply install one of the Unicode [Tibetan Fonts](tibetan_fonts.md).
