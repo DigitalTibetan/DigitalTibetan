@@ -1,5 +1,7 @@
 # Working with macOS and Tibetan script
 
+Tibetan support works equally well for old Intel Macs and the new Apple Silicon based Macs.
+
 The Mac comes with Tibetan fonts preinstalled. For more fonts, see [Tibetan fonts](tibetan_fonts.md).
 
 (macos_keyboard)=
@@ -69,5 +71,35 @@ So currently, to type ཌྜྷི, one types `<caps lock> d = d = <caps lock> h
 
 Apple is working on a bug-report...
 
+(macos_sanskrit_keyboard)=
 ## Sanskrit diacritics
 
+Working with dharma materials often requires access to diacritics. For those who are using an English QWERTY layout, the Apple keyboard `ABC - Extended` provides easy access to virtually all diacritics imaginable, including IAST Sanskrit transliteration. Install this keyboard from `System Preferences`, `Keyboard`, `Input Sources` and add the `ABC - Extended` keyboard just as you did with the Tibetan keyboard.
+
+```{image} Images/macos_abc_extended_diacritics.jpg
+:align: right
+:width: 480
+```
+Some examples for Sanskrit:
+
+Note: `⌥` is the **right** option key, it is always the first key in diacritics sequences with the `ABC - Extended ` keyboard. Again, enable `Show Keyboard Viewer` in the input-method selector in the menu bar, and as soon as the right option key `⌥` is pressed, all available diacritics are shown.
+
+| ā | ī | ū | Ā | Ī | Ū |
+| - | - | - | - | - | - |
+| ⌥aa | ⌥ai | ⌥au | ⌥aA | ⌥aI | ⌥aU |
+
+| ḍ | Ḍ | ḥ | Ḥ | ḷ | Ḷ | 
+| - | - | - | - | - | - |
+| ⌥xd | ⌥xD | ⌥xh | ⌥xH | ⌥xl | ⌥xL |
+
+| ñ | Ñ | ṇ | Ṇ | ṅ | Ṅ | 
+| - | - | - | - | - | - |
+| ⌥nn | ⌥nN | ⌥xn | ⌥xN | ⌥wn | ⌥wN |
+
+| ṃ | Ṃ | ṛ | Ṛ | ś | Ś |
+| - | - | - | - | - | - |
+| ⌥xm | ⌥xM | ⌥xr | ⌥xR | ⌥es | ⌥eS |
+
+| ṣ | Ṣ | ṭ | Ṭ |
+| - | - | - | - |
+| ⌥xs | ⌥xS | ⌥xt | ⌥xT |
