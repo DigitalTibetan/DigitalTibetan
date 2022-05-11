@@ -1,4 +1,4 @@
-# Google translation for Tibetan in preparation 
+# 2022-04: Google translation for Tibetan in preparation 
 
 Google is currently looking for support to train the upcoming translation technology. Can you help?
 
