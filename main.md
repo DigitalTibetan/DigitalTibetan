@@ -19,13 +19,14 @@ Digital Tibetan wants to cater two target audiences:
 - Additionally the plan is to introduce tools for [computational dharma](docs/computational_dharma.ipynb), how modern tools inherited from data science can be used to efficiently create personal working environments that support working with, cross-referencing, and transforming large amounts of natural language data related to Tibetan. 
 
 (contribute)=
-## Contribution, suggestions and corrections
+## Contributions, suggestions, ideas and corrections
 
 ```{image} Images/quick_edit.jpg
 :align: left
 :width: 128
 ```
-The Github-icon on the top right gives easy access to the source-repository and has a quick-edit option. Each edit will be reviewed, so there is no danger of generating a mess. Documents use the Markdown format.
+
+The Github-icon on the top right gives easy access to the source-repository and has a quick-edit option. Each edit will be reviewed, so there is no danger of generating a mess. Documents use the [markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) format.
 
 This site is based on a [github repository](https://github.com/DigitalTibetan/DigitalTibetan) that basically consists of simple text-files in markdown. The markdown files are converted into this web site using [Jupyter-Book](https://jupyterbook.org/en/stable/index.html).
 
