@@ -15,8 +15,11 @@ chapters:
     sections:
     - file: docs/computers_macos.md
     - file: docs/computers_windows.md
+    - file: docs/computers_windows_keyboards.md
     - file: docs/computers_linux_kde.md
     - file: docs/computers_linux_gnome.md
+    - file: docs/computers_windows_xp.md
+- file: docs/tibetan_fonts.md
 - file: docs/sanskrit_overview.md
 - file: docs/tibetan_calendar.md
 - file: docs/digital_tibetan_tools.md
