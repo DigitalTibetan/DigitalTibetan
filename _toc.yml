@@ -21,7 +21,7 @@ chapters:
     - file: docs/computers_windows_xp.md
 - file: docs/tibetan_fonts.md
   sections:
-  - file: doc/tibetan_font_creation.md
+  - file: docs/tibetan_font_creation.md
 - file: docs/sanskrit_overview.md
 - file: docs/tibetan_calendar.md
 - file: docs/digital_tibetan_tools.md
