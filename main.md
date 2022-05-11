@@ -9,7 +9,7 @@ This site will become in time the successor for the old DigitalTibetan v2.0 Medi
 An archived version of the old site is still available at [archive.org DigitalTibetan](https://web.archive.org/web/20210502044931/http://www.digitaltibetan.org/index.php/Digital_Tibetan)
 ```
 
-**Contribute!** Simply select the Github-icon (that black-creature-icon in the top-right) and 'suggest an edit'. No worries, you can't break things, since each edit will be reviewed before going life. Articles are written in Markdown. See 
+**Contribute!** Simply select the Github-icon (that black-creature-icon in the top-right) and 'suggest an edit'. No worries, you can't break things, since each edit will be reviewed before going life. For more details see [Contribution](contribute) below.
 
 ## The new scope of Digital Tibetan
 
@@ -21,7 +21,11 @@ Digital Tibetan wants to cater two target audiences:
 (contribute)=
 ## Contribution, suggestions and corrections
 
-The github-icon on the top right gives easy access to the source-repository and has a quick-edit option.
+```{image} Images/quick_edit.jpg
+:align: left
+:width: 128
+```
+The Github-icon on the top right gives easy access to the source-repository and has a quick-edit option. Each edit will be reviewed, so there is no danger of generating a mess. Documents use the Markdown format.
 
 This site is based on a [github repository](https://github.com/DigitalTibetan/DigitalTibetan) that basically consists of simple text-files in markdown. The markdown files are converted into this web site using [Jupyter-Book](https://jupyterbook.org/en/stable/index.html).
 
