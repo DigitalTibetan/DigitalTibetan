@@ -12,8 +12,15 @@ launch_buttons:
   thebe                  : true
   colab_url: "https://colab.research.google.com"
 
+repository:
+  url: https://github.com/digitaltibetan/DigitalTibetan
+  branch: main
+
 html:
   favicon                   : Images/favicon.ico
+  use_edit_page_button : true
+  use_repository_button : true
+  use_issue_button : true
 # Add a bibtex file so that we can create citations
 # bibtex_bibfiles:
 #  - references.bib
