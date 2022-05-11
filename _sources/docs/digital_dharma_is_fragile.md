@@ -54,4 +54,4 @@ Carefully evaluate the best possible backup- and distribution strategy for every
 #### Image references
 
 * Image "The outer panels of Rogier van der Weyden's Braque Triptych (c. 1452) show the skull of the patron displayed on the inner panels. The bones rest on a brick, a symbol of his former industry and achievement". (Public domain), [wikipedia](https://en.wikipedia.org/wiki/Memento_mori#/media/File:Braque_Family_Triptych_closed_WGA.jpg)
-* Image "Early writing tablet recording the allocation of beer"; 3100-3000 BC (Late Prehistoric period); height: 9.4 cm, width: 6.87 cm; probably from southern Iraq; British Museum (ME 140855). (Creative commons), [wikipedia](https://commons.wikimedia.org/wiki/File:Early_writing_tablet_recording_the_allocation_of_beer.jpg). _Your information is more important than a beer list? So what are your plans?_
+* Image "Early writing tablet recording the allocation of beer"; 3100-3000 BC (Late Prehistoric period); height: 9.4 cm, width: 6.87 cm; probably from southern Iraq; British Museum (ME 140855). (Creative commons), [wikipedia](https://commons.wikimedia.org/wiki/File:Early_writing_tablet_recording_the_allocation_of_beer.jpg). 

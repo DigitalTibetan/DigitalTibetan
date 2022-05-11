@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>How to configure Apple iOS (iPhone, iPad) for Tibetan &#8212; Digital Tibetan</title>
+    <title>Tibetan keyboards for Windows &#8212; Digital Tibetan</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -54,8 +54,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Best Tibetan apps for iOS" href="apps_ios.html" />
-    <link rel="prev" title="Tibetan and mobile devices" href="mobile_tibetan.html" />
+    <link rel="next" title="Working with Linux KDE and Tibetan script" href="computers_linux_kde.html" />
+    <link rel="prev" title="Working with Windows and Tibetan script" href="computers_windows.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -120,18 +120,18 @@ const thebe_selector_output = ".output, .cell_output"
    </i>
   </label>
   <ul class="current">
-   <li class="toctree-l2 current active has-children">
+   <li class="toctree-l2 has-children">
     <a class="reference internal" href="mobile_tibetan.html">
      Tibetan and mobile devices
     </a>
-    <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
     <label for="toctree-checkbox-2">
      <i class="fas fa-chevron-down">
      </i>
     </label>
-    <ul class="current">
-     <li class="toctree-l3 current active">
-      <a class="current reference internal" href="#">
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="configuration_ios.html">
        How to configure Apple iOS (iPhone, iPad) for Tibetan
       </a>
      </li>
@@ -152,16 +152,16 @@ const thebe_selector_output = ".output, .cell_output"
      </li>
     </ul>
    </li>
-   <li class="toctree-l2 has-children">
+   <li class="toctree-l2 current active has-children">
     <a class="reference internal" href="computers_tibetan.html">
      Computers and Tibetan script
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
     <label for="toctree-checkbox-3">
      <i class="fas fa-chevron-down">
      </i>
     </label>
-    <ul>
+    <ul class="current">
      <li class="toctree-l3">
       <a class="reference internal" href="computers_macos.html">
        Working with macOS and Tibetan script
@@ -172,8 +172,8 @@ const thebe_selector_output = ".output, .cell_output"
        Working with Windows and Tibetan script
       </a>
      </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="computers_windows_keyboards.html">
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
        Tibetan keyboards for Windows
       </a>
      </li>
@@ -279,7 +279,7 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/docs/configuration_ios.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/docs/computers_windows_keyboards.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -310,37 +310,45 @@ const thebe_selector_output = ".output, .cell_output"
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#tibetan-keyboard-on-mobile">
-   Tibetan keyboard on mobile
+  <a class="reference internal nav-link" href="#tise">
+   TISE
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a-short-introduction-typing-tibetan-with-tise1">
+   A short introduction: Typing Tibetan with TISE
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#ipad-with-hardware-keyboard">
-     iPad with hardware keyboard
+    <a class="reference internal nav-link" href="#basic-letters">
+     Basic letters
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tibetan-punctuation">
+     Tibetan punctuation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tibetan-sanskrit-letters">
+     Tibetan Sanskrit letters
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#complex-stacks">
+     Complex stacks
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#examples">
+     Examples
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#working-with-the-tibetan-keyboard">
-   Working with the Tibetan keyboard
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#the-on-screen-tibetan-keyboard">
-     The on-screen Tibetan keyboard
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#the-hardware-keyboard-ipad-with-magic-keyboard-or-similar">
-     The hardware keyboard (iPad with magic keyboard or similar)
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#next-steps">
-   Next steps
+  <a class="reference internal nav-link" href="#denjong-tibtype">
+   Denjong TibType
   </a>
  </li>
 </ul>
@@ -353,7 +361,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>How to configure Apple iOS (iPhone, iPad) for Tibetan</h1>
+                <h1>Tibetan keyboards for Windows</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -364,37 +372,45 @@ const thebe_selector_output = ".output, .cell_output"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#tibetan-keyboard-on-mobile">
-   Tibetan keyboard on mobile
+  <a class="reference internal nav-link" href="#tise">
+   TISE
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a-short-introduction-typing-tibetan-with-tise1">
+   A short introduction: Typing Tibetan with TISE
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#ipad-with-hardware-keyboard">
-     iPad with hardware keyboard
+    <a class="reference internal nav-link" href="#basic-letters">
+     Basic letters
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tibetan-punctuation">
+     Tibetan punctuation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tibetan-sanskrit-letters">
+     Tibetan Sanskrit letters
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#complex-stacks">
+     Complex stacks
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#examples">
+     Examples
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#working-with-the-tibetan-keyboard">
-   Working with the Tibetan keyboard
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#the-on-screen-tibetan-keyboard">
-     The on-screen Tibetan keyboard
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#the-hardware-keyboard-ipad-with-magic-keyboard-or-similar">
-     The hardware keyboard (iPad with magic keyboard or similar)
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#next-steps">
-   Next steps
+  <a class="reference internal nav-link" href="#denjong-tibtype">
+   Denjong TibType
   </a>
  </li>
 </ul>
@@ -406,55 +422,71 @@ const thebe_selector_output = ".output, .cell_output"
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="how-to-configure-apple-ios-iphone-ipad-for-tibetan">
-<h1>How to configure Apple iOS (iPhone, iPad) for Tibetan<a class="headerlink" href="#how-to-configure-apple-ios-iphone-ipad-for-tibetan" title="Permalink to this headline">¶</a></h1>
-<p>Apple iOS comes with a Tibetan font and can display Tibetan in all apps without any configuration.</p>
-<a class="reference internal image-reference" href="../_images/ios_keyboard.jpg" id="ios-keyboard"><img alt="iOS keyboard for Tibetan" class="align-right" id="ios-keyboard" src="../_images/ios_keyboard.jpg" style="width: 240px;" /></a>
-<div class="section" id="tibetan-keyboard-on-mobile">
-<h2>Tibetan keyboard on mobile<a class="headerlink" href="#tibetan-keyboard-on-mobile" title="Permalink to this headline">¶</a></h2>
-<p>In order to type Tibetan, configure an additional input method for Tibetan:</p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="tibetan-keyboards-for-windows">
+<h1>Tibetan keyboards for Windows<a class="headerlink" href="#tibetan-keyboards-for-windows" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="tise">
+<span id="keyboard-tise"></span><h2>TISE<a class="headerlink" href="#tise" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://tise.mokhin.org/"><strong>TISE</strong></a> (pronounced ‘tee-say’) is a Tibetan input utility for Windows XP, Vista, 7, 8, and 10.</p>
+<p>TISE is a free Wylie input method that runs on XP, Vista and Windows 7 (32 and 64 bit (since version 2.0)). You can download the software from:</p>
+<p><a class="reference external" href="http://tise.mokhin.org/">http://tise.mokhin.org/</a> (version 2.0, Nov. 2012, supports both 32 and 64 bit)</p>
+</div>
+<div class="section" id="a-short-introduction-typing-tibetan-with-tise1">
+<h2>A short introduction: Typing Tibetan with TISE<a class="footnote-reference brackets" href="#id2" id="id1">1</a><a class="headerlink" href="#a-short-introduction-typing-tibetan-with-tise1" title="Permalink to this headline">¶</a></h2>
+<img alt="https://tise.mokhin.org/tise.png" class="align-right" src="https://tise.mokhin.org/tise.png" />
+<p>Start the TISE program: you will see a Mount-Kailash icon on the right side of Windows task-bar.</p>
+<p>TISE can be switched on and off with <code class="docutils literal notranslate"><span class="pre">&lt;shift&gt;&lt;space&gt;</span></code>, or by clicking on the Mount-Kailash icon on the right side of Windows task-bar. Note that the sun in the icon indicates the activity-state of TISE.</p>
+<p>Make sure to familiarize yourself with EWTS (extended Wylie) using <a class="reference external" href="https://www.thlib.org/reference/transliteration/teachingewts.pdf">Teaching EWTS</a> by Alexandru Anton-Luca.</p>
+<p>Note: TISE seems to be incompatible with GoldenDict. If you plan to use this dictionary-program, the recommended input method would be <a class="reference internal" href="#keyboard-denjong"><span class="std std-ref">Denjong</span></a>. Alternatively, if you want to use TISE with GoldenDict, you can type the search-phrase in some other program (e.g. notepad) and then copy&amp;paste the search term into GoldenDict.</p>
+<div class="section" id="basic-letters">
+<h3>Basic letters<a class="headerlink" href="#basic-letters" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><p>Start the <code class="docutils literal notranslate"><span class="pre">Settings</span></code> app.</p></li>
-<li><p>Select <code class="docutils literal notranslate"><span class="pre">General</span></code>, <code class="docutils literal notranslate"><span class="pre">Keyboard</span></code>, <code class="docutils literal notranslate"><span class="pre">Keyboards</span></code>, <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">New</span> <span class="pre">Keyboard...</span></code></p></li>
-<li><p>Search for <code class="docutils literal notranslate"><span class="pre">Tibetan</span></code>, ‘Other iPhone keyboard’ will now offer to install a Tibetan keyboard.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Keyboards</span></code> should now display at least two keyboards: your default input method and <code class="docutils literal notranslate"><span class="pre">Tibetan</span></code>.</p></li>
-</ul>
-<div class="section" id="ipad-with-hardware-keyboard">
-<h3>iPad with hardware keyboard<a class="headerlink" href="#ipad-with-hardware-keyboard" title="Permalink to this headline">¶</a></h3>
-<p>If you are using an iPad with an additional hardware keyboard, an additional step is required:</p>
-<a class="reference internal image-reference" href="../_images/ipad_hardware_keyboard.jpg"><img alt="../_images/ipad_hardware_keyboard.jpg" src="../_images/ipad_hardware_keyboard.jpg" style="width: 560px;" /></a>
-<p>In the <code class="docutils literal notranslate"><span class="pre">Settings</span></code> app:</p>
-<ul class="simple">
-<li><p>Select <code class="docutils literal notranslate"><span class="pre">General</span></code>, <code class="docutils literal notranslate"><span class="pre">Keyboard</span></code>, <code class="docutils literal notranslate"><span class="pre">Hardware</span> <span class="pre">keyboard</span></code>. If you have correctly configure the Tibetan input method above, then you can now select the type of input method that is used for the hardware keyboard.</p></li>
-<li><p>Select <code class="docutils literal notranslate"><span class="pre">Tibetan</span></code>, and activate <code class="docutils literal notranslate"><span class="pre">Tibetan</span> <span class="pre">-</span> <span class="pre">Wylie</span></code>.</p></li>
-</ul>
-<p>An iPad with hardware keyboard works now very much like a laptop with Tibetan support.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>If you plan to work with Sanskrit diacritics, the <code class="docutils literal notranslate"><span class="pre">ABC</span> <span class="pre">-</span> <span class="pre">Extended</span></code> keyboard allows entering Sanskrit diacritics with your English QWERTY keyboard. See <a class="reference internal" href="sanskrit_overview.html"><span class="doc std std-doc">Working with Sanskrit</span></a>.</p>
-</div>
-</div>
-</div>
-<div class="section" id="working-with-the-tibetan-keyboard">
-<h2>Working with the Tibetan keyboard<a class="headerlink" href="#working-with-the-tibetan-keyboard" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="the-on-screen-tibetan-keyboard">
-<h3>The on-screen Tibetan keyboard<a class="headerlink" href="#the-on-screen-tibetan-keyboard" title="Permalink to this headline">¶</a></h3>
-<p>The <code class="docutils literal notranslate"><span class="pre">globe</span></code>-button (🌐), marked in red in the image above, is used to switch between your different keyboards.</p>
-<p>Once the Tibetan keyboard is active, you enter Tibetan by simply pressing the corresponding Tibetan letters (some letters, like ཨ, ཞ, ཤ, ཆ are hidden behind the shift-key!).</p>
-<p>Stacking has to done manually pressing the <code class="docutils literal notranslate"><span class="pre">stack</span></code>-key, marked in green in the keyboard-image above: in order to enter རྒྱུ་, you would type: <code class="docutils literal notranslate"><span class="pre">ར</span></code>, <code class="docutils literal notranslate"><span class="pre">stack</span></code>, <code class="docutils literal notranslate"><span class="pre">ག</span></code>, <code class="docutils literal notranslate"><span class="pre">stack</span></code>, <code class="docutils literal notranslate"><span class="pre">ཡ</span></code> and  <code class="docutils literal notranslate"><span class="pre">ུ</span></code> (vowel-sign u).</p>
-</div>
-<div class="section" id="the-hardware-keyboard-ipad-with-magic-keyboard-or-similar">
-<h3>The hardware keyboard (iPad with magic keyboard or similar)<a class="headerlink" href="#the-hardware-keyboard-ipad-with-magic-keyboard-or-similar" title="Permalink to this headline">¶</a></h3>
-<p>Usage of the hardware keyboard is very similar to macOS.</p>
-<ul class="simple">
-<li><p>Use the globe-key (🌐) to switch between Tibetan-Wylie and other input methods. Alternatively (e.g. for keyboards without the globe-key), you can specify the CAPS-LOCK key to switch between input methods (see <code class="docutils literal notranslate"><span class="pre">settings</span></code>, <code class="docutils literal notranslate"><span class="pre">hardware-keyboard</span></code>).</p></li>
-<li><p>Stacking works according to the EWTS-Rules: Use ‘+’ to force stacking (e.g. for Sanskrit).</p></li>
+<li><p>All basic Tibetan and Tibetan Sanskrit represented by EWTS scheme are supported by Tise. Often typing the final <code class="docutils literal notranslate"><span class="pre">a</span></code> as in <code class="docutils literal notranslate"><span class="pre">ka</span></code> ཀ is not necessary, <code class="docutils literal notranslate"><span class="pre">k</span></code> followed by a tsheg <code class="docutils literal notranslate"><span class="pre">&lt;space&gt;</span></code> is enough.</p></li>
+<li><p>Longer vowels (with a subjointed small letter achung) are typed as <code class="docutils literal notranslate"><span class="pre">aa</span></code> ཨཱ, <code class="docutils literal notranslate"><span class="pre">ii</span></code> ཨཱི, <code class="docutils literal notranslate"><span class="pre">uu</span></code> ཨཱུ, <code class="docutils literal notranslate"><span class="pre">ee</span></code> ཨཱེ, <code class="docutils literal notranslate"><span class="pre">oo</span></code> ཨཱོ, or <code class="docutils literal notranslate"><span class="pre">A</span></code> ཨཱ, <code class="docutils literal notranslate"><span class="pre">I</span></code> ཨཱི, <code class="docutils literal notranslate"><span class="pre">U</span></code> ཨཱུ, <code class="docutils literal notranslate"><span class="pre">E</span></code> ཨཱེ, <code class="docutils literal notranslate"><span class="pre">O</span></code> ཨཱོ.</p></li>
+<li><p>Retroflex i ྀ is typed as <code class="docutils literal notranslate"><span class="pre">-i</span></code>, and retroflex i with achung as <code class="docutils literal notranslate"><span class="pre">-I</span></code> ཱྀ, e.g. <code class="docutils literal notranslate"><span class="pre">k-i</span></code> ཀྀ, <code class="docutils literal notranslate"><span class="pre">k-I</span></code> ཀཱྀ.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">au</span></code> ཨཽ, <code class="docutils literal notranslate"><span class="pre">ai</span></code> ཨཻ are implemented.</p></li>
 </ul>
 </div>
+<div class="section" id="tibetan-punctuation">
+<h3>Tibetan punctuation<a class="headerlink" href="#tibetan-punctuation" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>As per EWTS, asterisk <code class="docutils literal notranslate"><span class="pre">*</span></code> types non-breaking tsheg (0x0f0c) <code class="docutils literal notranslate"><span class="pre">་</span></code>.</p></li>
+<li><p>Typing <code class="docutils literal notranslate"><span class="pre">_</span></code> (underscore) gives 0xa0 (non-breaking space).</p></li>
+<li><p>Regular space (0x20) is typed by <code class="docutils literal notranslate"><span class="pre">x</span></code> key.</p></li>
+</ul>
 </div>
-<div class="section" id="next-steps">
-<h2>Next steps<a class="headerlink" href="#next-steps" title="Permalink to this headline">¶</a></h2>
-<p>Now you’re ready to install some <a class="reference internal" href="apps_ios.html"><span class="doc std std-doc">Tibetan apps</span></a>!</p>
+<div class="section" id="tibetan-sanskrit-letters">
+<h3>Tibetan Sanskrit letters<a class="headerlink" href="#tibetan-sanskrit-letters" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>As per EWTS, they are usually typed as capital letter (with Shift key pressed). Implemented are the following Tibetan Sanskrit letters: <code class="docutils literal notranslate"><span class="pre">Ta</span></code> ཊ, <code class="docutils literal notranslate"><span class="pre">Tha</span></code> ཋ, <code class="docutils literal notranslate"><span class="pre">Da</span></code> ཌ, <code class="docutils literal notranslate"><span class="pre">Na</span></code> ཎ, <code class="docutils literal notranslate"><span class="pre">Sha</span></code> ཥ (the latter can be type as <code class="docutils literal notranslate"><span class="pre">S</span></code>) <code class="docutils literal notranslate"><span class="pre">R+</span></code> ཪ, <code class="docutils literal notranslate"><span class="pre">+W</span></code> ྺ, <code class="docutils literal notranslate"><span class="pre">+Y</span></code> ྻ, <code class="docutils literal notranslate"><span class="pre">+R</span></code> ྼ, (fixed form ra, wa, ya, e.g. ཪྟ་ རྻ་ མྺ་ ཡྼ་)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">H</span></code> ཿ, <code class="docutils literal notranslate"><span class="pre">M</span></code> ཾ, <code class="docutils literal notranslate"><span class="pre">&amp;</span></code> ྅, <code class="docutils literal notranslate"><span class="pre">?</span></code> ྄.</p></li>
+<li><p>For the sake of simplicity, EWTS <code class="docutils literal notranslate"><span class="pre">~M</span></code> and <code class="docutils literal notranslate"><span class="pre">~M</span></code> are typed as <code class="docutils literal notranslate"><span class="pre">q</span></code>  ྃ and <code class="docutils literal notranslate"><span class="pre">Q</span></code>  ྂ respectively.</p></li>
+</ul>
+</div>
+<div class="section" id="complex-stacks">
+<h3>Complex stacks<a class="headerlink" href="#complex-stacks" title="Permalink to this headline">¶</a></h3>
+<p>This is the major improvement of EWTS compared to previous approaches, and Tise fully takes advantage of this. In Tise stacks are typed using <code class="docutils literal notranslate"><span class="pre">+</span></code> symbol to stack glyphs vertically. If vertical stack is not what is desired, it is possible to quit vertical stacking mode by typing <code class="docutils literal notranslate"><span class="pre">.</span></code> (or just type a vowel or a tsheg if the syllable is complete).</p>
+</div>
+<div class="section" id="examples">
+<h3>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">gya</span></code> གྱ is stacked, but <code class="docutils literal notranslate"><span class="pre">g.ya</span></code> གཡ isn’t.</p></li>
+<li><p>to type <em>siddhi</em> use: <code class="docutils literal notranslate"><span class="pre">si.ddhi</span></code> or <code class="docutils literal notranslate"><span class="pre">sid+d+hi</span></code>. In many cases, as with all standard Wylie EWTS sequences like <code class="docutils literal notranslate"><span class="pre">brdza</span></code> བརྫ, for example, typing extra <code class="docutils literal notranslate"><span class="pre">+</span></code> sign is not required, Tise tries to be user friendly by minimizing the number of key hits needed for typing.</p></li>
+<li><p>More examples: <code class="docutils literal notranslate"><span class="pre">hUq</span></code> ཧཱུྃ་, <code class="docutils literal notranslate"><span class="pre">hUQ</span></code> ཧཱུྂ, <code class="docutils literal notranslate"><span class="pre">d+hIH</span></code> དྷཱིཿ, <code class="docutils literal notranslate"><span class="pre">oMAHhUQ</span></code> ཨོཾ་ཨཱཿཧཱུྂ.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="denjong-tibtype">
+<span id="keyboard-denjong"></span><h2>Denjong TibType<a class="headerlink" href="#denjong-tibtype" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://github.com/thubtenrigzin/DenjongTibType"><strong>Denjong TibType</strong></a> is a free Tibetan Unicode typing system based on Wylie that works on all Windows platforms including 32 &amp; 64 bits versions. The website and a more detailed documentation are on elaboration but you can, by now, download and install the product from:</p>
+<p><a class="reference external" href="https://github.com/thubtenrigzin/DenjongTibType/">https://github.com/thubtenrigzin/DenjongTibType/</a> - For AZERTY and QWERTY, Wylie and Sambhota transcription.</p>
+<p>Note: use versions &gt; 1.0 for international keyboard support.</p>
+<p><a class="reference external" href="https://github.com/thubtenrigzin/DenjongTibType/releases">https://github.com/thubtenrigzin/DenjongTibType/releases</a></p>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="id2"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>taken from TISE readme.</p>
+</dd>
+</dl>
 </div>
 </div>
 
@@ -483,17 +515,17 @@ const thebe_selector_output = ".output, .cell_output"
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="mobile_tibetan.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="computers_windows.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Tibetan and mobile devices</p>
+            <p class="prev-next-title">Working with Windows and Tibetan script</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="apps_ios.html" title="next page">
+    <a class='right-next' id="next-link" href="computers_linux_kde.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Best Tibetan apps for iOS</p>
+        <p class="prev-next-title">Working with Linux KDE and Tibetan script</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
