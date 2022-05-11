@@ -18,6 +18,10 @@ Digital Tibetan wants to cater two target audiences:
 - Much like the [predecessor version](https://web.archive.org/web/20210502044931/http://www.digitaltibetan.org/index.php/Digital_Tibetan) of DigitalTibetan, this site aspires to collect information and How-Tos on how to work with digital Tibetan information within the context of one's own hardware and setup. [Start here.](docs/devices_tibetan.md)
 - Additionally the plan is to introduce tools for [computational dharma](docs/computational_dharma.ipynb), how modern tools inherited from data science can be used to efficiently create personal working environments that support working with, cross-referencing, and transforming large amounts of natural language data related to Tibetan. 
 
+## News
+
+* 2022-04-11, Help requested: [Google translation for Tibetan in preparation](docs/tibetan_translation_services.md)
+  
 (contribute)=
 ## Contributions, suggestions, ideas and corrections
 
