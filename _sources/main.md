@@ -20,7 +20,7 @@ Digital Tibetan wants to cater two target audiences:
 
 ## News
 
-* 2022-04-11, Help requested: [Google translation for Tibetan in preparation](docs/tibetan_translation_services.md)
+* 2022-04-11, Help requested: [Google translation for Tibetan in preparation](docs/news/2022-04-11_tibetan_translation_services.md)
   
 (contribute)=
 ## Contributions, suggestions, ideas and corrections
