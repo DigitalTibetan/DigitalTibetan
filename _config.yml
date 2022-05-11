@@ -2,6 +2,7 @@
 title: Digital Tibetan
 author: Digital Tibetan Community
 logo: Images/DigitalTibetanLogo.png
+copyright: "2022"
 execute:
   execute_notebooks: force
 
@@ -11,6 +12,8 @@ launch_buttons:
   thebe                  : true
   colab_url: "https://colab.research.google.com"
 
+html:
+  favicon                   : Images/favicon.ico
 # Add a bibtex file so that we can create citations
 # bibtex_bibfiles:
 #  - references.bib
