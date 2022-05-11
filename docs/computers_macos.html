@@ -423,15 +423,19 @@ const thebe_selector_output = ".output, .cell_output"
 <h1>Working with macOS and Tibetan script<a class="headerlink" href="#working-with-macos-and-tibetan-script" title="Permalink to this headline">¶</a></h1>
 <p>The Mac comes with Tibetan fonts preinstalled. For more fonts, see <a class="reference internal" href="tibetan_fonts.html"><span class="doc std std-doc">Tibetan fonts</span></a>.</p>
 <div class="section" id="tibetan-keyboard">
-<h2>Tibetan keyboard<a class="headerlink" href="#tibetan-keyboard" title="Permalink to this headline">¶</a></h2>
+<span id="macos-keyboard"></span><h2>Tibetan keyboard<a class="headerlink" href="#tibetan-keyboard" title="Permalink to this headline">¶</a></h2>
 <a class="reference internal image-reference" href="../_images/macos_keyboard.jpg"><img alt="../_images/macos_keyboard.jpg" class="align-right" src="../_images/macos_keyboard.jpg" style="width: 480px;" /></a>
 <p>To activate a Tibetan keyboard, start <code class="docutils literal notranslate"><span class="pre">System</span> <span class="pre">Preferences</span></code> and select <code class="docutils literal notranslate"><span class="pre">Keyboard</span></code>, <code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">Sources</span></code>. Press the <code class="docutils literal notranslate"><span class="pre">+</span></code>-Icon (marked in red in the image) and add the <code class="docutils literal notranslate"><span class="pre">Tibetan</span> <span class="pre">-</span> <span class="pre">Wylie</span></code> keyboard.</p>
 <a class="reference internal image-reference" href="../_images/macos_input_source_select.jpg"><img alt="../_images/macos_input_source_select.jpg" class="align-left" src="../_images/macos_input_source_select.jpg" style="width: 150px;" /></a>
 <p>Make sure that <code class="docutils literal notranslate"><span class="pre">Show</span> <span class="pre">Input</span> <span class="pre">menu</span> <span class="pre">in</span> <span class="pre">menu</span> <span class="pre">bar</span></code> is enabled so that you can easily switch keyboards by clicking the input-menu icon in the menu bar.</p>
-<p>Newer Mac hardware keyboards have a globe icon 🌐 that can be used to switch between the Tibetan keyboard and your usual keyboard. If that’s not the case, consider assigning the <code class="docutils literal notranslate"><span class="pre">CAPS</span> <span class="pre">LOCK</span></code> key to switch between the keyboards (see green marker in image).</p>
+<p>Newer Mac hardware keyboards have a globe icon 🌐 that can be used to switch between the Tibetan keyboard and your usual keyboard.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>macOS implementation of Wylie is currently quite broken. The <code class="docutils literal notranslate"><span class="pre">&lt;shift&gt;</span></code>-key to access Sanskrit variants doesn’t work currently, and one needs to use <code class="docutils literal notranslate"><span class="pre">CAPS</span> <span class="pre">LOCK</span></code> to access those. Additionally, the <code class="docutils literal notranslate"><span class="pre">=</span></code> is used as non-standard stacking-key. So make sure that <code class="docutils literal notranslate"><span class="pre">CAPS</span> <span class="pre">LOCK</span></code> is not assigned to other functionality, like switching input methods.</p>
+</div>
+<a class="reference internal image-reference" href="../_images/macos_input_sources.jpg"><img alt="../_images/macos_input_sources.jpg" class="align-right" src="../_images/macos_input_sources.jpg" style="width: 480px;" /></a>
 <div class="section" id="chose-a-keyboard-switcher-hotkey">
 <h3>Chose a keyboard-switcher hotkey<a class="headerlink" href="#chose-a-keyboard-switcher-hotkey" title="Permalink to this headline">¶</a></h3>
-<a class="reference internal image-reference" href="../_images/macos_input_sources.jpg"><img alt="../_images/macos_input_sources.jpg" class="align-right" src="../_images/macos_input_sources.jpg" style="width: 480px;" /></a>
 <p>You can assign an arbitrary hotkey to switch between the keyboards: In <code class="docutils literal notranslate"><span class="pre">System</span> <span class="pre">Preferences</span></code>, <code class="docutils literal notranslate"><span class="pre">Keyboard</span></code>, select <code class="docutils literal notranslate"><span class="pre">Shortcuts</span></code> and <code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">Sources</span></code>. There either enable the suggested shortcut, or click on the proposed shortcut to enter a new key-combination.</p>
 </div>
 </div>
@@ -441,6 +445,19 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 <div class="section" id="how-to-type-tibetan-wylie-ewts">
 <h2>How to type Tibetan Wylie EWTS<a class="headerlink" href="#how-to-type-tibetan-wylie-ewts" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/macos_keyboard_viewer.jpg"><img alt="../_images/macos_keyboard_viewer.jpg" class="align-right" src="../_images/macos_keyboard_viewer.jpg" style="width: 480px;" /></a>
+<p>Since macOS Wylie input method is Wylie in name-only, it makes sense to activate the <code class="docutils literal notranslate"><span class="pre">Show</span> <span class="pre">Keyboard</span> <span class="pre">Viewer</span></code> in the input selector menu-bar icon.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">Caps</span> <span class="pre">lock</span></code> key makes Sanskrit and special symbols available, while the <code class="docutils literal notranslate"><span class="pre">=</span></code> key supports non-standard stacking.
+It might be necessary to experiment a bit with the keyboard viewer active.</p>
+<p>Here are the special layouts:</p>
+<p>After selecting <code class="docutils literal notranslate"><span class="pre">caps-lock</span></code>:</p>
+<a class="reference internal image-reference" href="../_images/macos_keyboard_viewer_caps.jpg"><img alt="../_images/macos_keyboard_viewer_caps.jpg" src="../_images/macos_keyboard_viewer_caps.jpg" style="width: 320px;" /></a>
+<p>after selecting <code class="docutils literal notranslate"><span class="pre">caps-lock</span></code> and <code class="docutils literal notranslate"><span class="pre">=</span></code>:</p>
+<a class="reference internal image-reference" href="../_images/macos_keyboard_viewer_caps_=.jpg"><img alt="../_images/macos_keyboard_viewer_caps_=.jpg" src="../_images/macos_keyboard_viewer_caps_=.jpg" style="width: 320px;" /></a>
+<p>after selcting <code class="docutils literal notranslate"><span class="pre">caps-lock</span></code>, <code class="docutils literal notranslate"><span class="pre">=</span></code>, and <code class="docutils literal notranslate"><span class="pre">caps-lock</span></code>:</p>
+<a class="reference internal image-reference" href="../_images/macos_keyboard_viewer_caps_=_caps.jpg"><img alt="../_images/macos_keyboard_viewer_caps_=_caps.jpg" src="../_images/macos_keyboard_viewer_caps_=_caps.jpg" style="width: 320px;" /></a>
+<p>So currently, to type ཌྜྷི, one types <code class="docutils literal notranslate"><span class="pre">&lt;caps</span> <span class="pre">lock&gt;</span> <span class="pre">d</span> <span class="pre">=</span> <span class="pre">d</span> <span class="pre">=</span> <span class="pre">&lt;caps</span> <span class="pre">lock&gt;</span> <span class="pre">h</span> <span class="pre">i</span></code>. Not <em>quite</em> the standard way to do things…</p>
+<p>Apple is working on a bug-report…</p>
 </div>
 <div class="section" id="sanskrit-diacritics">
 <h2>Sanskrit diacritics<a class="headerlink" href="#sanskrit-diacritics" title="Permalink to this headline">¶</a></h2>
