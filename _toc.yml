@@ -29,4 +29,6 @@ chapters:
   - file: docs/digital_tibetan_tools_wylie.md
   - file: docs/digital_tibetan_tools_pronunciation.md
   - file: docs/digital_tibetan_tools_calendar.md
-- file: docs/news/2022-04-11_tibetan_translation_services.md  
+- file: docs/news/_news_archive.md
+  sections:
+  - file: docs/news/2022-04-11_tibetan_translation_services.md  
