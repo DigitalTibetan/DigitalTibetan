@@ -9,7 +9,7 @@ All current computers and operating system support working with Tibetan script. 
 | [Linux KDE](computers_linux_kde.md)     |    + +           |   + +          |   + + +     |
 | [Linux Gnome](computers_linux_gnome.md)   |    + +           |   + +          |   + + +     |
 
-[^1]: macOS Wylie support is currently quite bug ridden and is currently no more Wylie-compliant. See [Working with macOS, keyboards](macos_keyboards) for work-arounds and details.
+[^1]: macOS Wylie support is currently quite bug ridden and is currently no more Wylie-compliant. See [Working with macOS, keyboards](macos_keyboard) for work-arounds and details.
 [^2]: Windows does not come with a Wylie input method.  Support for Wylie hinges on third-party tools with uncertain long-term availability. Alternatively Windows' own Tibetan keyboard, which is non-Wylie, can be used.
 
 ## I want to work with Tibetan texts, what's the best choice for a new computer?
