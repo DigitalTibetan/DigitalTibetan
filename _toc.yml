@@ -12,6 +12,11 @@ chapters:
     - file: docs/configuration_android.md
     - file: docs/apps_android.md
   - file: docs/computers_tibetan.md
+    sections:
+    - file: docs/computers_macos.md
+    - file: docs/computers_windows.md
+    - file: docs/computers_linux_kde.md
+    - file: docs/computers_linux_gnome.md
 - file: docs/sanskrit_overview.md
 - file: docs/tibetan_calendar.md
 - file: docs/digital_tibetan_tools.md
