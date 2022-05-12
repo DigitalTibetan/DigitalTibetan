@@ -14,8 +14,8 @@ The tool calculates the Tibetan calendar according to the Phugpa system for a gi
 
 ## Mobile apps
 
-- [iOS calendar apps](ios_calendar_apps)
-- [Android calendar apps](android_calendar_apps)
+- [iOS calendar apps](apps_ios_calendar)
+- [Android calendar apps](apps_android_calendar)
 
 ## Development
 

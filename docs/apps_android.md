@@ -6,6 +6,7 @@ A collection of Tibetan apps for Android phones.
 Your favorite app is missing? Comments? Please open an [issue](https://github.com/DigitalTibetan/DigitalTibetan/issues)!
 ```
 
+(apps_android_dictionary)=
 ## Dictionaries, ready to go
 
 | App | Description | Price | Rating | Privacy |
@@ -15,13 +16,14 @@ Your favorite app is missing? Comments? Please open an [issue](https://github.co
 | <img src="https://play-lh.googleusercontent.com/59jKi6cc9F19U7jVWqXC_gioHd7Abc6G7QXLG13SWCKOzzSEv86RDjsw-T4fxVbCNdQ=s360-rw" style="width: 96px;"> | [Monlam Grand Tibetan Dictionary 2020](https://play.google.com/store/apps/details?id=com.monlamit.dictionary) by _Lobsang Monlam_ This dictionary has more than two lakh seven thousand words while any dictionary in the history of Tibetan literature has not covered so much while maintaining the high quality of the content. | free | ★★★★ | ★★ |
 | <img src="https://play-lh.googleusercontent.com/5aZ5peJmYpdG599tY0BLLrRTNxoeKWLYO4zu3B9BgL_gGv68oTV43FW6K7GLbcP5ZOo=s360-rw" style="width: 96px;"> | [myTibetan dictionary](https://play.google.com/store/apps/details?id=com.rahmobile.myTibetan) by _Yury Nevalenny_ contains: 84000 translation project glossary, 4959 entries, bod rgya tshig mdzod chen mo (བོད་རྒྱ་ཚིག་མཛོད་ཆེན་མོ་), 53798 entries, dung dkar tshig mdzod chen mo (དུང་དཀར་ཚིག་མཛོད་ཆེན་མོ་), 13295 entries, Ives Waldo and Rangjung Yeshe, 145611 entries, Jeffrey Hopkins, 18441 entries, Monlam (སྨོན་ལམ་), Tib-Eng, 76838 entries, Monlam (སྨོན་ལམ་), Tib-Tib, 55124 entries, Monlam (སྨོན་ལམ་), Eng-Tib, 36126 entries, Nathan W. Hill Verbinator 2010, 2264 entries | free | ★★★★★ | ★★ |
 
+(apps_android_dictionary_custom)=
 ## Dictionaries for your own content
 
 | App | Description | Price | Rating | Privacy |
 | --- | ----------- | :---: | :----: | :-----: |
 |
 
-(android_calendar_apps)=
+(apps_android_calendar)=
 ## Calendar apps
 
 | App | Description | Price | Rating | Privacy |
