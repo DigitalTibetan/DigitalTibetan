@@ -9,7 +9,7 @@ This site will become in time the successor for the old DigitalTibetan v2.0 Medi
 An archived version of the old site is still available at [archive.org DigitalTibetan](https://web.archive.org/web/20210502044931/http://www.digitaltibetan.org/index.php/Digital_Tibetan)
 ```
 
-**Contribute!** Simply select the Github-icon (that black-creature-icon in the top-right) and 'suggest an edit'. No worries, you can't break things, since each edit will be reviewed before going life. For more details see [Contribution](contribute) below.
+**Contribute!** Simply select the Github-icon ( on of the icons on the top-right) and 'suggest an edit'. No worries, you can't break things, since each edit will be reviewed before going life. For more details see [Contribution](contribute) below.
 
 ## The new scope of Digital Tibetan
 
