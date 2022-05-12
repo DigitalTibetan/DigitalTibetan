@@ -11,7 +11,9 @@ As in Indian calendars,[^1] months are lunar (from new moon to new moon) but num
 
 ## Tools and software and apps
 
-See [Tibetan calendar tools](digital_tibetan_tools_calendar.md)
+- [Tibetan calendar tools](digital_tibetan_tools_calendar.md)
+- [iOS calendar apps](apps_ios_calendar.md)
+- [Android calendar apps](apps_android_calendar.md)
 
 [^1]: _Calendrical Calculations_, E.M. Reingold & N. Dershowitz (2018), p. 375. 
 [^2]: _[Tibetan calendar mathematics](http://www2.math.uu.se/~svante/papers/calendars/tibet.pdf)_ by [Svante Janson](https://katalog.uu.se/empInfo?id=XX2949)

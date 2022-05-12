@@ -86,7 +86,7 @@ Not _quite_ the standard way to do things...
 
 Apple is working on a bug-report...
 
-(macos_sanskrit_keyboard)=
+(macos_keyboard_sanskrit)=
 ## Sanskrit diacritics
 
 Working with dharma materials often requires access to diacritics. For those who are using an English QWERTY layout, the Apple keyboard `ABC - Extended` provides easy access to virtually all diacritics imaginable, including IAST Sanskrit transliteration. Install this keyboard from `System Preferences`, `Keyboard`, `Input Sources` and add the `ABC - Extended` keyboard just as you did with the Tibetan keyboard.

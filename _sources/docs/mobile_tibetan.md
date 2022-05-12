@@ -6,14 +6,14 @@
 | [Google Android](configuration_android.md) | + + | + + | + + + |Full Tibetan support since Android 6.0 (2015) |
 | Amazon Kindle | - -[^2] | - - | - - - | Amazon Kindle support for Tibetan is broken since Kindle OS version 5.9.6 |
 
-## I want to get a new mobile, what's best?
+## I want to get a new mobile, what's best for Tibetan?
 
 Since both major platforms, Google's Android and Apple's iOS fully support Tibetan, it's mostly a matter of taste which platform is preferred.
 
-* Generally **[Android](configuration_android.md) is more open** and easier to customize to more complex applications. If you plan to have maximum possibilities, go with Android. There are significantly more Tibetan apps available for Android than for the other platforms.
-* Slightly **easier** to use for some people are **[Apple](configuration_ios.md) iOS** devices (iPhone, iPad). This comes at the cost of fewer degrees of freedom: Installing your own content, fonts and cross-application interoperability is considerably hampered when compared to Android.
+- Generally **[Android](configuration_android.md) is more open** and easier to customize to more complex applications. If you plan to have maximum possibilities, go with Android. There are significantly more Tibetan apps available for Android than for the other platforms.
+- Slightly **easier** to use for some people are Apple iOS devices ([**iPhone, iPad**](configuration_ios.md)). This comes at the cost of fewer degrees of freedom: Installing your own content, fonts and cross-application interoperability is considerably hampered when compared to Android.
 
-For most people, the actual differences between Android and iOS do not matter: just check both app stores for the applications you might want to use.
+For most people, the actual **differences** between Android and iOS **do not matter**: just check both app stores for the applications you might want to use.
 
 Unfortunately most **e-ink ebook readers** are not particularly well suited for Tibetan. Amazon Kindle has completely **broken Tibetan** support, so those cannot be used. Some ebook manufacturers (e.g. PocketBook) offer some degree of Tibetan support, but it is still rather limited when compared with Android or iOS devices. Not recommended.
 
