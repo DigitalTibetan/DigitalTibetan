@@ -2,6 +2,8 @@
 
 [![publish-book](https://github.com/DigitalTibetan/DigitalTibetan/actions/workflows/Publish.yml/badge.svg)](https://github.com/DigitalTibetan/DigitalTibetan/actions/workflows/Publish.yml)
 
+[![pages-build-deployment](https://github.com/DigitalTibetan/DigitalTibetan/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/DigitalTibetan/DigitalTibetan/actions/workflows/pages/pages-build-deployment)
+
 This repository contains the source-files for Digital Tibetan. So to access the actual web-site, look here:
 
 * [Digital Tibetan web site](https://digitaltibetan.github.io/DigitalTibetan/)
