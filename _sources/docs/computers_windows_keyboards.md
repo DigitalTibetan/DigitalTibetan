@@ -1,10 +1,11 @@
 # Tibetan keyboards for Windows
 
-There are three main options to type Tibetan on Windows
+There are several main options to type Tibetan on Windows
 
 - [Denjong TibType Wylie keyboard](keyboard_denjong)
 - [TISE Wylie keyboard](keyboard_tise)
 - Windows' built-in Tibetan input method (non-Wylie!) 
+- Monlam bod-yig
 
 ## Windows Tibetan input method
 
@@ -76,3 +77,6 @@ Note: use versions > 1.0 for international keyboard support.
 
 <https://github.com/thubtenrigzin/DenjongTibType/releases>
 
+## Monlam bod-yig
+
+* <https://www.youtube.com/watch?v=UlB4FETM-7o>
