@@ -21,9 +21,19 @@ Unfortunately there is no single system or standard that's available on all plat
 | Google Gboard | + + | - -[^gboard] |
 | iOS | - - | + +[^tibq] |
 
-## Microsoft Tibetan keyboard
+```{admonition} You know of other or better keyboards?
+:class: tip
+If you are using different keyboards or have comments to make, [let us know!](https://github.com/DigitalTibetan/DigitalTibetan/issues)
+```
+## Microsoft Tibetan keyboard: `Tibetan (PRC)`
+
+Available on Linux too, `Tibetan (PRC)` stems from some initial efforts to standardize Tibetan keyboards.
+
+The following article describes the keyboard and it's history well:
 
 - <http://www.yalasoo.com/English/docs/yalasoo_en_MStbKb.html>
+
+Unfortunately, Apple did not adopt this standardization effort.
 
 
 [^mondist]: Many mirrors of the monlam installers are circulating, some of them infected with compromising viruses.
