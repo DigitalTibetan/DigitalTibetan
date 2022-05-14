@@ -7,6 +7,11 @@ The Mac comes with Tibetan fonts preinstalled. For more fonts, see [Tibetan font
 (macos_keyboard)=
 ## Tibetan keyboard
 
+```{Admonition} General overview
+:class: tip
+For different keyboards and their support on different platform see: [Tibetan keyboards](tibetan_keyboards.md)
+```
+
 ```{image} Images/macos_keyboard.jpg
 :align: right
 :width: 480

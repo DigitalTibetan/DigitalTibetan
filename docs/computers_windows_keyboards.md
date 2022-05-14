@@ -7,10 +7,15 @@ There are several main options to type Tibetan on Windows
 - Windows' built-in Tibetan input method (non-Wylie!) 
 - Monlam bod-yig
 
+```{Admonition} General overview
+:class: tip
+For different keyboards and their support on different platform see: [Tibetan keyboards](tibetan_keyboards.md)
+```
+
 ## Windows Tibetan input method
 
 ```{note}
-Windows does not support Wylie input as build-in input system. However all recent Windows versions provide a non-Wylie Tibetan keyboard.
+Windows does not support Wylie input as build-in input system, third-party tools are required. However all recent Windows versions provide a non-Wylie Tibetan keyboard adhering to the Chinese-Tibetan standard `Tibetan (PRC)`).
 ```
 
 (keyboard_tise)=
