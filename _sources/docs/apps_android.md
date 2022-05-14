@@ -28,4 +28,4 @@ Your favorite app is missing? Comments? Please open an [issue](https://github.co
 
 | App | Description | Price | Rating | Privacy |
 | --- | ----------- | :---: | :----: | :-----: |
-|
+| <img src="https://play-lh.googleusercontent.com/VELrOZBXX1jTLewoG0C-H0UjIjY6jDWODc46fquLXVmT5obaECbOxtFeEu38ABSlbw=s360-rw" style="widt: 96px;"> | Tibetan calendar with lots of useful information for practioners, special dates and Tibetan astrology. Beautiful presentation. | free | ★★★★★ | ★ |
