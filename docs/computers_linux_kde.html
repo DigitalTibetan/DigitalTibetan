@@ -368,6 +368,11 @@ const thebe_selector_output = ".output, .cell_output"
      Wylie EWTS
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#troubles">
+     Troubles
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -400,6 +405,11 @@ const thebe_selector_output = ".output, .cell_output"
      Wylie EWTS
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#troubles">
+     Troubles
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -422,6 +432,15 @@ const thebe_selector_output = ".output, .cell_output"
 <p>To add a Wylie keyboard, installed the packages <code class="docutils literal notranslate"><span class="pre">ibus</span></code> and <code class="docutils literal notranslate"><span class="pre">ibus-m17n</span></code> with the package manager of your distribution. Then either make sure to start the ibus daemon, or simply restart your computer.</p>
 <p>Now run <code class="docutils literal notranslate"><span class="pre">ibus_setup</span></code> once to add the ibus keyboard:
 select <code class="docutils literal notranslate"><span class="pre">Tibetan</span> <span class="pre">EWTS</span> <span class="pre">(m17n)</span></code> (not ‘Wylie’, which is an old version).</p>
+</div>
+<div class="section" id="troubles">
+<h3>Troubles<a class="headerlink" href="#troubles" title="Permalink to this headline">¶</a></h3>
+<p>If the Tibetan input doesn’t appear in some of your applications, make sure that the following environment variables are set (e.g. in <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code>):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">GTK_IM_MODULE</span><span class="o">=</span>ibus
+<span class="nv">QT_IM_MODULE</span><span class="o">=</span>ibus
+<span class="nv">XMODIFIERS</span><span class="o">=</span>@im<span class="o">=</span>ibus
+</pre></div>
+</div>
 </div>
 </div>
 </div>
