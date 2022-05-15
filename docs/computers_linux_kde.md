@@ -19,10 +19,9 @@ See [Tibetan keyboards](tibetan_keyboards.md) for more information.
 
 To add a Wylie keyboard, install the packages `ibus` and `ibus-m17n` with the package manager of your distribution. Then either make sure to start the `ibus` daemon, or simply restart your computer.
 
-Now run `ibus_setup` once to add the ibus keyboard:
-select `Tibetan EWTS (m17n)` (not 'Wylie', which is an old version).
+Now run `ibus_setup` once to add Tibetan Wylie EWTS keyboard: select `Tibetan EWTS (m17n)` (not 'Wylie', which is an old version).
 
-### Troubles
+### Trouble-shooting
 
 If the Tibetan input doesn't appear in some of your applications, make sure that the following environment variables are set (e.g. in `.bashrc`):
 

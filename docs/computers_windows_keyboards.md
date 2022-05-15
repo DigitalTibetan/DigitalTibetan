@@ -1,25 +1,32 @@
 # Tibetan keyboards for Windows
 
-There are several main options to type Tibetan on Windows
+There are several options to type Tibetan on Windows
 
 - [Denjong TibType Wylie keyboard](keyboard_denjong)
 - [TISE Wylie keyboard](keyboard_tise)
-- Windows' built-in Tibetan input method (non-Wylie!) 
-- Monlam bod-yig
+- Windows' built-in Tibetan input method `Tibetan (PRC)`
 
 ```{Admonition} General overview
 :class: tip
 For different keyboards and their support on different platform see: [Tibetan keyboards](tibetan_keyboards.md)
 ```
 
-## Windows Tibetan input method
+## Windows Tibetan input method `Tibetan (PRC)`
 
 ```{note}
 Windows does not support Wylie input as build-in input system, third-party tools are required. However all recent Windows versions provide a non-Wylie Tibetan keyboard adhering to the Chinese-Tibetan standard `Tibetan (PRC)`).
 ```
 
+```{image} Images/windows_keyboard_config.jpg
+:align: right
+:width: 480
+```
+
+
+
+
 (keyboard_tise)=
-## TISE
+## Extended Wylie-Keyboard: TISE
 
 [**TISE**](https://tise.mokhin.org/) (pronounced 'tee-say') is a Tibetan input utility for Windows XP, Vista, 7, 8, and 10.
 
@@ -72,16 +79,12 @@ This is the major improvement of EWTS compared to previous approaches, and Tise 
 [^1]: taken from TISE readme.
 
 (keyboard_denjong)=
-## Denjong TibType
+## Extended Wylie keyboard: Denjong Tib-Type
 
-[**Denjong TibType**](https://github.com/thubtenrigzin/DenjongTibType) is a free Tibetan Unicode typing system based on Wylie that works on all Windows platforms including 32 & 64 bits versions. The website and a more detailed documentation are on elaboration but you can, by now, download and install the product from:
+[**Denjong Tib-Type**](https://github.com/thubtenrigzin/DenjongTibType) is a free Tibetan Unicode typing system based on Wylie that works on all Windows platforms including 32 & 64 bits versions. The website and a more detailed documentation are on elaboration but you can, by now, download and install the product from:
 
 https://github.com/thubtenrigzin/DenjongTibType/ - For AZERTY and QWERTY, Wylie and Sambhota transcription.
 
 Note: use versions > 1.0 for international keyboard support.
 
 <https://github.com/thubtenrigzin/DenjongTibType/releases>
-
-## Monlam bod-yig
-
-* <https://www.youtube.com/watch?v=UlB4FETM-7o>

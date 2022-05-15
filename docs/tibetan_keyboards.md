@@ -38,9 +38,19 @@ Unfortunately there is no single system or standard that's available on all plat
 :class: tip
 If you are using different keyboards or have comments to make, [let us know!](https://github.com/DigitalTibetan/DigitalTibetan/issues)
 ```
-## Microsoft Tibetan keyboard: `Tibetan (PRC)`
+## Standard Tibetan keyboard: `Tibetan (PRC)`
 
-Available on Linux too, `Tibetan (PRC)` stems from some initial efforts to standardize Tibetan keyboards.
+```{image} Images/windows_tibetan_keyboard.jpg
+:align: right
+:width: 400
+```
+
+Available on Linux and Windows, `Tibetan (PRC)` stems from some initial efforts to standardize Tibetan keyboards.
+
+```{image} Images/windows_tibetan_keyboard_shift.jpg
+:align: right
+:width: 400
+```
 
 The following article describes the keyboard and it's history well:
 
