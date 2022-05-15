@@ -353,6 +353,26 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tibetan-keyboards">
+   Tibetan keyboards
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#wylie-ewts">
+     Wylie EWTS
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -365,6 +385,26 @@ const thebe_selector_output = ".output, .cell_output"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tibetan-keyboards">
+   Tibetan keyboards
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#wylie-ewts">
+     Wylie EWTS
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -373,6 +413,17 @@ const thebe_selector_output = ".output, .cell_output"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="working-with-linux-kde-and-tibetan-script">
 <h1>Working with Linux KDE and Tibetan script<a class="headerlink" href="#working-with-linux-kde-and-tibetan-script" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="tibetan-keyboards">
+<h2>Tibetan keyboards<a class="headerlink" href="#tibetan-keyboards" title="Permalink to this headline">¶</a></h2>
+<p>By default linux desktops come with a Tibetan keyboard compliant to GB/T 22034-2008, a Chinese norm. This keyboard is also used by Microsoft Windows. See <a class="reference internal" href="tibetan_keyboards.html"><span class="doc std std-doc">Tibetan keyboards</span></a> for more information.</p>
+<div class="section" id="wylie-ewts">
+<h3>Wylie EWTS<a class="headerlink" href="#wylie-ewts" title="Permalink to this headline">¶</a></h3>
+<a class="reference internal image-reference" href="docs/Images/kde_ibus_setup_keyboard.jpg"><img alt="docs/Images/kde_ibus_setup_keyboard.jpg" class="align-right" src="docs/Images/kde_ibus_setup_keyboard.jpg" style="width: 480px;" /></a>
+<p>To add a Wylie keyboard, installed the packages <code class="docutils literal notranslate"><span class="pre">ibus</span></code> and <code class="docutils literal notranslate"><span class="pre">ibus-m17n</span></code> with the package manager of your distribution. Then either make sure to start the ibus daemon, or simply restart your computer.</p>
+<p>Now run <code class="docutils literal notranslate"><span class="pre">ibus_setup</span></code> once to add the ibus keyboard:
+select <code class="docutils literal notranslate"><span class="pre">Tibetan</span> <span class="pre">EWTS</span> <span class="pre">(m17n)</span></code> (not ‘Wylie’, which is an old version).</p>
+</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
