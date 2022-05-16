@@ -490,7 +490,7 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="tex2jax_ignore mathjax_ignore section" id="computational-dharma-really">
 <h1>Computational dharma, really?<a class="headerlink" href="#computational-dharma-really" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="a-digital-toolset-to-work-with-multiple-languages">
-<h2>A digital toolset to work with multiple languages<a class="headerlink" href="#a-digital-toolset-to-work-with-multiple-languages" title="Permalink to this headline">¶</a></h2>
+<span id="computational-tibetan-transliteration"></span><h2>A digital toolset to work with multiple languages<a class="headerlink" href="#a-digital-toolset-to-work-with-multiple-languages" title="Permalink to this headline">¶</a></h2>
 <p>This article just wants to give a quick overview of what’s possible with today’s natural language processing tools. All examples will focus on the Python programming language as an additional tool for working with Tibetan texts.</p>
 <p>There are two main ways to use this notebook:</p>
 <ul class="simple">
@@ -546,6 +546,7 @@ sems nyid
 </div>
 <div class="section" id="sanskrit-transliteration">
 <span id="computational-sanskrit-transliteration"></span><h3>Sanskrit transliteration<a class="headerlink" href="#sanskrit-transliteration" title="Permalink to this headline">¶</a></h3>
+<p>The <a class="reference external" href="https://github.com/indic-transliteration/indic_transliteration_py">indic_transliteration project</a> provides libraries to convert between many different Sanskrit (and other) transliteration systems. Let’s look at an example to convert and IAST-encoded word (‘Kālacakra’) into Devanagari:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>%%capture
@@ -574,11 +575,11 @@ sems nyid
 </div>
 </div>
 </div>
+<p>Having now explored libraries that convert Tibetan and Sanskrit transliterations, let’s look at an example that combines both.</p>
 </div>
 <div class="section" id="transforming-glossaries">
 <h3>Transforming glossaries<a class="headerlink" href="#transforming-glossaries" title="Permalink to this headline">¶</a></h3>
-<p>Let’s say we found an old glossary, and we want to add
-Tibetan and Devanagari to it’s existing transliterations:</p>
+<p>Let’s say we found an old glossary, consisting of IAST-encoded Sanskrit vocabulary translated into Wylie-encoded Tibetan, and we want to add Unicode Tibetan and Devanagari to this glossary:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sample_glossary</span><span class="o">=</span><span class="s2">&quot;&quot;&quot;Abhiṣeka - dbang bskur</span>
@@ -597,7 +598,7 @@ Tibetan and Devanagari to it’s existing transliterations:</p>
 </div>
 </div>
 <p>First step is to parse this piece of text into Pandas dataframe. Such a dataframe is similar to a spreadsheet table and can be easily transformed.
-The result be saved as CSV or many different other formats.</p>
+The result can be saved as CSV-File or <a class="reference external" href="https://pandas.pydata.org/docs/user_guide/io.html">many different other formats</a>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -607,7 +608,9 @@ The result be saved as CSV or many different other formats.</p>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">iast</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;-&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">sample_glossary</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># get all the IAST words from the glossary</span>
+<span class="n">iast</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;-&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">sample_glossary</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)]</span>
+<span class="c1"># get all the Wylie words from the glossary</span>
 <span class="n">wylie</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;-&#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">+</span><span class="s1">&#39; &#39;</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">sample_glossary</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)]</span>
 </pre></div>
 </div>
@@ -615,7 +618,9 @@ The result be saved as CSV or many different other formats.</p>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="o">.</span><span class="n">from_dict</span><span class="p">({</span><span class="s1">&#39;Wylie&#39;</span><span class="p">:</span> <span class="n">wylie</span><span class="p">,</span> <span class="s1">&#39;IAST&#39;</span><span class="p">:</span> <span class="n">iast</span><span class="p">})</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Combine the two lists (IAST and Wylie words) into a &#39;dataframe&#39;:</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="o">.</span><span class="n">from_dict</span><span class="p">({</span><span class="s1">&#39;Wylie&#39;</span><span class="p">:</span> <span class="n">wylie</span><span class="p">,</span> <span class="s1">&#39;IAST&#39;</span><span class="p">:</span> <span class="n">iast</span><span class="p">})</span>
+<span class="c1"># Show the current table, nothing new, just a nice table that can be easily transformed:</span>
 <span class="n">df</span>
 </pre></div>
 </div>
@@ -707,8 +712,11 @@ The result be saved as CSV or many different other formats.</p>
 <p>Now we can use the converters shown above to add Unicode Tibetan and Devanagari for each entry:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Tibetan&#39;</span><span class="p">]</span><span class="o">=</span><span class="p">[</span><span class="n">converter</span><span class="o">.</span><span class="n">toUnicode</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Wylie&#39;</span><span class="p">]]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Add a new column &#39;Tibetan&#39; that will contain the Unicode Tibetan equivalent of the Wylie word:</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;Tibetan&#39;</span><span class="p">]</span><span class="o">=</span><span class="p">[</span><span class="n">converter</span><span class="o">.</span><span class="n">toUnicode</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Wylie&#39;</span><span class="p">]]</span>
+<span class="c1"># Add a new column &#39;Devanagari&#39; that will contain the Unicode Devanagari equivalent of the IAST word:</span>
 <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Devanagari&#39;</span><span class="p">]</span><span class="o">=</span><span class="p">[</span><span class="n">transliterate</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">sanscript</span><span class="o">.</span><span class="n">IAST</span><span class="p">,</span> <span class="n">sanscript</span><span class="o">.</span><span class="n">DEVANAGARI</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;IAST&#39;</span><span class="p">]]</span>
+<span class="c1"># Show the exanded tabled that now has the Tibetan and Devanagari columns:</span>
 <span class="n">df</span>
 </pre></div>
 </div>
@@ -824,7 +832,8 @@ The result be saved as CSV or many different other formats.</p>
 <p>Let’s use Wikipedia to explain those terms: We will use the IAST encoded name (e.g. <code class="docutils literal notranslate"><span class="pre">Akaniṣṭha</span></code>) and do a Wikipedia lookup. If an entry is available, we extract the summary (usually the first paragraph in Wikipedia) as text and add it to our table:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">urllib.request</span> <span class="kn">import</span> <span class="n">urlopen</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># First we write a litter helper that pulls data from a wikipedia article.</span>
+<span class="kn">from</span> <span class="nn">urllib.request</span> <span class="kn">import</span> <span class="n">urlopen</span>
 <span class="kn">from</span> <span class="nn">urllib.parse</span> <span class="kn">import</span> <span class="n">quote</span>
 <span class="kn">import</span> <span class="nn">json</span>
 </pre></div>
@@ -833,7 +842,9 @@ The result be saved as CSV or many different other formats.</p>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="sd">&#39;&#39;&#39;Get the summary of a wikipedia article with title `query` and return it as text.&#39;&#39;&#39;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># We want to get the &#39;summary&#39; part for a given search-word from wikipedia as text. We can add this</span>
+<span class="c1"># summary to each entry in our dataframe as an explanation of the word.</span>
+<span class="sd">&#39;&#39;&#39;Get the summary of a wikipedia article with title `query` and return it as text.&#39;&#39;&#39;</span>
 <span class="k">def</span> <span class="nf">wikipedia_summary</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
     <span class="n">api</span><span class="o">=</span><span class="s2">&quot;https://en.wikipedia.org/w/api.php&quot;</span>
     <span class="n">esc_query</span><span class="o">=</span><span class="n">quote</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
@@ -861,7 +872,9 @@ The result be saved as CSV or many different other formats.</p>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Definition&#39;</span><span class="p">]</span><span class="o">=</span><span class="p">[</span><span class="n">wikipedia_summary</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;IAST&#39;</span><span class="p">]]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Do a Wikipedia lookup for each IAST word in the dataframe, and add the result to a new column &#39;Definition&#39;:</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;Definition&#39;</span><span class="p">]</span><span class="o">=</span><span class="p">[</span><span class="n">wikipedia_summary</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;IAST&#39;</span><span class="p">]]</span>
+<span class="c1"># Show the expanded dataframe with the new column, (abbreviated in display)):</span>
 <span class="n">df</span>
 </pre></div>
 </div>
@@ -988,7 +1001,8 @@ The result be saved as CSV or many different other formats.</p>
 <p>Now our table also contains an explanation for most of the entries. Let’s look at row 1 (the entry for <code class="docutils literal notranslate"><span class="pre">Akaniṣṭha</span></code>)</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># The table is too small to show the full definitions, lets look at a sample:</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>
 <span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.max_colwidth&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
 <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;Definition&#39;</span><span class="p">]))</span>
 </pre></div>
