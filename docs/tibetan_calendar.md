@@ -12,6 +12,7 @@ As in Indian calendars,[^1] months are lunar (from new moon to new moon) but num
 ## Tools and software and apps
 
 - [Tibetan calendar tools](digital_tibetan_tools_calendar.md)
+- [Open source Tibetan calendar according to Phugpa and Tsurphu traditions (C-source)](http://www.kalacakra.org/calendar/os_tib.htm) by _Edward Henning_.
 - [iOS calendar apps](apps_ios_calendar)
 - [Android calendar apps](apps_android_calendar)
 
