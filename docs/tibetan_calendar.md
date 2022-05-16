@@ -18,6 +18,11 @@ As in Indian calendars,[^1] months are lunar (from new moon to new moon) but num
 [^1]: _Calendrical Calculations_, E.M. Reingold & N. Dershowitz (2018), p. 375. 
 [^2]: _[Tibetan calendar mathematics](http://www2.math.uu.se/~svante/papers/calendars/tibet.pdf)_ by [Svante Janson](https://katalog.uu.se/empInfo?id=XX2949)
 
+## History and Sources
+
+- [Collection of sources, descriptions and history of the Kālacakra calendar](http://www.kalacakra.org/calendar/kcal.htm)
+- [A Scholarly Imprint: How Tibetan Astronomers Brought Jesuit Astronomy to Tibet](https://core.ac.uk/reader/228879141) by _Lobsang Yongdan_
+- [Topics on the History of Tibetan AstronomyWith a Focus on Background Knowledge of Eclipse Calculations in the 18th Century](https://core.ac.uk/reader/154882098) by _Sokhyo Jo_
 ## References
 
 - _[Tibetan calendar mathematics](http://www2.math.uu.se/~svante/papers/calendars/tibet.pdf)_ by [Svante Janson](https://katalog.uu.se/empInfo?id=XX2949) is the original work used as basis for most other publications on the Tibetan calendar. It was also the basis for the implementation of [Tibetan calendar tool](digital_tibetan_tools_calendar). Alternative source on [Arxiv](https://arxiv.org/abs/1401.6285).
