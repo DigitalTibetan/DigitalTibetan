@@ -13,17 +13,12 @@ For different keyboards and their support on different platform see: [Tibetan ke
 
 ## Windows Tibetan input method `Tibetan (PRC)`
 
-```{note}
-Windows does not support Wylie input as build-in input system, third-party tools are required. However all recent Windows versions provide a non-Wylie Tibetan keyboard adhering to the Chinese-Tibetan standard `Tibetan (PRC)`).
-```
-
 ```{image} Images/windows_keyboard_config.jpg
 :align: right
 :width: 480
 ```
 
-
-
+`Tibetan (PRC)` can be installed via Windows settings. Simply add a keyboard `Tibetan`. Note that `Tibetan (PRC)` is not Wylie compliant, see below for alternatives.
 
 (keyboard_tise)=
 ## Extended Wylie-Keyboard: TISE
@@ -45,12 +40,12 @@ TISE can be switched on and off with `<shift><space>`, or by clicking on the Mou
 
 Make sure to familiarize yourself with EWTS (extended Wylie) using [Teaching EWTS](https://www.thlib.org/reference/transliteration/teachingewts.pdf) by Alexandru Anton-Luca.
 
-Note: TISE seems to be incompatible with GoldenDict. If you plan to use this dictionary-program, the recommended input method would be [Denjong](keyboard_denjong). Alternatively, if you want to use TISE with GoldenDict, you can type the search-phrase in some other program (e.g. notepad) and then copy&paste the search term into GoldenDict.
+Note: TISE seems to be incompatible with some applications, if TISE doesn't work in your application, the recommended input method would be [Denjong](keyboard_denjong). Alternatively, if you want to use TISE with GoldenDict, you can type the search-phrase in some other program (e.g. notepad) and then copy&paste the search term into GoldenDict.
 
 #### Basic letters
 
 - All basic Tibetan and Tibetan Sanskrit represented by EWTS scheme are supported by Tise. Often typing the final `a` as in `ka` ཀ is not necessary, `k` followed by a tsheg `<space>` is enough.
-- Longer vowels (with a subjointed small letter achung) are typed as `aa` ཨཱ, `ii` ཨཱི, `uu` ཨཱུ, `ee` ཨཱེ, `oo` ཨཱོ, or `A` ཨཱ, `I` ཨཱི, `U` ཨཱུ, `E` ཨཱེ, `O` ཨཱོ.
+- Longer vowels (with a subjoined small letter achung) are typed as `aa` ཨཱ, `ii` ཨཱི, `uu` ཨཱུ, `ee` ཨཱེ, `oo` ཨཱོ, or `A` ཨཱ, `I` ཨཱི, `U` ཨཱུ, `E` ཨཱེ, `O` ཨཱོ.
 - Retroflex i ྀ is typed as `-i`, and retroflex i with achung as `-I` ཱྀ, e.g. `k-i` ཀྀ, `k-I` ཀཱྀ.
 - `au` ཨཽ, `ai` ཨཻ are implemented.
 
