@@ -2,7 +2,11 @@
 
 Welcome to the DigitalTibetan v3.0
 
-_The Project is in a very early stage._
+```{warning}
+The Project is in a very early stage.
+
+**URLs will still change!**
+```
 
 ```{note}
 This site will become in time the successor for the old DigitalTibetan v2.0 Mediawiki site.
