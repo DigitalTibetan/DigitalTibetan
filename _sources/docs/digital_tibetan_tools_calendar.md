@@ -21,6 +21,7 @@ The tool calculates the Tibetan calendar according to the Phugpa system for a gi
 
 - [Perl source-code](https://www.lotsawahouse.org/Static/Calendar-Phugpa-dev.zip) by Roger Espel
 - A Lisp implementation is available in _Calendrical Calculations_[^1].
+- [Open source Tibetan calendar according to Phugpa and Tsurphu traditions (C-source)](http://www.kalacakra.org/calendar/os_tib.htm) by _Edward Henning_.
 
 [^1]: _Calendrical Calculations_, E.M. Reingold & N. Dershowitz (2018), p. 375. 
 
