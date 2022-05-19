@@ -23,7 +23,12 @@ The following list contains a number of fonts with good coverage of the most com
 
 [Chris Fynn](https://sites.google.com/view/chrisfynn/home) was one of the first Unicode font pioneers. His fonts Jomolhari and DDC Uchen, available with free Open SIL licenses, where the basis of many developments.
 
+[The Babelstone Project](https://collab.its.virginia.edu/wiki/tibetan-script/Tibetan%20Fonts.html) by Andrew West has continued the work on Jomolhari and updated the font to newer Unicode standards and extended the glyph coverage.
+
+[The Tibetan & Himalayan Library](https://www.thlib.org/tools/scripts/wiki/tibetan%20machine%20uni.html) at Virginia University had bought the rights on the proprietary Tibetan Machine font with help of the Trace Foundation and made it freely available as one of the first Unicode fonts.
+
+[Google's Noto font family](https://fonts.google.com/noto/specimen/Noto+Serif+Tibetan) provides Tibetan support and free support for virtually every language on earth for a large number of platforms.
+
 ## External sources
 
-- [Esukhia's font repository](https://github.com/Esukhia/tibetan-fonts)
 - [Tibetan fonts at University of Virginia](https://collab.its.virginia.edu/wiki/tibetan-script/Tibetan%20Fonts.html)
