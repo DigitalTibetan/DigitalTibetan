@@ -11,13 +11,13 @@ The following list contains a number of fonts with good coverage of the most com
 
 | Font name | Sample | Comment |
 | --------- | :----: | ------- |
-| [Tibetan Machine Uni](https://www.thlib.org/tools/scripts/wiki/tibetan%20machine%20uni.html) | ![Tibetan Machine Uni](Images/Font Tibetan Machine Uni.jpg) | One of the first Unicode fonts |
-| [DDC Uchen](https://sites.google.com/view/chrisfynn/home/fonts/ddc-uchen) | ![DDC Uchen](Images/Font Uchen.jpg) | Chris Fynn's font |
-| [Jomolhari](https://sites.google.com/view/chrisfynn/home/fonts/jomolhari) | ![Jomolhari](Images/Font Jomolhari.jpg) | Chris Fynn's font |
-| [Babelstone Tibetan](https://www.babelstone.co.uk/Fonts/Download/BabelStoneTibetan.ttf) | ![Babelstone Tibetan](Images/Font Babelstone Tibetan.jpg) | Extended version of Jomolhari |
-| [Babelstone Tibetan Slim](https://www.babelstone.co.uk/Fonts/Download/BabelStoneTibetanSlim.ttf) | ![Babelstone Tibetan Slim](Images/Font Babelstone Tibetan Slim.jpg) | Extended version of Jomolhari, slim |
-| [Noto Serif Tibetan](https://fonts.google.com/noto/specimen/Noto+Serif+Tibetan?noto.query=tibetan&noto.lang=bo_Tibt&noto.continent=Asia&noto.script=Tibt) | ![Noto Serif Tibetan](Images/Font Noto Serif Tibetan.jpg) | Google's Noto font, with many different weights |
-| Noto Sans Tibetan | ![Noto Sans Tibetan](Images/Font Noto Sans Tibetan.jpg) | Based on or identical to Google's Serif Tibetan. |
+| [Tibetan Machine Uni](https://www.thlib.org/tools/scripts/wiki/tibetan%20machine%20uni.html) | ![Tibetan Machine Uni](Images/Font_Tibetan_Machine_Uni.jpg) | One of the first Unicode fonts |
+| [DDC Uchen](https://sites.google.com/view/chrisfynn/home/fonts/ddc-uchen) | ![DDC Uchen](Images/Font_Uchen.jpg) | Chris Fynn's font |
+| [Jomolhari](https://sites.google.com/view/chrisfynn/home/fonts/jomolhari) | ![Jomolhari](Images/Font_Jomolhari.jpg) | Chris Fynn's font |
+| [Babelstone Tibetan](https://www.babelstone.co.uk/Fonts/Download/BabelStoneTibetan.ttf) | ![Babelstone Tibetan](Images/Font_Babelstone_Tibetan.jpg) | Extended version of Jomolhari |
+| [Babelstone Tibetan Slim](https://www.babelstone.co.uk/Fonts/Download/BabelStoneTibetanSlim.ttf) | ![Babelstone Tibetan Slim](Images/Font_Babelstone_Tibetan_Slim.jpg) | Extended version of Jomolhari, slim |
+| [Noto Serif Tibetan](https://fonts.google.com/noto/specimen/Noto+Serif+Tibetan?noto.query=tibetan&noto.lang=bo_Tibt&noto.continent=Asia&noto.script=Tibt) | ![Noto Serif Tibetan](Images/Font_Noto_Serif_Tibetan.jpg) | Google's Noto font, with many different weights |
+| Noto Sans Tibetan | ![Noto Sans Tibetan](Images/Font_Noto_Sans_Tibetan.jpg) | Based on or identical to Google's Serif Tibetan. |
 
 ## Remarks and History
 
