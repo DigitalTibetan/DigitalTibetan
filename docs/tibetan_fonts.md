@@ -6,6 +6,12 @@ Microsoft had develop a system that could dynamically render new glyph variants,
 
 So Tibetan fonts either look artificial or are incomplete...
 
+### Using fonts with an open license is important
+
+If you are working on Tibetan projects that involve Sanskrit stacks (mantras), Chinese transliterations or Dzongkha shortcuts, then there will be the situation that a given font doesn't correctly render a stack that is needed. In such a situation, it is possible to extend a given font by providing additional glyphs for such a special case. See [Tibetan font creation](tibetan_font_creation.md) for details.
+
+If the font you are using is not under a free license, then you won't be able to distribute any changes that you have made to a font to add needed glyphs.
+
 The following list contains a number of fonts with good coverage of the most common glyphs and open licenses.
 ## Overview of freely available Unicode Tibetan fonts
 
