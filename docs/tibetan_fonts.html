@@ -359,6 +359,11 @@ const thebe_selector_output = ".output, .cell_output"
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#using-fonts-with-an-open-license-is-important">
+   Using fonts with an open license is important
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#overview-of-freely-available-unicode-tibetan-fonts">
    Overview of freely available Unicode Tibetan fonts
   </a>
@@ -394,6 +399,11 @@ const thebe_selector_output = ".output, .cell_output"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#using-fonts-with-an-open-license-is-important">
+   Using fonts with an open license is important
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#overview-of-freely-available-unicode-tibetan-fonts">
    Overview of freely available Unicode Tibetan fonts
   </a>
@@ -422,7 +432,12 @@ const thebe_selector_output = ".output, .cell_output"
 <p>Tibetan fonts are difficult to produce due to the unlimited number of possible glyphs. While there are only a well defined set of ‘standard’ Tibetan syllables, there exists many extensions because of Sanskrit transliterations (e.g. mantras), Chinese transliterations, and Dzongkha shortcuts. Due to all of those extensions, it is virtually impossible to generate a ‘complete’ Tibetan font by providing all possible glyphs.</p>
 <p>Microsoft had develop a system that could dynamically render new glyph variants, but the resulting Himalaya font doesn’t work on non-Windows platforms and lacks the esthetics of preconceived glyphs.</p>
 <p>So Tibetan fonts either look artificial or are incomplete…</p>
+<div class="section" id="using-fonts-with-an-open-license-is-important">
+<h2>Using fonts with an open license is important<a class="headerlink" href="#using-fonts-with-an-open-license-is-important" title="Permalink to this headline">¶</a></h2>
+<p>If you are working on Tibetan projects that involve Sanskrit stacks (mantras), Chinese transliterations or Dzongkha shortcuts, then there will be the situation that a given font doesn’t correctly render a stack that is needed. In such a situation, it is possible to extend a given font by providing additional glyphs for such a special case. See <a class="reference internal" href="tibetan_font_creation.html"><span class="doc std std-doc">Tibetan font creation</span></a> for details.</p>
+<p>If the font you are using is not under a free license, then you won’t be able to distribute any changes that you have made to a font to add needed glyphs.</p>
 <p>The following list contains a number of fonts with good coverage of the most common glyphs and open licenses.</p>
+</div>
 <div class="section" id="overview-of-freely-available-unicode-tibetan-fonts">
 <h2>Overview of freely available Unicode Tibetan fonts<a class="headerlink" href="#overview-of-freely-available-unicode-tibetan-fonts" title="Permalink to this headline">¶</a></h2>
 <table class="colwidths-auto table">
@@ -454,7 +469,7 @@ const thebe_selector_output = ".output, .cell_output"
 <td><p>Extended version of Jomolhari, slim</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference external" href="https://fonts.google.com/noto/specimen/Noto+Serif+Tibetan?noto.query=tibetan%C2%ACo.lang=bo_Tibt%C2%ACo.continent=Asia%C2%ACo.script=Tibt">Noto Serif Tibetan</a></p></td>
-<td class="text-align:center"><p><img alt="Noto Serif Tibetan" src="../_images/Font_Noto_Serif_Tibetan.jpg" /></p></td>
+<td class="text-align:center"><p><img alt="Noto Serif Tibetan" src="../_images/Font_Noto_Serif_Tibetan.jpg" /><a class="footnote-reference brackets" href="#bug" id="id1">1</a></p></td>
 <td><p>Google’s Noto font, with many different weights</p></td>
 </tr>
 <tr class="row-even"><td><p>Noto Sans Tibetan</p></td>
@@ -476,6 +491,12 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="simple">
 <li><p><a class="reference external" href="https://collab.its.virginia.edu/wiki/tibetan-script/Tibetan%20Fonts.html">Tibetan fonts at University of Virginia</a></p></li>
 </ul>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="bug"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>Note that current version of Noto serif renders the glyph དྡྷི incorrectly. See <a class="reference external" href="https://github.com/googlefonts/noto-fonts/issues/2362">bug report</a></p>
+</dd>
+</dl>
 </div>
 <div class="toctree-wrapper compound">
 </div>
