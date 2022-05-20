@@ -15,15 +15,15 @@ If the font you are using is not under a free license, then you won't be able to
 The following list contains a number of fonts with good coverage of the most common glyphs and open licenses.
 ## Overview of freely available Unicode Tibetan fonts
 
-| Font name | Sample | Comment |
-| --------- | :----: | ------- |
-| [Tibetan Machine Uni](https://www.thlib.org/tools/scripts/wiki/tibetan%20machine%20uni.html) | ![Tibetan Machine Uni](Images/Font_Tibetan_Machine_Uni.jpg) | One of the first Unicode fonts |
-| [DDC Uchen](https://sites.google.com/view/chrisfynn/home/fonts/ddc-uchen) | ![DDC Uchen](Images/Font_Uchen.jpg) | Chris Fynn's font |
-| [Jomolhari](https://sites.google.com/view/chrisfynn/home/fonts/jomolhari) | ![Jomolhari](Images/Font_Jomolhari.jpg) | Chris Fynn's font |
-| [Babelstone Tibetan](https://www.babelstone.co.uk/Fonts/Download/BabelStoneTibetan.ttf) | ![Babelstone Tibetan](Images/Font_Babelstone_Tibetan.jpg) | Extended version of Jomolhari |
-| [Babelstone Tibetan Slim](https://www.babelstone.co.uk/Fonts/Download/BabelStoneTibetanSlim.ttf) | ![Babelstone Tibetan Slim](Images/Font_Babelstone_Tibetan_Slim.jpg) | Extended version of Jomolhari, slim |
-| [Noto Serif Tibetan](https://fonts.google.com/noto/specimen/Noto+Serif+Tibetan?noto.query=tibetan&noto.lang=bo_Tibt&noto.continent=Asia&noto.script=Tibt) | ![Noto Serif Tibetan](Images/Font_Noto_Serif_Tibetan.jpg)[^bug] | Google's Noto font, with many different weights |
-| Noto Sans Tibetan | ![Noto Sans Tibetan](Images/Font_Noto_Sans_Tibetan.jpg) | Based on or identical to Google's Serif Tibetan. |
+| Font name | Sample | Glyphs | Comment |
+| --------- | :----: | ------ | ------- |
+| [Tibetan Machine Uni](https://www.thlib.org/tools/scripts/wiki/tibetan%20machine%20uni.html) | ![Tibetan Machine Uni](Images/Font_Tibetan_Machine_Uni.jpg) | 5110 | One of the first Unicode fonts |
+| [DDC Uchen](https://sites.google.com/view/chrisfynn/home/fonts/ddc-uchen) | ![DDC Uchen](Images/Font_Uchen.jpg) | 3193 | Chris Fynn's font |
+| [Jomolhari](https://sites.google.com/view/chrisfynn/home/fonts/jomolhari) | ![Jomolhari](Images/Font_Jomolhari.jpg) | 3333 |  Chris Fynn's font |
+| [Babelstone Tibetan](https://www.babelstone.co.uk/Fonts/Download/BabelStoneTibetan.ttf) | ![Babelstone Tibetan](Images/Font_Babelstone_Tibetan.jpg) | 4019 | Extended version of Jomolhari |
+| [Babelstone Tibetan Slim](https://www.babelstone.co.uk/Fonts/Download/BabelStoneTibetanSlim.ttf) | ![Babelstone Tibetan Slim](Images/Font_Babelstone_Tibetan_Slim.jpg) | 4019 | Extended version of Jomolhari, slim |
+| [Noto Serif Tibetan](https://fonts.google.com/noto/specimen/Noto+Serif+Tibetan?noto.query=tibetan&noto.lang=bo_Tibt&noto.continent=Asia&noto.script=Tibt) | ![Noto Serif Tibetan](Images/Font_Noto_Serif_Tibetan.jpg)[^bug] | 1891 | Google's Noto font, with many different weights |
+| Noto Sans Tibetan | ![Noto Sans Tibetan](Images/Font_Noto_Sans_Tibetan.jpg) | 1296 | Based on or identical to Google's Serif Tibetan. |
 
 [^bug]: Note that current version of Noto serif renders the glyph དྡྷི incorrectly. See [bug report](https://github.com/googlefonts/noto-fonts/issues/2362)
 ## Remarks and History
