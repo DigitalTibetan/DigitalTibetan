@@ -22,9 +22,10 @@ The following list contains a number of fonts with good coverage of the most com
 | [Jomolhari](https://sites.google.com/view/chrisfynn/home/fonts/jomolhari) | ![Jomolhari](Images/Font_Jomolhari.jpg) | Chris Fynn's font |
 | [Babelstone Tibetan](https://www.babelstone.co.uk/Fonts/Download/BabelStoneTibetan.ttf) | ![Babelstone Tibetan](Images/Font_Babelstone_Tibetan.jpg) | Extended version of Jomolhari |
 | [Babelstone Tibetan Slim](https://www.babelstone.co.uk/Fonts/Download/BabelStoneTibetanSlim.ttf) | ![Babelstone Tibetan Slim](Images/Font_Babelstone_Tibetan_Slim.jpg) | Extended version of Jomolhari, slim |
-| [Noto Serif Tibetan](https://fonts.google.com/noto/specimen/Noto+Serif+Tibetan?noto.query=tibetan&noto.lang=bo_Tibt&noto.continent=Asia&noto.script=Tibt) | ![Noto Serif Tibetan](Images/Font_Noto_Serif_Tibetan.jpg) | Google's Noto font, with many different weights |
+| [Noto Serif Tibetan](https://fonts.google.com/noto/specimen/Noto+Serif+Tibetan?noto.query=tibetan&noto.lang=bo_Tibt&noto.continent=Asia&noto.script=Tibt) | ![Noto Serif Tibetan](Images/Font_Noto_Serif_Tibetan.jpg)[^bug] | Google's Noto font, with many different weights |
 | Noto Sans Tibetan | ![Noto Sans Tibetan](Images/Font_Noto_Sans_Tibetan.jpg) | Based on or identical to Google's Serif Tibetan. |
 
+[^bug]: Note that current version of Noto serif renders the glyph དྡྷི incorrectly. See [bug report](https://github.com/googlefonts/noto-fonts/issues/2362)
 ## Remarks and History
 
 [Chris Fynn](https://sites.google.com/view/chrisfynn/home) was one of the first Unicode font pioneers. His fonts Jomolhari and DDC Uchen, available with free Open SIL licenses, where the basis of many developments.

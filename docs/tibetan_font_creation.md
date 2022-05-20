@@ -6,7 +6,12 @@ Indic scripts and Tibetan create stacks by using the OpenType feature 'Below bas
 
 ## Using FontForge to create Tibetan fonts
 
+```{image} Images/FontForge.jpg
+:align: right
+:width: 480
+```
 
+[FontForge](https://fontforge.org/en-US/) is a powerful free and open font editor that can be used to extend existing Tibetan fonts or create new ones.
 
 ### Editing Tibetan fonts and creating Sanskrit stacks for existing fonts
 
