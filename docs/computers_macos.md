@@ -2,7 +2,19 @@
 
 Tibetan support works equally well for old Intel Macs and the new Apple Silicon based Macs.
 
-The Mac comes with Tibetan fonts preinstalled. For more fonts, see [Tibetan fonts](tibetan_fonts.md).
+(macos_fonts)=
+## Fonts
+
+The Mac comes with Tibetan fonts preinstalled. 
+
+| Font name | Sample | Glyphs | Comment |
+| --------- | :----: | ------ | ------- |
+| Kailasa   | ![macOS Kailasa](Images/Font_Kailasa.jpg) | 1.393 | Version 16.0d1e1, by Otani University Shin Buddhist Research Institute |
+| Kokonor | ![macOS Kokonor](Images/Font_Kokonor.jpg) | 1.344 | Version 13.0d1e3, Otani University Shin Buddhist Research Institute |
+
+Both fonts have a very limited glyph count, are not under a free license, and are only available on macOS.
+
+For alternative fonts, see [Tibetan fonts](tibetan_fonts.md).
 
 (macos_keyboard)=
 ## Tibetan keyboard
