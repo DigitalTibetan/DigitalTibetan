@@ -12,8 +12,15 @@ If you are working on Tibetan projects that involve Sanskrit stacks (mantras), C
 
 If the font you are using is not under a free license, then you won't be able to distribute any changes that you have made to a font to add needed glyphs.
 
-The following list contains a number of fonts with good coverage of the most common glyphs and open licenses.
+### Recommendation
+
+The `Noto` and `Babelstone` families of fonts are currently under activate development, so updates, improvements and bug-fixes are more likely.
+
+- [Google's Noto-Fonts project](https://github.com/googlefonts/noto-fonts)
+- [Andrew West's Babelstone project](https://www.babelstone.co.uk/Fonts/)
 ## Overview of freely available Unicode Tibetan fonts
+
+The following list contains a number of fonts with good coverage of the most common glyphs and open licenses.
 
 | Font name | Sample | Glyphs | Comment |
 | --------- | :----: | ------ | ------- |
