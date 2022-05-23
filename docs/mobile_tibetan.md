@@ -10,7 +10,7 @@
 
 Since both major platforms, Google's Android and Apple's iOS fully support Tibetan, it's mostly a matter of taste which platform is preferred.
 
-- Generally **[Android](configuration_android.md) is more open** and easier to customize to more complex applications. If you plan to have maximum possibilities, go with Android. There are significantly more Tibetan apps available for Android than for the other platforms. The language-rendering parts of Android are open-source, and Problems are usually fixed efficiently.
+- Generally **[Android](configuration_android.md) is more open** and easier to customize to more complex applications. If you plan to have maximum possibilities, go with Android. There are significantly more Tibetan apps available for Android than for the other platforms. The language-rendering parts of Android are open-source, and problems are usually fixed efficiently.
 - Slightly **easier** to use for some people are Apple iOS devices ([**iPhone, iPad**](configuration_ios.md)). This comes at the cost of fewer degrees of freedom: Installing your own content, fonts and cross-application interoperability is considerably hampered when compared to Android. Apple's support process for low resource languages is simply non-existing: so in case of technical problems, you're on your own.
 
 For most people, the actual **differences** between Android and iOS **do not matter**: just check both app stores for the applications you might want to use. Generally, power-users that want to access all technical possibilities, including extension and development are better off with Android, in terms of ease-of-use iOS has advantages for some.
