@@ -4,7 +4,7 @@ All current computers and operating system support working with Tibetan script.
 
 | Computer type | Tibetan display  | Input methods  | Development | Support |
 | ------------- | :--------------: | :------------: | :---------: | :-----: |
-| [Windows](computers_windows.md)       |    + +           |   +[^win]        |   +         | + |
+| [Windows](computers_windows.md)       |    + + +         |   +[^win]        |   +         | + |
 | [Linux KDE](computers_linux_kde.md)     |    + +           |   + +          |   + + +     | + + |
 | [Linux Gnome](computers_linux_gnome.md)   |    + +           |   + +          |   + + +     | + + |
 | [macOS](computers_macos.md)         |    + +           |   o[^mac]          |   + +       | - - |
