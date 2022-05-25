@@ -1,6 +1,6 @@
 # Digital Tibetan
 
-Welcome to the DigitalTibetan v3.0
+Welcome to the Digital Tibetan v3.0
 
 ```{warning}
 The Project is in a very early stage.
