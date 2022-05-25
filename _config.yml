@@ -21,6 +21,11 @@ html:
   use_edit_page_button : true
   use_repository_button : true
   use_issue_button : true
+
+# sphinx:
+#   config:
+#     html_theme: pydata_sphinx_theme
+
 # Add a bibtex file so that we can create citations
 # bibtex_bibfiles:
 #  - references.bib
