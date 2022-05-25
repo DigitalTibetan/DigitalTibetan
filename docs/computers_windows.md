@@ -10,9 +10,9 @@ Windows comes with a Tibetan font that has a very unusual property: it can rende
 
 Example:
 
-![Kalacākra](Images/Himalaya_Kalacakra.jpg)
+![Kālacakra](Images/Himalaya_Kalacakra.jpg)
 
-Unusual stacks as in this Kalacākra mantra are no problem for Microsoft Himalaya.
+Unusual stacks as in this Kālacakra mantra are no problem for Microsoft Himalaya.
 
 For more fonts, see [Tibetan Fonts](tibetan_fonts.md).
 ## Tibetan keyboards for Windows
