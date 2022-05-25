@@ -24,7 +24,7 @@ html:
 
 # sphinx:
 #   config:
-#     html_theme: pydata_sphinx_theme
+#     html_theme: alabaster # pydata_sphinx_theme
 
 # Add a bibtex file so that we can create citations
 # bibtex_bibfiles:
