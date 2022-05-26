@@ -51,8 +51,8 @@ Notice:
 
 - A line must not start with a `shad` །.
 - A `shad` ། is used as a Tibetan inter-punctuation, similar but not identical to a comma.
-- Verses, headlines or ends of longer paragraphs are ended by the sequence `<shad> <non-breaking space> <shad>` ། །.
-- Exception: if the last letter of a line is either a `ka` ཀ or a `ga` ག, one `shad` ། is ommitted. This is also the case if `ka` ཀ or `ga` ག have vowel-signs. A `shad` ། is _not_ omitted if they have a sub- or superscript. Examples:
+- Verses, headlines or ends of longer paragraphs are ended by the sequence `<shad> <non-breaking space> <shad>` ། །. Line breaks must not separate the two `shad` ། །.
+- Exception: if the last letter of a line is either a `ka` ཀ or a `ga` ག, one `shad` ། is ommitted. (The vertical stroke of ཀ or ག then serves as an implicit `shad` །. This avoids difficulties with carving two vertical lines ཀ། in wood-blocks.) This rule also applies, if `ka` ཀ or `ga` ག have vowel-signs. A `shad` ། is _not_ omitted if they have a sub- or superscript. Examples:
 
 - Incorrect: གི།, ཀུ། །,
 - Correct: གི, ཀུ །, སྐུ།, གྲུ། །.
@@ -60,7 +60,7 @@ Notice:
 ### Rules for replacing `shad` ། by `rin chen spungs shad` ༑
 
 - In Tibetan, especially in pechas, it is considered a special case, if the last syllable of an expression that is terminated by a `shad` ། breaks to a new line. In that case the `shad` ། or double `shad shad` ། ། is replaced by `rin chen spungs shad` ༑ or ༑ ༑. This serves as an optitical indication that there is a left-over syllable at the beginning of the line that actually belongs to the preceding line.
-- a special case would be for example `le'u`: in a line starting with ལེའུ། །, no _rin chen spungs shad_ would be used, since _le'u_ is pronounced as two syllables.
+- a special case would be for example `le'u`: in a line starting with ལེའུ། །, no `rin chen spungs shad` would be used, since `le'u` is pronounced as two syllables.
 - Variants: some books-prints do not use `rin chen spungs shad` replacements, however the majority of books seems to apply the same rules as are used with pechas.
 - Sometimes in the sequence ། ། only the first `shad` is replaced: ༑ །, but this style is considered less beautiful.
 - Correctly using `rin chen spungs shad` ༑ in long texts can be _very_ time consuming, because even very small formatting or content changes might move `rin chen spungs shad` ༑ into positions where they are no longer correct. Same is true for `shad` ། that suddenly need to become `rin chen spungs shad` ༑.
