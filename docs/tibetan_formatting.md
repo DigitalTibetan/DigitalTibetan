@@ -1,3 +1,4 @@
+# Tibetan formatting rules
 ## Introduction
 
 Current apps for desktop and mobile handle Tibetan script well, and in most cases it's simply necessary to use a correct [Tibetan font](tibetan_fonts.md) and things will work as expected.
