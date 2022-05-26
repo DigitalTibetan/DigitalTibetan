@@ -2,8 +2,8 @@
 
 | Mobile device | Displays Tibetan | Tibetan input method | Apps | Support | Comment |
 | :--------- | :---: | :---: | :---: | :---: | ----------------------------|
-| [Apple iPhone, iPad](configuration_ios.md) | + + | +[^1] | + | - - | Full Tibetan support since iOS 4.21 (2010), slowly breaking |
 | [Google Android](configuration_android.md) | + + | + + | + + + | + + | Full Tibetan support since Android 6.0 (2015) |
+| [Apple iPhone, iPad](configuration_ios.md) | + + | +[^1] | + | - - | Full Tibetan support since iOS 4.21 (2010), slowly breaking |
 | Amazon Kindle | - -[^2] | - - | - - - | - - | Amazon Kindle support for Tibetan is broken since Kindle OS version 5.9.6 |
 
 ## I want to get a new mobile, what's best for Tibetan?
