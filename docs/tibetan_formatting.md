@@ -92,4 +92,4 @@ Notice:
 
 ## References:
 
-- [Requirements for Tibetan Text Layout and Typography](https://www.w3.org/TR/tlreq/)
+- [Requirements for Tibetan Text Layout and Typography](https://www.w3.org/TR/tlreq/), W3C First Public Working Draft 16 June 2020.
