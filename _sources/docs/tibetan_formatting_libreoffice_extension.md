@@ -16,7 +16,7 @@ See the [LibreOffice_TibetanFormatter repository](https://github.com/DigitalTibe
 ### Installation
 
 ```{image} Images/libreoffice_extension_manager.jpg
-:align: right
+:align: center
 :width: 400
 ```
 
@@ -34,8 +34,8 @@ In LibreOffice, use `Tools, Extension Manager..., Add` and select the downloaded
 -   Select a passage of Tibetan text and then select `Format / Paragraph / Alignment / Justified`. Additionally tick `Expand single words`. Newer versions of LibreOffice fail to expand Tibetan words. A trick is to insert justification characters:
 
 ```{image} Images/libreoffice_tibetan_extension.jpg
-:align: right
-:width: 480
+:align: center
+:width: 640
 ```
 
 - Select a passage of Tibetan text and then select `Format / Paragraph / Alignment / Justified`.
@@ -60,42 +60,13 @@ LibreOffice seems to incorrectly break Tibtan syllables in the middle on some pl
 - `Tibetan / Insert Justification Characters` is faster if applied to the whole document.
 - Please note that LibreOffice handles large paragraphs very badly and it slows down all operation. If you have very long texts without paragraph breaks, it is recommended to insert paragraph breaks at line ends every 10-20 pages. This will significantly speed up LibreOffice in general and the Tibetan Formatting extensions.
 
-## Change log
-
-### Version 1.1.503 (2020-Apr-03)
-
--   Syntax fix contributed by 陳乙賓, (ReplaceInRenge -> ReplaceInRange)
-
-### Version 1.1.502 beta (2011-Jun-09)
-
--   Extension is now in OXT format and supports also LibreOffice and OpenOffice >=3.3. The extension should now work with all versions of OpenOffice >=3.0.1
-
-### Version 1.1.5 beta
-
--   Rinchen Spungs Shad replaced also after ga and ka. This can be changed by editing a flag, in the macro. A dialog will be implemented in the future.
-
-### Version 1.1.2 beta
-
--   There was an infinite number of combination of cases, exceptions and developing mistakes... Another bug was fixed, and now (as always) hopefully it will be stable and well functioning at all times in all texts.
-
-### Version 1.1.1 beta
-
--   More bugs that made the extension unstable were fixed. Still some instability might be experienced. We welcome all feedbacks.
--   More menu points and new options are implemented. Please see the function description above for more details.
-
-### Version 1.1.0 beta
-
--   Some important bugs were fixed, so that it is more stable now. Rinchen spungs shad are correctly (not)replaced also after ka and ga.
--   Bigger flexibility in supporting multiple spaces as well as different shad alignments.
-
-### Version 1.0.2 beta
-
--   An add on version is implemented. A 'Tibetan' menu appears between the 'Tools' and 'Window' menus.
--   Display Unicode Character code dialog changed.
-
 ## Credits & Acknowledgements
 
 -   The extension was developed by Eszter Hoffmann, Rigpa IT.
 -   Some code from [Andrew Pitonyak](https://web.archive.org/web/20210821222331/http://www.pitonyak.org/) was used. Thanks for the useful collection of guides and examples.
 -   Thanks to the members of the [OpenOffice.org Forum](https://web.archive.org/web/20210821222331/http://www.oooforum.org/), with so many helpful posts.
+
+## References
+
+- Gihub source repository: [LibreOffice_TibetanFormatter](https://github.com/DigitalTibetan/LibreOffice_TibetanFormatter)
 
