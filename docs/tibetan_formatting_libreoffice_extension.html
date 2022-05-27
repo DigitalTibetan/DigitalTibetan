@@ -193,6 +193,11 @@ const thebe_selector_output = ".output, .cell_output"
        How to prepare a Computer running Windows XP for Tibetan Editing
       </a>
      </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="computers_applications_libreoffice.html">
+       LibreOffice and Tibetan text
+      </a>
+     </li>
     </ul>
    </li>
   </ul>
@@ -409,11 +414,6 @@ const thebe_selector_output = ".output, .cell_output"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#right-left-justification-of-tibetan-text-windows-old-versions">
-     Right / left justification of Tibetan text (Windows, old versions)
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#automatic-insertion-of-rin-chen-spungs-chad-mac-linux-windows">
      Automatic insertion of
      <code class="docutils literal notranslate">
@@ -545,11 +545,6 @@ const thebe_selector_output = ".output, .cell_output"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#right-left-justification-of-tibetan-text-windows-old-versions">
-     Right / left justification of Tibetan text (Windows, old versions)
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#automatic-insertion-of-rin-chen-spungs-chad-mac-linux-windows">
      Automatic insertion of
      <code class="docutils literal notranslate">
@@ -644,7 +639,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p>The Tibetan formatting LibreOffice Extension supports two tasks for Tibetan processing in LibreOffice:</p>
 <ul class="simple">
 <li><p>Automatic application of <code class="docutils literal notranslate"><span class="pre">rin</span> <span class="pre">chen</span> <span class="pre">spungs</span> <span class="pre">chad</span></code> (‘snake head’) ༑ insertion. Especially for longer texts this can save a <em>lot</em> of time when formatting texts. See <a class="reference internal" href="tibetan_formatting.html#rinchen-spungsshad-rules"><span class="std std-ref"><code class="docutils literal notranslate"><span class="pre">rin</span> <span class="pre">chen</span> <span class="pre">spungs</span> <span class="pre">shad</span></code> formatting</span></a> for the underlying rules.</p></li>
-<li><p>Left/Right justification for (old) Windows computers. (Linux versions of LibreOffice don’t need an extra tool, justification works as expected with Tibetan.</p></li>
+<li><p>Left/Right justification through insertion of invisible elastic formatting characters.</p></li>
 </ul>
 </div>
 <div class="section" id="download-and-installation">
@@ -667,18 +662,12 @@ const thebe_selector_output = ".output, .cell_output"
 <h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="right-left-justification-of-tibetan-text-mac-linux">
 <h3>Right / left justification of Tibetan text (Mac &amp; Linux)<a class="headerlink" href="#right-left-justification-of-tibetan-text-mac-linux" title="Permalink to this headline">¶</a></h3>
-<p>Note: right / left justification for Tibetan for LibreOffice for Mac and Linux works well without the extension:</p>
 <ul class="simple">
-<li><p>Select a passage of Tibetan text and then select <code class="docutils literal notranslate"><span class="pre">Format</span> <span class="pre">/</span> <span class="pre">Paragraph</span> <span class="pre">/</span> <span class="pre">Alignment</span> <span class="pre">/</span> <span class="pre">Justified</span></code>. Additionally tick <code class="docutils literal notranslate"><span class="pre">Expand</span> <span class="pre">single</span> <span class="pre">words</span></code>.</p></li>
-</ul>
-</div>
-<div class="section" id="right-left-justification-of-tibetan-text-windows-old-versions">
-<h3>Right / left justification of Tibetan text (Windows, old versions)<a class="headerlink" href="#right-left-justification-of-tibetan-text-windows-old-versions" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
+<li><p>Select a passage of Tibetan text and then select <code class="docutils literal notranslate"><span class="pre">Format</span> <span class="pre">/</span> <span class="pre">Paragraph</span> <span class="pre">/</span> <span class="pre">Alignment</span> <span class="pre">/</span> <span class="pre">Justified</span></code>. Additionally tick <code class="docutils literal notranslate"><span class="pre">Expand</span> <span class="pre">single</span> <span class="pre">words</span></code>. Newer versions of LibreOffice fail to expand Tibetan words. A trick is to insert justification characters:</p></li>
 <li><p>Select a passage of Tibetan text and then select <code class="docutils literal notranslate"><span class="pre">Format</span> <span class="pre">/</span> <span class="pre">Paragraph</span> <span class="pre">/</span> <span class="pre">Alignment</span> <span class="pre">/</span> <span class="pre">Justified</span></code>.</p></li>
-<li><p>Select <code class="docutils literal notranslate"><span class="pre">Tibetan</span> <span class="pre">/</span> <span class="pre">Insert</span> <span class="pre">Justification</span> <span class="pre">Characters</span></code>. This will insert a zero-length space character after each <code class="docutils literal notranslate"><span class="pre">tsheg</span></code>. Older versions of LibreOffice for Windows cannot <code class="docutils literal notranslate"><span class="pre">Expand</span> <span class="pre">single</span> <span class="pre">words</span></code> for Tibetan, but it can expand zero-length characters.</p></li>
+<li><p>Select <code class="docutils literal notranslate"><span class="pre">Tibetan</span> <span class="pre">/</span> <span class="pre">Insert</span> <span class="pre">Justification</span> <span class="pre">Characters</span></code>. This will insert a zero-length space character after each <code class="docutils literal notranslate"><span class="pre">tsheg</span></code>. Some versions of LibreOffice cannot <code class="docutils literal notranslate"><span class="pre">Expand</span> <span class="pre">single</span> <span class="pre">words</span></code> for Tibetan, but it can expand zero-length characters.</p></li>
 </ul>
-<p><strong>Tip:</strong> Left/right justification, especially when using the Windows extension, and after using the automatic <code class="docutils literal notranslate"><span class="pre">rin</span> <span class="pre">chen</span> <span class="pre">spungs</span> <span class="pre">chad</span></code> ༑ insertion, might lead to ugly spaces after <code class="docutils literal notranslate"><span class="pre">tshegs</span></code> ་. In many cases this effect can be reduced by slightly compressing all characters by 0,1 to 0,2 pt using the LibreOffice command <code class="docutils literal notranslate"><span class="pre">Format</span> <span class="pre">/</span> <span class="pre">Character</span> <span class="pre">/</span> <span class="pre">Position</span> <span class="pre">/</span> <span class="pre">Condensed</span></code> option.</p>
+<p><strong>Tip:</strong> Left/right justification, especially when using the justification character insertion by the extension, and after using the automatic <code class="docutils literal notranslate"><span class="pre">rin</span> <span class="pre">chen</span> <span class="pre">spungs</span> <span class="pre">chad</span></code> ༑ insertion, might lead to ugly spaces after <code class="docutils literal notranslate"><span class="pre">tshegs</span></code> ་. In many cases this effect can be reduced by slightly compressing all characters by 0,1 to 0,2 pt using the LibreOffice command <code class="docutils literal notranslate"><span class="pre">Format</span> <span class="pre">/</span> <span class="pre">Character</span> <span class="pre">/</span> <span class="pre">Position</span> <span class="pre">/</span> <span class="pre">Condensed</span></code> option.</p>
 </div>
 <div class="section" id="automatic-insertion-of-rin-chen-spungs-chad-mac-linux-windows">
 <h3>Automatic insertion of <code class="docutils literal notranslate"><span class="pre">rin</span> <span class="pre">chen</span> <span class="pre">spungs</span> <span class="pre">chad</span></code> ༑ (Mac, Linux &amp; Windows)<a class="headerlink" href="#automatic-insertion-of-rin-chen-spungs-chad-mac-linux-windows" title="Permalink to this headline">¶</a></h3>

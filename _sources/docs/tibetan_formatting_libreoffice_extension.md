@@ -5,7 +5,7 @@
 The Tibetan formatting LibreOffice Extension supports two tasks for Tibetan processing in LibreOffice:
 
 -   Automatic application of `rin chen spungs chad` ('snake head') ༑ insertion. Especially for longer texts this can save a _lot_ of time when formatting texts. See [`rin chen spungs shad` formatting](rinchen_spungsshad_rules) for the underlying rules.
-- Left/Right justification for (old) Windows computers. (Linux versions of LibreOffice don't need an extra tool, justification works as expected with Tibetan.
+- Left/Right justification through insertion of invisible elastic formatting characters.
 
 ## Download and installation
 
@@ -26,16 +26,12 @@ In LibreOffice, use `Tools, Extension Manager..., Add` and select the downloaded
 
 ### Right / left justification of Tibetan text (Mac & Linux)
 
-Note: right / left justification for Tibetan for LibreOffice for Mac and Linux works well without the extension:
-
--   Select a passage of Tibetan text and then select `Format / Paragraph / Alignment / Justified`. Additionally tick `Expand single words`.
-
-### Right / left justification of Tibetan text (Windows, old versions)
+-   Select a passage of Tibetan text and then select `Format / Paragraph / Alignment / Justified`. Additionally tick `Expand single words`. Newer versions of LibreOffice fail to expand Tibetan words. A trick is to insert justification characters:
 
 - Select a passage of Tibetan text and then select `Format / Paragraph / Alignment / Justified`.
-- Select `Tibetan / Insert Justification Characters`. This will insert a zero-length space character after each `tsheg`. Older versions of LibreOffice for Windows cannot `Expand single words` for Tibetan, but it can expand zero-length characters.
+- Select `Tibetan / Insert Justification Characters`. This will insert a zero-length space character after each `tsheg`. Some versions of LibreOffice cannot `Expand single words` for Tibetan, but it can expand zero-length characters.
 
-**Tip:** Left/right justification, especially when using the Windows extension, and after using the automatic `rin chen spungs chad` ༑ insertion, might lead to ugly spaces after `tshegs` ་. In many cases this effect can be reduced by slightly compressing all characters by 0,1 to 0,2 pt using the LibreOffice command `Format / Character / Position / Condensed` option.
+**Tip:** Left/right justification, especially when using the justification character insertion by the extension, and after using the automatic `rin chen spungs chad` ༑ insertion, might lead to ugly spaces after `tshegs` ་. In many cases this effect can be reduced by slightly compressing all characters by 0,1 to 0,2 pt using the LibreOffice command `Format / Character / Position / Condensed` option.
 
 ### Automatic insertion of `rin chen spungs chad` ༑ (Mac, Linux & Windows)
 
