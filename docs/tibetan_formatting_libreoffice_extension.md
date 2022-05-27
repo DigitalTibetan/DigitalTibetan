@@ -15,6 +15,11 @@ See the [LibreOffice_TibetanFormatter repository](https://github.com/DigitalTibe
 
 ### Installation
 
+```{image} Images/libreoffice_extension_manager.jpg
+:align: right
+:width: 400
+```
+
 In LibreOffice, use `Tools, Extension Manager..., Add` and select the downloaded `TibFormat.oxt`. After a restart, a new LibreOffice menu item Tibetan is available.
 
 ### Uninstallation
@@ -27,6 +32,11 @@ In LibreOffice, use `Tools, Extension Manager..., Add` and select the downloaded
 ### Right / left justification of Tibetan text (Mac & Linux)
 
 -   Select a passage of Tibetan text and then select `Format / Paragraph / Alignment / Justified`. Additionally tick `Expand single words`. Newer versions of LibreOffice fail to expand Tibetan words. A trick is to insert justification characters:
+
+```{image} Images/libreoffice_tibetan_extension.jpg
+:align: right
+:width: 480
+```
 
 - Select a passage of Tibetan text and then select `Format / Paragraph / Alignment / Justified`.
 - Select `Tibetan / Insert Justification Characters`. This will insert a zero-length space character after each `tsheg`. Some versions of LibreOffice cannot `Expand single words` for Tibetan, but it can expand zero-length characters.
