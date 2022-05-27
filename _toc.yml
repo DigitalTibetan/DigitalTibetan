@@ -24,6 +24,8 @@ chapters:
   sections:
   - file: docs/tibetan_font_creation.md
 - file: docs/tibetan_formatting.md
+  sections:
+  - file: docs/tibetan_formatting_libreoffice_extension.md
 - file: docs/sanskrit_overview.md
 - file: docs/tibetan_calendar.md
 - file: docs/digital_tibetan_tools.md
