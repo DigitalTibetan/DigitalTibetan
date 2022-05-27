@@ -1,0 +1,826 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tibetan Formatting LibreOffice Extension &#8212; Digital Tibetan</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mod.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="How to work with Sanskrit diacritics" href="sanskrit_overview.html" />
+    <link rel="prev" title="Tibetan formatting rules" href="tibetan_formatting.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/DigitalTibetanLogo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Digital Tibetan</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../main.html">
+   Digital Tibetan
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="computational_dharma.html">
+   Computational dharma, really?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="digital_dharma_is_fragile.html">
+   Digital dharma is extremely fragile
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="devices_tibetan.html">
+   How to prepare your digital devices for Tibetan script
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="mobile_tibetan.html">
+     Tibetan and mobile devices
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="configuration_ios.html">
+       How to configure Apple iOS (iPhone, iPad) for Tibetan
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="apps_ios.html">
+       Best Tibetan apps for iOS
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="configuration_android.html">
+       How to configure Android mobiles
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="apps_android.html">
+       Best Tibetan apps for Android
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="computers_tibetan.html">
+     Computers and Tibetan script
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="computers_macos.html">
+       Working with macOS and Tibetan script
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="computers_windows.html">
+       Working with Windows and Tibetan script
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="computers_windows_keyboards.html">
+       Tibetan keyboards for Windows
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="computers_linux_kde.html">
+       Working with Linux KDE and Tibetan script
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="computers_linux_gnome.html">
+       Working with Linux Gnome and Tibetan script
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="computers_windows_xp.html">
+       How to prepare a Computer running Windows XP for Tibetan Editing
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tibetan_keyboards.html">
+   An overview of different Tibetan keyboards
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="tibetan_fonts.html">
+   Tibetan fonts
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tibetan_font_creation.html">
+     Editing and creating Tibetan fonts
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="tibetan_formatting.html">
+   Tibetan formatting rules
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Tibetan Formatting LibreOffice Extension
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sanskrit_overview.html">
+   How to work with Sanskrit diacritics
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tibetan_calendar.html">
+   The Tibetan calendar
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="digital_tibetan_tools.html">
+   Digital Tibetan Tools
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="digital_tibetan_tools_wylie.html">
+     Digital Tibetan Tools: Conversion between EWTS-Wylie and Unicode
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="digital_tibetan_tools_pronunciation.html">
+     Digital Tibetan Tools: Tibetan pronunciation and phonetics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="digital_tibetan_tools_calendar.html">
+     Digital Tibetan Tools: Tibetan calendar and special day calculations
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="news/_news_archive.html">
+   Digital Tibetan news archive
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="news/2022-04-11_tibetan_translation_services.html">
+     2022-04: Google translation for Tibetan in preparation
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/docs/tibetan_formatting_libreoffice_extension.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/digitaltibetan/DigitalTibetan"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        <a class="edit-button" href="https://github.com/digitaltibetan/DigitalTibetan/edit/main/docs/tibetan_formatting_libreoffice_extension.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#download-and-installation">
+   Download and installation
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#installation">
+     Installation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#uninstallation">
+     Uninstallation
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#description">
+   Description
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#right-left-justification-of-tibetan-text-mac-linux">
+     Right / left justification of Tibetan text (Mac &amp; Linux)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#right-left-justification-of-tibetan-text-windows-old-versions">
+     Right / left justification of Tibetan text (Windows, old versions)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#automatic-insertion-of-rin-chen-spungs-chad-mac-linux-windows">
+     Automatic insertion of
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       rin
+      </span>
+      <span class="pre">
+       chen
+      </span>
+      <span class="pre">
+       spungs
+      </span>
+      <span class="pre">
+       chad
+      </span>
+     </code>
+     ༑ (Mac, Linux &amp; Windows)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#corrections-of-invalid-line-breaks">
+     Corrections of invalid line breaks
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#restrictions-and-known-issues">
+   Restrictions and known issues
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#change-log">
+   Change log
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#version-1-1-503-2020-apr-03">
+     Version 1.1.503 (2020-Apr-03)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#version-1-1-502-beta-2011-jun-09">
+     Version 1.1.502 beta (2011-Jun-09)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#version-1-1-5-beta">
+     Version 1.1.5 beta
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#version-1-1-2-beta">
+     Version 1.1.2 beta
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#version-1-1-1-beta">
+     Version 1.1.1 beta
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#version-1-1-0-beta">
+     Version 1.1.0 beta
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#version-1-0-2-beta">
+     Version 1.0.2 beta
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#credits-acknowledgements">
+   Credits &amp; Acknowledgements
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Tibetan Formatting LibreOffice Extension</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#download-and-installation">
+   Download and installation
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#installation">
+     Installation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#uninstallation">
+     Uninstallation
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#description">
+   Description
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#right-left-justification-of-tibetan-text-mac-linux">
+     Right / left justification of Tibetan text (Mac &amp; Linux)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#right-left-justification-of-tibetan-text-windows-old-versions">
+     Right / left justification of Tibetan text (Windows, old versions)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#automatic-insertion-of-rin-chen-spungs-chad-mac-linux-windows">
+     Automatic insertion of
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       rin
+      </span>
+      <span class="pre">
+       chen
+      </span>
+      <span class="pre">
+       spungs
+      </span>
+      <span class="pre">
+       chad
+      </span>
+     </code>
+     ༑ (Mac, Linux &amp; Windows)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#corrections-of-invalid-line-breaks">
+     Corrections of invalid line breaks
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#restrictions-and-known-issues">
+   Restrictions and known issues
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#change-log">
+   Change log
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#version-1-1-503-2020-apr-03">
+     Version 1.1.503 (2020-Apr-03)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#version-1-1-502-beta-2011-jun-09">
+     Version 1.1.502 beta (2011-Jun-09)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#version-1-1-5-beta">
+     Version 1.1.5 beta
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#version-1-1-2-beta">
+     Version 1.1.2 beta
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#version-1-1-1-beta">
+     Version 1.1.1 beta
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#version-1-1-0-beta">
+     Version 1.1.0 beta
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#version-1-0-2-beta">
+     Version 1.0.2 beta
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#credits-acknowledgements">
+   Credits &amp; Acknowledgements
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="tibetan-formatting-libreoffice-extension">
+<h1>Tibetan Formatting LibreOffice Extension<a class="headerlink" href="#tibetan-formatting-libreoffice-extension" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>The Tibetan formatting LibreOffice Extension supports two tasks for Tibetan processing in LibreOffice:</p>
+<ul class="simple">
+<li><p>Left/Right justification for (old) Windows computers. (Linux versions of LibreOffice don’t need an extra tool, justification works as expected with Tibetan.</p></li>
+<li><p>Automatic application of <code class="docutils literal notranslate"><span class="pre">rin</span> <span class="pre">chen</span> <span class="pre">spungs</span> <span class="pre">chad</span></code> (‘snake head’) ༑ insertion. Especially for longer texts this can save a <em>lot</em> of time when formatting texts. See <a class="reference internal" href="tibetan_formatting.html"><span class="doc std std-doc">Formatting Tibetan</span></a> for the underlying formatting rules.</p></li>
+</ul>
+</div>
+<div class="section" id="download-and-installation">
+<h2>Download and installation<a class="headerlink" href="#download-and-installation" title="Permalink to this headline">¶</a></h2>
+<p>The extension can be downloaded from the repository <a class="reference external" href="https://github.com/DigitalTibetan/LibreOffice_TibetanFormatter/releases/download/v1.1.503/TibFormat.oxt">TibFormat.oxt</a></p>
+<p>See the <a class="reference external" href="https://github.com/DigitalTibetan/LibreOffice_TibetanFormatter">LibreOffice_TibetanFormatter repository</a> for more details.</p>
+<div class="section" id="installation">
+<h3>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h3>
+<p>In LibreOffice, use <code class="docutils literal notranslate"><span class="pre">Tools,</span> <span class="pre">Extension</span> <span class="pre">Manager...,</span> <span class="pre">Add</span></code> and select the downloaded <code class="docutils literal notranslate"><span class="pre">TibFormat.oxt</span></code>. After a restart, a new LibreOffice menu item Tibetan is available.</p>
+</div>
+<div class="section" id="uninstallation">
+<h3>Uninstallation<a class="headerlink" href="#uninstallation" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>To uninstall TibetanFormatter go to <strong>Tools / Extension Manager</strong>. Under My Extensions select TibetanFormatter and click <em>Remove</em>.</p></li>
+<li><p>Restart LibreOffice.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="right-left-justification-of-tibetan-text-mac-linux">
+<h3>Right / left justification of Tibetan text (Mac &amp; Linux)<a class="headerlink" href="#right-left-justification-of-tibetan-text-mac-linux" title="Permalink to this headline">¶</a></h3>
+<p>Note: right / left justification for Tibetan for LibreOffice for Mac and Linux works well without the extension:</p>
+<ul class="simple">
+<li><p>Select a passage of Tibetan text and then select <code class="docutils literal notranslate"><span class="pre">Format</span> <span class="pre">/</span> <span class="pre">Paragraph</span> <span class="pre">/</span> <span class="pre">Alignment</span> <span class="pre">/</span> <span class="pre">Justified</span></code>. Additionally tick <code class="docutils literal notranslate"><span class="pre">Expand</span> <span class="pre">single</span> <span class="pre">words</span></code>.</p></li>
+</ul>
+</div>
+<div class="section" id="right-left-justification-of-tibetan-text-windows-old-versions">
+<h3>Right / left justification of Tibetan text (Windows, old versions)<a class="headerlink" href="#right-left-justification-of-tibetan-text-windows-old-versions" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Select a passage of Tibetan text and then select <code class="docutils literal notranslate"><span class="pre">Format</span> <span class="pre">/</span> <span class="pre">Paragraph</span> <span class="pre">/</span> <span class="pre">Alignment</span> <span class="pre">/</span> <span class="pre">Justified</span></code>.</p></li>
+<li><p>Select <code class="docutils literal notranslate"><span class="pre">Tibetan</span> <span class="pre">/</span> <span class="pre">Insert</span> <span class="pre">Justification</span> <span class="pre">Characters</span></code>. This will insert a zero-length space character after each <code class="docutils literal notranslate"><span class="pre">tsheg</span></code>. Older versions of LibreOffice for Windows cannot <code class="docutils literal notranslate"><span class="pre">Expand</span> <span class="pre">single</span> <span class="pre">words</span></code> for Tibetan, but it can expand zero-length characters.</p></li>
+</ul>
+<p><strong>Tip:</strong> Left/right justification, especially when using the Windows extension, and after using the automatic <code class="docutils literal notranslate"><span class="pre">rin</span> <span class="pre">chen</span> <span class="pre">spungs</span> <span class="pre">chad</span></code> ༑ insertion, might lead to ugly spaces after <code class="docutils literal notranslate"><span class="pre">tshegs</span></code> ་. In many cases this effect can be reduced by slightly compressing all characters by 0,1 to 0,2 pt using the LibreOffice command <code class="docutils literal notranslate"><span class="pre">Format</span> <span class="pre">/</span> <span class="pre">Character</span> <span class="pre">/</span> <span class="pre">Position</span> <span class="pre">/</span> <span class="pre">Condensed</span></code> option.</p>
+</div>
+<div class="section" id="automatic-insertion-of-rin-chen-spungs-chad-mac-linux-windows">
+<h3>Automatic insertion of <code class="docutils literal notranslate"><span class="pre">rin</span> <span class="pre">chen</span> <span class="pre">spungs</span> <span class="pre">chad</span></code> ༑ (Mac, Linux &amp; Windows)<a class="headerlink" href="#automatic-insertion-of-rin-chen-spungs-chad-mac-linux-windows" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>The option <code class="docutils literal notranslate"><span class="pre">Tibetan</span> <span class="pre">/</span> <span class="pre">Apply</span> <span class="pre">rinchen</span> <span class="pre">spungs</span> <span class="pre">shad</span></code> automatically searches the selected paragraphs for <code class="docutils literal notranslate"><span class="pre">shad</span></code> ། characters that need to be changed into <code class="docutils literal notranslate"><span class="pre">rin</span> <span class="pre">chen</span> <span class="pre">spungs</span> <span class="pre">chad</span></code> ༑. Especially for longer texts this can save a <em>lot</em> of time when changing and formatting texts.</p></li>
+<li><p>The function <code class="docutils literal notranslate"><span class="pre">Tibetan</span> <span class="pre">/</span> <span class="pre">Apply</span> <span class="pre">rinchen</span> <span class="pre">spungs</span> <span class="pre">shad</span></code> also automatically corrects illegal line breaks and <code class="docutils literal notranslate"><span class="pre">shad</span></code> ། at beginning of lines.</p></li>
+</ul>
+</div>
+<div class="section" id="corrections-of-invalid-line-breaks">
+<h3>Corrections of invalid line breaks<a class="headerlink" href="#corrections-of-invalid-line-breaks" title="Permalink to this headline">¶</a></h3>
+<p>LibreOffice seems to incorrectly break Tibtan syllables in the middle on some platforms. Running the “Tibetan / Apply rinchen spungs shad” function fixes the incorrect line breaks.</p>
+</div>
+</div>
+<div class="section" id="restrictions-and-known-issues">
+<h2>Restrictions and known issues<a class="headerlink" href="#restrictions-and-known-issues" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Important:</strong> we recommend at this stage not to use the function <code class="docutils literal notranslate"><span class="pre">Tibetan</span> <span class="pre">/</span> <span class="pre">Justify</span> <span class="pre">&amp;</span> <span class="pre">Apply</span> <span class="pre">Rinchen</span> <span class="pre">Spungs</span> <span class="pre">Shad</span></code>, but do all formatting in two steps:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Tibetan</span> <span class="pre">/</span> <span class="pre">Insert</span> <span class="pre">Justification</span> <span class="pre">Characters</span></code>,</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Tibetan</span> <span class="pre">/</span> <span class="pre">Apply</span> <span class="pre">Rinchen</span> <span class="pre">Spungs</span> <span class="pre">Shad</span></code>. It is currently faster and more reliable this way.</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Tibetan</span> <span class="pre">/</span> <span class="pre">Insert</span> <span class="pre">Justification</span> <span class="pre">Characters</span></code> is faster if applied to the whole document.</p></li>
+<li><p>Please note that LibreOffice handles large paragraphs very badly and it slows down all operation. If you have very long texts without paragraph breaks, it is recommended to insert paragraph breaks at line ends every 10-20 pages. This will significantly speed up LibreOffice in general and the Tibetan Formatting extensions.</p></li>
+</ul>
+</div>
+<div class="section" id="change-log">
+<h2>Change log<a class="headerlink" href="#change-log" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="version-1-1-503-2020-apr-03">
+<h3>Version 1.1.503 (2020-Apr-03)<a class="headerlink" href="#version-1-1-503-2020-apr-03" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Syntax fix contributed by 陳乙賓, (ReplaceInRenge -&gt; ReplaceInRange)</p></li>
+</ul>
+</div>
+<div class="section" id="version-1-1-502-beta-2011-jun-09">
+<h3>Version 1.1.502 beta (2011-Jun-09)<a class="headerlink" href="#version-1-1-502-beta-2011-jun-09" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Extension is now in OXT format and supports also LibreOffice and OpenOffice &gt;=3.3. The extension should now work with all versions of OpenOffice &gt;=3.0.1</p></li>
+</ul>
+</div>
+<div class="section" id="version-1-1-5-beta">
+<h3>Version 1.1.5 beta<a class="headerlink" href="#version-1-1-5-beta" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Rinchen Spungs Shad replaced also after ga and ka. This can be changed by editing a flag, in the macro. A dialog will be implemented in the future.</p></li>
+</ul>
+</div>
+<div class="section" id="version-1-1-2-beta">
+<h3>Version 1.1.2 beta<a class="headerlink" href="#version-1-1-2-beta" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>There was an infinite number of combination of cases, exceptions and developing mistakes… Another bug was fixed, and now (as always) hopefully it will be stable and well functioning at all times in all texts.</p></li>
+</ul>
+</div>
+<div class="section" id="version-1-1-1-beta">
+<h3>Version 1.1.1 beta<a class="headerlink" href="#version-1-1-1-beta" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>More bugs that made the extension unstable were fixed. Still some instability might be experienced. We welcome all feedbacks.</p></li>
+<li><p>More menu points and new options are implemented. Please see the function description above for more details.</p></li>
+</ul>
+</div>
+<div class="section" id="version-1-1-0-beta">
+<h3>Version 1.1.0 beta<a class="headerlink" href="#version-1-1-0-beta" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Some important bugs were fixed, so that it is more stable now. Rinchen spungs shad are correctly (not)replaced also after ka and ga.</p></li>
+<li><p>Bigger flexibility in supporting multiple spaces as well as different shad alignments.</p></li>
+</ul>
+</div>
+<div class="section" id="version-1-0-2-beta">
+<h3>Version 1.0.2 beta<a class="headerlink" href="#version-1-0-2-beta" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>An add on version is implemented. A ‘Tibetan’ menu appears between the ‘Tools’ and ‘Window’ menus.</p></li>
+<li><p>Display Unicode Character code dialog changed.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="credits-acknowledgements">
+<h2>Credits &amp; Acknowledgements<a class="headerlink" href="#credits-acknowledgements" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>The extension was developed by Eszter Hoffmann, Rigpa IT.</p></li>
+<li><p>Some code from <a class="reference external" href="https://web.archive.org/web/20210821222331/http://www.pitonyak.org/">Andrew Pitonyak</a> was used. Thanks for the useful collection of guides and examples.</p></li>
+<li><p>Thanks to the members of the <a class="reference external" href="https://web.archive.org/web/20210821222331/http://www.oooforum.org/">OpenOffice.org Forum</a>, with so many helpful posts.</p></li>
+</ul>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "digitaltibetan/DigitalTibetan",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./docs"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="tibetan_formatting.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Tibetan formatting rules</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="sanskrit_overview.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">How to work with Sanskrit diacritics</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Digital Tibetan Community<br/>
+    
+        &copy; Copyright 2022.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
