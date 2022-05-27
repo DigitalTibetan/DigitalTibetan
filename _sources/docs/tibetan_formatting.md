@@ -57,6 +57,7 @@ Notice:
 - Incorrect: གི།, ཀུ། །,
 - Correct: གི, ཀུ །, སྐུ།, གྲུ། །.
 
+(rinchen_spungsshad_rules)=
 ### Rules for replacing `shad` ། by `rin chen spungs shad` ༑
 
 - In Tibetan, especially in pechas, it is considered a special case, if the last syllable of an expression that is terminated by a `shad` ། breaks to a new line. In that case the `shad` ། or double `shad shad` ། ། is replaced by `rin chen spungs shad` ༑ or ༑ ༑. This serves as an optitical indication that there is a left-over syllable at the beginning of the line that actually belongs to the preceding line.
@@ -64,6 +65,12 @@ Notice:
 - Variants: some books-prints do not use `rin chen spungs shad` replacements, however the majority of books seems to apply the same rules as are used with pechas.
 - Sometimes in the sequence ། ། only the first `shad` is replaced: ༑ །, but this style is considered less beautiful.
 - Correctly using `rin chen spungs shad` ༑ in long texts can be _very_ time consuming, because even very small formatting or content changes might move `rin chen spungs shad` ༑ into positions where they are no longer correct. Same is true for `shad` ། that suddenly need to become `rin chen spungs shad` ༑.
+
+```{tip} 
+Check out the LibreOffice tool for `rin chen spungs shad` ༑ formatting. The tool automatically handles formatting and approriate replacing of ༑ and །.
+
+See: [LibreOffice Tibetan formatting extension](tibetan_formatting_libreoffice_extension.md)
+```
 
 ### Numbers and special signs
 
