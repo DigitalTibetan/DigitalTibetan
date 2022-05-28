@@ -4,7 +4,7 @@
 
 The Tibetan formatting LibreOffice Extension supports two tasks for Tibetan processing in LibreOffice:
 
--   Automatic application of `rin chen spungs chad` ('snake head') ༑ insertion. Especially for longer texts this can save a _lot_ of time when formatting texts. See [`rin chen spungs shad` formatting](rinchen_spungsshad_rules) for the underlying rules.
+-   Automatic application of `rin chen spungs chad` ༑ insertion. Especially for longer texts this can save a _lot_ of time when formatting texts. See [`rin chen spungs shad` formatting](rinchen_spungsshad_rules) for the underlying rules.
 - Left/Right justification through insertion of invisible elastic formatting characters.
 
 ## Download and installation
