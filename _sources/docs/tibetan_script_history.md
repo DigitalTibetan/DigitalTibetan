@@ -62,6 +62,11 @@ LH-->LI(Tibetan script)
 LA-->LK(Greek alphabet 800 BC - present)
 LK-->LL(Old Italic script 700 BC - 100 BC)
 LL-->LM(Latin alphabet 700 BC - present)
+
+BB-.->LD;
+BB-.->BA;
+BB-.->CA;
+
 end
 ```
 Source: compiled from Wikipedia 2022-05
@@ -73,9 +78,6 @@ A<-.->BB
 AK<-.->CE;
 LD<-.->AD;
 LH<-.->AD;
-BB-.->BA;
-BB-.->LD;
-BB-.->CA;
 BE-.->AK;
 BE<-.->CD;
 
