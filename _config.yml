@@ -22,7 +22,9 @@ html:
   use_repository_button : true
   use_issue_button : true
 
-# sphinx:
+sphinx:
+  extra_extensions:
+    - sphinxcontrib.mermaid
 #   config:
 #     html_theme: alabaster # pydata_sphinx_theme
 
