@@ -37,7 +37,7 @@ BA(Megalithic graffiti symbols)-.->BB(Indus script 3500 BC - 1900 BC);
 
 CA(Linear Elamite script 2300 BC - 1850 BC)-->CB(Cuneiform Elamite);
 CB-->CD(Cuneiform Sumerian);
-CD-->CE(Cuneiform Arcadian);
+CD-->CE(Cuneiform Akkadian);
 L0A(Egyptian Hieroglyphs 3200 BC - AD 400<br>)-->LA(Proto-Sinaitic script 1900 BC - 1500 BC);
 LA-->LB(Phoenician alphabet 1050 BC - 150 BC);
 LB-->LC(Aramaic alphabet 800 BC - AD 600);
