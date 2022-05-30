@@ -8,20 +8,20 @@ The following table compares five consonants in different scripts. With exceptio
 |language | b | d | m | r | t |
 | :- | - | - | - | - | - |
 |Hieroglyphic | 𓉐  | 𓉿  | 𓈖  | 𓁶 | 𓏴 |
-|Proto-Sinaitic[^proto_sinaitic] | <img src="Images/ProtoSinaitic-b.jpg" style="width:16px;" /> | <img src="Images/ProtoSinaitic-d.jpg" style="width:16px;" /> | <img src="Images/ProtoSinaitic-m.jpg" style="width:16px;" /> | <img src="Images/ProtoSinaitic-r.jpg" style="width:16px;" /> | <img src="Images/ProtoSinaitic-t.jpg" style="width:16px;" /> |
+|Proto-Sinaitic[^proto_sinaitic] | <img src="Images/ProtoSinaitic-b.jpg" width="16px" /> | <img src="Images/ProtoSinaitic-d.jpg" width="16px" /> | <img src="Images/ProtoSinaitic-m.jpg" width="16px" /> | <img src="Images/ProtoSinaitic-r.jpg" width="16px" /> | <img src="Images/ProtoSinaitic-t.jpg" width="16px" /> |
 |Phoenician | 𐤁 | 𐤃 | 𐤌 | 𐤓 | 𐤕 |
 | Aramaic | 𐡁 | 𐡃 | 𐡌 | 𐡓 | 𐡕 |
 | Brāhmī | 𑀩 | 𑀤 | 𑀫 | 𑀭 | 𑀢 |
-| Gupta[^gupta] | <img src="Images/Gupta_b.jpg" style="width:10px;" /> | <img src="Images/Gupta_d.jpg" style="width:10px;" /> | <img src="Images/Gupta_m.jpg" style="width:10px;" /> | <img src="Images/Gupta_r.jpg" style="width:10px;" /> | <img src="Images/Gupta_t.jpg" style="width:10px;" /> | 
+| Gupta[^gupta] | <img src="Images/Gupta_b.jpg" width="10px" /> | <img src="Images/Gupta_d.jpg" width="10px" /> | <img src="Images/Gupta_m.jpg" width="10px" /> | <img src="Images/Gupta_r.jpg" width="10px" /> | <img src="Images/Gupta_t.jpg" width="10px" /> | 
 | Siddhaṃ | 𑖤 | 𑖟 | 𑖦 | 𑖨 | 𑖝 |
-| Nāgarī[^nagari] | <img src="Images/Nagari_b.jpg" style="width:12px;" /> | <img src="Images/Nagari_d.jpg" style="width:12px;" /> | <img src="Images/Nagari_m.jpg" style="width:12px;" /> | <img src="Images/Nagari_r.jpg" style="width:12px;" /> | <img src="Images/Nagari_t.jpg" style="width:12px;" /> |
+| Nāgarī[^nagari] | <img src="Images/Nagari_b.jpg" width="12px" /> | <img src="Images/Nagari_d.jpg" width="12px" /> | <img src="Images/Nagari_m.jpg" width="12px" /> | <img src="Images/Nagari_r.jpg" width="12px" /> | <img src="Images/Nagari_t.jpg" width="12px" /> |
 | Devanagari | ब | द | म | र | त |
 | Tibetan | བ | ད | མ | ར | ཏ |
 
 |language | b | d | m | r | t |
 | :- | - | - | - | - | - |
 |Hieroglyphic | 𓉐  | 𓉿  | 𓈖  | 𓁶 | 𓏴 |
-|Proto-Sinaitic[^proto_sinaitic] | <img src="Images/ProtoSinaitic-b.jpg" style="width:16px;" /> | <img src="Images/ProtoSinaitic-d.jpg" style="width:16px;" /> | <img src="Images/ProtoSinaitic-m.jpg" style="width:16px;" /> | <img src="Images/ProtoSinaitic-r.jpg" style="width:16px;" /> | <img src="Images/ProtoSinaitic-t.jpg" style="width:16px;" /> |
+|Proto-Sinaitic[^proto_sinaitic] | <img src="Images/ProtoSinaitic-b.jpg" width="16px" /> | <img src="Images/ProtoSinaitic-d.jpg" width="16px" /> | <img src="Images/ProtoSinaitic-m.jpg" width="16px" /> | <img src="Images/ProtoSinaitic-r.jpg" width="16px" /> | <img src="Images/ProtoSinaitic-t.jpg" width="16px" /> |
 | Greek | Β | Δ | Μ | Ρ | Τ |
 | Old Italic | 𐌁 | 𐌃 | 𐌌 | 𐌓 | 𐌕 |
 | Latin | B | D | M | R | T |
