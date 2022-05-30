@@ -6,6 +6,8 @@ While Tibetan script is (remotely) related to Western Latin script via there com
 
 The following table compares five consonants in different scripts. With exception of Proto-Sinaitic, Gupta, and Nāgarī all display requires the corresponding Unicode fonts being installed.
 
+### Development of Tibetan script
+
 |language | b | d | m | r | t | Time period |
 | :- | - | - | - | - | - | :- |
 | [Hieroglyphic](https://en.wikipedia.org/wiki/Egyptian_hieroglyphs) | 𓉐  | 𓉿  | 𓈖  | 𓁶 | 𓏴 | c. 3200 BC - AD 400 |
@@ -19,10 +21,13 @@ The following table compares five consonants in different scripts. With exceptio
 | [Devanagari](https://en.wikipedia.org/wiki/Devanagari) | ब | द | म | र | त | AD 100 (early) AD 700 - present |
 | [Tibetan](https://en.wikipedia.org/wiki/Tibetan_script) | བ | ད | མ | ར | ཏ | AD 650 - present |
 
+### Development of Latin script
+
 |language | b | d | m | r | t | Time period |
 | :- | - | - | - | - | - | :- |
-| Hieroglyphic | 𓉐  | 𓉿  | 𓈖  | 𓁶 | 𓏴  | c. 3200 BC - AD 400 |
-| Proto-Sinaitic[^proto_sinaitic] | <img src="Images/ProtoSinaitic-b.jpg" width="16px" /> | <img src="Images/ProtoSinaitic-d.jpg" width="16px" /> | <img src="Images/ProtoSinaitic-m.jpg" width="16px" /> | <img src="Images/ProtoSinaitic-r.jpg" width="16px" /> | <img src="Images/ProtoSinaitic-t.jpg" width="16px" /> | 1900 BC - 1500 BC |
+| [Hieroglyphic](https://en.wikipedia.org/wiki/Egyptian_hieroglyphs) | 𓉐  | 𓉿  | 𓈖  | 𓁶 | 𓏴 | c. 3200 BC - AD 400 |
+| [Proto-Sinaitic](https://en.wikipedia.org/wiki/Proto-Sinaitic_script)[^proto_sinaitic] | <img src="Images/ProtoSinaitic-b.jpg" width="16px" /> | <img src="Images/ProtoSinaitic-d.jpg" width="16px" /> | <img src="Images/ProtoSinaitic-m.jpg" width="16px" /> | <img src="Images/ProtoSinaitic-r.jpg" width="16px" /> | <img src="Images/ProtoSinaitic-t.jpg" width="16px" /> | 1900 BC - 1500 BC |
+| [Phoenician](https://en.wikipedia.org/wiki/Phoenician_alphabet) | 𐤁 | 𐤃 | 𐤌 | 𐤓 | 𐤕 | 1050 BC - 150 BC |
 | [Greek](https://en.wikipedia.org/wiki/Greek_alphabet) | Β | Δ | Μ | Ρ | Τ | 800 BC - present |
 | [Old Italic](https://en.wikipedia.org/wiki/Old_Italic_scripts) | 𐌁 | 𐌃 | 𐌌 | 𐌓 | 𐌕 | 700 BC - 100 BC |
 | [Latin](https://en.wikipedia.org/wiki/Latin_script) | B | D | M | R | T | 700 BC - present |
@@ -30,6 +35,9 @@ The following table compares five consonants in different scripts. With exceptio
 [^proto_sinaitic]: Not yet (2022-05) part of Unicode, glyphs from: <https://omniglot.com/writing/protosinaitc.htm>
 [^gupta]: Not yet (2022-05) part of Unicode, glyphs from: <https://en.wikipedia.org/wiki/Gupta_script> by: <https://commons.wikimedia.org/wiki/User:Mhss>
 [^nagari]: Not part of Unicode, considered variant of Devanagari, glyphs from <https://en.wikipedia.org/wiki/N%C4%81gar%C4%AB_script> by: <https://commons.wikimedia.org/w/index.php?title=User:Benedettou&action=edit&redlink=1>
+
+
+### Inter-relations
 
 ```{mermaid}
 graph TD;  
@@ -46,7 +54,8 @@ LD-->LE(Gupta);
 LE-->LF(Siddhaṃ);
 LF-->LG(Nāgarī);
 LG-->LH(Devanagari);
-LH-->LI(Tibetan script);
+LG-->LI;
+LH-.->LI(Tibetan script);
 LA-->LK(Greek alphabet 800 BC - present);
 LK-->LL(Old Italic script 700 BC - 100 BC);
 LL-->LM(Latin alphabet 700 BC - present);
@@ -55,7 +64,6 @@ BB-.->BA;
 BB-.->CA;
 LB-.->LL;
 LE-.->LI;
-LG-.->LI;
 ```
 Source: compiled from Wikipedia 2022-05
 
