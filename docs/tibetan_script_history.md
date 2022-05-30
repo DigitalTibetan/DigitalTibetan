@@ -29,7 +29,8 @@ The following table compares five consonants in different scripts. With exceptio
 [^proto_sinaitic]: Not yet (2022-05) part of Unicode, glyphs from: <https://omniglot.com/writing/protosinaitc.htm>
 [^gupta]: Not yet (2022-05) part of Unicode, glyphs from: <https://en.wikipedia.org/wiki/Gupta_script> by: <https://commons.wikimedia.org/wiki/User:Mhss>
 [^nagari]: Not part of Unicode, considered variant of Devanagari, glyphs from <https://en.wikipedia.org/wiki/N%C4%81gar%C4%AB_script> by: <https://commons.wikimedia.org/w/index.php?title=User:Benedettou&action=edit&redlink=1>
-```mermaid
+
+```{mermaid}
 graph TD;  
 BA(Megalithic graffiti symbols)-.->BB(Indus script 3500 BC - 1900 BC);
 
