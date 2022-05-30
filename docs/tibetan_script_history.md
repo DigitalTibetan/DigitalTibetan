@@ -55,6 +55,7 @@ BB-.->BA;
 BB-.->CA;
 LB-.->LL;
 LE-.->LI;
+LG-.->LI;
 ```
 Source: compiled from Wikipedia 2022-05
 
