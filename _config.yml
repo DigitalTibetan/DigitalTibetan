@@ -23,6 +23,11 @@ html:
   use_issue_button : true
 
 sphinx:
+  # mermaid_params = ['--theme', 'forest', '--width', '600', '--backgroundColor', 'transparent']
+  config:
+    mermaid_params: 
+      - --width 
+      - 100%
   extra_extensions:
     - sphinxcontrib.mermaid
 #   config:
