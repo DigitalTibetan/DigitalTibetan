@@ -1,4 +1,4 @@
-# 2022-04: Google translation for Tibetan in preparation 
+# 2022-04: Tibetan machine translation
 
 Google is currently looking for support to train the upcoming translation technology. Can you help?
 
@@ -12,6 +12,5 @@ Google is currently looking for support to train the upcoming translation techno
 > 2. Hit Contribute
 > 3. Select Sanskrit from the dropdown - Continue
 > 4. Choose English to Tibetan then pick either Validate or Translate option or Evaluate option.[^1]
-
 
 [^1]: From: <https://support.google.com/translate/thread/157766495/how-do-i-add-tibetan-language-in-google-translate?hl=en>

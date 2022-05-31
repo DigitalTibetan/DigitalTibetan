@@ -1,4 +1,4 @@
-# Working with Windows and Tibetan script
+# Windows and Tibetan script
 
 (fonts_windows)=
 ## Windows Tibetan fonts

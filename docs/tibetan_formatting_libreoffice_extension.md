@@ -1,4 +1,4 @@
-# Tibetan Formatting LibreOffice Extension
+# LibreOffice Extension
 
 ## Introduction
 

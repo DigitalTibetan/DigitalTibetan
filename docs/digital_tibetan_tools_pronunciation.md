@@ -1,4 +1,4 @@
-# Digital Tibetan Tools: Tibetan pronunciation and phonetics
+# Tibetan phonetics tools
 
 Tibetan pronunciation is difficult to approximate. There are several different systems for phonetizing Tibetan according to target language and phonetics system. The most comprehensive tool is the online-converter by Roger Espel:
 

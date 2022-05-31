@@ -1,4 +1,4 @@
-# An overview of different Tibetan keyboards
+# Tibetan keyboards
 
 ```{warning}
 Keyboards are a primary attack vector on computer integrity. Never, ever install keyboards from unvalidated sources, neither on computer nor on mobile.

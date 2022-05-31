@@ -1,4 +1,4 @@
-# Digital Tibetan Tools: Conversion between EWTS-Wylie and Unicode
+# Wylie conversion
 
 For introduction how EWTS Wylie works, see [Teaching EWTS](https://www.thlib.org/reference/transliteration/teachingewts.pdf) by Alexandru Anton-Luca. If you want to learn, how to work with Tibetan computer keyboards, this is a useful resource.
 

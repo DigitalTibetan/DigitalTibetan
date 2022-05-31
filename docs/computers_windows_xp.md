@@ -1,4 +1,4 @@
-# How to prepare a Computer running Windows XP for Tibetan Editing
+# Windows XP and Tibetan
 
 ```{warning}
 Windows XP is a very old operating system, no longer supported by Microsoft. If your computer is less than 10 years old, you probably want to check the [main Windows article](computers_windows.md)
