@@ -1,5 +1,6 @@
 # Working with Windows and Tibetan script
 
+(fonts_windows)=
 ## Windows Tibetan fonts
 
 Windows comes with a Tibetan font that has a very unusual property: it can render arbitrary complex Tibetan stacks (e.g. Sanskrit mantras) 'on the fly' without the requirement that a specific glyph is already part of the font. 

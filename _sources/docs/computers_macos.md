@@ -2,7 +2,7 @@
 
 Tibetan support works equally well for old Intel Macs and the new Apple Silicon based Macs.
 
-(macos_fonts)=
+(fonts_macos)=
 ## Fonts
 
 The Mac comes with Tibetan fonts preinstalled. 

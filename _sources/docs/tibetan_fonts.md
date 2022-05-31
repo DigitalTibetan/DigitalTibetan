@@ -33,6 +33,11 @@ The following list contains a number of fonts with good coverage of the most com
 | Noto Sans Tibetan | ![Noto Sans Tibetan](Images/Font_Noto_Sans_Tibetan.jpg) | 1296 | Subset based on outdated version of Google's Serif Tibetan, do not use. |
 
 [^bug]: Current release-version of `Noto Serif Tibetan`, version 2.001, renders the glyph དྡྷི incorrectly. A fix is available at [noto development repository](https://github.com/googlefonts/noto-fonts/issues/2362#:~:text=https%3A//github.com/googlefonts/noto%2Dfonts/blob/main/hinted/ttf/NotoSerifTibetan/NotoSerifTibetan%2DRegular.ttf). See discussion at [bug report](https://github.com/googlefonts/noto-fonts/issues/2362).
+
+## OS-specific fonts
+
+* [macOS only fonts Kokonor, Kailasa](fonts_macos)
+* [Windows only fonts, Himalaya](fonts_windows)
 ## Remarks and History
 
 [Chris Fynn](https://sites.google.com/view/chrisfynn/home) was one of the first Unicode font pioneers. His fonts Jomolhari and DDC Uchen, available with free Open SIL licenses, where the basis of many developments.
