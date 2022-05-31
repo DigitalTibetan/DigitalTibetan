@@ -2,15 +2,10 @@
 
 Welcome to the Digital Tibetan v3.0
 
-```{warning}
-The Project is in a very early stage.
-
-**URLs will still change!**
-```
-
 ```{note}
-This site will become in time the successor for the old DigitalTibetan v2.0 Mediawiki site.
-An archived version of the old site is still available at [archive.org DigitalTibetan](https://web.archive.org/web/20210502044931/http://www.digitaltibetan.org/index.php/Digital_Tibetan)
+While this project is still incomplete and under development, it will at some point in time become the successor for the old DigitalTibetan v2.0 Mediawiki site.
+
+An archived version of the old DigitalTibetan site is still available at [archive.org DigitalTibetan](https://web.archive.org/web/20210502044931/http://www.digitaltibetan.org/index.php/Digital_Tibetan)
 ```
 
 **Contribute!** Simply select the Github-icon ( on of the icons on the top-right) and 'suggest an edit'. No worries, you can't break things, since each edit will be reviewed before going life. For more details see [Contribution](contribute) below.
