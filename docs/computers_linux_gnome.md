@@ -1,4 +1,4 @@
-# Working with Linux Gnome and Tibetan script
+# Linux Gnome and Tibetan script
 
 ## Tibetan keyboards
 

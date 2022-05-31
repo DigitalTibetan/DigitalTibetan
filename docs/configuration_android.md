@@ -1,5 +1,4 @@
-# How to configure Android mobiles
-
+# Android and Tibetan
 
 ```{warning}
 Installing a third-party keyboard on Android is a significant security risk! Do not install keyboard from unknown or untrusted sources. Once a keyboard is installed, the producer of that keyboard has basically potentially access to everything you do on your mobile device.

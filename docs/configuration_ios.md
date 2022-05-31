@@ -1,4 +1,4 @@
-# How to configure Apple iOS (iPhone, iPad) for Tibetan
+# iOS (iPhone, iPad) and Tibetan
 
 Apple iOS comes with a Tibetan font and can display Tibetan in all apps without any configuration. 
 
