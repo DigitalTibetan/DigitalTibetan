@@ -1,4 +1,4 @@
-# Working with macOS and Tibetan script
+# macOS and Tibetan script
 
 Tibetan support works equally well for old Intel Macs and the new Apple Silicon based Macs.
 

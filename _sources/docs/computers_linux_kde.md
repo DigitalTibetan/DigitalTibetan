@@ -1,4 +1,4 @@
-# Working with Linux KDE and Tibetan script
+# Linux KDE and Tibetan script
 
 ## Tibetan keyboards
 

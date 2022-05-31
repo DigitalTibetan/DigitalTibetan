@@ -1,4 +1,4 @@
-# How to work with Sanskrit diacritics
+# Sanskrit transliteration
 
 TBD.
 ## Conversion between transliteration systems and Devanagari
