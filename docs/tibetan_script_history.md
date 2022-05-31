@@ -4,11 +4,14 @@ While Tibetan script is (remotely) related to Western Latin script via there com
 
 ## Script development
 
-The following table compares five consonants in different scripts. With exception of Proto-Sinaitic, Gupta, and Nāgarī all display requires the corresponding Unicode fonts being installed.
+The following table compares five consonants in different scripts. With exception of Proto-Sinaitic, Gupta, and Nāgarī (which are images), correct display requires the corresponding Unicode fonts being installed. If fonts are missing (visible as a row in the table just being placeholder-boxes), it's easiest to install the [Noto family](https://fonts.google.com/noto) of fonts.
 
+(tibetan_script_development)=
 ### Development of Tibetan script
 
-|language | b | d | m | r | t | Time period |
+This table shows the development of consonants `b`, `d`, `m`, `r`, and `t`:
+
+| Script | b | d | m | r | t | Time period |
 | :- | - | - | - | - | - | :- |
 | [Hieroglyphic](https://en.wikipedia.org/wiki/Egyptian_hieroglyphs) | 𓉐  | 𓉿  | 𓈖  | 𓁶 | 𓏴 | c. 3200 BC - AD 400 |
 | [Proto-Sinaitic](https://en.wikipedia.org/wiki/Proto-Sinaitic_script)[^proto_sinaitic] | <img src="Images/ProtoSinaitic-b.jpg" width="16px" /> | <img src="Images/ProtoSinaitic-d.jpg" width="16px" /> | <img src="Images/ProtoSinaitic-m.jpg" width="16px" /> | <img src="Images/ProtoSinaitic-r.jpg" width="16px" /> | <img src="Images/ProtoSinaitic-t.jpg" width="16px" /> | 1900 BC - 1500 BC |
@@ -21,9 +24,13 @@ The following table compares five consonants in different scripts. With exceptio
 | [Devanagari](https://en.wikipedia.org/wiki/Devanagari) | ब | द | म | र | त | AD 100 (early) AD 700 - present |
 | [Tibetan](https://en.wikipedia.org/wiki/Tibetan_script) | བ | ད | མ | ར | ཏ | AD 650 - present |
 
+According to William Woodville Rockhill,[^nagari_origin] Tibetan was development von Nāgarī script: The 7th century Tibetan king Songtsen Gampo ordered that all foreign books be transcribed into Tibetan language, and sent his ambassador Tonmi Sambota to India to acquire alphabet and writing methods, who returned with Sanskrit Nāgarī script from Kashmir corresponding to 24 Tibetan sounds and innovating new symbols for 6 local sounds. [_Wikipedia_](https://en.wikipedia.org/wiki/N%C4%81gar%C4%AB_script)
+
+[^nagari_origin]: William Woodville Rockhill, [_Annual Report of the Board of Regents of the Smithsonian Institution_](https://books.google.com/books?id=avFDAQAAMAAJ&pg=PA671), p. 671, at Google Books, United States National Museum, page 671.
+
 ### Development of Latin script
 
-|language | b | d | m | r | t | Time period |
+| Script | b | d | m | r | t | Time period |
 | :- | - | - | - | - | - | :- |
 | [Hieroglyphic](https://en.wikipedia.org/wiki/Egyptian_hieroglyphs) | 𓉐  | 𓉿  | 𓈖  | 𓁶 | 𓏴 | c. 3200 BC - AD 400 |
 | [Proto-Sinaitic](https://en.wikipedia.org/wiki/Proto-Sinaitic_script)[^proto_sinaitic] | <img src="Images/ProtoSinaitic-b.jpg" width="16px" /> | <img src="Images/ProtoSinaitic-d.jpg" width="16px" /> | <img src="Images/ProtoSinaitic-m.jpg" width="16px" /> | <img src="Images/ProtoSinaitic-r.jpg" width="16px" /> | <img src="Images/ProtoSinaitic-t.jpg" width="16px" /> | 1900 BC - 1500 BC |
