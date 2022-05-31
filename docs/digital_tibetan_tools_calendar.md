@@ -1,4 +1,4 @@
-# Digital Tibetan Tools: Tibetan calendar
+# Tibetan calendar tools
 
 ```{image} Images/tibetan_calendar_tool.jpg
 :align: right
