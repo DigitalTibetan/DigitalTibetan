@@ -34,9 +34,13 @@ The following list contains a number of fonts with good coverage of the most com
 
 [^bug]: Current release-version of `Noto Serif Tibetan`, version 2.001, renders the glyph དྡྷི incorrectly. A fix is available at [noto development repository](https://github.com/googlefonts/noto-fonts/issues/2362#:~:text=https%3A//github.com/googlefonts/noto%2Dfonts/blob/main/hinted/ttf/NotoSerifTibetan/NotoSerifTibetan%2DRegular.ttf). See discussion at [bug report](https://github.com/googlefonts/noto-fonts/issues/2362).
 
-<br>
+### Text samples
 
-| Samples | Samples |
+Longer text samples, created with Scribus.
+* [Scribus document](https://digitaltibetan.github.io/DigitalTibetan/TibTest.sla)
+* [PDF version](https://digitaltibetan.github.io/DigitalTibetan/TibTest.pdf)
+
+| Samples |  |
 | ------- | ------- |
 | ![Tibetan Machine Uni](Images/TextSample_TibetanMachineUni.jpg) | ![DDC Uchen](Images/TextSample_DDCUchen.jpg) |
 | ![Jomolhari](Images/TextSample_Jomolhari.jpg) | ![Babelstone Tibetan](Images/TextSample_BabelstoneTibetan.jpg) |
@@ -44,27 +48,46 @@ The following list contains a number of fonts with good coverage of the most com
 
 ## Qomolangma Tibetan Unicode Fonts
 
-These fonts are [free for non-commercial use](http://www.yalasoo.com/English/docs/yalasoo_en_qomolangma_fonts.html) only:
+These fonts are [free for non-commercial use](http://www.yalasoo.com/English/docs/yalasoo_en_qomolangma_fonts.html) only.
+
+### Uchen fonts
 
 | Font name | Sample | Glyphs | Comment |
 | --------- | :----: | ------ | ------- |
-| Qomolangma-Art | ![Qomolangma-Art](Images/Font_Qomolangma_Art.jpg) | 1562 | Version 1.00 June 18, 2014, China Tibetology Research Center, Tashi Tsering and Wangdra Gyab |
-| Qomolangma-Betsu | ![Qomolangma-Betsu](Images/Font_Qomolangma_Betsu.jpg) | 1404 | Version 2.00, 2008, China Tibetology Research Center, Tashi Tsering and Wangdra Gyab |
-| Qomolangma-Chuyig | ![Qomolangma-Chuyig](Images/Font_Qomolangma_Chuyig.jpg) | 1655 | Version 2.00, 2009, China Tibetology Research Center, Tashi Tsering and Wangdra Gyab |
-| Qomolangma-Drutsa | ![Qomolangma-Drutsa](Images/Font_Qomolangma_Drutsa.jpg) | 1415 | Version 2.00, 2008, China Tibetology Research Center, Tashi Tsering and Wangdra Gyab |
-| Qomolangma-Dunhang | ![Qomolangma-Dunhang](Images/Font_Qomolangma_Dunhang.jpg) | 1562 | Version 1.00, 2015, China Tibetology Research Center, Tashi Tsering and Wangdra Gyab |
-| Qomolangma-Edict | ![Qomolangma-Edict](Images/Font_Qomolangma_Edict.jpg) | 1562 | Version 1.00, 2013, China Tibetology Research Center, Tashi Tsering and Wangdra Gyab |
-| Qomolangma-Horyig | ![Qomolangma-Horyig](Images/Font_Qomolangma_Horyig.jpg) | 1562 | Version 1.00, 2013, China Tibetology Research Center, Tashi Tsering and Wangdra Gyab |
 | Qomolangma-Subtitle | ![Qomolangma-Subtitle](Images/Font_Qomolangma_Subtitle.jpg) | 1561 | Version 1.00, 2013, China Tibetology Research Center, Tashi Tsering and Wangdra Gyab |
 | Qomolangma-Title | ![Qomolangma-Title](Images/Font_Qomolangma_Title.jpg) | 1561 | Version 1.00, 2013, China Tibetology Research Center, Tashi Tsering and Wangdra Gyab |
-| Qomolangma-Tsumachu | ![Qomolangma-Tsumachu](Images/Font_Qomolangma_Tsumachu.jpg) | 1526 | Version 2.00, 2008, China Tibetology Research Center, Tashi Tsering and Wangdra Gyab |
-| Qomolangma-Tsuring | ![Qomolangma-Tsuring](Images/Font_Qomolangma_Tsuring.jpg) | 1562 | Version 2.00, 2008, China Tibetology Research Center, Tashi Tsering and Wangdra Gyab |
-| Qomolangma-Tsutong | ![Qomolangma-Tsutong](Images/Font_Qomolangma_Tsutong.jpg) | 1562 | Version 2.00, 2008, China Tibetology Research Center, Tashi Tsering and Wangdra Gyab |
 | Qomolangma-Uchen Sarchen | ![Qomolangma-Uchen Sarchen](Images/Font_Qomolangma_Uchen_Sarchen.jpg) | 1563 | Version 2.00, 2008, China Tibetology Research Center, Tashi Tsering and Wangdra Gyab |
 | Qomolangma-Uchen Sarchung | ![Qomolangma-Uchen Sarchung](Images/Font_Qomolangma_Uchen_Sarchung.jpg) | 1563 | Version 2.00, 2008, China Tibetology Research Center, Tashi Tsering and Wangdra Gyab |
 | Qomolangma-Uchen Suring | ![Qomolangma-Uchen Suring](Images/Font_Qomolangma_Uchen_Suring.jpg) | 1564 | Version 2.00, 2009, China Tibetology Research Center, Tashi Tsering and Wangdra Gyab |
 | Qomolangma-Uchen Sutung | ![Qomolangma-Uchen Sutung](Images/Font_Qomolangma_Uchen_Sutung.jpg) | 1477 | Version 2.00, 2008, China Tibetology Research Center, Tashi Tsering and Wangdra Gyab |
+
+### Artistic variations
+
+| Font name | Sample | Glyphs | Comment |
+| --------- | :----: | ------ | ------- |
+| Qomolangma-Art | ![Qomolangma-Art](Images/Font_Qomolangma_Art.jpg) | 1562 | Version 1.00 June 18, 2014, China Tibetology Research Center, Tashi Tsering and Wangdra Gyab |
+| Qomolangma-Dunhang | ![Qomolangma-Dunhang](Images/Font_Qomolangma_Dunhang.jpg) | 1562 | Version 1.00, 2015, China Tibetology Research Center, Tashi Tsering and Wangdra Gyab |
 | Qomolangma-Woodblock | ![Qomolangma-Woodblock](Images/Font_Qomolangma_Woodblock.jpg) | 1561 | Version 2.00, 2014, China Tibetology Research Center, Tashi Tsering and Wangdra Gyab |
+
+### Cursive variants
+
+See [Tibetan calligraphy](https://en.wikipedia.org/wiki/Tibetan_calligraphy).
+
+| Font name | Sample | Glyphs | Comment |
+| --------- | :----: | ------ | ------- |
+| Qomolangma-Betsu | ![Qomolangma-Betsu](Images/Font_Qomolangma_Betsu.jpg) | 1404 | Version 2.00, 2008, China Tibetology Research Center, Tashi Tsering and Wangdra Gyab |
+| Qomolangma-Chuyig | ![Qomolangma-Chuyig](Images/Font_Qomolangma_Chuyig.jpg) | 1655 | Version 2.00, 2009, China Tibetology Research Center, Tashi Tsering and Wangdra Gyab |
+| Qomolangma-Drutsa | ![Qomolangma-Drutsa](Images/Font_Qomolangma_Drutsa.jpg) | 1415 | Version 2.00, 2008, China Tibetology Research Center, Tashi Tsering and Wangdra Gyab |
+| Qomolangma-Edict | ![Qomolangma-Edict](Images/Font_Qomolangma_Edict.jpg) | 1562 | Version 1.00, 2013, China Tibetology Research Center, Tashi Tsering and Wangdra Gyab |
+| Qomolangma-Tsumachu | ![Qomolangma-Tsumachu](Images/Font_Qomolangma_Tsumachu.jpg) | 1526 | Version 2.00, 2008, China Tibetology Research Center, Tashi Tsering and Wangdra Gyab |
+| Qomolangma-Tsuring | ![Qomolangma-Tsuring](Images/Font_Qomolangma_Tsuring.jpg) | 1562 | Version 2.00, 2008, China Tibetology Research Center, Tashi Tsering and Wangdra Gyab |
+| Qomolangma-Tsutong | ![Qomolangma-Tsutong](Images/Font_Qomolangma_Tsutong.jpg) | 1562 | Version 2.00, 2008, China Tibetology Research Center, Tashi Tsering and Wangdra Gyab |
+
+### Mongolian, phag-pa (Tibetan variant)
+
+| Font name | Sample | Glyphs | Comment |
+| --------- | :----: | ------ | ------- |
+| Qomolangma-Horyig | ![Qomolangma-Horyig](Images/Font_Qomolangma_Horyig.jpg) | 1562 | Version 1.00, 2013, China Tibetology Research Center, Tashi Tsering and Wangdra Gyab, see [Phag-pa](https://en.wikipedia.org/wiki/%CA%BCPhags-pa_script) |
 
 ## OS-specific fonts
 

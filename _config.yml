@@ -30,9 +30,8 @@ html:
 sphinx:
   # mermaid_params = ['--theme', 'forest', '--width', '600', '--backgroundColor', 'transparent']
   config:
-    mermaid_params: 
-      - --width 
-      - 100%
+    mermaid_params: ['--width', '100%']
+    html_extra_path: ['resources']
   extra_extensions:
     - sphinxcontrib.mermaid
 #   config:
