@@ -24,11 +24,20 @@ This table shows the development of consonants `b`, `d`, `m`, `r`, and `t`:
 | [Devanagari](https://en.wikipedia.org/wiki/Devanagari) | ब | द | म | र | त | AD 100 (early) AD 700 - present |
 | [Tibetan](https://en.wikipedia.org/wiki/Tibetan_script) | བ | ད | མ | ར | ཏ | AD 650 - present |
 
-According to William Woodville Rockhill,[^nagari_origin] Tibetan was development von Nāgarī script: The 7th century Tibetan king Songtsen Gampo ordered that all foreign books be transcribed into Tibetan language, and sent his ambassador Tonmi Sambota to India to acquire alphabet and writing methods, who returned with Sanskrit Nāgarī script from Kashmir corresponding to 24 Tibetan sounds and innovating new symbols for 6 local sounds. [_Wikipedia_](https://en.wikipedia.org/wiki/N%C4%81gar%C4%AB_script)
+According to William Woodville Rockhill,[^nagari_origin] Tibetan was developed based on Nāgarī script: 
+
+> The 7th century Tibetan king Songtsen Gampo ordered that all foreign books be transcribed into Tibetan language, and sent his ambassador Tonmi Sambota to India to acquire alphabet and writing methods, who returned with Sanskrit Nāgarī script from Kashmir corresponding to 24 Tibetan sounds and innovating new symbols for 6 local sounds. [_Wikipedia_](https://en.wikipedia.org/wiki/N%C4%81gar%C4%AB_script)
 
 [^nagari_origin]: William Woodville Rockhill, [_Annual Report of the Board of Regents of the Smithsonian Institution_](https://books.google.com/books?id=avFDAQAAMAAJ&pg=PA671), p. 671, at Google Books, United States National Museum, page 671.
 
-### Development of Latin script
+### For comparison: development of Latin script
+
+The common ancestor of all alphabetic system based scripts is Proto-Sinaitic. Additionally, Old Italic was influenced by Phoenician:[^old_italic_phoenician]
+
+> Proto-Sinaitic is considered the earliest trace of alphabetic writing and the common ancestor of both the Ancient South Arabian script and the Phoenician alphabet, which led to many modern alphabets including the Greek alphabet.[^proto_sinaitic_alphabet]
+
+[^old_italic_phoenician]: The Old Italic alphabets clearly derive from the Phoenician alphabet, although the precise chain of cultural transmission is unknown. [(WP)](https://en.wikipedia.org/wiki/Old_Italic_scripts)
+[^proto_sinaitic_alphabet]: See <https://en.wikipedia.org/wiki/Proto-Sinaitic_script>
 
 | Script | b | d | m | r | t | Time period |
 | :- | - | - | - | - | - | :- |
@@ -38,6 +47,7 @@ According to William Woodville Rockhill,[^nagari_origin] Tibetan was development
 | [Greek](https://en.wikipedia.org/wiki/Greek_alphabet) | Β | Δ | Μ | Ρ | Τ | 800 BC - present |
 | [Old Italic](https://en.wikipedia.org/wiki/Old_Italic_scripts) | 𐌁 | 𐌃 | 𐌌 | 𐌓 | 𐌕 | 700 BC - 100 BC |
 | [Latin](https://en.wikipedia.org/wiki/Latin_script) | B | D | M | R | T | 700 BC - present |
+| [Runes](https://en.wikipedia.org/wiki/Runes) | ᛒ | ᛞ | ᛗ | ᚱ | ᛏ | AD 150 - AD 1100 |
 
 [^proto_sinaitic]: Not yet (2022-05) part of Unicode, glyphs from: <https://omniglot.com/writing/protosinaitc.htm>
 [^gupta]: Not yet (2022-05) part of Unicode, glyphs from: <https://en.wikipedia.org/wiki/Gupta_script> by: <https://commons.wikimedia.org/wiki/User:Mhss>
@@ -66,6 +76,7 @@ LH-.->LI(Tibetan script);
 LA-->LK(Greek alphabet 800 BC - present);
 LK-->LL(Old Italic script 700 BC - 100 BC);
 LL-->LM(Latin alphabet 700 BC - present);
+LL-->LN(Runes AD 150 - AD 1100);
 BB-.->LD;
 BB-.->BA;
 BB-.->CA;
