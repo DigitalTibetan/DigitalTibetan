@@ -34,6 +34,14 @@ The following list contains a number of fonts with good coverage of the most com
 
 [^bug]: Current release-version of `Noto Serif Tibetan`, version 2.001, renders the glyph དྡྷི incorrectly. A fix is available at [noto development repository](https://github.com/googlefonts/noto-fonts/issues/2362#:~:text=https%3A//github.com/googlefonts/noto%2Dfonts/blob/main/hinted/ttf/NotoSerifTibetan/NotoSerifTibetan%2DRegular.ttf). See discussion at [bug report](https://github.com/googlefonts/noto-fonts/issues/2362).
 
+<br>
+
+| Samples | Samples |
+| ------- | ------- |
+| ![Tibetan Machine Uni](Images/TextSample_TibetanMachineUni.jpg) | ![DDC Uchen](Images/TextSample_DDCUchen.jpg) |
+| ![Jomolhari](Images/TextSample_Jomolhari.jpg) | ![Babelstone Tibetan](Images/TextSample_BabelstoneTibetan.jpg) |
+| ![Noto Serif Tibetan](Images/TextSample_NotoSerifTibetan.jpg)
+
 ## Qomolangma Tibetan Unicode Fonts
 
 These fonts are [free for non-commercial use](http://www.yalasoo.com/English/docs/yalasoo_en_qomolangma_fonts.html) only:
