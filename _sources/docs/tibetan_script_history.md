@@ -34,18 +34,6 @@ According to William Woodville Rockhill,[^nagari_origin] Tibetan was developed b
 [^nagari_origin]: William Woodville Rockhill, [_Annual Report of the Board of Regents of the Smithsonian Institution_](https://books.google.com/books?id=avFDAQAAMAAJ&pg=PA671), p. 671, at Google Books, United States National Museum, page 671.
 
 
-### Indus valley and Mesopotamia
-
-| Script | b | d | m | r | t | Time period |
-| :- | - | - | - | - | - | :- |
-| [Indus valley script](https://en.wikipedia.org/wiki/Indus_script) |  |  |  |  |  | BC 3500 - BC 1900 |
-| [Linear Elamite](https://en.wikipedia.org/wiki/Linear_Elamite) |  |  |  |  |  | BC 2300 - BC 1850 |
-| [Elamite Cuneiform](https://en.wikipedia.org/wiki/Elamite_cuneiform) |  |  |  |  |  | BC 2300 - BC 1850 |
-| [Sumerian Cuneiform](https://en.wikipedia.org/wiki/Cuneiform#Akkadian_cuneiform) |  |  |  |  |  | BC 2300 - BC 1850 |
-| [Akkadian Cuneiform](https://en.wikipedia.org/wiki/Cuneiform#Akkadian_cuneiform) |  |  |  |  |  | BC 2300 - BC 1850 |
-
-
-
 ### For comparison: development of Latin script
 
 The common ancestor of all alphabetic system based scripts is Proto-Sinaitic. Additionally, Old Italic was influenced by Phoenician:[^old_italic_phoenician]
@@ -94,14 +82,14 @@ It is however consensus that all alphabetic scripts have Proto-Sinaitic as commo
 [^gs2]: <https://en.wikipedia.org/wiki/Cuneiform#cite_note-38>
 [^gs3]: <https://en.wikipedia.org/wiki/Cuneiform#cite_note-39>
 [^short_history]: Ribur Ngawang Gyatso: [A Short History of Tibetan Script](https://www.jstor.org/stable/43300125).
-```{mermaid}
+```mermaid}
 graph TD;  
-BA(Megalithic graffiti symbols)-.->BB(Indus script<br><small>3500 BC - 1900 BC<small/>);
+BA(<a href='https://en.wikipedia.org/wiki/Megalithic_graffiti_symbols'>Megalithic graffiti symbols</a>)-.->BB(<a href='https://en.wikipedia.org/wiki/Indus_script'>Indus script</a><br><small>3500 BC - 1900 BC<small/>);
 
-CA(Linear Elamite script<br><small>3000 BC - 1850 BC</small>)-->CB(Cuneiform Elamite<br><small>3000 BC - 400 BC</small>);
+CA(<a href='https://en.wikipedia.org/wiki/Linear_Elamite'>Linear Elamite script</a><br><small>3000 BC - 1850 BC</small>)-->CB(<a href='https://en.wikipedia.org/wiki/Elamite_cuneiform'>Cuneiform Elamite</a><br><small>3000 BC - 400 BC</small>);
 CB-->CD(Cuneiform Sumerian);
 CD-->CE(Cuneiform Akkadian);
-L0A(Egyptian Hieroglyphs<br><small>3200 BC - AD 400</small>)-->LA(Proto-Sinaitic script<br><small>1900 BC - 1500 BC</small>);
+L0A(<a href='https://en.wikipedia.org/wiki/Egyptian_hieroglyphs'> Egyptian Hieroglyphs</a><br><small>3200 BC - AD 400</small>)-->LA(<a href='https://en.wikipedia.org/wiki/Proto-Sinaitic_script'>Proto-Sinaitic script</a><br><small>1900 BC - 1500 BC</small>);
 LA-->LB(Phoenician alphabet<br><small>1050 BC - 150 BC</small>);
 LB-->LC(Aramaic alphabet<br><small>800 BC - AD 600</small>);
 LC-->LD(Brāhmī<br><small>300 BC - AD 500</small>);
