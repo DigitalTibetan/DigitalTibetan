@@ -82,7 +82,7 @@ It is however consensus that all alphabetic scripts have Proto-Sinaitic as commo
 [^gs2]: <https://en.wikipedia.org/wiki/Cuneiform#cite_note-38>
 [^gs3]: <https://en.wikipedia.org/wiki/Cuneiform#cite_note-39>
 [^short_history]: Ribur Ngawang Gyatso: [A Short History of Tibetan Script](https://www.jstor.org/stable/43300125).
-```mermaid}
+```{mermaid}
 graph TD;  
 BA(<a href='https://en.wikipedia.org/wiki/Megalithic_graffiti_symbols'>Megalithic graffiti symbols</a>)-.->BB(<a href='https://en.wikipedia.org/wiki/Indus_script'>Indus script</a><br><small>3500 BC - 1900 BC<small/>);
 
