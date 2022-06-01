@@ -4,7 +4,7 @@ While Tibetan script is (remotely) related to Western Latin script via there com
 
 ## Script development
 
-The following table compares five consonants in different scripts. With exception of Proto-Sinaitic, Gupta, and Nāgarī (which are images), correct display requires the corresponding Unicode fonts being installed. If fonts are missing (visible as a row in the table just being placeholder-boxes), it's easiest to install the [Noto family](https://fonts.google.com/noto) of fonts.
+The following table compares five consonants in different scripts. With exception of Proto-Sinaitic, Gupta, Rañjanā, Lantsa, and Nāgarī (which are images due to not yet being part of Unicode), correct display requires the corresponding Unicode fonts being installed. If fonts are missing (visible as a row in the table just being placeholder-boxes), it's easiest to install the [Noto family](https://fonts.google.com/noto) of fonts.
 
 (tibetan_script_development)=
 ### Development of Tibetan script
