@@ -39,7 +39,11 @@ According to William Woodville Rockhill,[^nagari_origin] Tibetan was developed b
 | Script | b | d | m | r | t | Time period |
 | :- | - | - | - | - | - | :- |
 | [Indus valley script](https://en.wikipedia.org/wiki/Indus_script) |  |  |  |  |  | BC 3500 - BC 1900 |
-| 
+| [Linear Elamite](https://en.wikipedia.org/wiki/Linear_Elamite) |  |  |  |  |  | BC 2300 - BC 1850 |
+| [Elamite Cuneiform](https://en.wikipedia.org/wiki/Elamite_cuneiform) |  |  |  |  |  | BC 2300 - BC 1850 |
+| [Sumerian Cuneiform](https://en.wikipedia.org/wiki/Cuneiform#Akkadian_cuneiform) |  |  |  |  |  | BC 2300 - BC 1850 |
+| [Akkadian Cuneiform](https://en.wikipedia.org/wiki/Cuneiform#Akkadian_cuneiform) |  |  |  |  |  | BC 2300 - BC 1850 |
+
 
 
 ### For comparison: development of Latin script
@@ -69,11 +73,18 @@ The common ancestor of all alphabetic system based scripts is Proto-Sinaitic. Ad
 
 ### Inter-relations
 
-```mermaid
+Note: the relations between Hieroglyphs, Indus script, Proto-Sinaitic, and Cuneiform are subject of active research, and there are different theories on origins and relations between these scripts.
+
+Among current theories are:
+- Geoffrey Sampson stated that Egyptian hieroglyphs "came into existence a little after Sumerian script, and, probably, \[were\] invented under the influence of the latter",[$^*$](https://en.wikipedia.org/wiki/Cuneiform#cite_note-b1-37) and that it is "probable that the general idea of expressing words of a language in writing was brought to Egypt from Sumerian Mesopotamia".[$^*$](https://en.wikipedia.org/wiki/Cuneiform#cite_note-38)[$^*$](https://en.wikipedia.org/wiki/Cuneiform#cite_note-39)
+
+It is however consensus that all alphabetic scripts have Proto-Sinaitic as common ancestor.
+
+```{mermaid}
 graph TD;  
 BA(Megalithic graffiti symbols)-.->BB(Indus script<br><small>3500 BC - 1900 BC<small/>);
 
-CA(Linear Elamite script<br><small>2300 BC - 1850 BC</small>)-->CB(Cuneiform Elamite);
+CA(Linear Elamite script<br><small>3000 BC - 1850 BC</small>)-->CB(Cuneiform Elamite<br><small>3000 BC - 400 BC</small>);
 CB-->CD(Cuneiform Sumerian);
 CD-->CE(Cuneiform Akkadian);
 L0A(Egyptian Hieroglyphs<br><small>3200 BC - AD 400</small>)-->LA(Proto-Sinaitic script<br><small>1900 BC - 1500 BC</small>);
