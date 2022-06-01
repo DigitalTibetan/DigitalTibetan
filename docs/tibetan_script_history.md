@@ -89,14 +89,15 @@ LF-->LG(Nāgarī<br><small>AD 100 early, AD 700 - present</small>);
 LG-->LH(Devanagari<br><small>AD 100 early AD 700 - present</small>);
 LG-->LI;
 LH-.->LI(Tibetan script<br><small>AD 650 - present</small>);
-LI-->LI2(Mongolian 'phags pa script<br><small>AD 1300 - present</small>)
 LA-->LK(Greek alphabet<br><small>800 BC - present</small>);
 LK-->LL(Old Italic script<br><small>700 BC - 100 BC</small>);
 LL-->LM(Latin alphabet<br><small>700 BC - present</small>);
 LL-->LN(Runes<br><small>AD 150 - AD 1100</small>);
+LI-->LI2(Mongolian 'phags pa script<br><small>AD 1300 - present</small>)
 BB-.->LD;
 BB-.->BA;
 BB-.->CA;
+CA-.->BB;
 LB-.->LL;
 LE-.->LI;
 BB-.->LA;
