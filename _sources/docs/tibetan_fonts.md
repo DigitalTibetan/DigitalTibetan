@@ -22,9 +22,9 @@ The `Noto` and `Babelstone` families of fonts are currently under activate devel
 
 The following list contains a number of fonts with good coverage of the most common glyphs and open licenses.
 
-| Font name | Sample | Glyphs | Comment |
-| --------- | :----: | ------ | ------- |
-| [Tibetan Machine Uni](https://www.thlib.org/tools/scripts/wiki/tibetan%20machine%20uni.html) | ![Tibetan Machine Uni](Images/Font_Tibetan_Machine_Uni.jpg) | 5110 | Version 1.901 2007 (beta for v 2.00), one of the first Unicode fonts |
+| Font name | Sample                | Glyphs | Comment |
+| --------- | --------------------- | ------ | ------- |
+| [Tibetan Machine Uni](https://www.thlib.org/tools/scripts/wiki/tibetan%20machine%20uni.html) | <img src="Images/Font_Tibetan_Machine_Uni.jpg" alt="Tibetan Machine Uni" width=640px /> | 5110 | Version 1.901 2007 (beta for v 2.00), one of the first Unicode fonts |
 | [DDC Uchen](https://sites.google.com/view/chrisfynn/home/fonts/ddc-uchen) | ![DDC Uchen](Images/Font_Uchen.jpg) | 3193 | Version 1.000 preliminary, Chris Fynn's font |
 | [Jomolhari](https://sites.google.com/view/chrisfynn/home/fonts/jomolhari) | ![Jomolhari](Images/Font_Jomolhari.jpg) | 3333 |  Version 1.000, Chris Fynn's font |
 | [Babelstone Tibetan](https://www.babelstone.co.uk/Fonts/Download/BabelStoneTibetan.ttf) | ![Babelstone Tibetan](Images/Font_Babelstone_Tibetan.jpg) | 4019 | Version 10.008 April 21, 2022, extended version of Jomolhari |
@@ -32,7 +32,7 @@ The following list contains a number of fonts with good coverage of the most com
 | [Noto Serif Tibetan](https://fonts.google.com/noto/specimen/Noto+Serif+Tibetan?noto.query=tibetan&noto.lang=bo_Tibt&noto.continent=Asia&noto.script=Tibt) | ![Noto Serif Tibetan](Images/Font_Noto_Serif_Tibetan.jpg) | 1891 | Google's Noto font, with many different weights. Linked Release version 2.001 (2022) has bugs, see  comment[^bug] for a solution. |
 | Noto Sans Tibetan | ![Noto Sans Tibetan](Images/Font_Noto_Sans_Tibetan.jpg) | 1296 | Subset based on outdated version of Google's Serif Tibetan, do not use. |
 
-[^bug]: Current release-version of `Noto Serif Tibetan`, version 2.001, renders the glyph དྡྷི incorrectly. A fix is available at [noto development repository](https://github.com/googlefonts/noto-fonts/issues/2362#:~:text=https%3A//github.com/googlefonts/noto%2Dfonts/blob/main/hinted/ttf/NotoSerifTibetan/NotoSerifTibetan%2DRegular.ttf). See discussion at [bug report](https://github.com/googlefonts/noto-fonts/issues/2362).
+[^bug]: Current (2022-06) release-version of `Noto Serif Tibetan`, version 2.001, renders the glyph དྡྷི incorrectly. A fix is available at [noto development repository](https://github.com/googlefonts/noto-fonts/issues/2362#:~:text=https%3A//github.com/googlefonts/noto%2Dfonts/blob/main/hinted/ttf/NotoSerifTibetan/NotoSerifTibetan%2DRegular.ttf). See discussion at [bug report](https://github.com/googlefonts/noto-fonts/issues/2362).
 
 ### Text samples
 
@@ -83,11 +83,14 @@ See [Tibetan calligraphy](https://en.wikipedia.org/wiki/Tibetan_calligraphy).
 | Qomolangma-Tsuring | ![Qomolangma-Tsuring](Images/Font_Qomolangma_Tsuring.jpg) | 1562 | Version 2.00, 2008, China Tibetology Research Center, Tashi Tsering and Wangdra Gyab |
 | Qomolangma-Tsutong | ![Qomolangma-Tsutong](Images/Font_Qomolangma_Tsutong.jpg) | 1562 | Version 2.00, 2008, China Tibetology Research Center, Tashi Tsering and Wangdra Gyab |
 
-### Mongolian, phag-pa (Tibetan variant)
+### Mongolian, `'phags-pa` (Tibetan variant)
 
-| Font name | Sample | Glyphs | Comment |
-| --------- | :----: | ------ | ------- |
-| Qomolangma-Horyig | ![Qomolangma-Horyig](Images/Font_Qomolangma_Horyig.jpg) | 1562 | Version 1.00, 2013, China Tibetology Research Center, Tashi Tsering and Wangdra Gyab, see [Phag-pa](https://en.wikipedia.org/wiki/%CA%BCPhags-pa_script) |
+| Qomolangma-horyig |  |  |
+| ----------------- | :- | - |
+| <img src="Images/Font_Qomolangma_Horyig.jpg" width="30px" /> | **Qomolangma-horyig**<br><br>A vertical `'phags pa ` script that uses Tibetan letters. 1562 glyphs. Version 1.00, 2013, China Tibetology Research Center, Tashi Tsering and Wangdra Gyab, see [`'Phags-pa`](https://en.wikipedia.org/wiki/%CA%BCPhags-pa_script) | <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Liu_Yigong_1324.jpg" width=240px /><br>A `'phags pa` inscriptions on an Italian tombstone of the 14th century.[^jesus_silkroad][^mongol_western] |
+
+[^jesus_silkroad]: ([Jesus on the Silk Road by Dale A. Johnson p.73](https://books.google.com/books?id=kWTDfRythVkC&pg=PA73))
+[^mongol_western]: [Mongol elements in Western medieval art](https://en.wikipedia.org/wiki/Mongol_elements_in_Western_medieval_art)
 
 ## OS-specific fonts
 
@@ -102,6 +105,8 @@ See [Tibetan calligraphy](https://en.wikipedia.org/wiki/Tibetan_calligraphy).
 [The Tibetan & Himalayan Library](https://www.thlib.org/tools/scripts/wiki/tibetan%20machine%20uni.html) at Virginia University had bought the rights on the proprietary Tibetan Machine font with help of the Trace Foundation and made it freely available as one of the first Unicode fonts.
 
 [Google's Noto font family](https://fonts.google.com/noto/specimen/Noto+Serif+Tibetan) provides Tibetan support and free support for virtually every language on earth for a large number of platforms.
+
+[The Qomolangma font project](http://www.yalasoo.com/English/docs/yalasoo_en_qomolangma_fonts.html) at Yalasoo, created with support by the Central Tibetan Relief Committee, [CTRC](https://centraltibetanreliefcommittee.net/).
 
 ## External sources
 
