@@ -23,6 +23,7 @@ This table shows the development of consonants `b`, `d`, `m`, `r`, and `t`:
 | [Nāgarī](https://en.wikipedia.org/wiki/N%C4%81gar%C4%AB_script)[^nagari] | <img src="Images/Nagari_b.jpg" width="12px" /> | <img src="Images/Nagari_d.jpg" width="12px" /> | <img src="Images/Nagari_m.jpg" width="12px" /> | <img src="Images/Nagari_r.jpg" width="12px" /> | <img src="Images/Nagari_t.jpg" width="12px" /> | AD 100 (early), AD 700 - present
 | [Devanagari](https://en.wikipedia.org/wiki/Devanagari) | ब | द | म | र | त | AD 100 (early) AD 700 - present |
 | [Tibetan](https://en.wikipedia.org/wiki/Tibetan_script) | བ | ད | མ | ར | ཏ | AD 650 - present |
+| [Mongolian `'phags pa`](https://en.wikipedia.org/wiki/%CA%BCPhags-pa_script) | ꡎ | ꡊ | ꡏ | ꡘ | ꡈ | (turn 90&deg; clockwise!) AD 1300 - present |
 
 According to William Woodville Rockhill,[^nagari_origin] Tibetan was developed based on Nāgarī script: 
 
@@ -58,25 +59,26 @@ The common ancestor of all alphabetic system based scripts is Proto-Sinaitic. Ad
 
 ```{mermaid}
 graph TD;  
-BA(Megalithic graffiti symbols)-.->BB(Indus script 3500 BC - 1900 BC);
+BA(Megalithic graffiti symbols)-.->BB(Indus script<br><small>3500 BC - 1900 BC<small/>);
 
-CA(Linear Elamite script 2300 BC - 1850 BC)-->CB(Cuneiform Elamite);
+CA(Linear Elamite script<br><small>2300 BC - 1850 BC</small>)-->CB(Cuneiform Elamite);
 CB-->CD(Cuneiform Sumerian);
 CD-->CE(Cuneiform Akkadian);
-L0A(Egyptian Hieroglyphs 3200 BC - AD 400<br>)-->LA(Proto-Sinaitic script 1900 BC - 1500 BC);
-LA-->LB(Phoenician alphabet 1050 BC - 150 BC);
-LB-->LC(Aramaic alphabet 800 BC - AD 600);
-LC-->LD(Brāhmī 300 BC - AD 500);
+L0A(Egyptian Hieroglyphs<br><small>3200 BC - AD 400</small>)-->LA(Proto-Sinaitic script<br><small>1900 BC - 1500 BC</small>);
+LA-->LB(Phoenician alphabet<br><small>1050 BC - 150 BC</small>);
+LB-->LC(Aramaic alphabet<br><small>800 BC - AD 600</small>);
+LC-->LD(Brāhmī<br><small>300 BC - AD 500</small>);
 LD-->LE(Gupta);
 LE-->LF(Siddhaṃ);
 LF-->LG(Nāgarī);
 LG-->LH(Devanagari);
 LG-->LI;
 LH-.->LI(Tibetan script);
-LA-->LK(Greek alphabet 800 BC - present);
-LK-->LL(Old Italic script 700 BC - 100 BC);
-LL-->LM(Latin alphabet 700 BC - present);
-LL-->LN(Runes AD 150 - AD 1100);
+LI-->LI2(Mongolian 'phags pa script)
+LA-->LK(Greek alphabet<br><small>800 BC - present</small>);
+LK-->LL(Old Italic script<br><small>700 BC - 100 BC</small>);
+LL-->LM(Latin alphabet<br><small>700 BC - present</small>);
+LL-->LN(Runes<br><small>AD 150 - AD 1100</small>);
 BB-.->LD;
 BB-.->BA;
 BB-.->CA;
