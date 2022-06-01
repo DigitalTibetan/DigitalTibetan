@@ -25,7 +25,7 @@ This table shows the development of consonants `b`, `d`, `m`, `r`, and `t`:
 | [Nāgarī](https://en.wikipedia.org/wiki/N%C4%81gar%C4%AB_script)[^nagari] | <img src="Images/Nagari_b.jpg" width="12px" /> | <img src="Images/Nagari_d.jpg" width="12px" /> | <img src="Images/Nagari_m.jpg" width="12px" /> | <img src="Images/Nagari_r.jpg" width="12px" /> | <img src="Images/Nagari_t.jpg" width="12px" /> | AD 100 (early), AD 700 - present
 | [Devanagari](https://en.wikipedia.org/wiki/Devanagari) | ब | द | म | र | त | AD 100 (early) AD 700 - present |
 | [Tibetan](https://en.wikipedia.org/wiki/Tibetan_script) | བ | ད | མ | ར | ཏ | AD 650 - present |
-| [Mongolian `'phags pa`](https://en.wikipedia.org/wiki/%CA%BCPhags-pa_script) | ꡎ | ꡊ | ꡏ | ꡘ | ꡈ | (turn 90&deg; clockwise!) AD 1300 - present |
+| [Mongolian 'phags pa](https://en.wikipedia.org/wiki/%CA%BCPhags-pa_script) | ꡎ | ꡊ | ꡏ | ꡘ | ꡈ | (vertical script, turn 90&deg; clockwise!) AD 1300 - present |
 
 According to William Woodville Rockhill,[^nagari_origin] Tibetan was developed based on Nāgarī script: 
 
@@ -73,13 +73,27 @@ The common ancestor of all alphabetic system based scripts is Proto-Sinaitic. Ad
 
 ### Inter-relations
 
+### Open questions
+
 Note: the relations between Hieroglyphs, Indus script, Proto-Sinaitic, and Cuneiform are subject of active research, and there are different theories on origins and relations between these scripts.
 
 Among current theories are:
-- Geoffrey Sampson stated that Egyptian hieroglyphs "came into existence a little after Sumerian script, and, probably, \[were\] invented under the influence of the latter",[$^*$](https://en.wikipedia.org/wiki/Cuneiform#cite_note-b1-37) and that it is "probable that the general idea of expressing words of a language in writing was brought to Egypt from Sumerian Mesopotamia".[$^*$](https://en.wikipedia.org/wiki/Cuneiform#cite_note-38)[$^*$](https://en.wikipedia.org/wiki/Cuneiform#cite_note-39)
+- Geoffrey Sampson stated that Egyptian hieroglyphs "came into existence a little after Sumerian script, and, probably, \[were\] invented under the influence of the latter",[^gs1] and that it is "probable that the general idea of expressing words of a language in writing was brought to Egypt from Sumerian Mesopotamia".[^gs2][^gs3]
+
+#### Alternate theories on Tibetan scripts
+
+- According to Ribur Ngawang Gyatso[^short_history], Thonmi Sambota, being sent to India by Srongtsan Gampo to search for a script, upon his return to Tibet, formulated the Tibetan script from Lantsa and Vartu.
+
+Historical evidence however shows that a modified version of the Rañjanā script was adopted as Lantsa for use of creating Sanskrit titles.
+
+#### Current consensus
 
 It is however consensus that all alphabetic scripts have Proto-Sinaitic as common ancestor.
 
+[^gs1]: <https://en.wikipedia.org/wiki/Cuneiform#cite_note-b1-37>
+[^gs2]: <https://en.wikipedia.org/wiki/Cuneiform#cite_note-38>
+[^gs3]: <https://en.wikipedia.org/wiki/Cuneiform#cite_note-39>
+[^short_history]: Ribur Ngawang Gyatso: [A Short History of Tibetan Script](https://www.jstor.org/stable/43300125).
 ```{mermaid}
 graph TD;  
 BA(Megalithic graffiti symbols)-.->BB(Indus script<br><small>3500 BC - 1900 BC<small/>);
