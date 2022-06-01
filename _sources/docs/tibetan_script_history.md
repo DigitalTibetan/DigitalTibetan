@@ -87,26 +87,26 @@ graph TD;
 BA(<a href='https://en.wikipedia.org/wiki/Megalithic_graffiti_symbols'>Megalithic graffiti symbols</a>)-.->BB(<a href='https://en.wikipedia.org/wiki/Indus_script'>Indus script</a><br><small>3500 BC - 1900 BC<small/>);
 
 CA(<a href='https://en.wikipedia.org/wiki/Linear_Elamite'>Linear Elamite script</a><br><small>3000 BC - 1850 BC</small>)-->CB(<a href='https://en.wikipedia.org/wiki/Elamite_cuneiform'>Cuneiform Elamite</a><br><small>3000 BC - 400 BC</small>);
-CB-->CD(Cuneiform Sumerian);
-CD-->CE(Cuneiform Akkadian);
+CB-->CD(<a href='https://en.wikipedia.org/wiki/Cuneiform#Sumero-Akkadian_cuneiform'>Cuneiform Sumerian</a><br><small>2300 BC - 2000 BC</small>);
+CD-->CE(<a href='https://en.wikipedia.org/wiki/Cuneiform#Sumero-Akkadian_cuneiform'>Cuneiform Akkadian</a><br><small>2000 BC - 1800 BC</small>);
 L0A(<a href='https://en.wikipedia.org/wiki/Egyptian_hieroglyphs'> Egyptian Hieroglyphs</a><br><small>3200 BC - AD 400</small>)-->LA(<a href='https://en.wikipedia.org/wiki/Proto-Sinaitic_script'>Proto-Sinaitic script</a><br><small>1900 BC - 1500 BC</small>);
-LA-->LB(Phoenician alphabet<br><small>1050 BC - 150 BC</small>);
-LB-->LC(Aramaic alphabet<br><small>800 BC - AD 600</small>);
-LC-->LD(Brāhmī<br><small>300 BC - AD 500</small>);
-LD-->LE(Gupta<br><small>AD 400 - AD 600</small>);
-LE-->LF(Siddhaṃ<br><small>AD 600 - AD 1200</small>);
-LF-->LF2(Nepalese<br><small>AD 1100 - AD 1950</small>);
-LF2-->LF3(Rañjanā<br><small>AD 1100 - present</small>);
-LF3-->LF4(Lantsa, Lanthsa<br><small>AD 1100 - present</small>)
-LF-->LG(Nāgarī<br><small>AD 100 early, AD 700 - present</small>);
-LG-->LH(Devanagari<br><small>AD 100 early AD 700 - present</small>);
+LA-->LB(<a href='https://en.wikipedia.org/wiki/Phoenician_alphabet'>Phoenician alphabet</a><br><small>1050 BC - 150 BC</small>);
+LB-->LC(<a href='https://en.wikipedia.org/wiki/Aramaic_alphabet'>Aramaic alphabet</a><br><small>800 BC - AD 600</small>);
+LC-->LD(<a href='https://en.wikipedia.org/wiki/Brahmi_script'>Brāhmī</a><br><small>300 BC - AD 500</small>);
+LD-->LE(<a href='https://en.wikipedia.org/wiki/Gupta_script'>Gupta</a><br><small>AD 400 - AD 600</small>);
+LE-->LF(<a href='https://en.wikipedia.org/wiki/Siddha%E1%B9%83_script'>Siddhaṃ</a><br><small>AD 600 - AD 1200</small>);
+LF-->LF2(<a href='https://en.wikipedia.org/wiki/Nepalese_scripts'>Nepalese</a><br><small>AD 1100 - AD 1950</small>);
+LF2-->LF3(<a href='https://en.wikipedia.org/wiki/Ranjana_script'>Rañjanā</a><br><small>AD 1100 - present</small>);
+LF3-->LF4(<a href='http://www.lantsha-vartu.org/'>Lantsa, Lanthsa</a><br><small>AD 1100 - present</small>)
+LF-->LG(<a href='https://en.wikipedia.org/wiki/N%C4%81gar%C4%AB_script'>Nāgarī</a><br><small>AD 100 early, AD 700 - present</small>);
+LG-->LH(<a href='https://en.wikipedia.org/wiki/Devanagari'>Devanagari</a><br><small>AD 100 early AD 700 - present</small>);
 LG-->LI;
-LH-.->LI(Tibetan script<br><small>AD 650 - present</small>);
-LA-->LK(Greek alphabet<br><small>800 BC - present</small>);
-LK-->LL(Old Italic script<br><small>700 BC - 100 BC</small>);
-LL-->LM(Latin alphabet<br><small>700 BC - present</small>);
-LL-->LN(Runes<br><small>AD 150 - AD 1100</small>);
-LI-->LI2(Mongolian 'phags pa script<br><small>AD 1300 - present</small>)
+LH-.->LI(<a href='https://en.wikipedia.org/wiki/Tibetan_script'>Tibetan script</a><br><small>AD 650 - present</small>);
+LA-->LK(<a href='https://en.wikipedia.org/wiki/Greek_alphabet'>Greek alphabet</a><br><small>800 BC - present</small>);
+LK-->LL(<a href='https://en.wikipedia.org/wiki/Old_Italic_scripts'>Old Italic script</a><br><small>700 BC - 100 BC</small>);
+LL-->LM(<a href='https://en.wikipedia.org/wiki/Latin_alphabet'>Latin alphabet</a><br><small>700 BC - present</small>);
+LL-->LN(<a href='https://en.wikipedia.org/wiki/Runes'>Runes</a><br><small>AD 150 - AD 1100</small>);
+LI-->LI2(<a href='https://en.wikipedia.org/wiki/%CA%BCPhags-pa_script'>Mongolian 'phags pa script</a><br><small>AD 1300 - present</small>)
 BB-.->LD;
 BB-.->BA;
 BB-.->CA;
