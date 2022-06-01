@@ -25,13 +25,26 @@ This table shows the development of consonants `b`, `d`, `m`, `r`, and `t`:
 | [Nāgarī](https://en.wikipedia.org/wiki/N%C4%81gar%C4%AB_script)[^nagari] | <img src="Images/Nagari_b.jpg" width="12px" /> | <img src="Images/Nagari_d.jpg" width="12px" /> | <img src="Images/Nagari_m.jpg" width="12px" /> | <img src="Images/Nagari_r.jpg" width="12px" /> | <img src="Images/Nagari_t.jpg" width="12px" /> | AD 100 (early), AD 700 - present
 | [Devanagari](https://en.wikipedia.org/wiki/Devanagari) | ब | द | म | र | त | AD 100 (early) AD 700 - present |
 | [Tibetan](https://en.wikipedia.org/wiki/Tibetan_script) | བ | ད | མ | ར | ཏ | AD 650 - present |
-| [Mongolian `'phags pa`](https://en.wikipedia.org/wiki/%CA%BCPhags-pa_script) | ꡎ | ꡊ | ꡏ | ꡘ | ꡈ | (turn 90&deg; clockwise!) AD 1300 - present |
+| [Mongolian 'phags pa](https://en.wikipedia.org/wiki/%CA%BCPhags-pa_script) | ꡎ | ꡊ | ꡏ | ꡘ | ꡈ | (vertical script, turn 90&deg; clockwise!) AD 1300 - present |
 
 According to William Woodville Rockhill,[^nagari_origin] Tibetan was developed based on Nāgarī script: 
 
 > The 7th century Tibetan king Songtsen Gampo ordered that all foreign books be transcribed into Tibetan language, and sent his ambassador Tonmi Sambota to India to acquire alphabet and writing methods, who returned with Sanskrit Nāgarī script from Kashmir corresponding to 24 Tibetan sounds and innovating new symbols for 6 local sounds. [_Wikipedia_](https://en.wikipedia.org/wiki/N%C4%81gar%C4%AB_script)
 
 [^nagari_origin]: William Woodville Rockhill, [_Annual Report of the Board of Regents of the Smithsonian Institution_](https://books.google.com/books?id=avFDAQAAMAAJ&pg=PA671), p. 671, at Google Books, United States National Museum, page 671.
+
+
+### Indus valley and Mesopotamia
+
+| Script | b | d | m | r | t | Time period |
+| :- | - | - | - | - | - | :- |
+| [Indus valley script](https://en.wikipedia.org/wiki/Indus_script) |  |  |  |  |  | BC 3500 - BC 1900 |
+| [Linear Elamite](https://en.wikipedia.org/wiki/Linear_Elamite) |  |  |  |  |  | BC 2300 - BC 1850 |
+| [Elamite Cuneiform](https://en.wikipedia.org/wiki/Elamite_cuneiform) |  |  |  |  |  | BC 2300 - BC 1850 |
+| [Sumerian Cuneiform](https://en.wikipedia.org/wiki/Cuneiform#Akkadian_cuneiform) |  |  |  |  |  | BC 2300 - BC 1850 |
+| [Akkadian Cuneiform](https://en.wikipedia.org/wiki/Cuneiform#Akkadian_cuneiform) |  |  |  |  |  | BC 2300 - BC 1850 |
+
+
 
 ### For comparison: development of Latin script
 
@@ -52,7 +65,7 @@ The common ancestor of all alphabetic system based scripts is Proto-Sinaitic. Ad
 | [Latin](https://en.wikipedia.org/wiki/Latin_script) | B | D | M | R | T | 700 BC - present |
 | [Runes](https://en.wikipedia.org/wiki/Runes) | ᛒ | ᛞ | ᛗ | ᚱ | ᛏ | AD 150 - AD 1100 |
 
-[^proto_sinaitic]: Not yet (2022-05) part of Unicode, glyphs from: <https://omniglot.com/writing/protosinaitc.htm>
+[^proto_sinaitic]: Not yet (2022-05) part of Unicode, glyphs from: <https://omniglot.com/writing/protosinaitc.htm>. Unicode proposal for [proto sinaitic](https://www.unicode.org/L2/L2019/19299-revisiting-proto-sinaitic.pdf).
 [^gupta]: Not yet (2022-05) part of Unicode, glyphs from: <https://en.wikipedia.org/wiki/Gupta_script> by: <https://commons.wikimedia.org/wiki/User:Mhss>
 [^nagari]: Not part of Unicode, considered variant of Devanagari, glyphs from <https://en.wikipedia.org/wiki/N%C4%81gar%C4%AB_script> by: <https://commons.wikimedia.org/w/index.php?title=User:Benedettou&action=edit&redlink=1>
 [^ranjana]: Not yet (2022-05) part of Unicode, glyphs from Unicode proposal: <https://www.unicode.org/L2/L2016/16015-ranjana.pdf>
@@ -60,11 +73,32 @@ The common ancestor of all alphabetic system based scripts is Proto-Sinaitic. Ad
 
 ### Inter-relations
 
+### Open questions
+
+Note: the relations between Hieroglyphs, Indus script, Proto-Sinaitic, and Cuneiform are subject of active research, and there are different theories on origins and relations between these scripts.
+
+Among current theories are:
+- Geoffrey Sampson stated that Egyptian hieroglyphs "came into existence a little after Sumerian script, and, probably, \[were\] invented under the influence of the latter",[^gs1] and that it is "probable that the general idea of expressing words of a language in writing was brought to Egypt from Sumerian Mesopotamia".[^gs2][^gs3]
+
+#### Alternate theories on Tibetan scripts
+
+- According to Ribur Ngawang Gyatso[^short_history], Thonmi Sambota, being sent to India by Srongtsan Gampo to search for a script, upon his return to Tibet, formulated the Tibetan script from Lantsa and Vartu.
+
+Historical evidence however shows that a modified version of the Rañjanā script was adopted as Lantsa for use of creating Sanskrit titles.
+
+#### Current consensus
+
+It is however consensus that all alphabetic scripts have Proto-Sinaitic as common ancestor.
+
+[^gs1]: <https://en.wikipedia.org/wiki/Cuneiform#cite_note-b1-37>
+[^gs2]: <https://en.wikipedia.org/wiki/Cuneiform#cite_note-38>
+[^gs3]: <https://en.wikipedia.org/wiki/Cuneiform#cite_note-39>
+[^short_history]: Ribur Ngawang Gyatso: [A Short History of Tibetan Script](https://www.jstor.org/stable/43300125).
 ```{mermaid}
 graph TD;  
 BA(Megalithic graffiti symbols)-.->BB(Indus script<br><small>3500 BC - 1900 BC<small/>);
 
-CA(Linear Elamite script<br><small>2300 BC - 1850 BC</small>)-->CB(Cuneiform Elamite);
+CA(Linear Elamite script<br><small>3000 BC - 1850 BC</small>)-->CB(Cuneiform Elamite<br><small>3000 BC - 400 BC</small>);
 CB-->CD(Cuneiform Sumerian);
 CD-->CE(Cuneiform Akkadian);
 L0A(Egyptian Hieroglyphs<br><small>3200 BC - AD 400</small>)-->LA(Proto-Sinaitic script<br><small>1900 BC - 1500 BC</small>);
@@ -80,16 +114,19 @@ LF-->LG(Nāgarī<br><small>AD 100 early, AD 700 - present</small>);
 LG-->LH(Devanagari<br><small>AD 100 early AD 700 - present</small>);
 LG-->LI;
 LH-.->LI(Tibetan script<br><small>AD 650 - present</small>);
-LI-->LI2(Mongolian 'phags pa script<br><small>AD 1300 - present</small>)
 LA-->LK(Greek alphabet<br><small>800 BC - present</small>);
 LK-->LL(Old Italic script<br><small>700 BC - 100 BC</small>);
 LL-->LM(Latin alphabet<br><small>700 BC - present</small>);
 LL-->LN(Runes<br><small>AD 150 - AD 1100</small>);
+LI-->LI2(Mongolian 'phags pa script<br><small>AD 1300 - present</small>)
 BB-.->LD;
 BB-.->BA;
 BB-.->CA;
+CA-.->BB;
 LB-.->LL;
 LE-.->LI;
+BB-.->LA;
+LA-.->BB;
 LI-.->LF4;
 ```
 Source: compiled from Wikipedia 2022-05
