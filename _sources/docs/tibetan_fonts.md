@@ -6,6 +6,7 @@ Microsoft had develop a system that could dynamically render new glyph variants,
 
 So Tibetan fonts either look artificial or are incomplete...
 
+For more information about the history and development of the Tibetan scripts, see [History of Tibetan script](tibetan_script_history.md).
 ## Using fonts with an open license is important
 
 If you are working on Tibetan projects that involve Sanskrit stacks (mantras), Chinese transliterations or Dzongkha shortcuts, then there will be the situation that a given font doesn't correctly render a stack that is needed. In such a situation, it is possible to extend a given font by providing additional glyphs for such a special case. See [Tibetan font creation](tibetan_font_creation.md) for details.
@@ -50,6 +51,7 @@ Longer text samples, created with Scribus.
 
 These fonts are [free for non-commercial use](http://www.yalasoo.com/English/docs/yalasoo_en_qomolangma_fonts.html) only.
 
+Download the Qomolangma collection [here](http://www.yalasoo.com/files/CTRCfonts.rar). (at [Yalasoo font page](http://www.yalasoo.com/English/docs/yalasoo_en_qomolangma_fonts.html))
 ### Uchen fonts
 
 | Font name | Sample | Glyphs | Comment |
@@ -75,19 +77,21 @@ See [Tibetan calligraphy](https://en.wikipedia.org/wiki/Tibetan_calligraphy).
 
 | Font name | Sample | Glyphs | Comment |
 | --------- | :----: | ------ | ------- |
-| Qomolangma-Betsu | ![Qomolangma-Betsu](Images/Font_Qomolangma_Betsu.jpg) | 1404 | Version 2.00, 2008, China Tibetology Research Center, Tashi Tsering and Wangdra Gyab |
+| Qomolangma-Betsu | ![Qomolangma-Betsu](Images/Font_Qomolangma_Betsu.jpg) | 1404 | `dbu med` script ([Umê](https://en.wikipedia.org/wiki/Um%C3%AA_script)) used for scriptures. Version 2.00, 2008, China Tibetology Research Center, Tashi Tsering and Wangdra Gyab |
+| Qomolangma-Drutsa | ![Qomolangma-Drutsa](Images/Font_Qomolangma_Drutsa.jpg) | 1415 | `dbu med` script ([Umê](https://en.wikipedia.org/wiki/Um%C3%AA_script)) used for documents. Version 2.00, 2008, China Tibetology Research Center, Tashi Tsering and Wangdra Gyab |
 | Qomolangma-Chuyig | ![Qomolangma-Chuyig](Images/Font_Qomolangma_Chuyig.jpg) | 1655 | Version 2.00, 2009, China Tibetology Research Center, Tashi Tsering and Wangdra Gyab |
-| Qomolangma-Drutsa | ![Qomolangma-Drutsa](Images/Font_Qomolangma_Drutsa.jpg) | 1415 | Version 2.00, 2008, China Tibetology Research Center, Tashi Tsering and Wangdra Gyab |
-| Qomolangma-Edict | ![Qomolangma-Edict](Images/Font_Qomolangma_Edict.jpg) | 1562 | Version 1.00, 2013, China Tibetology Research Center, Tashi Tsering and Wangdra Gyab |
 | Qomolangma-Tsumachu | ![Qomolangma-Tsumachu](Images/Font_Qomolangma_Tsumachu.jpg) | 1526 | Version 2.00, 2008, China Tibetology Research Center, Tashi Tsering and Wangdra Gyab |
-| Qomolangma-Tsuring | ![Qomolangma-Tsuring](Images/Font_Qomolangma_Tsuring.jpg) | 1562 | Version 2.00, 2008, China Tibetology Research Center, Tashi Tsering and Wangdra Gyab |
 | Qomolangma-Tsutong | ![Qomolangma-Tsutong](Images/Font_Qomolangma_Tsutong.jpg) | 1562 | Version 2.00, 2008, China Tibetology Research Center, Tashi Tsering and Wangdra Gyab |
+| Qomolangma-Edict | ![Qomolangma-Edict](Images/Font_Qomolangma_Edict.jpg) | 1562 | Version 1.00, 2013, China Tibetology Research Center, Tashi Tsering and Wangdra Gyab |
+| Qomolangma-Tsuring | ![Qomolangma-Tsuring](Images/Font_Qomolangma_Tsuring.jpg) | 1562 | Version 2.00, 2008, China Tibetology Research Center, Tashi Tsering and Wangdra Gyab |
 
 ### Mongolian, `'phags-pa` (Tibetan variant)
 
 | Qomolangma-horyig |  |  |
 | ----------------- | :- | - |
-| <img src="Images/Font_Qomolangma_Horyig.jpg" width="30px" /> | **Qomolangma-horyig**<br><br>A vertical `'phags pa ` script that uses Tibetan letters. 1562 glyphs. Version 1.00, 2013, China Tibetology Research Center, Tashi Tsering and Wangdra Gyab, see [`'Phags-pa`](https://en.wikipedia.org/wiki/%CA%BCPhags-pa_script) | <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Liu_Yigong_1324.jpg" width=240px /><br>A `'phags pa` inscriptions on an Italian tombstone of the 14th century.[^jesus_silkroad][^mongol_western] |
+| <img src="Images/Font_Qomolangma_Horyig.jpg" width="30px" /> | **Qomolangma-horyig**<br><br>A vertical `'phags pa ` script that uses Tibetan letters. 1562 glyphs. Version 1.00, 2013, China Tibetology Research Center, Tashi Tsering and Wangdra Gyab<br>Note: this font encodes `'phags pa` incorrectly on the Unicode-pages of Tibetan (`0x0f00`), whereas `'phags pa` has it's own Unicode page at `0xA840`. Due to the use of the Tibetan page, horyig must be manually turned 90&deg;.  | <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Liu_Yigong_1324.jpg" width=240px /><br>A `'phags pa` inscriptions on an Italian tombstone of the 14th century.[^jesus_silkroad][^mongol_western] |
+
+See also: [`'Phags-pa` Wikipedia](https://en.wikipedia.org/wiki/%CA%BCPhags-pa_script)
 
 [^jesus_silkroad]: ([Jesus on the Silk Road by Dale A. Johnson p.73](https://books.google.com/books?id=kWTDfRythVkC&pg=PA73))
 [^mongol_western]: [Mongol elements in Western medieval art](https://en.wikipedia.org/wiki/Mongol_elements_in_Western_medieval_art)
