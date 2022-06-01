@@ -30,6 +30,15 @@ According to William Woodville Rockhill,[^nagari_origin] Tibetan was developed b
 
 [^nagari_origin]: William Woodville Rockhill, [_Annual Report of the Board of Regents of the Smithsonian Institution_](https://books.google.com/books?id=avFDAQAAMAAJ&pg=PA671), p. 671, at Google Books, United States National Museum, page 671.
 
+
+### Indus valley and Mesopotamia
+
+| Script | b | d | m | r | t | Time period |
+| :- | - | - | - | - | - | :- |
+| [Indus valley script](https://en.wikipedia.org/wiki/Indus_script) |  |  |  |  |  | BC 3500 - BC 1900 |
+| 
+
+
 ### For comparison: development of Latin script
 
 The common ancestor of all alphabetic system based scripts is Proto-Sinaitic. Additionally, Old Italic was influenced by Phoenician:[^old_italic_phoenician]
@@ -49,14 +58,14 @@ The common ancestor of all alphabetic system based scripts is Proto-Sinaitic. Ad
 | [Latin](https://en.wikipedia.org/wiki/Latin_script) | B | D | M | R | T | 700 BC - present |
 | [Runes](https://en.wikipedia.org/wiki/Runes) | ᛒ | ᛞ | ᛗ | ᚱ | ᛏ | AD 150 - AD 1100 |
 
-[^proto_sinaitic]: Not yet (2022-05) part of Unicode, glyphs from: <https://omniglot.com/writing/protosinaitc.htm>
+[^proto_sinaitic]: Not yet (2022-05) part of Unicode, glyphs from: <https://omniglot.com/writing/protosinaitc.htm>. Unicode proposal for [proto sinaitic](https://www.unicode.org/L2/L2019/19299-revisiting-proto-sinaitic.pdf).
 [^gupta]: Not yet (2022-05) part of Unicode, glyphs from: <https://en.wikipedia.org/wiki/Gupta_script> by: <https://commons.wikimedia.org/wiki/User:Mhss>
 [^nagari]: Not part of Unicode, considered variant of Devanagari, glyphs from <https://en.wikipedia.org/wiki/N%C4%81gar%C4%AB_script> by: <https://commons.wikimedia.org/w/index.php?title=User:Benedettou&action=edit&redlink=1>
 
 
 ### Inter-relations
 
-```{mermaid}
+```mermaid
 graph TD;  
 BA(Megalithic graffiti symbols)-.->BB(Indus script 3500 BC - 1900 BC);
 
@@ -82,6 +91,8 @@ BB-.->BA;
 BB-.->CA;
 LB-.->LL;
 LE-.->LI;
+BB-.->LA;
+LA-.->BB;
 ```
 Source: compiled from Wikipedia 2022-05
 
