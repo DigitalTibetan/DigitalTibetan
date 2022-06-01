@@ -102,6 +102,8 @@ See also: [`'Phags-pa` Wikipedia](https://en.wikipedia.org/wiki/%CA%BCPhags-pa_s
 * [Windows only fonts, Himalaya](fonts_windows)
 ## Remarks and History
 
+For more information about the history and development of the Tibetan scripts, see [History of Tibetan script](tibetan_script_history.md).
+
 [Chris Fynn](https://sites.google.com/view/chrisfynn/home) was one of the first Unicode font pioneers. His fonts Jomolhari and DDC Uchen, available with free Open SIL licenses, where the basis of many developments.
 
 [The Babelstone Project](https://collab.its.virginia.edu/wiki/tibetan-script/Tibetan%20Fonts.html) by Andrew West has continued the work on Jomolhari and updated the font to newer Unicode standards and extended the glyph coverage.
