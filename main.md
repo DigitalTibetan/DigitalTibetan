@@ -8,11 +8,7 @@ While this project is still incomplete and under development, it will at some po
 An archived version of the old DigitalTibetan site is still available at [archive.org DigitalTibetan](https://web.archive.org/web/20210502044931/http://www.digitaltibetan.org/index.php/Digital_Tibetan)
 ```
 
-**Contribute!** Simply select the Github-icon ( on of the icons on the top-right) and 'suggest an edit'. No worries, you can't break things, since each edit will be reviewed before going life. For more details see [Contribution](contribute) below.
-
-## The new scope of Digital Tibetan
-
-Digital Tibetan wants to cater two target audiences:
+## The new scope of Digital Tibetan v3.0
 
 - Much like the [predecessor version](https://web.archive.org/web/20210502044931/http://www.digitaltibetan.org/index.php/Digital_Tibetan) of DigitalTibetan, this site aspires to collect information and How-Tos on how to work with digital Tibetan information within the context of one's own hardware and setup. [Start here.](docs/devices_tibetan.md)
 - Additionally the plan is to introduce tools for [computational dharma](docs/computational_dharma.ipynb), how modern tools inherited from data science can be used to efficiently create personal working environments that support working with, cross-referencing, and transforming large amounts of natural language data related to Tibetan. 
@@ -39,6 +35,7 @@ This site is based on a [github repository](https://github.com/DigitalTibetan/Di
 ## Some random topics
 
 - [Getting started: how to setup your devices for working with Tibetan](docs/devices_tibetan.md)
+- [History of Tibetan script](docs/tibetan_script_history.md)
 - [The Tibetan calendar](docs/tibetan_calendar.md)
 - [On the fragility of digital information](docs/digital_dharma_is_fragile.md)
-- [Digital Tibetan Tools](docs/digital_tibetan_tools.md) (Wylie ↔ Tibetan Unicode conversion, Tibetan phonetics tools, Tibetan calendar tools)
+- [Digital Tibetan Tools]
