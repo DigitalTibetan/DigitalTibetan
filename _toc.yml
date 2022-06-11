@@ -3,7 +3,6 @@ root: main
 chapters:
 - file: docs/computational_dharma.ipynb
 - file: docs/digital_dharma_is_fragile.md
-- file: docs/tibetan_script_history.md
 - file: docs/devices_tibetan.md
   sections:
   - file: docs/mobile_tibetan.md
@@ -22,8 +21,9 @@ chapters:
     - file: docs/computers_windows_xp.md
     - file: docs/computers_applications_libreoffice.md
 - file: docs/tibetan_keyboards.md
-- file: docs/tibetan_fonts.md
+- file: docs/tibetan_script_history.md
   sections:
+  - file: docs/tibetan_fonts.md
   - file: docs/tibetan_font_creation.md
 - file: docs/tibetan_formatting.md
   sections:
@@ -35,6 +35,7 @@ chapters:
   - file: docs/digital_tibetan_tools_wylie.md
   - file: docs/digital_tibetan_tools_pronunciation.md
   - file: docs/digital_tibetan_tools_calendar.md
+- file: docs/resources.md
 - file: docs/news/_news_archive.md
   sections:
   - file: docs/news/2022-04-11_tibetan_translation_services.md  
