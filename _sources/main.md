@@ -40,4 +40,25 @@ This site is based on a [github repository](https://github.com/DigitalTibetan/Di
 - [History of Tibetan script](docs/tibetan_script_history.md)
 - [The Tibetan calendar](docs/tibetan_calendar.md)
 - [On the fragility of digital information](docs/digital_dharma_is_fragile.md)
-- [Digital Tibetan Tools]
+- [Digital Tibetan Tools](docs/digital_tibetan_tools.md)
+
+
+::::{grid} 2
+
+:::{grid-item} 
+One!
+Here's the first card.
+:::
+
+:::{grid-item}
+Two!
+Here's the second card.
+:::
+
+:::{grid-item}
+Three!
+Here's the third card.
+:::
+
+::::
+
