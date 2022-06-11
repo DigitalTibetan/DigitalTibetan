@@ -21,6 +21,8 @@ parse:
     # don't forget to list any other extensions you want enabled,
     # including those that are enabled by default!
     - html_image
+    - dollarmath
+    - amsmath
 html:
   favicon                   : Images/favicon.ico
   use_edit_page_button : true
