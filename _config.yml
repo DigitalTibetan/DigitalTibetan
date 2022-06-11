@@ -34,9 +34,3 @@ sphinx:
     html_extra_path: ['resources']
   extra_extensions:
     - sphinxcontrib.mermaid
-#   config:
-#     html_theme: alabaster # pydata_sphinx_theme
-
-# Add a bibtex file so that we can create citations
-# bibtex_bibfiles:
-#  - references.bib
