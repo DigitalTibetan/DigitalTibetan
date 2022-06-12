@@ -31,6 +31,16 @@ Looking at the Unicode table one notices that all Tibetan letters are contained 
 
 ### Encoding glyphs
 
+A Tibetan font contains two major areas:
+
+* First, it contains all the glyphs defined by the Unicode Tibetan table as shown in the table above. An example for such a standard entry would be `ག`.
+* Secondly, it needs to contain a _ligature table_, containing the glyphs and an OpenType descriptions for each glyph for _any possible Tibetan stack_. So there needs to be a glyph for `གི`, `གྱ`, `གྱི` and so on. Every single possible stack needs to be designed and included into the font. Due to the multiple different use-cases of Tibetan for Sanskrit transliteration (mantras, e.g. `ཧྲཱིཿ`), Chinese transliteration and Dzongkha shorthand contractions[^dzongkha_shorthand_examples] (e.g. `དཀོོག་` for `དཀོན་མཆོག་`), the number of possible stacks is basically unlimited.
+
+[^dzongkha_shorthand_examples]: For examples, see [here](https://www.babelstone.co.uk/Tibetan/Contractions.html)
+
+
+# OUTDATED:
+
 Indic scripts and Tibetan create stacks by using the OpenType feature 'Below base substitution ligatures' (`blws`). The font contains the image of a Tibetan stack ('a glyph') together with a definition which letters do compose this stack. A Unicode font would for example contain an image of the glyph `rgyu`, རྒྱུ together with a ligature definition how this glyph is composed of single letters. A very good description how to encode Unicode stacks can be found at [THLib](https://www.thlib.org/tools/scripts/wiki/Encoding%20model%20of%20the%20Tibetan%20script%20in%20the%20UCS.html).
 
 
