@@ -51,6 +51,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
     <script>mermaid.initialize({startOnLoad:true});</script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
@@ -500,6 +502,34 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#unicode-tibetan">
+   Unicode Tibetan
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-unicode-code-page-for-tibetan-0x0f00-0x0fff">
+     The Unicode code page for Tibetan:
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       0x0F00
+      </span>
+      <span class="pre">
+       -
+      </span>
+      <span class="pre">
+       0x0FFF
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#encoding-glyphs">
+     Encoding glyphs
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#using-fontforge-to-create-tibetan-fonts">
    Using FontForge to create Tibetan fonts
   </a>
@@ -541,6 +571,34 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#unicode-tibetan">
+   Unicode Tibetan
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-unicode-code-page-for-tibetan-0x0f00-0x0fff">
+     The Unicode code page for Tibetan:
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       0x0F00
+      </span>
+      <span class="pre">
+       -
+      </span>
+      <span class="pre">
+       0x0FFF
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#encoding-glyphs">
+     Encoding glyphs
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#using-fontforge-to-create-tibetan-fonts">
    Using FontForge to create Tibetan fonts
   </a>
@@ -575,14 +633,336 @@ title="Print to PDF"
   <section class="tex2jax_ignore mathjax_ignore" id="editing-and-creating-tibetan-fonts">
 <h1>Editing and creating Tibetan fonts<a class="headerlink" href="#editing-and-creating-tibetan-fonts" title="Permalink to this headline">#</a></h1>
 <p>INCOMPLETE DRAFT</p>
+<section id="unicode-tibetan">
+<h2>Unicode Tibetan<a class="headerlink" href="#unicode-tibetan" title="Permalink to this headline">#</a></h2>
+<section id="the-unicode-code-page-for-tibetan-0x0f00-0x0fff">
+<h3>The Unicode code page for Tibetan: <code class="docutils literal notranslate"><span class="pre">0x0F00</span> <span class="pre">-</span> <span class="pre">0x0FFF</span></code><a class="footnote-reference brackets" href="#uni-tib-ref" id="id1">1</a><a class="headerlink" href="#the-unicode-code-page-for-tibetan-0x0f00-0x0fff" title="Permalink to this headline">#</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p>0</p></th>
+<th class="head"><p>1</p></th>
+<th class="head"><p>2</p></th>
+<th class="head"><p>3</p></th>
+<th class="head"><p>4</p></th>
+<th class="head"><p>5</p></th>
+<th class="head"><p>6</p></th>
+<th class="head"><p>7</p></th>
+<th class="head"><p>8</p></th>
+<th class="head"><p>9</p></th>
+<th class="head"><p>A</p></th>
+<th class="head"><p>B</p></th>
+<th class="head"><p>C</p></th>
+<th class="head"><p>D</p></th>
+<th class="head"><p>E</p></th>
+<th class="head"><p>F</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>U+0F0x</p></td>
+<td><p>ༀ</p></td>
+<td><p>༁</p></td>
+<td><p>༂</p></td>
+<td><p>༃</p></td>
+<td><p>༄</p></td>
+<td><p>༅</p></td>
+<td><p>༆</p></td>
+<td><p>༇</p></td>
+<td><p>༈</p></td>
+<td><p>༉</p></td>
+<td><p>༊</p></td>
+<td><p>་</p></td>
+<td><p>༌<span class="math notranslate nohighlight">\(_{\tiny{NB}}\)</span></p></td>
+<td><p>།</p></td>
+<td><p>༎</p></td>
+<td><p>༏</p></td>
+</tr>
+<tr class="row-odd"><td><p>U+0F1x</p></td>
+<td><p>༐</p></td>
+<td><p>༑</p></td>
+<td><p>༒</p></td>
+<td><p>༓</p></td>
+<td><p>༔</p></td>
+<td><p>༕</p></td>
+<td><p>༖</p></td>
+<td><p>༗</p></td>
+<td><p>༘</p></td>
+<td><p>༙</p></td>
+<td><p>༚</p></td>
+<td><p>༛</p></td>
+<td><p>༜</p></td>
+<td><p>༝</p></td>
+<td><p>༞</p></td>
+<td><p>༟</p></td>
+</tr>
+<tr class="row-even"><td><p>U+0F2x</p></td>
+<td><p>༠</p></td>
+<td><p>༡</p></td>
+<td><p>༢</p></td>
+<td><p>༣</p></td>
+<td><p>༤</p></td>
+<td><p>༥</p></td>
+<td><p>༦</p></td>
+<td><p>༧</p></td>
+<td><p>༨</p></td>
+<td><p>༩</p></td>
+<td><p>༪</p></td>
+<td><p>༫</p></td>
+<td><p>༬</p></td>
+<td><p>༭</p></td>
+<td><p>༮</p></td>
+<td><p>༯</p></td>
+</tr>
+<tr class="row-odd"><td><p>U+0F3x</p></td>
+<td><p>༰</p></td>
+<td><p>༱</p></td>
+<td><p>༲</p></td>
+<td><p>༳</p></td>
+<td><p>༴</p></td>
+<td><p>༵</p></td>
+<td><p>༶</p></td>
+<td><p>༷</p></td>
+<td><p>༸</p></td>
+<td><p>༹</p></td>
+<td><p>༺</p></td>
+<td><p>༻</p></td>
+<td><p>༼</p></td>
+<td><p>༽</p></td>
+<td><p>༾</p></td>
+<td><p>༿</p></td>
+</tr>
+<tr class="row-even"><td><p>U+0F4x</p></td>
+<td><p>ཀ</p></td>
+<td><p>ཁ</p></td>
+<td><p>ག</p></td>
+<td><p>གྷ</p></td>
+<td><p>ང</p></td>
+<td><p>ཅ</p></td>
+<td><p>ཆ</p></td>
+<td><p>ཇ</p></td>
+<td><p></p></td>
+<td><p>ཉ</p></td>
+<td><p>ཊ</p></td>
+<td><p>ཋ</p></td>
+<td><p>ཌ</p></td>
+<td><p>ཌྷ</p></td>
+<td><p>ཎ</p></td>
+<td><p>ཏ</p></td>
+</tr>
+<tr class="row-odd"><td><p>U+0F5x</p></td>
+<td><p>ཐ</p></td>
+<td><p>ད</p></td>
+<td><p>དྷ</p></td>
+<td><p>ན</p></td>
+<td><p>པ</p></td>
+<td><p>ཕ</p></td>
+<td><p>བ</p></td>
+<td><p>བྷ</p></td>
+<td><p>མ</p></td>
+<td><p>ཙ</p></td>
+<td><p>ཚ</p></td>
+<td><p>ཛ</p></td>
+<td><p>ཛྷ</p></td>
+<td><p>ཝ</p></td>
+<td><p>ཞ</p></td>
+<td><p>ཟ</p></td>
+</tr>
+<tr class="row-even"><td><p>U+0F6x</p></td>
+<td><p>འ</p></td>
+<td><p>ཡ</p></td>
+<td><p>ར</p></td>
+<td><p>ལ</p></td>
+<td><p>ཤ</p></td>
+<td><p>ཥ</p></td>
+<td><p>ས</p></td>
+<td><p>ཧ</p></td>
+<td><p>ཨ</p></td>
+<td><p>ཀྵ</p></td>
+<td><p>ཪ</p></td>
+<td><p>ཫ</p></td>
+<td><p>ཬ</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>U+0F7x</p></td>
+<td><p></p></td>
+<td><p>ཱ</p></td>
+<td><p>ི</p></td>
+<td><p>ཱི</p></td>
+<td><p>ུ</p></td>
+<td><p>ཱུ</p></td>
+<td><p>ྲྀ</p></td>
+<td><p>ཷ</p></td>
+<td><p>ླྀ</p></td>
+<td><p>ཹ</p></td>
+<td><p>ེ</p></td>
+<td><p>ཻ</p></td>
+<td><p>ོ</p></td>
+<td><p>ཽ</p></td>
+<td><p>ཾ</p></td>
+<td><p>ཿ</p></td>
+</tr>
+<tr class="row-even"><td><p>U+0F8x</p></td>
+<td><p>ྀ</p></td>
+<td><p>ཱྀ</p></td>
+<td><p>ྂ</p></td>
+<td><p>ྃ</p></td>
+<td><p>྄</p></td>
+<td><p>྅</p></td>
+<td><p>྆</p></td>
+<td><p>྇</p></td>
+<td><p>ྈ</p></td>
+<td><p>ྉ</p></td>
+<td><p>ྊ</p></td>
+<td><p>ྋ</p></td>
+<td><p>ྌ</p></td>
+<td><p>ྍ</p></td>
+<td><p>ྎ</p></td>
+<td><p>ྏ</p></td>
+</tr>
+<tr class="row-odd"><td><p>U+0F9x</p></td>
+<td><p>ྐ</p></td>
+<td><p>ྑ</p></td>
+<td><p>ྒ</p></td>
+<td><p>ྒྷ</p></td>
+<td><p>ྔ</p></td>
+<td><p>ྕ</p></td>
+<td><p>ྖ</p></td>
+<td><p>ྗ</p></td>
+<td><p></p></td>
+<td><p>ྙ</p></td>
+<td><p>ྚ</p></td>
+<td><p>ྛ</p></td>
+<td><p>ྜ</p></td>
+<td><p>ྜྷ</p></td>
+<td><p>ྞ</p></td>
+<td><p>ྟ</p></td>
+</tr>
+<tr class="row-even"><td><p>U+0FAx</p></td>
+<td><p>ྠ</p></td>
+<td><p>ྡ</p></td>
+<td><p>ྡྷ</p></td>
+<td><p>ྣ</p></td>
+<td><p>ྤ</p></td>
+<td><p>ྥ</p></td>
+<td><p>ྦ</p></td>
+<td><p>ྦྷ</p></td>
+<td><p>ྨ</p></td>
+<td><p>ྩ</p></td>
+<td><p>ྪ</p></td>
+<td><p>ྫ</p></td>
+<td><p>ྫྷ</p></td>
+<td><p>ྭ</p></td>
+<td><p>ྮ</p></td>
+<td><p>ྯ</p></td>
+</tr>
+<tr class="row-odd"><td><p>U+0FBx</p></td>
+<td><p>ྰ</p></td>
+<td><p>ྱ</p></td>
+<td><p>ྲ</p></td>
+<td><p>ླ</p></td>
+<td><p>ྴ</p></td>
+<td><p>ྵ</p></td>
+<td><p>ྶ</p></td>
+<td><p>ྷ</p></td>
+<td><p>ྸ</p></td>
+<td><p>ྐྵ</p></td>
+<td><p>ྺ</p></td>
+<td><p>ྻ</p></td>
+<td><p>ྼ</p></td>
+<td><p></p></td>
+<td><p>྾</p></td>
+<td><p>྿</p></td>
+</tr>
+<tr class="row-even"><td><p>U+0FCx</p></td>
+<td><p>࿀</p></td>
+<td><p>࿁</p></td>
+<td><p>࿂</p></td>
+<td><p>࿃</p></td>
+<td><p>࿄</p></td>
+<td><p>࿅</p></td>
+<td><p>࿆</p></td>
+<td><p>࿇</p></td>
+<td><p>࿈</p></td>
+<td><p>࿉</p></td>
+<td><p>࿊</p></td>
+<td><p>࿋</p></td>
+<td><p>࿌</p></td>
+<td><p></p></td>
+<td><p>࿎</p></td>
+<td><p>࿏</p></td>
+</tr>
+<tr class="row-odd"><td><p>U+0FDx</p></td>
+<td><p>࿐</p></td>
+<td><p>࿑</p></td>
+<td><p>࿒</p></td>
+<td><p>࿓</p></td>
+<td><p>࿔</p></td>
+<td><p>࿕</p></td>
+<td><p>࿖</p></td>
+<td><p>࿗</p></td>
+<td><p>࿘</p></td>
+<td><p>࿙</p></td>
+<td><p>࿚</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>U+0FEx</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>U+0FFx</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<p>Looking at the Unicode table one notices that all Tibetan letters are contained in it, and they are all contained twice, e.g. <code class="docutils literal notranslate"><span class="pre">ཀ</span></code> and <code class="docutils literal notranslate"> <span class="pre">ྐ</span></code>. The second variant is used to construct compounded stacks, e.g. <code class="docutils literal notranslate"><span class="pre">གྱི</span></code>, which is a sequence of Unicode characters <code class="docutils literal notranslate"><span class="pre">ག</span></code>, <code class="docutils literal notranslate"> <span class="pre">ྱ</span></code>, <code class="docutils literal notranslate"> <span class="pre">ི</span></code>. The circles simply indicate, if the subsequent glyphs are ‘pasted’ below (as in <code class="docutils literal notranslate"> <span class="pre">ྱ</span></code>) or above (as in <code class="docutils literal notranslate"> <span class="pre">ི</span></code>).</p>
+</section>
+<section id="encoding-glyphs">
+<h3>Encoding glyphs<a class="headerlink" href="#encoding-glyphs" title="Permalink to this headline">#</a></h3>
 <p>Indic scripts and Tibetan create stacks by using the OpenType feature ‘Below base substitution ligatures’ (<code class="docutils literal notranslate"><span class="pre">blws</span></code>). The font contains the image of a Tibetan stack (‘a glyph’) together with a definition which letters do compose this stack. A Unicode font would for example contain an image of the glyph <code class="docutils literal notranslate"><span class="pre">rgyu</span></code>, རྒྱུ together with a ligature definition how this glyph is composed of single letters. A very good description how to encode Unicode stacks can be found at <a class="reference external" href="https://www.thlib.org/tools/scripts/wiki/Encoding%20model%20of%20the%20Tibetan%20script%20in%20the%20UCS.html">THLib</a>.</p>
+</section>
+</section>
 <section id="using-fontforge-to-create-tibetan-fonts">
 <h2>Using FontForge to create Tibetan fonts<a class="headerlink" href="#using-fontforge-to-create-tibetan-fonts" title="Permalink to this headline">#</a></h2>
 <a class="reference internal image-reference" href="../_images/FontForge.jpg"><img alt="../_images/FontForge.jpg" class="align-right" src="../_images/FontForge.jpg" style="width: 480px;" /></a>
 <p><a class="reference external" href="https://fontforge.org/en-US/">FontForge</a> is a powerful free and open font editor that can be used to extend existing Tibetan fonts or create new ones.</p>
 <section id="editing-tibetan-fonts-and-creating-sanskrit-stacks-for-existing-fonts">
 <h3>Editing Tibetan fonts and creating Sanskrit stacks for existing fonts<a class="headerlink" href="#editing-tibetan-fonts-and-creating-sanskrit-stacks-for-existing-fonts" title="Permalink to this headline">#</a></h3>
-<p>To convert an existing Tibetan font, load the font into FontForge and create a new empty font. Use the THDL Tibetan Machine Uni font as an example if you in doubt about settings. Name your font using “Element / font info”.</p>
+<p>To update an existing Tibetan font, load the font into FontForge and create a new empty font. Use the THDL Tibetan Machine Uni font as an example if you in doubt about settings. Name your font using “Element / font info”.</p>
 <p>Standard range Tibetan 0x0f00 - 0x0fff
 Get a definition of the Tibetan Unicode font range (characters 0x0F00 to 0x0FFF) and copy the standard characters from your existing font into the standard range. You can simply load Tibetan Machine Uni into FontForge and take this as reference to see which character is expected where in the range of 0x0f00 to 0x0fff. Note that only a few stacks are within the standard range. Stacks are handled differently.</p>
 <p><code class="docutils literal notranslate"><span class="pre">FontForgeLigatureCode.jpg</span></code></p>
@@ -603,6 +983,12 @@ Get a definition of the Tibetan Unicode font range (characters 0x0F00 to 0x0FFF)
 <p>https://fontforge.org/en-US/downloads/
 https://github.com/fontforge/fontforge</p>
 <p>https://docs.microsoft.com/en-us/typography/script-development/tibetan</p>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="uni-tib-ref"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>After <a class="reference external" href="https://en.wikipedia.org/wiki/Tibetan_(Unicode_block)">Wikipedia</a></p>
+</dd>
+</dl>
 </section>
 </section>
 
