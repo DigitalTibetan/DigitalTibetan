@@ -42,7 +42,7 @@ The `awesome digital Tibetan` list. A collection of pointers to projects that pr
 
 ### Dictionaries
 * https://github.com/Esukhia/sympound-python
-* 
+* [`Tibetisches Wörterbuch`: first scientific Tibetan dictionary, Tibetan-German, WIP](https://wts.badw.de/das-projekt.html)
 ## Translator's resources
 
 ## NLP

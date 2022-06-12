@@ -2,7 +2,38 @@
 
 INCOMPLETE DRAFT
 
+## Unicode Tibetan
+
+### The Unicode code page for Tibetan: `0x0F00 - 0x0FFF`[^uni_tib_ref]
+
+|        | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | A | B | C | D | E | F |
+| ------ | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - |
+| U+0F0x | ༀ | ༁ | ༂| ༃ | ༄ | ༅ | ༆ | ༇ | ༈ | ༉ | ༊ | ་ | ༌$_{\tiny{NB}}$ | ། | ༎ | ༏ |
+| U+0F1x | ༐ | ༑ | ༒ | ༓ | ༔ | ༕ | ༖ | ༗ | ༘  | ༙ | ༚ | ༛ | ༜ | ༝ | ༞ | ༟ |
+| U+0F2x | ༠ | ༡ | ༢ | ༣ | ༤ | ༥ | ༦ | ༧ | ༨ | ༩ | ༪ | ༫ | ༬ | ༭ | ༮ | ༯ |
+| U+0F3x | ༰ | ༱ | ༲ | ༳ | ༴ | ༵ | ༶ | ༷ | ༸ | ༹ | ༺ | ༻ | ༼ | ༽ | ༾ | ༿ |
+| U+0F4x | ཀ | ཁ | ག | གྷ | ང | ཅ | ཆ | ཇ | 	 | ཉ | ཊ | ཋ | ཌ | ཌྷ | ཎ | ཏ |
+| U+0F5x | ཐ | ད | དྷ | ན | པ | ཕ | བ | བྷ | མ | ཙ | ཚ | ཛ | ཛྷ | ཝ | ཞ | ཟ |
+| U+0F6x | འ | ཡ | ར | ལ | ཤ | ཥ | ས | ཧ | ཨ | ཀྵ | ཪ | ཫ | ཬ | |  |  |
+| U+0F7x |  | 	ཱ | ི | ཱི | ུ | ཱུ | ྲྀ | ཷ | ླྀ | ཹ | ེ | ཻ | ོ | ཽ | ཾ | ཿ |
+| U+0F8x | ྀ | ཱྀ | ྂ | ྃ | ྄ | ྅ | ྆ | ྇ | ྈ | ྉ | ྊ | ྋ | ྌ | ྍ | ྎ | ྏ |
+| U+0F9x | ྐ | ྑ | ྒ | ྒྷ | ྔ | ྕ | ྖ | ྗ |  |  ྙ | ྚ | ྛ | ྜ | ྜྷ | ྞ | ྟ |
+| U+0FAx | ྠ | ྡ | ྡྷ | ྣ | ྤ | ྥ | ྦ | ྦྷ | ྨ | ྩ | ྪ | ྫ | ྫྷ | ྭ | ྮ | ྯ |
+| U+0FBx | ྰ | ྱ | ྲ | ླ | ྴ | ྵ | ྶ | ྷ | ྸ | ྐྵ | ྺ | ྻ | ྼ  | | 	྾  | 	྿ | 
+| U+0FCx | ࿀ | ࿁ | ࿂ | ࿃ | ࿄ | ࿅ | ࿆ | ࿇ | ࿈ | ࿉ | ࿊ | ࿋ | ࿌ | 	 | ࿎ | ࿏ |
+| U+0FDx | ࿐ | ࿑ | ࿒ | ࿓ | ࿔ | ࿕ | ࿖ | ࿗ | ࿘ | ࿙ | ࿚ |  |  |  |  |  |	
+| U+0FEx |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 	
+| U+0FFx |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+
+[^uni_tib_ref]: After [Wikipedia](https://en.wikipedia.org/wiki/Tibetan_(Unicode_block))
+
+Looking at the Unicode table one notices that all Tibetan letters are contained in it, and they are all contained twice, e.g. `ཀ` and ` ྐ`. The second variant is used to construct compounded stacks, e.g. `གྱི`, which is a sequence of Unicode characters `ག`, ` ྱ`, ` ི`. The circles simply indicate, if the subsequent glyphs are 'pasted' below (as in ` ྱ`) or above (as in ` ི`).
+
+### Encoding glyphs
+
 Indic scripts and Tibetan create stacks by using the OpenType feature 'Below base substitution ligatures' (`blws`). The font contains the image of a Tibetan stack ('a glyph') together with a definition which letters do compose this stack. A Unicode font would for example contain an image of the glyph `rgyu`, རྒྱུ together with a ligature definition how this glyph is composed of single letters. A very good description how to encode Unicode stacks can be found at [THLib](https://www.thlib.org/tools/scripts/wiki/Encoding%20model%20of%20the%20Tibetan%20script%20in%20the%20UCS.html).
+
+
 
 ## Using FontForge to create Tibetan fonts
 
@@ -15,7 +46,7 @@ Indic scripts and Tibetan create stacks by using the OpenType feature 'Below bas
 
 ### Editing Tibetan fonts and creating Sanskrit stacks for existing fonts
 
-To convert an existing Tibetan font, load the font into FontForge and create a new empty font. Use the THDL Tibetan Machine Uni font as an example if you in doubt about settings. Name your font using "Element / font info".
+To update an existing Tibetan font, load the font into FontForge and create a new empty font. Use the THDL Tibetan Machine Uni font as an example if you in doubt about settings. Name your font using "Element / font info".
 
 Standard range Tibetan 0x0f00 - 0x0fff
 Get a definition of the Tibetan Unicode font range (characters 0x0F00 to 0x0FFF) and copy the standard characters from your existing font into the standard range. You can simply load Tibetan Machine Uni into FontForge and take this as reference to see which character is expected where in the range of 0x0f00 to 0x0fff. Note that only a few stacks are within the standard range. Stacks are handled differently.
