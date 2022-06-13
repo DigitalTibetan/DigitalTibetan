@@ -8,37 +8,73 @@ INCOMPLETE DRAFT
 
 |        | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | A | B | C | D | E | F |
 | ------ | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - |
-| U+0F0x | ༀ | ༁ | ༂| ༃ | ༄ | ༅ | ༆ | ༇ | ༈ | ༉ | ༊ | ་ | ༌$_{\tiny{NB}}$ | ། | ༎ | ༏ |
-| U+0F1x | ༐ | ༑ | ༒ | ༓ | ༔ | ༕ | ༖ | ༗ | ༘  | ༙ | ༚ | ༛ | ༜ | ༝ | ༞ | ༟ |
-| U+0F2x | ༠ | ༡ | ༢ | ༣ | ༤ | ༥ | ༦ | ༧ | ༨ | ༩ | ༪ | ༫ | ༬ | ༭ | ༮ | ༯ |
-| U+0F3x | ༰ | ༱ | ༲ | ༳ | ༴ | ༵ | ༶ | ༷ | ༸ | ༹ | ༺ | ༻ | ༼ | ༽ | ༾ | ༿ |
-| U+0F4x | ཀ | ཁ | ག | གྷ | ང | ཅ | ཆ | ཇ | 	 | ཉ | ཊ | ཋ | ཌ | ཌྷ | ཎ | ཏ |
-| U+0F5x | ཐ | ད | དྷ | ན | པ | ཕ | བ | བྷ | མ | ཙ | ཚ | ཛ | ཛྷ | ཝ | ཞ | ཟ |
-| U+0F6x | འ | ཡ | ར | ལ | ཤ | ཥ | ས | ཧ | ཨ | ཀྵ | ཪ | ཫ | ཬ | |  |  |
-| U+0F7x |  | 	ཱ | ི | ཱི | ུ | ཱུ | ྲྀ | ཷ | ླྀ | ཹ | ེ | ཻ | ོ | ཽ | ཾ | ཿ |
-| U+0F8x | ྀ | ཱྀ | ྂ | ྃ | ྄ | ྅ | ྆ | ྇ | ྈ | ྉ | ྊ | ྋ | ྌ | ྍ | ྎ | ྏ |
-| U+0F9x | ྐ | ྑ | ྒ | ྒྷ | ྔ | ྕ | ྖ | ྗ |  |  ྙ | ྚ | ྛ | ྜ | ྜྷ | ྞ | ྟ |
-| U+0FAx | ྠ | ྡ | ྡྷ | ྣ | ྤ | ྥ | ྦ | ྦྷ | ྨ | ྩ | ྪ | ྫ | ྫྷ | ྭ | ྮ | ྯ |
-| U+0FBx | ྰ | ྱ | ྲ | ླ | ྴ | ྵ | ྶ | ྷ | ྸ | ྐྵ | ྺ | ྻ | ྼ  | | 	྾  | 	྿ | 
-| U+0FCx | ࿀ | ࿁ | ࿂ | ࿃ | ࿄ | ࿅ | ࿆ | ࿇ | ࿈ | ࿉ | ࿊ | ࿋ | ࿌ | 	 | ࿎ | ࿏ |
-| U+0FDx | ࿐ | ࿑ | ࿒ | ࿓ | ࿔ | ࿕ | ࿖ | ࿗ | ࿘ | ࿙ | ࿚ |  |  |  |  |  |	
-| U+0FEx |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 	
-| U+0FFx |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+| **U+0F0x** | ༀ | ༁ | ༂| ༃ | ༄ | ༅ | ༆ | ༇ | ༈ | ༉ | ༊ | ་ | ༌$_{\tiny{NB}}$ | ། | ༎ | ༏ |
+| **U+0F1x** | ༐ | ༑ | ༒ | ༓ | ༔ | ༕ | ༖ | ༗ | ༘  | ༙ | ༚ | ༛ | ༜ | ༝ | ༞ | ༟ |
+| **U+0F2x** | ༠ | ༡ | ༢ | ༣ | ༤ | ༥ | ༦ | ༧ | ༨ | ༩ | ༪ | ༫ | ༬ | ༭ | ༮ | ༯ |
+| **U+0F3x** | ༰ | ༱ | ༲ | ༳ | ༴ | ༵ | ༶ | ༷ | ༸ | ༹ | ༺ | ༻ | ༼ | ༽ | ༾ | ༿ |
+| **U+0F4x** | ཀ | ཁ | ག | གྷ | ང | ཅ | ཆ | ཇ | 	 | ཉ | ཊ | ཋ | ཌ | ཌྷ | ཎ | ཏ |
+| **U+0F5x** | ཐ | ད | དྷ | ན | པ | ཕ | བ | བྷ | མ | ཙ | ཚ | ཛ | ཛྷ | ཝ | ཞ | ཟ |
+| **U+0F6x** | འ | ཡ | ར | ལ | ཤ | ཥ | ས | ཧ | ཨ | ཀྵ | ཪ | ཫ | ཬ | |  |  |
+| **U+0F7x** |  | 	ཱ | ི | ཱི | ུ | ཱུ | ྲྀ | ཷ | ླྀ | ཹ | ེ | ཻ | ོ | ཽ | ཾ | ཿ |
+| **U+0F8x** | ྀ | ཱྀ | ྂ | ྃ | ྄ | ྅ | ྆ | ྇ | ྈ | ྉ | ྊ | ྋ | ྌ | ྍ | ྎ | ྏ |
+| **U+0F9x** | ྐ | ྑ | ྒ | ྒྷ | ྔ | ྕ | ྖ | ྗ |  |  ྙ | ྚ | ྛ | ྜ | ྜྷ | ྞ | ྟ |
+| **U+0FAx** | ྠ | ྡ | ྡྷ | ྣ | ྤ | ྥ | ྦ | ྦྷ | ྨ | ྩ | ྪ | ྫ | ྫྷ | ྭ | ྮ | ྯ |
+| **U+0FBx** | ྰ | ྱ | ྲ | ླ | ྴ | ྵ | ྶ | ྷ | ྸ | ྐྵ | ྺ | ྻ | ྼ  | | 	྾  | 	྿ | 
+| **U+0FCx** | ࿀ | ࿁ | ࿂ | ࿃ | ࿄ | ࿅ | ࿆ | ࿇ | ࿈ | ࿉ | ࿊ | ࿋ | ࿌ | 	 | ࿎ | ࿏ |
+| **U+0FDx** | ࿐ | ࿑ | ࿒ | ࿓ | ࿔ | ࿕ | ࿖ | ࿗ | ࿘ | ࿙ | ࿚ |  |  |  |  |  |	
+| **U+0FEx** |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 	
+| **U+0FFx** |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
 
 [^uni_tib_ref]: After [Wikipedia](https://en.wikipedia.org/wiki/Tibetan_(Unicode_block))
 
-Looking at the Unicode table one notices that all Tibetan letters are contained in it, and they are all contained twice, e.g. `ཀ` and ` ྐ`. The second variant is used to construct compounded stacks, e.g. `གྱི`, which is a sequence of Unicode characters `ག`, ` ྱ`, ` ི`. The circles simply indicate, if the subsequent glyphs are 'pasted' below (as in ` ྱ`) or above (as in ` ི`).
+Looking at the Unicode table one notices that all Tibetan letters are contained in it, and they are all contained twice, e.g. `ཀ` (at position `U+0F40`) and ` ྐ` (at position `U+0F90`). The second variant is used to construct compounded stacks, e.g. `གྱི`, which is a sequence of Unicode characters `ག`, ` ྱ`, ` ི`, or `U+0F41`,`U+0FB1`,`U+0F72`. The circles simply indicate, if the subsequent glyphs are 'pasted' below (as in ` ྱ`) or above (as in ` ི`).
 
 ### Encoding glyphs
 
 A Tibetan font contains two major areas:
+
+```{image} Images/FontForge.jpg
+:align: right
+:width: 480
+```
 
 * First, it contains all the glyphs defined by the Unicode Tibetan table as shown in the table above. An example for such a standard entry would be `ག`.
 * Secondly, it needs to contain a _ligature table_, containing the glyphs and an OpenType descriptions for each glyph for _any possible Tibetan stack_. So there needs to be a glyph for `གི`, `གྱ`, `གྱི` and so on. Every single possible stack needs to be designed and included into the font. Due to the multiple different use-cases of Tibetan for Sanskrit transliteration (mantras, e.g. `ཧྲཱིཿ`), Chinese transliteration and Dzongkha shorthand contractions[^dzongkha_shorthand_examples] (e.g. `དཀོོག་` for `དཀོན་མཆོག་`), the number of possible stacks is basically unlimited.
 
 [^dzongkha_shorthand_examples]: For examples, see [here](https://www.babelstone.co.uk/Tibetan/Contractions.html)
 
+## Example: Jomolhari and FontForge
 
+To learn more about the encoding and creation of Tibetan fonts, is best to look at an example. Download:
+
+- [Jomolhari font](https://fonts.google.com/specimen/Jomolhari#type-tester)
+- [FontForge](https://fontforge.org/en-US/), a powerful free and open font editor that can be used to extend existing Tibetan fonts or create new ones. It available for Linux, macOS and Windows.
+
+Now start FontForge and open `Jomolhari-Regular.ttf`. Once Jomolhari is loaded, select `Encoding / Compact (hide unused glyphs)` to make navigation easier.
+
+```{image} Images/FontForgeKa.jpg
+:align: right
+:width: 180
+```
+
+Then `View / Label glyph by / Unicode`. That will display the numeric code of each glyph above it's graphical representation. This code is later required in order to construct new Tibetan stacks or ligatures.
+
+Double-click `ཀ` at `0F40`, and a vector-graphics editor for the `ཀ`-glyph will open. Each glyph in the Unicode table for Tibetan is defined by a vector outline.
+
+It becomes a bit more complicated for compound stacks, so called _ligatures_. We will again look at the example of `གྱི`.
+
+```{image} Images/FontForgeGya.jpg
+:align: right
+:width: 240
+```
+
+First, scroll down to position `f360`. It contains the glyph `གྱ`, the intermediate between `ག` and `གྱི`. In the outline editor window of `གྱ`, select `Element / Glyph info`, and `Ligatures`. This describes the OpenType rules, how the glyph `གྱ` is composed of the two unicode characters `ག` (at `U+0F41`) and ` ྱ` (at `U+0FB1`): the ligature is a `blws` 'Below Base Substitution' which means a `གྱ` is composed of a `ག` with subjoined ` ྱ`.
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 # OUTDATED:
 
 Indic scripts and Tibetan create stacks by using the OpenType feature 'Below base substitution ligatures' (`blws`). The font contains the image of a Tibetan stack ('a glyph') together with a definition which letters do compose this stack. A Unicode font would for example contain an image of the glyph `rgyu`, རྒྱུ together with a ligature definition how this glyph is composed of single letters. A very good description how to encode Unicode stacks can be found at [THLib](https://www.thlib.org/tools/scripts/wiki/Encoding%20model%20of%20the%20Tibetan%20script%20in%20the%20UCS.html).
@@ -47,12 +83,7 @@ Indic scripts and Tibetan create stacks by using the OpenType feature 'Below bas
 
 ## Using FontForge to create Tibetan fonts
 
-```{image} Images/FontForge.jpg
-:align: right
-:width: 480
-```
 
-[FontForge](https://fontforge.org/en-US/) is a powerful free and open font editor that can be used to extend existing Tibetan fonts or create new ones.
 
 ### Editing Tibetan fonts and creating Sanskrit stacks for existing fonts
 
