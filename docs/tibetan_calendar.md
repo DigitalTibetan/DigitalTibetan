@@ -1,4 +1,4 @@
-# The Tibetan calendar
+# Tibetan calendar
 
 > The Tibetan system of astronomy and astrology is extremely complex. It takes five years to study and master it at the Astro Division of the Tibetan Medical and Astro Institute in Dharamsala, India. Students learn to calculate everything by hand in the traditional manner, on a wooden board covered with soot upon which one write with a stylus. There is no complete ephemeris compiled in which to look up figures. One of the main aspects of the training is the mathematics involved in all the calculations.
 > _Alexander Berzin (1986)[^1]_
