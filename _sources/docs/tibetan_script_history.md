@@ -1,4 +1,8 @@
-# History of Tibetan script
+# Tibetan script and fonts
+
+- Skip history and go directly to [Tibetan fonts](DigitalTibetan/docs/tibetan_fonts).
+
+## History of Tibetan script
 
 While Tibetan script is (remotely) related to Western Latin script via there common ancestor Proto-Sinaitic, the first alphabetic script, the Tibetan language is part of the Sino-Tibetan language family, without common ancestor with Indo-European or Afro-Asiatic languages. The following is a short overview of the relations between different scripts and languages:
 
