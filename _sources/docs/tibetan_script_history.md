@@ -1,6 +1,6 @@
 # Tibetan script and fonts
 
-- Skip history and go directly to [Tibetan fonts](DigitalTibetan/docs/tibetan_fonts).
+- Skip history and go directly to the list of available [Tibetan fonts](tibetan_fonts.md).
 
 ## History of Tibetan script
 
