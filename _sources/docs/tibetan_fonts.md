@@ -35,7 +35,7 @@ The following list contains a number of fonts with good coverage of the most com
 
 [^bug]: Current (2022-06) release-version of `Noto Serif Tibetan`, version 2.001, renders the glyph དྡྷི incorrectly. A fix is available at [noto development repository](https://github.com/googlefonts/noto-fonts/issues/2362#:~:text=https%3A//github.com/googlefonts/noto%2Dfonts/blob/main/hinted/ttf/NotoSerifTibetan/NotoSerifTibetan%2DRegular.ttf). See discussion at [bug report](https://github.com/googlefonts/noto-fonts/issues/2362).
 
-### Text samples
+### Text samples[^ref_lotsawahouse]
 
 Longer text samples, created with Scribus.
 * [Scribus document](https://digitaltibetan.github.io/DigitalTibetan/TibTest.sla)
@@ -47,6 +47,7 @@ Longer text samples, created with Scribus.
 | ![Jomolhari](Images/TextSample_Jomolhari.jpg) | ![Babelstone Tibetan](Images/TextSample_BabelstoneTibetan.jpg) |
 | ![Noto Serif Tibetan](Images/TextSample_NotoSerifTibetan.jpg)
 
+[^ref_lotsawahouse]: Sample text by Nāgārjuna taken from [Lotsawa House](https://www.lotsawahouse.org/bo/indian-masters/nagarjuna/essence-dharmadhatu)
 ## Qomolangma Tibetan Unicode Fonts
 
 These fonts are [free for non-commercial use](http://www.yalasoo.com/English/docs/yalasoo_en_qomolangma_fonts.html) only.
