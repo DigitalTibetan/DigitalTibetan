@@ -114,6 +114,21 @@ For more information about the history and development of the Tibetan scripts, s
 
 [The Qomolangma font project](http://www.yalasoo.com/English/docs/yalasoo_en_qomolangma_fonts.html) at Yalasoo, created with support by the Central Tibetan Relief Committee, [CTRC](https://centraltibetanreliefcommittee.net/).
 
+## Pre-Unicode fonts
+
+Old digital Tibetan files often use ancient pre-Unicode fonts. The following list contains the most frequent types. All of those fonts use their own proprietary encoding, check [Conversion of old Tibetan text](tibetan_pre_unicode.md) for information on how to convert old documents to modern Unicode.
+
+(pre_unicode_font_list)=
+- TibetanMachine (free download: [pktc.org](http://www.pktc.org/pktc/download.htm#FreeTypeface)) and TibetanCaligraphic, TibetanClassic, DzongkhaCaligraphic (commercial fonts: [www.pktc.org](http://www.pktc.org/pktc/SFTtypefaces.htm))
+- TibetanMachineWeb (free download: [www.pktc.org](https://pktc.org/tibetan-software/free-downloads/#FreeTypeface))
+- Tibetan Modern A (free download: [virginia.edu](https://collab.itc.virginia.edu/access/wiki/site/26a34146-33a6-48ce-001e-f16ce7908a6a/tibetan%20modern%20a.html).)
+- Robillard (Ltibetan, etc) (free download: [UDP website](http://udp.leighb.com/robillard.exe)).
+- Sambhota including Dedris, Eedris, Esama/b/c, Sama/b/c, Samw (was a free download if only used to view [ACIP](http://www.asianclassics.org/) documents, otherwise commercial license required, see updated at: [nitartha.net](http://www.nitartha.net/).)
+- TIBETBT (free download via [THDL](https://collab.itc.virginia.edu/access/wiki/site/26a34146-33a6-48ce-001e-f16ce7908a6a/tibetbt.html)
+(extension_a)=
+- fonts derived from the "P.R.C. National Standard for Tibetan (Extension A)" (aka "Set A"). For a documentation see Chris Fynn's website: [Tibetan Extension A](https://sites.google.com/view/chrisfynn/home/tibetanscriptfonts/standardization/precomposedtibetan-parta). Chris Fynn's Jomolhari supports this standard.
+- TCRC Bod-Yig, TCRC Youtsoweb, TCRC Youtso (free download: [www.tchrd.org](http://www.tchrd.org/tibetan/download/)
+
 ## External sources
 
 - [Tibetan fonts at University of Virginia](https://collab.its.virginia.edu/wiki/tibetan-script/Tibetan%20Fonts.html)
