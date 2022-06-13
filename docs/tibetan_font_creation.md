@@ -50,7 +50,9 @@ To learn more about the encoding and creation of Tibetan fonts, is best to look 
 - [Jomolhari font](https://fonts.google.com/specimen/Jomolhari#type-tester)
 - [FontForge](https://fontforge.org/en-US/), a powerful free and open font editor that can be used to extend existing Tibetan fonts or create new ones. It available for Linux, macOS and Windows.
 
-Now start FontForge and open `Jomolhari-Regular.ttf`. Once Jomolhari is loaded, select `Encoding / Compact (hide unused glyphs)` to make navigation easier.
+Now start FontForge and open `Jomolhari-Regular.ttf`. 
+
+Once Jomolhari is loaded, select `Encoding / Compact (hide unused glyphs)` to make navigation easier.
 
 ```{image} Images/FontForgeKa.jpg
 :align: right
@@ -68,51 +70,27 @@ It becomes a bit more complicated for compound stacks, so called _ligatures_. We
 :width: 240
 ```
 
-First, scroll down to position `f360`. It contains the glyph `གྱ`, the intermediate between `ག` and `གྱི`. In the outline editor window of `གྱ`, select `Element / Glyph info`, and `Ligatures`. This describes the OpenType rules, how the glyph `གྱ` is composed of the two unicode characters `ག` (at `U+0F41`) and ` ྱ` (at `U+0FB1`): the ligature is a `blws` 'Below Base Substitution' which means a `གྱ` is composed of a `ག` with subjoined ` ྱ`.
+First, scroll down to position `f360`. It contains the glyph `གྱ`, the intermediate between `ག` and `གྱི`. Double-click the glyph to open the outlien editor: this specific glyph had to be designed using vector graphics, since both letters merge organically. In the outline editor window of `གྱ`, select `Element / Glyph info`, and `Ligatures`. This describes the OpenType rules, how the glyph `གྱ` is composed of the two unicode characters `ག` (at `U+0F41`) and ` ྱ` (at `U+0FB1`): the ligature is a `blws` 'Below Base Substitution' which means a `གྱ` is composed of a `ག` with subjoined ` ྱ`.
 
+```{image} Images/FontForgeGyi.jpg
+:align: right
+:width: 240
+```
 
+The next position `f361` contains `གྱི`. Open the outline editor. `གྱི` is composed as references to two existing glyphs: `གྱ` and ` ི`. Since the two glyphs are not morphed together, no vector-graphics-editing is needed to compose `གྱི` from it's two components that are referenced by their corresponding glyph-names: `uni0F72` and `uni0F420FB1`. Those names are chosen by the creator of the font.
 
+Before you start modifying a given font, it is good practice to look at many different glyphs and learn which OpenType features are used to describe ligatures.
 
+Some general hints and advice on potential pitfalls:
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-# OUTDATED:
+* Usually, ligatures are not stored within the Unicode code range. Jomolhari follows an old, outdated standard that uses a specific Unicode range (the private use area, here `f3`_`xx`_) to store some of the more commonly used glyphs. This was important at times where OpenType features didn't work on all platforms and programs, in order to achieve greater compatibility. This is no longer a concern.
+* Some OpenType ligature descriptors are sometimes used interchangeably, e.g. `blws` and `abws`, which in most cases works fine. It's best to learn from a given font's existing ligatures which conventions are being followed.
+* Especially when creating fonts from scratch, extensive testing on different operating systems and with different applications and web browsers is required to make sure that Tibetan stacks are rendered correctly. Situation with compatibility has very much improved during the last decade of Unicode development, but there are still surprises. An example is `ཨཱརྻ` which renders incorrectly with Jomolhari on macOS and correctly on other operating systems. In order to find out what goes wrong, it might be necessary to look at the ligature-definitions of different fonts to narrow down the problems.
+* Avoid using fonts that do not have an open license. During any serious work, you'll encounter the case that you need a certain Tibetan stack (e.g. an uncommon mantra) that isn't rendered correctly with your favorite font. In that case you have two possibilities: contacting the authors of the font for support, or to modify the font yourself. In both cases you would end up with a custom font that you only can distribute, if the the font uses an open license. So avoid to lock yourself in with proprietary fonts. Examples of fonts that are both well supported and have an open license are Google's Noto fonts and the Babelstone fonts. See [Tibetan fonts](tibetan_fonts.md) for more information.
 
-Indic scripts and Tibetan create stacks by using the OpenType feature 'Below base substitution ligatures' (`blws`). The font contains the image of a Tibetan stack ('a glyph') together with a definition which letters do compose this stack. A Unicode font would for example contain an image of the glyph `rgyu`, རྒྱུ together with a ligature definition how this glyph is composed of single letters. A very good description how to encode Unicode stacks can be found at [THLib](https://www.thlib.org/tools/scripts/wiki/Encoding%20model%20of%20the%20Tibetan%20script%20in%20the%20UCS.html).
+## References:
 
+- <https://fontforge.org/en-US/downloads/>
+- <https://github.com/fontforge/fontforge>
+- <https://docs.microsoft.com/en-us/typography/script-development/tibetan>
 
-
-## Using FontForge to create Tibetan fonts
-
-
-
-### Editing Tibetan fonts and creating Sanskrit stacks for existing fonts
-
-To update an existing Tibetan font, load the font into FontForge and create a new empty font. Use the THDL Tibetan Machine Uni font as an example if you in doubt about settings. Name your font using "Element / font info".
-
-Standard range Tibetan 0x0f00 - 0x0fff
-Get a definition of the Tibetan Unicode font range (characters 0x0F00 to 0x0FFF) and copy the standard characters from your existing font into the standard range. You can simply load Tibetan Machine Uni into FontForge and take this as reference to see which character is expected where in the range of 0x0f00 to 0x0fff. Note that only a few stacks are within the standard range. Stacks are handled differently.
-
-`FontForgeLigatureCode.jpg`
-
-Since Unicode knows that Tibetan fonts are aligned at the upper border of a character, you need to move the characters upwards. Select them and your Transform/move to adjust the zero line. Again it is a good idea to use Tibetan Machine Uni as an example.
-
-### Tibetan Stacks
-
-Tibetan Stacks are implemented as ligatures. The Unicode sequence for rgyu is defined as a ligature-glyph that represents the corresponding stack. This way the font itself has all the knowledge how to represent those stacks. In the example of rgyu, the Unicode encoding is: uni0F62 (ra from upper half of unicode area 0F00-0FFFF), uni0F92 (ga and all following letters from lower half, since they are subjoined letters to ra), uni0FB1 (yata), uni0F74 (vowel marker for u). Note that Unicode does not know about root letters in Tibetan alphabet. The encoding always marks the uppermost letter (not including vowel signs, nadas and so on) by encoding it from the Unicode range of 0F40-0F79 and all lower letters of a stack ('subjoined') are encoded from range 0F90-0FBC. See THDL for a very good description on how to compose Tibetan Unicode glyphs.
-
-To create a stack, in FontForge create a new encoding slot ('Encoding / Add Encoding Slot') and copy the graphical representation of a stack into that new slot. Note that this slot does not have a standard Unicode ID. At this point there would be no way for any computer program to actually use the stack. In order to make the stack known, we need to define a ligature: Select a stack and select 'Element / Glyph Info'. Now select 'OT Glyph class' = Base Lig. Then select ligatures on the left and create a 'New' ligature. You need to enter the Unicode Values of the stack components: the first letter of a stack is from the upper half of the Unicode range, all following ('subjoined') letters are from the second range. See THDL for detailed explanation. Select as Tag: 'Below base substitution' blws and select 'Ignore combining marks'.
-
-To create a Mac OS 10.4.8 compatible font, you would either only or additionally create a rlig ligature entry. Fontforge supports more than one ligature entry per glyph. To make the font Linux compatible, you would additionally create a CCMP ligature with identical information.
-
-FontForge also has a useful function to replace all BLWS tags by RLIG tags. (See FontForge 'Typographic features'). This can be used to easily convert fonts that were created for only one of the platforms.
-
-At this point you should have a font that can be used for a first test:
-
-Save your work in FontForge, then select 'File / Generate Font' and generate a TrueType or OpenType font (both seem to work for Windows). Create 'OpenType' for Mac. Drag the font into control panel / fonts and launch a Unicode aware application (e.g. notepad, OpenOffice, Microsoft Word) to test your new font. Use TextEdit for Mac OS-X 10.4.8 and above.
-
-## Material:
-
-https://fontforge.org/en-US/downloads/
-https://github.com/fontforge/fontforge
-
-https://docs.microsoft.com/en-us/typography/script-development/tibetan
