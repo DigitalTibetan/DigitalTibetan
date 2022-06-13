@@ -49,6 +49,8 @@ To learn more about the encoding and creation of Tibetan fonts, is best to look 
 - [Jomolhari font](https://fonts.google.com/specimen/Jomolhari#type-tester)
 - [FontForge](https://fontforge.org/en-US/), a powerful free and open font editor that can be used to extend existing Tibetan fonts or create new ones. It available for Linux, macOS and Windows.
 
+Checkout the [FontForge tutorial](https://fontforge.org/docs/tutorial.html) to get an overview of the programs capabilities.
+
 Now start FontForge and open `Jomolhari-Regular.ttf`. 
 
 Once Jomolhari is loaded, select `Encoding / Compact (hide unused glyphs)` to make navigation easier.
@@ -58,11 +60,11 @@ Once Jomolhari is loaded, select `Encoding / Compact (hide unused glyphs)` to ma
 :width: 180
 ```
 
-Then `View / Label glyph by / Unicode`. That will display the numeric code of each glyph above it's graphical representation. This code is later required in order to construct new Tibetan stacks or ligatures.
+Then select `View / Label glyph by / Unicode`. That will display the numeric code (the Unicode value) of each glyph above it's graphical representation. This code is later required in order to construct new Tibetan stacks or ligatures.
 
-Double-click `ཀ` at `0F40`, and a vector-graphics editor for the `ཀ`-glyph will open. Each glyph in the Unicode table for Tibetan is defined by a vector outline.
+Double-click `ཀ` at Unicode value `0F40`, and a vector-graphics editor for the `ཀ`-glyph will open. Each glyph in the Unicode table for Tibetan is defined by a vector outline.
 
-It becomes a bit more complicated for compound stacks, so called _ligatures_. We will again look at the example of `གྱི`.
+Let's look at compound stacks, so called _ligatures_. We will again look at the example of `གྱི`.
 
 ```{image} Images/FontForgeGya.jpg
 :align: right
@@ -71,7 +73,9 @@ It becomes a bit more complicated for compound stacks, so called _ligatures_. We
 
 First, scroll down to position `f360`. It contains the glyph `གྱ`, the intermediate between `ག` and `གྱི`. Double-click the glyph to open the outline editor: this specific glyph had to be designed using vector graphics, since both letters merge organically. In the outline editor window of `གྱ`, select `Element / Glyph info`, and `Ligatures`. This describes the OpenType rules, how the glyph `གྱ` is composed of the two unicode characters `ག` (at `U+0F41`) and ` ྱ` (at `U+0FB1`): the ligature is a `blws` 'Below Base Substitution' which means a `གྱ` is composed of a `ག` with subjoined ` ྱ`.
 
-The next position `f361` contains `གྱི`. Open the outline editor. `གྱི` is composed as references to two existing glyphs: `གྱ` and ` ི`. Since the two glyphs are not morphed together, no vector-graphics-editing is needed to compose `གྱི` from it's two components that are referenced by their corresponding glyph-names: `uni0F72` and `uni0F420FB1`. Those names are chosen by the creator of the font.
+To learn more about FontForge's ligatures check out the [ligature documentation](https://fontforge.org/docs/tutorial/editexample4.html).
+
+The next position `f361` contains `གྱི`. Again open the outline editor. `གྱི` is composed as references to two existing glyphs: `གྱ` and ` ི`. Since the two glyphs are not morphed together, no vector-graphics-editing is needed to compose `གྱི` from it's two components that are referenced by their corresponding glyph-names: `uni0F72` and `uni0F420FB1`. Those names were originally chosen by the creator of the font. FontForge simply stores the relative positioning of the two referenced glyphs in order to synthesize the compound `གྱི`.
 
 ```{image} Images/FontForgeGyi.jpg
 :align: right
@@ -82,14 +86,16 @@ Before you start modifying a given font, it is good practice to look at many dif
 
 Some general hints and advice on potential pitfalls:
 
+* Using the vector graph editor to generate new glyphs is art work. It's very helpful to have a reference calligraphy available as ground truth. Each calligrapher has their own subtle style of how to join and merge stacks and where to align vowel marks. External vector editors (e.g. [Inkscape](https://inkscape.org/)) can be used and the result [can be imported into FontForge](https://fontforge.org/docs/tutorial/importexample.html).
 * Usually, ligatures are not stored within the Unicode code range. Jomolhari follows an old, outdated standard that uses a specific Unicode range (the private use area, here `f3`_`xx`_) to store some of the more commonly used glyphs. This was important at times where OpenType features didn't work on all platforms and programs, in order to achieve greater compatibility. This is no longer a concern.
-* Some OpenType ligature descriptors are sometimes used interchangeably, e.g. `blws` and `abws`, which in most cases works fine. It's best to learn from a given font's existing ligatures which conventions are being followed.
+* Some OpenType ligature descriptors are sometimes used interchangeably, e.g. `blws` and `abvs` (**b**e**l**o**w**- and **ab**o**v**e **s**ubstitution), which in most cases works fine. It's best to learn from a given font's existing ligatures which conventions are being followed. Note that Western ligatures (mostly by convention) use different OpenType ligature classes, so what you might encounter in [ligature tutorials](https://fontforge.org/docs/tutorial/editexample4.html) might not directly map to Tibetan. Again it is best to use FontForge to examine [existing Tibetan Fonts](tibetan_fonts.md)
 * Especially when creating fonts from scratch, extensive testing on different operating systems and with different applications and web browsers is required to make sure that Tibetan stacks are rendered correctly. Situation with compatibility has very much improved during the last decade of Unicode development, but there are still surprises. An example is `ཨཱརྻ` which renders incorrectly with Jomolhari on macOS and correctly on other operating systems. In order to find out what goes wrong, it might be necessary to look at the ligature-definitions of different fonts to narrow down the problems.
 * Avoid using fonts that do not have an open license. During any serious work, you'll encounter the case that you need a certain Tibetan stack (e.g. an uncommon mantra) that isn't rendered correctly with your favorite font. In that case you have two possibilities: contacting the authors of the font for support, or to modify the font yourself. In both cases you would end up with a custom font that you only can distribute, if the the font uses an open license. So avoid to lock yourself in with proprietary fonts. Examples of fonts that are both well supported and have an open license are Google's Noto fonts and the Babelstone fonts. See [Tibetan fonts](tibetan_fonts.md) for more information.
 
 ## References:
 
-- <https://fontforge.org/en-US/downloads/>
-- <https://github.com/fontforge/fontforge>
-- <https://docs.microsoft.com/en-us/typography/script-development/tibetan>
+- [FontForge download](https://fontforge.org/en-US/downloads/)
+- [FontForge Tutorial](https://fontforge.org/docs/tutorial.html)
+- [Microsoft information on Tibetan fonts](https://docs.microsoft.com/en-us/typography/script-development/tibetan)
+- [FontForge github](https://github.com/fontforge/fontforge)
 
