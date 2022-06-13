@@ -1,7 +1,6 @@
 # Editing and creating Tibetan fonts
 
-INCOMPLETE DRAFT
-
+This page describes how to modify Tibetan fonts. Visit [Tibetan fonts](tibetan_fonts.md) for a list of available fonts.
 ## Unicode Tibetan
 
 ### The Unicode code page for Tibetan: `0x0F00 - 0x0FFF`[^uni_tib_ref]
@@ -70,7 +69,7 @@ It becomes a bit more complicated for compound stacks, so called _ligatures_. We
 :width: 240
 ```
 
-First, scroll down to position `f360`. It contains the glyph `གྱ`, the intermediate between `ག` and `གྱི`. Double-click the glyph to open the outlien editor: this specific glyph had to be designed using vector graphics, since both letters merge organically. In the outline editor window of `གྱ`, select `Element / Glyph info`, and `Ligatures`. This describes the OpenType rules, how the glyph `གྱ` is composed of the two unicode characters `ག` (at `U+0F41`) and ` ྱ` (at `U+0FB1`): the ligature is a `blws` 'Below Base Substitution' which means a `གྱ` is composed of a `ག` with subjoined ` ྱ`.
+First, scroll down to position `f360`. It contains the glyph `གྱ`, the intermediate between `ག` and `གྱི`. Double-click the glyph to open the outline editor: this specific glyph had to be designed using vector graphics, since both letters merge organically. In the outline editor window of `གྱ`, select `Element / Glyph info`, and `Ligatures`. This describes the OpenType rules, how the glyph `གྱ` is composed of the two unicode characters `ག` (at `U+0F41`) and ` ྱ` (at `U+0FB1`): the ligature is a `blws` 'Below Base Substitution' which means a `གྱ` is composed of a `ག` with subjoined ` ྱ`.
 
 The next position `f361` contains `གྱི`. Open the outline editor. `གྱི` is composed as references to two existing glyphs: `གྱ` and ` ི`. Since the two glyphs are not morphed together, no vector-graphics-editing is needed to compose `གྱི` from it's two components that are referenced by their corresponding glyph-names: `uni0F72` and `uni0F420FB1`. Those names are chosen by the creator of the font.
 
