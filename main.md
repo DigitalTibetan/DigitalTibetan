@@ -7,7 +7,7 @@ Welcome to the Digital Tibetan v3.0
 - This site is a collection of information and How-Tos on how to work with digital Tibetan information. For information on how to configure mobiles and computer for Tibetan fonts, [start here](docs/devices_tibetan.md). This site is a new version of the old DigitalTibetan wiki[^ref_old_site], and it is currently still under development.
 - Additionally, the plan is to introduce tools for [computational dharma](docs/computational_dharma.ipynb), how modern tools inherited from data science can be used to efficiently create personal working environments that support working with, cross-referencing, and transforming large amounts of natural language data related to Tibetan. 
 
-[^ref_old_site]: [Archive of the old DigitalTibetan v2 site at archive.org](https://web.archive.org/web/20210502044931/http://www.digitaltibetan.org/index.php/Digital_Tibetan). Note: there exist rogue copies of the old digitaltibetan site by Chinese hosters at similar domain names. Those should be considered unsafe.
+[^ref_old_site]: [Archive of the old DigitalTibetan v2 site at archive.org](https://web.archive.org/web/20210502044931/http://www.digitaltibetan.org/index.php/Digital_Tibetan).
 
 (contribute)=
 ## Contributions, suggestions, ideas and corrections
