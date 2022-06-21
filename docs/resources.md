@@ -21,7 +21,7 @@ The `awesome digital Tibetan` list. A collection of pointers to projects that pr
 
 ### Tibetan corpora
 
-* [The 2013 UVA-SOAS eKangyur](https://openpecha.github.io/P000001/). An ongoing Esukhia-Barom proofreading project of the Kangyur. An older version of this project is found [here](https://github.com/Esukhia/derge-kangyur).
+* [The 2013 UVA-SOAS eKangyur](https://github.com/OpenPecha-Data/catalog). An ongoing Esukhia-Barom proofreading project of the Kangyur. An older version of this project is found [here](https://github.com/Esukhia/derge-kangyur). (Things seem to move around a bit still)
 * [The Digital Derge Tengyur](https://github.com/Esukhia/derge-tengyur). Working repository for the digital Derge Tengyur prepared by Esukhia and Barom Theksum Choling.
 * [Diverse collection of Tibetan corpora](https://github.com/Esukhia/Corpora) by Esukhia
 * [Nalanda text list at Esukhia](https://github.com/Esukhia/nalanda_text_list)
