@@ -18,3 +18,14 @@ jupyter-book build .
 ```
 
 The result ends up in `_build/html` and can be opened with a web-browser. The github action publishes this into the branch `gh-pages` which is served by Github pages as `digitaltibetan.github.io/DigitalTibetan`.
+
+### Dependencies:
+
+Requires:
+- jupyter-book
+- sphinxcontrib-mermaid
+
+```
+pip install jupyter-book sphinxcontrib-mermaid
+```
+
