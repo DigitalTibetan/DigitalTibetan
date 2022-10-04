@@ -2,6 +2,34 @@
 
 ## Offline conversion
 
+### Conversion of old Tibetan PDFs
+
+The github project [Python Tibetan Legacy Encodings tool](https://github.com/buda-base/py-tiblegenc) by Elie Roux provides a python-based toolset to convert old PDFs that were created with old (pre-Unicode) Tibetan fonts. 
+
+You'll find an email address on the github project page that offers support with the conversion!
+
+Supported formats are:
+
+- Tibetisch dBu-can
+- DBu-can
+- Youtsoweb (TCRC)
+- Youtso (TCRC)
+- Bod-Yig (TCRC)
+- Ededris
+- Dedris
+- Drutsa
+- Khamdris
+- Sama / Esama
+- LTibetan, LTibetanExtension and LMantra
+- TibetanMachine
+- TibetanMachineWeb
+- TibetanMachineSkt
+- TibetanChogyal (PKTC)
+- TibetanClassic (PKTC)
+- DzongkhaCalligraphic (PKTC)
+- TB-Youtso, TB-TTYoutso, TB2-Youtso, TB2-TTYoutso (LTWA)
+- Monlam ouchan and Monlam yigchong
+
 ### UTFC converter
 
 -   The trace foundation has supported the development of a Tibetan text converter [Yalasoo UTFC](http://www.yalasoo.com/English/docs/yalasoo_en_utfc.html):
