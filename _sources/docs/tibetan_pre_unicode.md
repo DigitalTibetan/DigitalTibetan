@@ -140,7 +140,7 @@ THDL offers a table with several Converters & Reverters For Tibetan: [Tabular Su
 
 ### ACIP
 
-- A backup of the _ACIP Tibetan Input Code Standards as of July 1998_ (`ticode.pdf`) can be downloaded [here](Resources/ticode.pdf).[^acipbck]
+- A backup of the _ACIP Tibetan Input Code Standards as of July 1998_ ([`ticode.pdf`](https://github.com/DigitalTibetan/DigitalTibetan/raw/main/docs/Resources/ticode.pdf)) can be downloaded [here](https://github.com/DigitalTibetan/DigitalTibetan/raw/main/docs/Resources/ticode.pdf).[^acipbck]
 
 
 [^ref_attu]: List is taken from [Attu's website](http://www.pechamaker.com/attu/)
