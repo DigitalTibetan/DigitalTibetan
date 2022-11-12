@@ -136,5 +136,13 @@ See [Digital Tibetan tools - phonetics](digital_tibetan_tools_pronunciation.md)
 
 THDL offers a table with several Converters & Reverters For Tibetan: [Tabular Survey Of Converters & Reverters For Tibetan](http://www.thlib.org/tools/scripts/wiki/Tabular%20Survey%20Of%20Converters%20%7Camp%7C%20Reverters%20For%20Tibetan.html)
 
+## Resources
+
+### ACIP
+
+- A backup of the _ACIP Tibetan Input Code Standards as of July 1998_ (`ticode.pdf`) can be downloaded [here](Resources/ticode.pdf).[^acipbck]
+
+
 [^ref_attu]: List is taken from [Attu's website](http://www.pechamaker.com/attu/)
 [^ref_udp]: Table taken from [UDP website](http://udp.leighb.com/convert.htm)
+[^acipbck]: Retrieved from <https://web.archive.org/web/20080828031427/http://www.asianclassics.org/download/tibetancode/ticode.pdf> on 2022-11-12.
