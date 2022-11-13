@@ -11,6 +11,7 @@ Welcome to the Digital Tibetan v3.0
 
 ## News
 
+- 2022-11-13: Digital Tibetan is now on Mastodon at `@digitaltibetan@social.linux.pizza`
 - 2022-10-04: A new conversion tool for PDFs using old Tibetan fonts is being [made available](https://github.com/buda-base/py-tiblegenc) by Elie Roux. Text within PDFs created with non-Unicode Tibetan fonts is difficult to recover, and this tool helps to extract the original Tibetan typing in modern Unicode encoding. Development is ongoing, and the sources are available at [Python Tibetan Legacy Encodings tool](https://github.com/buda-base/py-tiblegenc) at github. More conversion tools can be found at [Tibetan Pre-Unicode](docs/tibetan_pre_unicode.md).
 - See the [news archive](docs/news/_news_archive.md) for what was previously news.
 
