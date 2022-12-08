@@ -12,7 +12,7 @@ The `awesome digital Tibetan` list. A collection of pointers to projects that pr
  
 ## Development: Tibetan tools and software
 
-- [pyewts]: Python library for Wylie-EWTS and ACIP conversion. [Github](https://github.com/OpenPecha/pyewts)
+- [pyewts](https://github.com/OpenPecha/pyewts): Python library for Wylie-EWTS and [ACIP](https://github.com/OpenPecha/pyewts/blob/master/pyewts/ACIP.py) conversion.
 - [Python Tibetan Legacy Encodings tool](https://github.com/buda-base/py-tiblegenc)
 - [botok: Tibetan tokenizer in Python](https://github.com/Esukhia/botok) by Esukhia.
 - [pybo: Tibetan tokenizer in Python](https://github.com/Esukhia/pybo) by Esukhia.
