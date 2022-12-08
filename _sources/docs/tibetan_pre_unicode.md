@@ -128,6 +128,9 @@ Mac OS-X users need to install wine first, using for example [homebrew](https://
 
 See [Digital Tibetan tools - Wylie](digital_tibetan_tools_wylie.md)
 
+## ACIP conversion
+
+The [pyewts](https://github.com/OpenPecha/pyewts) library by Elie Roux also supports [conversion from ACIP to Unicode](https://github.com/OpenPecha/pyewts/blob/master/pyewts/pyewts.py).
 ## Converting Tibetan Unicode into phonetics
 
 See [Digital Tibetan tools - phonetics](digital_tibetan_tools_pronunciation.md)

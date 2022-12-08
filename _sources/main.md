@@ -11,6 +11,7 @@ Welcome to the Digital Tibetan v3.0
 
 ## News
 
+- 2022-12-08: Python source code for the conversion of ACIP to Unicode is now available at [ACIP to Unicode converter](https://github.com/OpenPecha/pyewts/blob/master/pyewts/ACIP.py). The converter is part of the [OpenPecha](https://github.com/OpenPecha) project. The ACIP documentation (see: [`ticode.pdf`](https://github.com/DigitalTibetan/DigitalTibetan/raw/main/docs/Resources/ticode.pdf)) was almost lost due to digital erosion, but has now been recovered due to the work of Elie Roux.
 - 2022-11-13: Digital Tibetan is now on Mastodon at [`@digitaltibetan@social.linux.pizza`](https://social.linux.pizza/@digitaltibetan).
 - 2022-10-04: A new conversion tool for PDFs using old Tibetan fonts is being [made available](https://github.com/buda-base/py-tiblegenc) by Elie Roux. Text within PDFs created with non-Unicode Tibetan fonts is difficult to recover, and this tool helps to extract the original Tibetan typing in modern Unicode encoding. Development is ongoing, and the sources are available at [Python Tibetan Legacy Encodings tool](https://github.com/buda-base/py-tiblegenc) at github. More conversion tools can be found at [Tibetan Pre-Unicode](docs/tibetan_pre_unicode.md).
 - See the [news archive](docs/news/_news_archive.md) for what was previously news.
