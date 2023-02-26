@@ -51,7 +51,7 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script src="https://unpkg.com/mermaid@9.4.0/dist/mermaid.min.js"></script>
     <script>mermaid.initialize({startOnLoad:true});</script>
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
@@ -512,6 +512,11 @@ title="Print to PDF"
      Dependencies:
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#build-notes-for-macos-with-brew">
+     Build notes for macOS with brew:
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -543,6 +548,11 @@ title="Print to PDF"
      Dependencies:
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#build-notes-for-macos-with-brew">
+     Build notes for macOS with brew:
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -567,7 +577,7 @@ title="Print to PDF"
 <h2>How this works<a class="headerlink" href="#how-this-works" title="Permalink to this headline">#</a></h2>
 <p>This repository contains markdown files (for textual information) and jupyter notebooks (for computational examples) that are automatically converted at each push to the repository using github actions. The result are web pages, accessible at the <a class="reference external" href="https://digitaltibetan.github.io/DigitalTibetan/">Digital Tibetan site</a>.</p>
 <p>To build the project manually:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter-book build .
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter-book<span class="w"> </span>build<span class="w"> </span>.
 </pre></div>
 </div>
 <p>The result ends up in <code class="docutils literal notranslate"><span class="pre">_build/html</span></code> and can be opened with a web-browser. The github action publishes this into the branch <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> which is served by Github pages as <code class="docutils literal notranslate"><span class="pre">digitaltibetan.github.io/DigitalTibetan</span></code>.</p>
@@ -581,6 +591,14 @@ title="Print to PDF"
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">sphinxcontrib</span><span class="o">-</span><span class="n">mermaid</span>
 </pre></div>
 </div>
+</section>
+<section id="build-notes-for-macos-with-brew">
+<h3>Build notes for macOS with brew:<a class="headerlink" href="#build-notes-for-macos-with-brew" title="Permalink to this headline">#</a></h3>
+<p>If encountering build errors containing <code class="docutils literal notranslate"><span class="pre">ValueError:</span> <span class="pre">No</span> <span class="pre">template</span> <span class="pre">sub-directory</span> <span class="pre">with</span> <span class="pre">name</span> <span class="pre">'script'</span> <span class="pre">found</span> <span class="pre">in</span> <span class="pre">the</span> <span class="pre">following</span> <span class="pre">paths:</span></code> then execute the following before building:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">JUPYTER_PATH</span><span class="o">=</span>/opt/homebrew/share/jupyter:<span class="nv">$JUPYTER_PATH</span>
+</pre></div>
+</div>
+<p>is currently required to make the jupyter-book build work until <a class="reference external" href="https://github.com/jupyter/nbconvert/issues/1773">this</a> is fixed.</p>
 </section>
 </section>
 </section>
@@ -597,7 +615,7 @@ title="Print to PDF"
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./."
         },
         predefinedOutput: true

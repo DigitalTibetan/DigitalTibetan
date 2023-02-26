@@ -51,7 +51,7 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script src="https://unpkg.com/mermaid@9.4.0/dist/mermaid.min.js"></script>
     <script>mermaid.initialize({startOnLoad:true});</script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -508,6 +508,13 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#i-want-to-get-a-new-mobile-what-s-best-for-tibetan">
    I want to get a new mobile, what’s best for Tibetan?
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#e-readers">
+     E-Readers
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#how-do-i-work-with-tibetan-on-my-mobile-device">
@@ -542,6 +549,13 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#i-want-to-get-a-new-mobile-what-s-best-for-tibetan">
    I want to get a new mobile, what’s best for Tibetan?
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#e-readers">
+     E-Readers
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#how-do-i-work-with-tibetan-on-my-mobile-device">
@@ -590,12 +604,32 @@ title="Print to PDF"
 <td class="text-align:center"><p>- -</p></td>
 <td><p>Full Tibetan support since iOS 4.21 (2010), slowly breaking</p></td>
 </tr>
+</tbody>
+</table>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>E-Reader</p></th>
+<th class="text-align:center head"><p>Displays Tibetan</p></th>
+<th class="text-align:center head"><p>Tibetan input method</p></th>
+<th class="text-align:center head"><p>Apps</p></th>
+<th class="text-align:center head"><p>Support</p></th>
+<th class="head"><p>Comment</p></th>
+</tr>
+</thead>
+<tbody>
 <tr class="row-even"><td class="text-align:left"><p>Amazon Kindle</p></td>
 <td class="text-align:center"><p>- -<a class="footnote-reference brackets" href="#id4" id="id2">2</a></p></td>
 <td class="text-align:center"><p>- -</p></td>
 <td class="text-align:center"><p>- - -</p></td>
 <td class="text-align:center"><p>- -</p></td>
 <td><p>Amazon Kindle support for Tibetan is broken since Kindle OS version 5.9.6</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Boox Leaf 2</p></td>
+<td class="text-align:center"><p>+</p></td>
+<td class="text-align:center"><p>++</p></td>
+<td class="text-align:center"><p>++</p></td>
+<td class="text-align:center"><p>?</p></td>
+<td><p>Requires considerable configuration effort and tech skills</p></td>
 </tr>
 </tbody>
 </table>
@@ -607,8 +641,12 @@ title="Print to PDF"
 <li><p>Slightly <strong>easier</strong> to use for some people are Apple iOS devices (<a class="reference internal" href="configuration_ios.html"><span class="doc std std-doc"><strong>iPhone, iPad</strong></span></a>). This comes at the cost of fewer degrees of freedom: Installing your own content, fonts and cross-application interoperability is considerably hampered when compared to Android. Apple’s support process for low resource languages is simply non-existing: so in case of technical problems, you’re on your own.</p></li>
 </ul>
 <p>For most people, the actual <strong>differences</strong> between Android and iOS <strong>do not matter</strong>: just check both app stores for the applications you might want to use. Generally, power-users that want to access all technical possibilities, including extension and development are better off with Android, in terms of ease-of-use iOS has advantages for some.</p>
+<section id="e-readers">
+<h3>E-Readers<a class="headerlink" href="#e-readers" title="Permalink to this headline">#</a></h3>
 <p>Unfortunately most <strong>e-ink ebook readers</strong> are not particularly well suited for Tibetan. Amazon Kindle has completely <strong>broken Tibetan</strong> support, so those cannot be used. Amazon support was unable to track and fix the problem.</p>
 <p>Some ebook manufacturers (e.g. PocketBook) offer some degree of Tibetan support, but it is still rather limited when compared with Android or iOS devices. Not recommended.</p>
+<p>There is a new generation of <strong>Android-based e-readers</strong> (e.g. Boox Leaf 2) that offer a lot of possibilities, but require considerable technical skills to set up. Not recommended for beginners.</p>
+</section>
 </section>
 <section id="how-do-i-work-with-tibetan-on-my-mobile-device">
 <h2>How do I work with Tibetan on my mobile device?<a class="headerlink" href="#how-do-i-work-with-tibetan-on-my-mobile-device" title="Permalink to this headline">#</a></h2>
@@ -651,7 +689,7 @@ title="Print to PDF"
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./docs"
         },
         predefinedOutput: true

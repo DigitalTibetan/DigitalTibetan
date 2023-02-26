@@ -51,7 +51,7 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script src="https://unpkg.com/mermaid@9.4.0/dist/mermaid.min.js"></script>
     <script>mermaid.initialize({startOnLoad:true});</script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -709,16 +709,16 @@ title="Print to PDF"
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>import pyewts
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pyewts</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>converter=pyewts.pyewts()
-print(converter.toUnicode(&quot;oM AHhUM:&quot;))
-print(converter.toWylie(&quot;སེམས་ཉིད་&quot;))
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">converter</span><span class="o">=</span><span class="n">pyewts</span><span class="o">.</span><span class="n">pyewts</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">converter</span><span class="o">.</span><span class="n">toUnicode</span><span class="p">(</span><span class="s2">&quot;oM AHhUM:&quot;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">converter</span><span class="o">.</span><span class="n">toWylie</span><span class="p">(</span><span class="s2">&quot;སེམས་ཉིད་&quot;</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -743,15 +743,15 @@ sems nyid
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>from indic_transliteration import sanscript
-from indic_transliteration.sanscript import SchemeMap, SCHEMES, transliterate
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">indic_transliteration</span> <span class="kn">import</span> <span class="n">sanscript</span>
+<span class="kn">from</span> <span class="nn">indic_transliteration.sanscript</span> <span class="kn">import</span> <span class="n">SchemeMap</span><span class="p">,</span> <span class="n">SCHEMES</span><span class="p">,</span> <span class="n">transliterate</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>transliterate(&quot;Kālacakra&quot;, sanscript.IAST, sanscript.DEVANAGARI)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">transliterate</span><span class="p">(</span><span class="s2">&quot;Kālacakra&quot;</span><span class="p">,</span> <span class="n">sanscript</span><span class="o">.</span><span class="n">IAST</span><span class="p">,</span> <span class="n">sanscript</span><span class="o">.</span><span class="n">DEVANAGARI</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -768,17 +768,17 @@ from indic_transliteration.sanscript import SchemeMap, SCHEMES, transliterate
 <p>Let’s say we found an old glossary, consisting of IAST-encoded Sanskrit vocabulary translated into Wylie-encoded Tibetan, and we want to add Unicode Tibetan and Devanagari to this glossary:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>sample_glossary=&quot;&quot;&quot;Abhiṣeka - dbang bskur
-Akaniṣṭha - og min
-Avalokiteśvara - spyan ras gzigs
-Bhagavān - bcom ldan &#39;das
-Ḍākinī - mkha&#39; &#39;gro
-Jñānasattva - ye shes sems dpa&#39;
-Mahāmudrā - phyag rgya chen po
-Oḍḍiyāna - o rgyan
-Samantabhadrī - kun tu bzang mo
-Tathāgata - de bzhin gshegs pa
-Yoginī - rnal &#39;byor ma&quot;&quot;&quot;
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sample_glossary</span><span class="o">=</span><span class="s2">&quot;&quot;&quot;Abhiṣeka - dbang bskur</span>
+<span class="s2">Akaniṣṭha - og min</span>
+<span class="s2">Avalokiteśvara - spyan ras gzigs</span>
+<span class="s2">Bhagavān - bcom ldan &#39;das</span>
+<span class="s2">Ḍākinī - mkha&#39; &#39;gro</span>
+<span class="s2">Jñānasattva - ye shes sems dpa&#39;</span>
+<span class="s2">Mahāmudrā - phyag rgya chen po</span>
+<span class="s2">Oḍḍiyāna - o rgyan</span>
+<span class="s2">Samantabhadrī - kun tu bzang mo</span>
+<span class="s2">Tathāgata - de bzhin gshegs pa</span>
+<span class="s2">Yoginī - rnal &#39;byor ma&quot;&quot;&quot;</span>
 </pre></div>
 </div>
 </div>
@@ -787,27 +787,27 @@ Yoginī - rnal &#39;byor ma&quot;&quot;&quot;
 The result can be saved as CSV-File or <a class="reference external" href="https://pandas.pydata.org/docs/user_guide/io.html">many different other formats</a>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>import pandas as pd
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># get all the IAST words from the glossary
-iast = [x.split(&#39;-&#39;)[0].strip() for x in sample_glossary.split(&quot;\n&quot;)]
-# get all the Wylie words from the glossary
-wylie = [x.split(&#39;-&#39;)[1].strip()+&#39; &#39; for x in sample_glossary.split(&quot;\n&quot;)]
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># get all the IAST words from the glossary</span>
+<span class="n">iast</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;-&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">sample_glossary</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)]</span>
+<span class="c1"># get all the Wylie words from the glossary</span>
+<span class="n">wylie</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;-&#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">+</span><span class="s1">&#39; &#39;</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">sample_glossary</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)]</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Combine the two lists (IAST and Wylie words) into a &#39;dataframe&#39;:
-df = pd.DataFrame.from_dict({&#39;Wylie&#39;: wylie, &#39;IAST&#39;: iast})
-# Show the current table, nothing new, just a nice table that can be easily transformed:
-df
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Combine the two lists (IAST and Wylie words) into a &#39;dataframe&#39;:</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="o">.</span><span class="n">from_dict</span><span class="p">({</span><span class="s1">&#39;Wylie&#39;</span><span class="p">:</span> <span class="n">wylie</span><span class="p">,</span> <span class="s1">&#39;IAST&#39;</span><span class="p">:</span> <span class="n">iast</span><span class="p">})</span>
+<span class="c1"># Show the current table, nothing new, just a nice table that can be easily transformed:</span>
+<span class="n">df</span>
 </pre></div>
 </div>
 </div>
@@ -898,12 +898,12 @@ df
 <p>Now we can use the converters shown above to add Unicode Tibetan and Devanagari for each entry:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Add a new column &#39;Tibetan&#39; that will contain the Unicode Tibetan equivalent of the Wylie word:
-df[&#39;Tibetan&#39;]=[converter.toUnicode(x) for x in df[&#39;Wylie&#39;]]
-# Add a new column &#39;Devanagari&#39; that will contain the Unicode Devanagari equivalent of the IAST word:
-df[&#39;Devanagari&#39;]=[transliterate(x, sanscript.IAST, sanscript.DEVANAGARI) for x in df[&#39;IAST&#39;]]
-# Show the exanded tabled that now has the Tibetan and Devanagari columns:
-df
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Add a new column &#39;Tibetan&#39; that will contain the Unicode Tibetan equivalent of the Wylie word:</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;Tibetan&#39;</span><span class="p">]</span><span class="o">=</span><span class="p">[</span><span class="n">converter</span><span class="o">.</span><span class="n">toUnicode</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Wylie&#39;</span><span class="p">]]</span>
+<span class="c1"># Add a new column &#39;Devanagari&#39; that will contain the Unicode Devanagari equivalent of the IAST word:</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;Devanagari&#39;</span><span class="p">]</span><span class="o">=</span><span class="p">[</span><span class="n">transliterate</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">sanscript</span><span class="o">.</span><span class="n">IAST</span><span class="p">,</span> <span class="n">sanscript</span><span class="o">.</span><span class="n">DEVANAGARI</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;IAST&#39;</span><span class="p">]]</span>
+<span class="c1"># Show the exanded tabled that now has the Tibetan and Devanagari columns:</span>
+<span class="n">df</span>
 </pre></div>
 </div>
 </div>
@@ -1018,50 +1018,50 @@ df
 <p>Let’s use Wikipedia to explain those terms: We will use the IAST encoded name (e.g. <code class="docutils literal notranslate"><span class="pre">Akaniṣṭha</span></code>) and do a Wikipedia lookup. If an entry is available, we extract the summary (usually the first paragraph in Wikipedia) as text and add it to our table:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># First we write a litter helper that pulls data from a wikipedia article.
-from urllib.request import urlopen
-from urllib.parse import quote
-import json
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># First we write a litter helper that pulls data from a wikipedia article.</span>
+<span class="kn">from</span> <span class="nn">urllib.request</span> <span class="kn">import</span> <span class="n">urlopen</span>
+<span class="kn">from</span> <span class="nn">urllib.parse</span> <span class="kn">import</span> <span class="n">quote</span>
+<span class="kn">import</span> <span class="nn">json</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># We want to get the &#39;summary&#39; part for a given search-word from wikipedia as text. We can add this
-# summary to each entry in our dataframe as an explanation of the word.
-&#39;&#39;&#39;Get the summary of a wikipedia article with title `query` and return it as text.&#39;&#39;&#39;
-def wikipedia_summary(query, verbose=False):
-    api=&quot;https://en.wikipedia.org/w/api.php&quot;
-    esc_query=quote(query)
-    query_url=f&quot;{api}?format=json&amp;action=query&amp;prop=extracts&amp;exintro&amp;explaintext&amp;redirects=1&amp;titles={esc_query}&quot;
-    result=[]
-    with urlopen(query_url) as f:
-        resp = json.load(f)
-        if verbose is True:
-            print(resp)
-        for entry_name in resp[&quot;query&quot;][&quot;pages&quot;]:
-            entry=resp[&quot;query&quot;][&quot;pages&quot;][entry_name]
-            if &quot;title&quot; in entry.keys() and &#39;extract&#39; in entry.keys():
-                result.append((entry[&#39;title&#39;],entry[&#39;extract&#39;]))
-    if len(result)==1:
-        ans=result[0][1]
-        if &#39;refer&#39; in ans and &#39;to:&#39; in ans:
-            return &quot;&quot;
-        else:
-            return ans
-    else:
-        return &quot;&quot;
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># We want to get the &#39;summary&#39; part for a given search-word from wikipedia as text. We can add this</span>
+<span class="c1"># summary to each entry in our dataframe as an explanation of the word.</span>
+<span class="sd">&#39;&#39;&#39;Get the summary of a wikipedia article with title `query` and return it as text.&#39;&#39;&#39;</span>
+<span class="k">def</span> <span class="nf">wikipedia_summary</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="n">api</span><span class="o">=</span><span class="s2">&quot;https://en.wikipedia.org/w/api.php&quot;</span>
+    <span class="n">esc_query</span><span class="o">=</span><span class="n">quote</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+    <span class="n">query_url</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">api</span><span class="si">}</span><span class="s2">?format=json&amp;action=query&amp;prop=extracts&amp;exintro&amp;explaintext&amp;redirects=1&amp;titles=</span><span class="si">{</span><span class="n">esc_query</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="n">result</span><span class="o">=</span><span class="p">[]</span>
+    <span class="k">with</span> <span class="n">urlopen</span><span class="p">(</span><span class="n">query_url</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">resp</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">verbose</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">resp</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">entry_name</span> <span class="ow">in</span> <span class="n">resp</span><span class="p">[</span><span class="s2">&quot;query&quot;</span><span class="p">][</span><span class="s2">&quot;pages&quot;</span><span class="p">]:</span>
+            <span class="n">entry</span><span class="o">=</span><span class="n">resp</span><span class="p">[</span><span class="s2">&quot;query&quot;</span><span class="p">][</span><span class="s2">&quot;pages&quot;</span><span class="p">][</span><span class="n">entry_name</span><span class="p">]</span>
+            <span class="k">if</span> <span class="s2">&quot;title&quot;</span> <span class="ow">in</span> <span class="n">entry</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="ow">and</span> <span class="s1">&#39;extract&#39;</span> <span class="ow">in</span> <span class="n">entry</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+                <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">entry</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">],</span><span class="n">entry</span><span class="p">[</span><span class="s1">&#39;extract&#39;</span><span class="p">]))</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">result</span><span class="p">)</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span>
+        <span class="n">ans</span><span class="o">=</span><span class="n">result</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+        <span class="k">if</span> <span class="s1">&#39;refer&#39;</span> <span class="ow">in</span> <span class="n">ans</span> <span class="ow">and</span> <span class="s1">&#39;to:&#39;</span> <span class="ow">in</span> <span class="n">ans</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s2">&quot;&quot;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">ans</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;&quot;</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Do a Wikipedia lookup for each IAST word in the dataframe, and add the result to a new column &#39;Definition&#39;:
-df[&#39;Definition&#39;]=[wikipedia_summary(x) for x in df[&#39;IAST&#39;]]
-# Show the expanded dataframe with the new column, (abbreviated in display)):
-df
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Do a Wikipedia lookup for each IAST word in the dataframe, and add the result to a new column &#39;Definition&#39;:</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;Definition&#39;</span><span class="p">]</span><span class="o">=</span><span class="p">[</span><span class="n">wikipedia_summary</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;IAST&#39;</span><span class="p">]]</span>
+<span class="c1"># Show the expanded dataframe with the new column, (abbreviated in display)):</span>
+<span class="n">df</span>
 </pre></div>
 </div>
 </div>
@@ -1187,10 +1187,10 @@ df
 <p>Now our table also contains an explanation for most of the entries. Let’s look at row 1 (the entry for <code class="docutils literal notranslate"><span class="pre">Akaniṣṭha</span></code>)</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># The table is too small to show the full definitions, lets look at a sample:
-from IPython.display import display, HTML
-pd.set_option(&#39;display.max_colwidth&#39;, None)
-display(HTML(df.loc[1,&#39;Definition&#39;]))
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># The table is too small to show the full definitions, lets look at a sample:</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.max_colwidth&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;Definition&#39;</span><span class="p">]))</span>
 </pre></div>
 </div>
 </div>
@@ -1236,7 +1236,7 @@ The Mundane Akaniṣṭha, which is the highest pure level of the form realm, wh
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./docs"
         },
         predefinedOutput: true
