@@ -29,3 +29,12 @@ Requires:
 pip install jupyter-book sphinxcontrib-mermaid
 ```
 
+### Build notes for macOS with brew:
+
+If encountering build errors containing `ValueError: No template sub-directory with name 'script' found in the following paths:` then execute the following before building:
+
+```bash
+export JUPYTER_PATH=/opt/homebrew/share/jupyter:$JUPYTER_PATH
+```
+
+is currently required to make the jupyter-book build work until [this](https://github.com/jupyter/nbconvert/issues/1773) is fixed.
