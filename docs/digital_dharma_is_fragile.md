@@ -54,7 +54,15 @@ Carefully evaluate the best possible backup- and distribution strategy for every
 ### Related projects
 
  - [LongNow.org](https://longnow.org/)
+ > Our work encourages imagination at the timescale of civilization — the next and last 10,000 years — a timespan we call the long now.
+ - [LongNow: Very long-term backups](https://longnow.org/ideas/very-long-term-backup/)
+> This problem of long-term digital storage seemed a crucial hurdle for any civilization trying to act generationaly. How could a society think in terms of centuries unless there was a reliable way to transmit and store its knowledge over centuries? 
  - [The Rosetta Project](https://rosettaproject.org/)
+ > The Rosetta Project is a global collaboration of language specialists and native speakers working to build a publicly accessible digital library of human languages.
+ - [The Lunar Library](https://www.archmission.org/spaceil) 
+ > The carrier of the first version crashed into the moon, however: "currently it is believed that the Lunar Library survived the crash of Beresheet and is intact on the Moon according to our team of scientific advisors based on imagery data provided by NASA’s LRO."
+ - [Github Arctic Code Vault](https://archiveprogram.github.com/)
+ > On 02/02/2020 GitHub captured a snapshot of every active public repository. Those millions of repos were then archived to hardened film designed to last for 1,000 years, and stored in the GitHub Arctic Code Vault in a decommissioned coal mine deep beneath an Arctic mountain in Svalbard, Norway.
  
 #### Image references
 
