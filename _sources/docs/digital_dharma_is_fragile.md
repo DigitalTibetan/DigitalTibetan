@@ -51,6 +51,11 @@ Once you've made sure that dharma material that needs to be preserved is stored 
 Carefully evaluate the best possible backup- and distribution strategy for everything that has been established as source-of-truth above.
 ```
 
+### Related projects
+
+ - [LongNow.org](https://longnow.org/)
+ - [The Rosetta Project](https://rosettaproject.org/)
+ 
 #### Image references
 
 * Image "The outer panels of Rogier van der Weyden's Braque Triptych (c. 1452) show the skull of the patron displayed on the inner panels. The bones rest on a brick, a symbol of his former industry and achievement". (Public domain), [wikipedia](https://en.wikipedia.org/wiki/Memento_mori#/media/File:Braque_Family_Triptych_closed_WGA.jpg)
