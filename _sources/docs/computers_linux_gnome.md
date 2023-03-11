@@ -17,7 +17,7 @@ See [Tibetan keyboards](tibetan_keyboards.md) for more information.
 :width: 480
 ```
 
-To add a Wylie keyboard, install the packages `ibus` and `ibus-m17n` with the package manager of your distribution. Then either make sure to start the `ibus` daemon, or simply restart your computer.
+Gnome already has the `ibus` input method installed by default, which is a considerable advantage over KDE. You might need to install the `ibus-m17n` package, which provides the Wylie keyboard.
 
 Then, when opening gnome `settings`, a three new Tibetan keyboards should be available: select `EWTS (m17n)` (not 'Wylie', which is an old version).
 
