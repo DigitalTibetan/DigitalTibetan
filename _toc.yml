@@ -20,6 +20,7 @@ chapters:
     - file: docs/computers_linux_gnome.md
     - file: docs/computers_windows_xp.md
     - file: docs/computers_applications_libreoffice.md
+    - file: docs/dictionaries.md
 - file: docs/tibetan_keyboards.md
 - file: docs/tibetan_script_history.md
   sections:
