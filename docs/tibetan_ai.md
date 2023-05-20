@@ -44,4 +44,4 @@ Humans first will work togehter with language models to edit texts faster and mo
 Very large translation projects, like 84000.co will most probably finished by automatic machine translation.
 
 
-[^1]: Gai Gutherz and others, Translating Akkadian to English with neural machine translation, PNAS Nexus, Volume 2, Issue 5, May 2023, pgad096, https://doi.org/10.1093/pnasnexus/pgad096
+[^1]: Gai Gutherz and others, Translating Akkadian to English with neural machine translation, PNAS Nexus, Volume 2, Issue 5, May 2023, pgad096, <https://doi.org/10.1093/pnasnexus/pgad096>
