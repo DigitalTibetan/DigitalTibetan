@@ -47,6 +47,8 @@ The `awesome digital Tibetan` list. A collection of pointers to projects that pr
 - [`Tibetisches Wörterbuch`: first scientific Tibetan dictionary, Tibetan-German, WIP](https://wts.badw.de/das-projekt.html)
 ## Translator's resources
 
+- https://sites.google.com/view/tibvocab/home
+
 ## NLP
 
 - Meta: [Awesome Tibetan NLP](https://github.com/tibetan-nlp/awesome-tibetan-nlp) a collection of NLP projects at the [Tibetan NLP project](https://github.com/tibetan-nlp)
