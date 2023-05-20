@@ -1,8 +1,11 @@
 # Optical character recognition (OCR)
 
+> **Note:** Research in application of AI on language translation is a very fast moving field. If you have new information that should be part of this collection, please generate an [issue at github](https://github.com/DigitalTibetan/DigitalTibetan/issues).
+
 ## Google drive and Google docs (online OCR)
 
-Excellent progress has been made by Google in automatically converting woodblock pechas into editable text.
+Excellent progress has been made by Google in automatically converting woodblock pechas into editable text. This is currently the recommended way to OCR Tibetan text corpora.
+
 The workflow for conversion is:
 
 1. Get a Tibetan pecha or text in PDF format.
