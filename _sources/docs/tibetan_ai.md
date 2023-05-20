@@ -5,10 +5,7 @@ and machine translation will change the way researchers can work with Tibetan so
 
 > **Note:** Research in application of AI on language translation is a very fast moving field. If you have new information that should be part of this collection, please generate an [issue at github](https://github.com/DigitalTibetan/DigitalTibetan/issues).
 
-While for language systems that are commonly used, such as English or Chinese, these machine 
-algorithms already achieve human level performance, so-called low-resource languages that are 
-either no longer spoken by many people or are subject to other kind of restrictions on access 
-of freely available material in that language, have not yet reached comparable level of functionality.
+While machine algorithms for commonly used languages such as English or Chinese have already achieved human-level performance, low-resource languages that are either no longer spoken by many people or are subject to other kinds of restrictions on access to freely available material in that language have not yet reached a comparable level of functionality.
 
 However, progress is being made: modern multi-language systems can even translate unknown languages
 with very few given translation examples.
