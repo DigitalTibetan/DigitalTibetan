@@ -4,11 +4,11 @@
 
 ## Overview
 
-| Test-date | OCR Tool | Comment | Evaluation |
-| --------- | -------- | ------- | ---------- |
-| 2023-03 | Google Drive, Google Docs | Requires upload of PDFs to a Google account | 4/5 |
-| 2023-03 | Tesseract 5.3 | Local installation required | 2/5 |
-| 2023-03 | Google Photos (mobile) | Photo with Google Photos, Lens, Text | 4/5 |
+| Test-date | OCR Tool                  | Comment                                     | Evaluation |
+| --------- | ------------------------- | ------------------------------------------- | ---------- |
+| 2023-03   | Google Drive, Google Docs | Requires upload of PDFs to a Google account | 4/5        |
+| 2023-03   | Tesseract 5.3             | Local installation required                 | 2/5        |
+| 2023-03   | Google Photos (mobile)    | Photo with Google Photos, Lens, Text        | 4/5        |
 
 
 ## Google drive and Google docs (online OCR)
@@ -88,29 +88,34 @@ Things to try:
 - `-l` selects the language, there are two main variants: `-l bod` and `-l script/Tibetan`.
 - `--psm <number>` select the segmentation mode:
 
-| PSM mode | Explanation |
-| -------- | ----------- |
-| 0 | Orientation and script detection (OSD) only. |
-| 1 | Automatic page segmentation with OSD. |
-| 2 | Automatic page segmentation, but no OSD, or OCR. |
-| **3** | Fully automatic page segmentation, but no OSD. **(Default)** |
-| 4 | Assume a single column of text of variable sizes. |
-| 5 | Assume a single uniform block of vertically aligned text. |
-| 6 | Assume a single uniform block of text. |
-| 7 | Treat the image as a single text line. |
-| 8 | Treat the image as a single word. |
-| 9 | Treat the image as a single word in a circle. |
-| 10 | Treat the image as a single character. |
-| 11 | Sparse text. Find as much text as possible in no particular order. |
-| 12 | Sparse text with OSD. |
-| 13 | Raw line. Treat the image as a single text line, bypassing hacks that are Tesseract-specific. |
+| PSM mode | Explanation                                                                                   |
+| -------- | --------------------------------------------------------------------------------------------- |
+| 0        | Orientation and script detection (OSD) only.                                                  |
+| 1        | Automatic page segmentation with OSD.                                                         |
+| 2        | Automatic page segmentation, but no OSD, or OCR.                                              |
+| **3**    | Fully automatic page segmentation, but no OSD. **(Default)**                                  |
+| 4        | Assume a single column of text of variable sizes.                                             |
+| 5        | Assume a single uniform block of vertically aligned text.                                     |
+| 6        | Assume a single uniform block of text.                                                        |
+| 7        | Treat the image as a single text line.                                                        |
+| 8        | Treat the image as a single word.                                                             |
+| 9        | Treat the image as a single word in a circle.                                                 |
+| 10       | Treat the image as a single character.                                                        |
+| 11       | Sparse text. Find as much text as possible in no particular order.                            |
+| 12       | Sparse text with OSD.                                                                         |
+| 13       | Raw line. Treat the image as a single text line, bypassing hacks that are Tesseract-specific. |
 
 For more information, see [Tesseract options](https://tesseract-ocr.github.io/tessdoc/Command-Line-Usage.html#simplest-invocation-to-ocr-an-image).
 
 
 ## Mobile - Google Photos
 
-<img src="Images/google_photos_ocr.jpg" alt="Image description" style="float:right; width:50%;">
+```{figure} Images/google_photos_ocr.jpg
+---
+scale: 50%
+align: right
+---
+```
 
 With mobile application Google Photos, a photo of a Tibetan page can be translated into text by
 using the 'Google Lens' and 'Text' function.
