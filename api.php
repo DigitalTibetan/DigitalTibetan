@@ -1,1 +1,3 @@
-<meta http-equiv="Refresh" content="0; url=main.html" />
+header("Location: https://digitaltibetan.github.io/DigitalTibetan/main.html");
+die();
+
