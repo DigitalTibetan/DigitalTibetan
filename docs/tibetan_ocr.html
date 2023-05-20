@@ -383,7 +383,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -399,6 +401,18 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#google-drive-and-google-docs-online-ocr">Google drive and Google docs (online OCR)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#local-conversion-with-tesseract">Local conversion with Tesseract</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -410,7 +424,27 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="optical-character-recognition-ocr">
 <h1>Optical character recognition (OCR)<a class="headerlink" href="#optical-character-recognition-ocr" title="Permalink to this heading">#</a></h1>
-<p>(TBD)</p>
+<section id="google-drive-and-google-docs-online-ocr">
+<h2>Google drive and Google docs (online OCR)<a class="headerlink" href="#google-drive-and-google-docs-online-ocr" title="Permalink to this heading">#</a></h2>
+<p>Excellent progress has been made by Google in automatically converting woodblock pechas into editable text.
+The workflow for conversion is:</p>
+<ol class="arabic simple">
+<li><p>Get a Tibetan pecha or text in PDF format.</p></li>
+<li><p>Upload the PDF file to Google drive (free Google account required)</p></li>
+<li><p>Open the PDF with Google Docs: the PDF will be automatically translated to text, and color marking is used to highlight difficult parts.</p></li>
+</ol>
+<section id="example">
+<h3>Example<a class="headerlink" href="#example" title="Permalink to this heading">#</a></h3>
+<p>A one-page PDF (you can also use of course multiple pages) is uploaded to Google Drive</p>
+<p><img alt="Zabmo" src="../_images/zabmo.png" /></p>
+<p>The, in Google Drive, open the PDF. You will see a button “Open in Google Docs”. Do so, you will get editable text:</p>
+<p><img alt="Zabmo-OCR" src="../_images/zabmo_ocr.png" /></p>
+<p>Note that even the side-text and page-numbers have been automatically identified!</p>
+</section>
+</section>
+<section id="local-conversion-with-tesseract">
+<h2>Local conversion with Tesseract<a class="headerlink" href="#local-conversion-with-tesseract" title="Permalink to this heading">#</a></h2>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -471,6 +505,24 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#google-drive-and-google-docs-online-ocr">Google drive and Google docs (online OCR)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#local-conversion-with-tesseract">Local conversion with Tesseract</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
