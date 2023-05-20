@@ -37,7 +37,6 @@ Then, in Google Drive, open the PDF. You will see a button "Open in Google Docs"
 scale: 70%
 ---
 ```
-![Zabmo-OCR](Images/zabmo_ocr.png)
 
 Note that even the side-text and page-numbers have been automatically identified! Still, a number of unrecognized spelling mistakes require attention.
 
