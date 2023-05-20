@@ -32,6 +32,10 @@ chapters:
   - file: docs/tibetan_formatting_libreoffice_extension.md
 - file: docs/sanskrit_overview.md
 - file: docs/tibetan_calendar.md
+- file: docs/tibetan_ai.md
+  sections:
+  - file: docs/tibetan_ocr.md
+  - file: docs/tibetan_machine_translation.md
 - file: docs/digital_tibetan_tools.md
   sections:
   - file: docs/digital_tibetan_tools_wylie.md
