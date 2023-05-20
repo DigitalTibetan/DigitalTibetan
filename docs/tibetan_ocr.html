@@ -406,11 +406,17 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#google-drive-and-google-docs-online-ocr">Google drive and Google docs (online OCR)</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#local-conversion-with-tesseract">Local conversion with Tesseract</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#local-conversion-with-tesseract">Local conversion with Tesseract</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">Installation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#usage-example">Usage example</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#historical-approaches">Historical approaches</a></li>
 </ul>
             </nav>
         </div>
@@ -427,6 +433,30 @@ document.write(`
 <blockquote>
 <div><p><strong>Note:</strong> Research in application of AI on optical character recognition and related artificial intelligence topics is a very fast moving field. If you have new information that should be part of this collection, please generate an <a class="reference external" href="https://github.com/DigitalTibetan/DigitalTibetan/issues">issue at github</a>.</p>
 </div></blockquote>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">#</a></h2>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Test-date</p></th>
+<th class="head"><p>OCR Tool</p></th>
+<th class="head"><p>Comment</p></th>
+<th class="head"><p>Evaluation</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>2023-03</p></td>
+<td><p>Google Drive, Google Docs</p></td>
+<td><p>Requires upload of PDFs to a Google account</p></td>
+<td><p>4/5</p></td>
+</tr>
+<tr class="row-odd"><td><p>2023-03</p></td>
+<td><p>Tesseract 5.3</p></td>
+<td><p>Local installation required</p></td>
+<td><p>2/5</p></td>
+</tr>
+</tbody>
+</table>
+</section>
 <section id="google-drive-and-google-docs-online-ocr">
 <h2>Google drive and Google docs (online OCR)<a class="headerlink" href="#google-drive-and-google-docs-online-ocr" title="Permalink to this heading">#</a></h2>
 <p>Excellent progress has been made by Google in automatically converting woodblock pechas into editable text. This is currently the recommended way to OCR Tibetan text corpora.</p>
@@ -447,6 +477,105 @@ document.write(`
 </section>
 <section id="local-conversion-with-tesseract">
 <h2>Local conversion with Tesseract<a class="headerlink" href="#local-conversion-with-tesseract" title="Permalink to this heading">#</a></h2>
+<section id="installation">
+<h3>Installation<a class="headerlink" href="#installation" title="Permalink to this heading">#</a></h3>
+<p>Install <a class="reference external" href="https://github.com/tesseract-ocr/tesseract"><code class="docutils literal notranslate"><span class="pre">tesseract</span></code></a> with you package manager. Some Linux variants require to additionally install language packs, e.g. <code class="docutils literal notranslate"><span class="pre">tesseract-data-bod</span></code> for Tibetan.</p>
+<p>On a Mac, assuming <a class="reference external" href="https://brew.sh/">homebrew</a> is installed, simply execute:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>brew<span class="w"> </span>install<span class="w"> </span>tesseract
+</pre></div>
+</div>
+<p>Additionally it might be useful to install <code class="docutils literal notranslate"><span class="pre">imagemagick</span></code> to be able to convert PDFs to images:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>brew<span class="w"> </span>install<span class="w"> </span>imagemagick
+</pre></div>
+</div>
+<p>This gives the <code class="docutils literal notranslate"><span class="pre">convert</span></code> command that allows converting many image- and PDF-formats.</p>
+</section>
+<section id="usage-example">
+<h3>Usage example<a class="headerlink" href="#usage-example" title="Permalink to this heading">#</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">tesseract</span></code> only understands image formats (no PDF). If you have a PDF, first convert in to an image:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>convert<span class="w"> </span>myPdf.pdf<span class="w"> </span>myImage.png
+</pre></div>
+</div>
+<p>This uses <code class="docutils literal notranslate"><span class="pre">imagemagick</span></code>’s <code class="docutils literal notranslate"><span class="pre">convert</span></code> command to convert <code class="docutils literal notranslate"><span class="pre">myPdf.pdf</span></code> into <code class="docutils literal notranslate"><span class="pre">myImage.png</span></code>.</p>
+<p>Then use:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tesseract<span class="w"> </span>myImage.png<span class="w"> </span>-<span class="w"> </span>--psm<span class="w"> </span><span class="m">6</span><span class="w"> </span>-l<span class="w"> </span>bod
+</pre></div>
+</div>
+<p>For our example text from above, the result (with <code class="docutils literal notranslate"><span class="pre">tesseract</span></code> 5.3) is:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>ཛཱ ཉིདཀྱི་ངངལས་ཆོས་ཉེད་ཀུནཏུབཟང་མོའི་ལོངས་པཱོད་དུརིགས་ལྔའིསངསརྒྱུས་རང་ཤར་ཏེ་རྫོགས་པ་ཆེནཔའི་གྲྭརའོད་འབར་རོ། །དེའི་ཚོའོདཁྦིམ་རྣམ་པར་
+ད་ིས་མསོསཏདཞུན།བསང་ད་ི་  ཾ ་ི་གིཾཾས་ རཱ
+ཐམས་ཅདྲ་ཤིམངའབདགུཏུ་རངྱབུང་སེ། གུ་གསུང་བུགསརདྱ་བུངབས་བམེདཔའིབསནཔ་རིནཔོ་ཆའི་དངལ་ཡི་གཡོ་ཞིང། རྭངབུངཚོམབུའི་འཁོར་
+དཔགཏུམེདཔ་དཔྱལནཅི་གྲནམ་དགྱར་གཔེབཀདཔའི་ཞིང་ཁམསནེ། ལཱདཔ་ཡེཤེས་འབལ་མེདཔ་འི་དགོངསཔ་ལ་བྱའགསཔའོ། །དྲཤས་རང་
+
+ངང་གི་ཡྲཾ་ཤེས་ནམ་པར་གཡོས་ཏེ། ཐུགས་རྗེ་ཕྱུལ་པའི་སླར་ནམ་པར་པྦུལ་པཝསུ། ཧཱཾཧགྱི་སྨོནལམ་གླི་རྟེནཇེས་སུ་དྲན་པའི་དབང་གིས།, མཚན་རྫོགྲ
+དངིས།པར་བཞེངསཏ། གྲ་འི་ི་དིདཡདབནིནནཔ་ཚའི་ླུམོོ་ལབའོ། ཇི་ཧརཝངནགནས་བྷཅ་གཉིསདྱ།
+</pre></div>
+</div>
+<p>which is inferior to the above Google Docs solution.</p>
+<p>Things to try:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">-l</span></code> selects the language, there are two main variants: <code class="docutils literal notranslate"><span class="pre">-l</span> <span class="pre">bod</span></code> and <code class="docutils literal notranslate"><span class="pre">-l</span> <span class="pre">script/Tibetan</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--psm</span> <span class="pre">&lt;number&gt;</span></code> select the segmentation mode:</p></li>
+</ul>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>PSM mode</p></th>
+<th class="head"><p>Explanation</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>Orientation and script detection (OSD) only.</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>Automatic page segmentation with OSD.</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>Automatic page segmentation, but no OSD, or OCR.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>3</strong></p></td>
+<td><p>Fully automatic page segmentation, but no OSD. <strong>(Default)</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>4</p></td>
+<td><p>Assume a single column of text of variable sizes.</p></td>
+</tr>
+<tr class="row-odd"><td><p>5</p></td>
+<td><p>Assume a single uniform block of vertically aligned text.</p></td>
+</tr>
+<tr class="row-even"><td><p>6</p></td>
+<td><p>Assume a single uniform block of text.</p></td>
+</tr>
+<tr class="row-odd"><td><p>7</p></td>
+<td><p>Treat the image as a single text line.</p></td>
+</tr>
+<tr class="row-even"><td><p>8</p></td>
+<td><p>Treat the image as a single word.</p></td>
+</tr>
+<tr class="row-odd"><td><p>9</p></td>
+<td><p>Treat the image as a single word in a circle.</p></td>
+</tr>
+<tr class="row-even"><td><p>10</p></td>
+<td><p>Treat the image as a single character.</p></td>
+</tr>
+<tr class="row-odd"><td><p>11</p></td>
+<td><p>Sparse text. Find as much text as possible in no particular order.</p></td>
+</tr>
+<tr class="row-even"><td><p>12</p></td>
+<td><p>Sparse text with OSD.</p></td>
+</tr>
+<tr class="row-odd"><td><p>13</p></td>
+<td><p>Raw line. Treat the image as a single text line, bypassing hacks that are Tesseract-specific.</p></td>
+</tr>
+</tbody>
+</table>
+<p>For more information, see <a class="reference external" href="https://tesseract-ocr.github.io/tessdoc/Command-Line-Usage.html#simplest-invocation-to-ocr-an-image">Tesseract options</a>.</p>
+</section>
+</section>
+<section id="historical-approaches">
+<h2>Historical approaches<a class="headerlink" href="#historical-approaches" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://escholarship.org/uc/item/6d5781k5#page-3">Namsel</a></p></li>
+</ul>
 </section>
 </section>
 
@@ -517,11 +646,17 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#google-drive-and-google-docs-online-ocr">Google drive and Google docs (online OCR)</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#local-conversion-with-tesseract">Local conversion with Tesseract</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#local-conversion-with-tesseract">Local conversion with Tesseract</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">Installation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#usage-example">Usage example</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#historical-approaches">Historical approaches</a></li>
 </ul>
   </nav></div>
 
