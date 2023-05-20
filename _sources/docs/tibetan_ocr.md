@@ -8,6 +8,7 @@
 | --------- | -------- | ------- | ---------- |
 | 2023-03 | Google Drive, Google Docs | Requires upload of PDFs to a Google account | 4/5 |
 | 2023-03 | Tesseract 5.3 | Local installation required | 2/5 |
+| 2023-03 | Google Photos (mobile) | Photo with Google Photos, Lens, Text | 4/5 |
 
 
 ## Google drive and Google docs (online OCR)
@@ -106,6 +107,18 @@ Things to try:
 
 For more information, see [Tesseract options](https://tesseract-ocr.github.io/tessdoc/Command-Line-Usage.html#simplest-invocation-to-ocr-an-image).
 
+
+## Mobile - Google Photos
+
+With mobile application Google Photos, a photo of a Tibetan page can be translated into text by
+using the 'Google Lens' and 'Text' function.
+
+Quality is comparable to the Google Drive / Google Docs approach, but this just works for single
+pages and requires taking a photo.
+
+```
+ཤད་ ཟབ་མོ་ཡང་ཏིག ༆ ཉིད་ཀྱིངང་ལས་ཆོས་ཉིད་ཀུན་ཏུ་བཟང་མོའི་ལོངས་སྤྱོད་དུ་ ས་ལྔའིསངས་རྒྱུས་རང་ཤར་ཏེ་རྫོགས་པ་ཆེན་པོའི་སྐུར་འོད་འབར་རོ། །དེའི་ཚེའོད་ཁྱིམ་རྣམ་པར་ དགབའི་གནས་འོད་ཀྱི་ཁང་བུ་བརྩེགས་པ་ན། སྟོན་པ་རྣམ་པར་དག་པ་རང་ཤེས་རིག་གི་རྒྱལ་པོརྣམ་པར་སྣང་མཛད་གྲང་ཆེནམཚོ་ཞེས་བྱབ། དཀྱིལའཁོར་ ཐམས་ཅད་ཀྱི་མངའ་བདག་ཏུརང་བྱུང་སྟེ། སྐུ་གསུང་ཐུགསརང་བྱུང་བྱས་བ་མེད་པའི་བསྟནཔ་རིན་པོ་ཆེའི་ངང་ལ་མི་གཡོ་ཞིང་། རང་བྱུང་ཚོམགུའིའཁོང་ དཔག་ཏུ་མེདཔ་དང་ལྷན་ཅིག་རྣམ་དག་སྟུགཔོབཀོད་པའི་ཞིང་ཁམས་ན། སྐུདང་ཡེ་ཤེསའང་འབྲལ་མེད་པའི་དགོངསཔ་ལ་བཞུགས་པའོ། །དེ་ནས་རང་་ བྱུང་གི་ཡེ་ཤེས་རྣམ་པར་གཡོས་ཏེ། ཐུགས་རྗེ་སྤྲུལ་པའི་སྐུར་རྣམ་པརསྤྲུལ་པ་ལས། སྔོན་གྱི་སྨོནལམ་གྱི་རྟེན་རྗེསསུ་དྲན་པའི་དབང་གིས། མཚན་རྫོག རྡོརྗེ་འཆང་གིརྣམ་པར་བཞེངསཏེ། གདུལ་བྱའི་དོནདུ་འདུལབྱེད་ཡིད་བཞིན་རིནཔེཆེའི་སྐུམངོནཔར་སྣང་བའོ།                                        
+```
 
 ## Historical approaches
 
