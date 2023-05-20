@@ -34,7 +34,8 @@ Then, in Google Drive, open the PDF. You will see a button "Open in Google Docs"
 
 ```{figure} Images/zabmo_ocr.png
 ---
-scale: 70%
+scale: 50%
+align: right
 ---
 ```
 
