@@ -27,12 +27,16 @@ A one-page PDF (you can also use of course multiple pages) is uploaded to Google
 
 ```{figure} Images/zabmo.png
 ---
-scale: 70%
 ---
 ```
 
 Then, in Google Drive, open the PDF. You will see a button "Open in Google Docs". Do so, you will get editable text:
 
+```{figure} Images/zabmo_ocr.png
+---
+scale: 70%
+---
+```
 ![Zabmo-OCR](Images/zabmo_ocr.png)
 
 Note that even the side-text and page-numbers have been automatically identified! Still, a number of unrecognized spelling mistakes require attention.
