@@ -18,11 +18,11 @@ A one-page PDF (you can also use of course multiple pages) is uploaded to Google
 
 ![Zabmo](Images/zabmo.png)
 
-The, in Google Drive, open the PDF. You will see a button "Open in Google Docs". Do so, you will get editable text:
+Then, in Google Drive, open the PDF. You will see a button "Open in Google Docs". Do so, you will get editable text:
 
 ![Zabmo-OCR](Images/zabmo_ocr.png)
 
-Note that even the side-text and page-numbers have been automatically identified!
+Note that even the side-text and page-numbers have been automatically identified! Still, a number of unrecognized spelling mistakes require attention.
 
 ## Local conversion with Tesseract
 
