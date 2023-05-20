@@ -110,7 +110,7 @@ For more information, see [Tesseract options](https://tesseract-ocr.github.io/te
 
 ## Mobile - Google Photos
 
-<img src="Images/google_photos_ocr.jpg" alt="Image description" style="float:right;">
+<img src="Images/google_photos_ocr.jpg" alt="Image description" style="float:right; width:50%;">
 
 With mobile application Google Photos, a photo of a Tibetan page can be translated into text by
 using the 'Google Lens' and 'Text' function.
