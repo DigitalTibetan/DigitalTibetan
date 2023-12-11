@@ -4,7 +4,7 @@
 
 ```{image} Images/kindle_info.jpg
 :align: right
-:width: 480
+:width: 320
 ```
 
 Recent Amazon Kindle ebook readers do support display of Tibetan ebooks.
@@ -29,7 +29,7 @@ You can check, if your Kindle reader can be updated to a newer version by visiti
 
 ```{image} Images/kindle_fonts.jpg
 :align: right
-:width: 480
+:width: 320
 ```
 
 The font setting for your Kindle reader must be set to 'Publisher font'. If you select any Western-only font, your Kindle will display rectangles with hex-codes instead of Tibetan glyphs.
@@ -56,7 +56,8 @@ Amazon's ebook conversion is very picky, and sometimes you'll get a mail back in
 - Visit [Lotsawa House](https://www.lotsawahouse.org), and select any text on the site. You will find an `EPUB` download link on each page for every text.
 - Email the downloaded `epub` file to your Kindle email address. (Note: Do __not__ try to transfer the document via USB, your Kindle won't be able to read `epub` directly.)
 
-```{info}
+```{Admonition} Strange rectangles instead of Tibetan?
+:class: tip
 If Tibetan does not display correctly (strange rectangles with codes inside), then select 'Publisher font' (s.a., 'Kindle default font'.)
 ```
 
@@ -67,7 +68,8 @@ The font then can be selected while viewing your Tibetan ebook.
 
 ### MTP and macOS
 
-```{info}
+```{Admonition} Connect your Kindle to the Mac
+:class: tip
 Recend firmware versions have switched to MTP-protocol for USB-connections. macOS __does not support this__ without additional software.
 ```
 

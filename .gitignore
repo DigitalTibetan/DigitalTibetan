@@ -3,3 +3,10 @@
 _build/
 .ipynb_checkpoints/
 
+bin/
+etc/
+include/
+lib/
+lib64
+pyvenv.cfg
+share/

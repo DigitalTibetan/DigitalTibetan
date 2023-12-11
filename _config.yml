@@ -7,6 +7,7 @@ execute:
   execute_notebooks: force
 
 exclude_pattern: [README.md]
+only_build_toc_files: true
 
 launch_buttons:
   thebe                  : true
@@ -39,3 +40,4 @@ sphinx:
 # slow:    mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   extra_extensions:
     - sphinxcontrib.mermaid
+#    - sphinxcontrib.bibtex
