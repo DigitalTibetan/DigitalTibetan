@@ -70,7 +70,7 @@ The font then can be selected while viewing your Tibetan ebook.
 
 ```{Admonition} Connect your Kindle to the Mac
 :class: tip
-Recend firmware versions have switched to MTP-protocol for USB-connections. macOS __does not support this__ without additional software.
+Recent firmware versions have switched to the MTP-protocol for USB-connections. macOS __does not support this__ without additional software.
 ```
 
 Some programs for macOS that support MTP:
