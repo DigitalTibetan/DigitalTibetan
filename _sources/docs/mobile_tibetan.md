@@ -8,7 +8,7 @@
 
 | E-Reader | Displays Tibetan | Tibetan input method | Apps | Support | Comment |
 | :--------- | :---: | :---: | :---: | :---: | ----------------------------|
-| Amazon Kindle | - -[^2] | - - | - - - | - - | Amazon Kindle support for Tibetan is broken since Kindle OS version 5.9.6 |
+| [Amazon Kindle](ebook_reader_kindle.md) | + | - - | - - - | - | Recent Amazon Kindle devices, since Firmware 5.16.x, support display of Tibetan. |
 | Boox Leaf 2 | + | ++ | ++ | ? | Requires considerable configuration effort and tech skills |
 
 ## I want to get a new mobile, what's best for Tibetan?
@@ -22,11 +22,7 @@ For most people, the actual **differences** between Android and iOS **do not mat
 
 ### E-Readers
 
-Unfortunately most **e-ink ebook readers** are not particularly well suited for Tibetan. Amazon Kindle has completely **broken Tibetan** support, so those cannot be used. Amazon support was unable to track and fix the problem.
-
-Some ebook manufacturers (e.g. PocketBook) offer some degree of Tibetan support, but it is still rather limited when compared with Android or iOS devices. Not recommended.
-
-There is a new generation of **Android-based e-readers** (e.g. Boox Leaf 2) that offer a lot of possibilities, but require considerable technical skills to set up. Not recommended for beginners.
+- Read Tibetan ebook with your: [Amazon Kindle ebook reader](ebook_reader_kindle.md) 
 
 ## How do I work with Tibetan on my mobile device?
 

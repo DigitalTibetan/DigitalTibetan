@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -39,8 +39,9 @@
     <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
@@ -62,8 +63,6 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script src="https://unpkg.com/mermaid@9.4.0/dist/mermaid.min.js"></script>
-    <script>mermaid.initialize({startOnLoad:true});</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'main';</script>
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
@@ -79,6 +78,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -132,9 +140,11 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="#">
+  
   
   
   
@@ -144,8 +154,8 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="_static/DigitalTibetanLogo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="_static/DigitalTibetanLogo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="_static/DigitalTibetanLogo.png" class="logo__image only-light" alt="Digital Tibetan - Home"/>
+    <script>document.write(`<img src="_static/DigitalTibetanLogo.png" class="logo__image only-dark" alt="Digital Tibetan - Home"/>`);</script>
   
   
 </a></div>
@@ -168,6 +178,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l3"><a class="reference internal" href="docs/apps_ios.html">Best Tibetan apps for iOS</a></li>
 <li class="toctree-l3"><a class="reference internal" href="docs/configuration_android.html">Android and Tibetan</a></li>
 <li class="toctree-l3"><a class="reference internal" href="docs/apps_android.html">Best Tibetan apps for Android</a></li>
+<li class="toctree-l3"><a class="reference internal" href="docs/ebook_reader_kindle.html">Amazon Kindle</a></li>
 </ul>
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="docs/computers_tibetan.html">Computers and Tibetan script</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -365,20 +376,22 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -433,6 +446,7 @@ document.write(`
 <section id="news">
 <h2>News<a class="headerlink" href="#news" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
+<li><p>2023-12-11: Recent Kindle firmware updates (verson 5.16.x) support proper display of Tibetan on your Kindle e-reader. Check out the <a class="reference internal" href="docs/ebook_reader_kindle.html"><span class="doc std std-doc">Amazon Kindle</span></a> Tibetan support page and get some fresh Tibetan ebooks for your Kindle from <a class="reference external" href="https://www.lotsawahouse.org">Lotsawa House</a>!</p></li>
 <li><p>2023-04-20: An overview on the state of <a class="reference internal" href="docs/tibetan_ai.html"><span class="doc std std-doc">Artificial intelligence and Tibetan</span></a>, <a class="reference internal" href="docs/tibetan_ocr.html"><span class="doc std std-doc">Tibetan OCR</span></a>, and <a class="reference internal" href="docs/tibetan_machine_translation.html"><span class="doc std std-doc">Tibetan machine translation</span></a>.</p></li>
 <li><p>2022-12-08: Python source code for the conversion of ACIP to Unicode is now available at <a class="reference external" href="https://github.com/OpenPecha/pyewts/blob/master/pyewts/ACIP.py">ACIP to Unicode converter</a>. The converter is part of the <a class="reference external" href="https://github.com/OpenPecha">OpenPecha</a> project. The ACIP documentation (see: <a class="reference external" href="https://github.com/DigitalTibetan/DigitalTibetan/raw/main/docs/Resources/ticode.pdf"><code class="docutils literal notranslate"><span class="pre">ticode.pdf</span></code></a>) was almost lost due to digital erosion, but has now been recovered due to the work of Elie Roux.</p></li>
 <li><p>2022-11-13: Digital Tibetan is now on Mastodon at <a class="reference external" href="https://social.linux.pizza/&#64;digitaltibetan"><code class="docutils literal notranslate"><span class="pre">&#64;digitaltibetan&#64;social.linux.pizza</span></code></a>.</p></li>
@@ -495,11 +509,10 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="right-next"
        href="docs/computational_dharma.html"
@@ -510,10 +523,7 @@ document.write(`
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -553,6 +563,7 @@ By Digital Tibetan Community
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
       © Copyright 2022.
@@ -579,8 +590,8 @@ By Digital Tibetan Community
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
 
   <footer class="bd-footer">
   </footer>

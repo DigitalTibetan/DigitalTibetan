@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -39,8 +39,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -62,8 +63,6 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script src="https://unpkg.com/mermaid@9.4.0/dist/mermaid.min.js"></script>
-    <script>mermaid.initialize({startOnLoad:true});</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'docs/computational_dharma';</script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -80,6 +79,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -133,9 +141,11 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../main.html">
+  
   
   
   
@@ -145,8 +155,8 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../_static/DigitalTibetanLogo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/DigitalTibetanLogo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../_static/DigitalTibetanLogo.png" class="logo__image only-light" alt="Digital Tibetan - Home"/>
+    <script>document.write(`<img src="../_static/DigitalTibetanLogo.png" class="logo__image only-dark" alt="Digital Tibetan - Home"/>`);</script>
   
   
 </a></div>
@@ -169,6 +179,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l3"><a class="reference internal" href="apps_ios.html">Best Tibetan apps for iOS</a></li>
 <li class="toctree-l3"><a class="reference internal" href="configuration_android.html">Android and Tibetan</a></li>
 <li class="toctree-l3"><a class="reference internal" href="apps_android.html">Best Tibetan apps for Android</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ebook_reader_kindle.html">Amazon Kindle</a></li>
 </ul>
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="computers_tibetan.html">Computers and Tibetan script</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -415,20 +426,22 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -934,7 +947,7 @@ The result can be saved as CSV-File or <a class="reference external" href="https
       <td>Bhagavān</td>
       <td>བཅོམ་ལྡན་འདས་</td>
       <td>भगवान्</td>
-      <td>Bhagavan (Sanskrit: भगवान्, romanized: Bhagavā...</td>
+      <td>The word Bhagavan (Sanskrit: भगवान्, romanized...</td>
     </tr>
     <tr>
       <th>4</th>
@@ -982,7 +995,7 @@ The result can be saved as CSV-File or <a class="reference external" href="https
       <td>Tathāgata</td>
       <td>དེ་བཞིན་གཤེགས་པ་</td>
       <td>तथागत</td>
-      <td>Tathāgata (Pali: [tɐˈtʰaːɡɐtɐ]) is a Pali word...</td>
+      <td>Tathāgata (Pali: [tɐˈtʰaːɡɐtɐ]) is a Pali and ...</td>
     </tr>
     <tr>
       <th>10</th>
@@ -1008,10 +1021,10 @@ The result can be saved as CSV-File or <a class="reference external" href="https
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">In classical Buddhist Cosmology, Akaniṣṭha (Pali: Akaniṭṭha, meaning "Nothing Higher", "Unsurpassed") is the highest of the Pure Abodes, and thus the highest of all the form realms. It is the realm where devas like Maheśvara live.
-In Mahayana Buddhism, Akaniṣṭha is also a name for the Pure Land (Buddhafield) of the Buddha Vairocana.
+In Mahayana Buddhism, Akaniṣṭha is also a name for the Pure Land (Buddhafield) of the Buddha Vairocana. This is also the setting of the Ghanavyūha Sūtra.
 
 Tibetan Buddhism, Akaniṣṭha (Tib. 'og min) often describes three Akaniṣṭhas:
-The Ultimate Akaniṣṭha, the formless state of dharmakaya, the dharmadhatu.
+The Ultimate Akaniṣṭha, the formless state of dharmakaya, the dharmadhatu, i.e. the ultimate reality.
 The Densely Arrayed Akaniṣṭha (Tib. 'Og min rgyan stug po bkod pa; Skt. Ghanavyūhakaniṣṭha), or the "Symbolic Akaniṣṭha" which is the realm of  sambhogakaya. "Ghanavyūha Akaniṣṭha", refers to the pure Saṃbhogakāya Buddha field out of which emanate all Nirmāṇakāya Buddhas and Buddhafields such as Sukhāvati. It is the supreme Buddhafield in which all Buddhas attain Buddhahood. The Saṃbhogakāya Buddha Vajradhara is said to have taught the Vajrayana in the realm of Akaniṣṭha Ghanavyūha.
 The Mundane Akaniṣṭha, which is the highest pure level of the form realm, which is the sphere of nirmanakayas.</div></div>
 </div>
@@ -1061,11 +1074,10 @@ The Mundane Akaniṣṭha, which is the highest pure level of the form realm, wh
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="../main.html"
@@ -1085,10 +1097,7 @@ The Mundane Akaniṣṭha, which is the highest pure level of the form realm, wh
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -1133,6 +1142,7 @@ By Digital Tibetan Community
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
       © Copyright 2022.
@@ -1159,8 +1169,8 @@ By Digital Tibetan Community
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
 
   <footer class="bd-footer">
   </footer>
