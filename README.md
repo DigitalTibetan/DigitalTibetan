@@ -19,14 +19,26 @@ jupyter-book build .
 
 The result ends up in `_build/html` and can be opened with a web-browser. The github action publishes this into the branch `gh-pages` which is served by Github pages as `digitaltibetan.github.io/DigitalTibetan`.
 
-### Dependencies:
+### Installation:
 
-Requires:
-- jupyter-book
-- sphinxcontrib-mermaid
-
+```bash
+# Clone repository of markdown files
+git clone https://github.com/DigitalTibetan/DigitalTibetan
+# Create a virtual env for Python
+python -m venv DigitalTibetan
+cd DigitalTibetan
+# Activate environment
+source bin/activate
+# Install python dependencies
+pip install -r requirements.txt
+# Re-activate environment with newly install binaries
+source bin/activate
 ```
-pip install jupyter-book sphinxcontrib-mermaid
+
+then build the book with:
+
+```bash
+jupyter-book build .
 ```
 
 ### Build notes for macOS with brew:

@@ -11,7 +11,9 @@ chapters:
     - file: docs/apps_ios.md
     - file: docs/configuration_android.md
     - file: docs/apps_android.md
+    - file: docs/ebooks_readers.md
     - file: docs/ebook_reader_kindle.md
+    - file: docs/ebook_tools.md
   - file: docs/computers_tibetan.md
     sections:
     - file: docs/computers_macos.md
