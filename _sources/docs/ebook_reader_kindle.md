@@ -107,9 +107,20 @@ Frequent causes for problems are:
   </metadata>
 ```
 
+## Technical details
+
+### Firmware history
+
+Interestingly, if you have a _very old_ Kindle, Tibetan might work just fine. It seems that firmware version 5.9.x is able to display Tibetan for all ebooks, including the ability to display Tibetan titles in overview. So Tibetan support of those very old devices (older than about 2016) was actually _better_ than even the most recent Kindle firmware.
+
+### Identifying your Kindle model
+
+Older Kindle models do not show the name of the Kindle model in the info-screen. You can use this [overview](https://www.androidauthority.com/which-kindle-model-do-i-have-1073996/) to figure out your Kindle model using the model number (small print on the back) or the serial number (from info screen).
+
 ## References
 
 - [Lotsawa House](https://www.lotsawahouse.org)
 - [Amazon Kindle Firmware](https://www.amazon.de/gp/help/customer/display.html?nodeId=GKMQC26VQQMM8XSW)
+- [How to identify your older Kindle model](https://www.androidauthority.com/which-kindle-model-do-i-have-1073996/)
 - [Android File Transfer](https://www.android.com/filetransfer/)
 - [OpenMTP](https://github.com/ganeshrvel/openmtp)
