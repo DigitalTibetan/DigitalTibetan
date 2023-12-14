@@ -15,7 +15,7 @@ Recent Amazon Kindle ebook readers do support display of Tibetan ebooks.
 
 ### Checking the Kindle Firmware version
 
-Kindle devices that are from 2018 or newer should be able to run the latest firmware. 
+Kindle devices that are from about 2018 or newer should be able to run the latest firmware. 
 
 Check your Kindle's firmware version: Settings / Device Options / Device Info. It should say something like:
 
@@ -54,7 +54,7 @@ Amazon's ebook conversion is very picky, and sometimes you'll get a mail back in
 ## Ebook sources
 
 - Visit [Lotsawa House](https://www.lotsawahouse.org), and select any text on the site. You will find an `EPUB` download link on each page for every text.
-- Email the downloaded `epub` file to your Kindle email address. (Note: Do __not__ try to transfer the document via USB, your Kindle won't be able to read `epub` directly.)
+- Email the downloaded `epub` file to your Kindle email address. (Note: Do __not__ try to transfer the epub document via USB, your Kindle won't be able to read `epub` directly. It is however possible to locally convert `EPUB` into Amazon's proprietary `kfx` format, see [Ebook tools](ebook_tools.md) for the non-trivial conversion process. The resulting files can be copied locally and distributed independent of reliance on clouds.)
 
 ```{Admonition} Strange rectangles instead of Tibetan?
 :class: tip
