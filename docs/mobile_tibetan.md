@@ -22,7 +22,10 @@ For most people, the actual **differences** between Android and iOS **do not mat
 
 ### E-Readers
 
+- Overview [ebook readers](ebook_readers.md)
 - Read Tibetan ebook with your: [Amazon Kindle ebook reader](ebook_reader_kindle.md) 
+- Read Tibetan ebook with your: [Pocketbook reader](ebook_reader_pocketbook.md) 
+- Read Tibetan ebook with your: [Onyx Boox reader](ebook_reader_boox.md) 
 
 ## How do I work with Tibetan on my mobile device?
 
@@ -30,6 +33,7 @@ Setup, fonts and Tibetan keyboard:
 
 * [Apple iOS configuration](configuration_ios.md)
 * [Android configuration](configuration_android.md)
+* [Ebook reader tools](ebook_tools.md)
 
 ## Apps
 
