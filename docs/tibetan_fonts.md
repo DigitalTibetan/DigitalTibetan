@@ -31,9 +31,9 @@ The following list contains a number of fonts with good coverage of the most com
 | [Babelstone Tibetan](https://www.babelstone.co.uk/Fonts/Download/BabelStoneTibetan.ttf) | ![Babelstone Tibetan](Images/Font_Babelstone_Tibetan.jpg) | 4019 | Version 10.008 April 21, 2022, extended version of Jomolhari |
 | [Babelstone Tibetan Slim](https://www.babelstone.co.uk/Fonts/Download/BabelStoneTibetanSlim.ttf) | ![Babelstone Tibetan Slim](Images/Font_Babelstone_Tibetan_Slim.jpg) | 4019 | Version 10.008 April 21, 2022, extended version of Jomolhari, slim |
 | [Noto Serif Tibetan](https://fonts.google.com/noto/specimen/Noto+Serif+Tibetan?noto.query=tibetan&noto.lang=bo_Tibt&noto.continent=Asia&noto.script=Tibt) | ![Noto Serif Tibetan](Images/Font_Noto_Serif_Tibetan.jpg) | 1891 | Google's Noto font, with many different weights. Linked Release version 2.001 (2022) has bugs, see  comment[^bug] for a solution. |
-| Noto Sans Tibetan | ![Noto Sans Tibetan](Images/Font_Noto_Sans_Tibetan.jpg) | 1296 | Subset based on outdated version of Google's Serif Tibetan, do not use. |
+| Noto Sans Tibetan | ![Noto Sans Tibetan](Images/Font_Noto_Serif_Tibetan.jpg) |  | Some applications (eBook readers) insist on fonts from "Noto Sans" family, and Tibetan is simply a Serif script. Visit the [FontRenamer](https://github.com/DigitalTibetan/FontRenamer) project to download a Tibetan serif font internally renamed to Noto Sans Tibetan for use in GUI applications. |
 
-[^bug]: Current (2022-06) release-version of `Noto Serif Tibetan`, version 2.001, renders the glyph དྡྷི incorrectly. A fix is available at [noto development repository](https://github.com/googlefonts/noto-fonts/issues/2362#:~:text=https%3A//github.com/googlefonts/noto%2Dfonts/blob/main/hinted/ttf/NotoSerifTibetan/NotoSerifTibetan%2DRegular.ttf). See discussion at [bug report](https://github.com/googlefonts/noto-fonts/issues/2362).
+[^bug]: Release-version of `Noto Serif Tibetan`, version 2.001, renders the glyph དྡྷི incorrectly. A fix is available at [noto development repository](https://github.com/googlefonts/noto-fonts/issues/2362#:~:text=https%3A//github.com/googlefonts/noto%2Dfonts/blob/main/hinted/ttf/NotoSerifTibetan/NotoSerifTibetan%2DRegular.ttf). See discussion at [bug report](https://github.com/googlefonts/noto-fonts/issues/2362).
 
 ### Text samples[^ref_lotsawahouse]
 
