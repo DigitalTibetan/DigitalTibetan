@@ -4,55 +4,27 @@
 
 ## Overview
 
-| Date       | Language model            | Technology              | Rating |
-| ---------- | ------------------------- | ----------------------- | ------ |
-| 2023-05-20 | ChatGPT                   | OpenAI GPT 3.5          | 0/5    |
-| 2023-05-20 | Bing Microsoft Translator | Microsoft legacy        | 1/5    |
-| 2023-05-20 | Bing Chat                 | OpenAI GPT 4 + Web + MS | 3/5    |
+Tibetan translation is now for the most part an almost solved problem (2025-12-11). Especially the Gemini 3.0 model can deliver good-quality raw translations of Dharma-Tibetan.
 
-None of the models is currently useful, but progress is fast.
+The example, which failed completely in 2023, is now handled better (with some issues for the first verse, which would require providing the model with some kind of guidance) with the latest Gemini models:
 
-## Testing current large language models and translators
-
-Note: this test will be outdated very fast. Software versions from 2023-05-20 are use.
-
-The test-text are the refuge verses from the Longchen Nyingtik Ngöndro. For the reference translation, see [Lotsawa House](https://www.lotsawahouse.org/tibetan-masters/dodrupchen-I/longchen-nyingtik-ngondro), section 2. Refuge.
-
-### 2. Refuge<br>
 དཀོན་མཆོག་གསུམ་དངོས་བདེ་གཤེགས་རྩ་བ་གསུམ༔<br>
 རྩ་རླུང་ཐིག་ལེའི་རང་བཞིན་བྱང་ཆུབ་སེམས༔<br>
 ངོ་བོ་རང་བཞིན་ཐུགས་རྗེའི་དཀྱིལ་འཁོར་ལ༔<br>
-བྱང་ཆུབ་སྙིང་པོའི་བར་དུ་སྐྱབས་སུ་མཆི༔<br>
+བྱང་ཆུབ་སྙིང་པོའི་བར་དུ་སྐྱབས་སུ་མཆི༔
 
-### ChatGPT's attempt
+### Gemini 3.0 response
 
-[ChatGPT](chat.openai.com) presents us with a halicunation completely free of reference to the source text:
+The Tibetan text is a traditional Buddhist refuge prayer. Here is the translation into English:
 
-![ChatGPT on refuge](Images/translate_ngondro_chatgpt.png)
+#### 🇬🇧 English Translation
 
-ChatGPT obviously thinks Longchen Nyingtik Ngöndro requires a complete rework. Not helpful.
+The three Jewels (Buddha, Dharma, Sangha) are the actual, the three Roots (Guru, Deva, Dakini) are the Sugata (Buddha), 
+The nature of tsa, lung, and tiklé is the Bodhicitta (Enlightenment Mind), 
+In the Mandala of the Nature, Characteristic, and Compassion, 
+I take refuge until I reach the essence of Enlightenment.
 
-### Bing Microsoft Translator
+## Current status of translation with large language models (LLMs)
 
-[Bing Microsoft Translator](https://www.bing.com/TRANSLATOR) seems to at least recognise a word or two, but the result is still gibberish.
-
-![Bing Microsoft Translator](Images/translate_ngondro_microsoft_bing_translator.png)
-
-
-### Bing Chat
-
-The most advanced Large Language Model that is freely available is (at the time of this writing 2023-05) Bing chat:
-
-![Bing chat](Images/translate_ngondro_bingchat.png)
-
-While the translation is still quite far off, it is a significant progress compared to he two older models above.
-
-Since the last verse got skipped, asking it again yields:
-
-![Bing chat](Images/translate_ngondro_bingchat_2.png)
-
-Again, one step further.
-
-It is just a matter of time, more training data, and further refinement on this task, until there will be useful context-aware translations from large language models available.
-
+Models like Gemini 3.0 now can translate entire treatises in one go. The translations are Dharma-context aware, and while not without mistakes, can produce a fast raw translation of large corpora. However, proof-reading and human editing is still required!
 
