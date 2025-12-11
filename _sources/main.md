@@ -11,6 +11,7 @@ Welcome to the Digital Tibetan v3.0
 
 ## News
 
+- 2025-12-11: [Booklet Maker](https://github.com/DigitalTibetan/BookletMaker) tool to print pechas (3 on 1) or A6 (4 on 1) or A5 (2 on 1) booklets.
 - 2024-07-24: Provide a version of [Noto Sans Tibetan.ttf](https://github.com/DigitalTibetan/FontRenamer) by internally renaming Google's [Noto Serif Tibetan](https://fonts.google.com/noto/specimen/Noto+Serif+Tibetan). The GUI of some ereaders require fonts of the "Noto Sans" family, and the renamed font allows displaying of Tibetan on these devices. See [Tibetan Fonts](docs/tibetan_fonts.md) for more information.
 - 2023-12-11: Recent Kindle firmware updates (verson 5.16.x) support proper display of Tibetan on your Kindle e-reader. Check out the [Amazon Kindle](docs/ebook_reader_kindle.md) Tibetan support page and get some fresh Tibetan ebooks for your Kindle from [Lotsawa House](https://www.lotsawahouse.org)!
 - 2023-04-20: An overview on the state of [Artificial intelligence and Tibetan](docs/tibetan_ai.md), [Tibetan OCR](docs/tibetan_ocr.md), and [Tibetan machine translation](docs/tibetan_machine_translation.md).
