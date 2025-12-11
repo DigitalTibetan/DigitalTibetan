@@ -1,24 +1,20 @@
 Traceback (most recent call last):
-  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/jupyter_core/utils/__init__.py", line 154, in wrapped
-    asyncio.get_running_loop()
-RuntimeError: no running event loop
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
+  File "/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
     executenb(
-  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/nbclient/client.py", line 1305, in execute
+  File "/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/nbclient/client.py", line 1319, in execute
     return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
-  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/jupyter_core/utils/__init__.py", line 158, in wrapped
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
     return loop.run_until_complete(inner)
-  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/asyncio/base_events.py", line 616, in run_until_complete
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
     return future.result()
-  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/nbclient/client.py", line 705, in async_execute
+           ^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/nbclient/client.py", line 709, in async_execute
     await self.async_execute_cell(
-  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/nbclient/client.py", line 1058, in async_execute_cell
+  File "/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/nbclient/client.py", line 1062, in async_execute_cell
     await self._check_raise_for_error(cell, cell_index, exec_reply)
-  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/nbclient/client.py", line 914, in _check_raise_for_error
+  File "/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/nbclient/client.py", line 918, in _check_raise_for_error
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
@@ -29,61 +25,55 @@ df
 ------------------
 
 
-[0;31m---------------------------------------------------------------------------[0m
-[0;31mHTTPError[0m                                 Traceback (most recent call last)
-Cell [0;32mIn[14], line 2[0m
-[1;32m      1[0m [38;5;66;03m# Do a Wikipedia lookup for each IAST word in the dataframe, and add the result to a new column 'Definition':[39;00m
-[0;32m----> 2[0m df[[38;5;124m'[39m[38;5;124mDefinition[39m[38;5;124m'[39m][38;5;241m=[39m[wikipedia_summary(x) [38;5;28;01mfor[39;00m x [38;5;129;01min[39;00m df[[38;5;124m'[39m[38;5;124mIAST[39m[38;5;124m'[39m]]
-[1;32m      3[0m [38;5;66;03m# Show the expanded dataframe with the new column, (abbreviated in display)):[39;00m
-[1;32m      4[0m df
+[31m---------------------------------------------------------------------------[39m
+[31mHTTPError[39m                                 Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[14][39m[32m, line 2[39m
+[32m      1[39m [38;5;66;03m# Do a Wikipedia lookup for each IAST word in the dataframe, and add the result to a new column 'Definition':[39;00m
+[32m----> [39m[32m2[39m df[[33m'[39m[33mDefinition[39m[33m'[39m]=[[43mwikipedia_summary[49m[43m([49m[43mx[49m[43m)[49m [38;5;28;01mfor[39;00m x [38;5;129;01min[39;00m df[[33m'[39m[33mIAST[39m[33m'[39m]]
+[32m      3[39m [38;5;66;03m# Show the expanded dataframe with the new column, (abbreviated in display)):[39;00m
+[32m      4[39m df
 
-Cell [0;32mIn[14], line 2[0m, in [0;36m<listcomp>[0;34m(.0)[0m
-[1;32m      1[0m [38;5;66;03m# Do a Wikipedia lookup for each IAST word in the dataframe, and add the result to a new column 'Definition':[39;00m
-[0;32m----> 2[0m df[[38;5;124m'[39m[38;5;124mDefinition[39m[38;5;124m'[39m][38;5;241m=[39m[[43mwikipedia_summary[49m[43m([49m[43mx[49m[43m)[49m [38;5;28;01mfor[39;00m x [38;5;129;01min[39;00m df[[38;5;124m'[39m[38;5;124mIAST[39m[38;5;124m'[39m]]
-[1;32m      3[0m [38;5;66;03m# Show the expanded dataframe with the new column, (abbreviated in display)):[39;00m
-[1;32m      4[0m df
+[36mCell[39m[36m [39m[32mIn[13][39m[32m, line 9[39m, in [36mwikipedia_summary[39m[34m(query, verbose)[39m
+[32m      7[39m query_url=[33mf[39m[33m"[39m[38;5;132;01m{[39;00mapi[38;5;132;01m}[39;00m[33m?format=json&action=query&prop=extracts&exintro&explaintext&redirects=1&titles=[39m[38;5;132;01m{[39;00mesc_query[38;5;132;01m}[39;00m[33m"[39m
+[32m      8[39m result=[]
+[32m----> [39m[32m9[39m [38;5;28;01mwith[39;00m [43murlopen[49m[43m([49m[43mquery_url[49m[43m)[49m [38;5;28;01mas[39;00m f:
+[32m     10[39m     resp = json.load(f)
+[32m     11[39m     [38;5;28;01mif[39;00m verbose [38;5;129;01mis[39;00m [38;5;28;01mTrue[39;00m:
 
-Cell [0;32mIn[13], line 9[0m, in [0;36mwikipedia_summary[0;34m(query, verbose)[0m
-[1;32m      7[0m query_url[38;5;241m=[39m[38;5;124mf[39m[38;5;124m"[39m[38;5;132;01m{[39;00mapi[38;5;132;01m}[39;00m[38;5;124m?format=json&action=query&prop=extracts&exintro&explaintext&redirects=1&titles=[39m[38;5;132;01m{[39;00mesc_query[38;5;132;01m}[39;00m[38;5;124m"[39m
-[1;32m      8[0m result[38;5;241m=[39m[]
-[0;32m----> 9[0m [38;5;28;01mwith[39;00m [43murlopen[49m[43m([49m[43mquery_url[49m[43m)[49m [38;5;28;01mas[39;00m f:
-[1;32m     10[0m     resp [38;5;241m=[39m json[38;5;241m.[39mload(f)
-[1;32m     11[0m     [38;5;28;01mif[39;00m verbose [38;5;129;01mis[39;00m [38;5;28;01mTrue[39;00m:
+[36mFile [39m[32m/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/urllib/request.py:215[39m, in [36murlopen[39m[34m(url, data, timeout, cafile, capath, cadefault, context)[39m
+[32m    213[39m [38;5;28;01melse[39;00m:
+[32m    214[39m     opener = _opener
+[32m--> [39m[32m215[39m [38;5;28;01mreturn[39;00m [43mopener[49m[43m.[49m[43mopen[49m[43m([49m[43murl[49m[43m,[49m[43m [49m[43mdata[49m[43m,[49m[43m [49m[43mtimeout[49m[43m)[49m
 
-File [0;32m/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py:222[0m, in [0;36murlopen[0;34m(url, data, timeout, cafile, capath, cadefault, context)[0m
-[1;32m    220[0m [38;5;28;01melse[39;00m:
-[1;32m    221[0m     opener [38;5;241m=[39m _opener
-[0;32m--> 222[0m [38;5;28;01mreturn[39;00m [43mopener[49m[38;5;241;43m.[39;49m[43mopen[49m[43m([49m[43murl[49m[43m,[49m[43m [49m[43mdata[49m[43m,[49m[43m [49m[43mtimeout[49m[43m)[49m
+[36mFile [39m[32m/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/urllib/request.py:521[39m, in [36mOpenerDirector.open[39m[34m(self, fullurl, data, timeout)[39m
+[32m    519[39m [38;5;28;01mfor[39;00m processor [38;5;129;01min[39;00m [38;5;28mself[39m.process_response.get(protocol, []):
+[32m    520[39m     meth = [38;5;28mgetattr[39m(processor, meth_name)
+[32m--> [39m[32m521[39m     response = [43mmeth[49m[43m([49m[43mreq[49m[43m,[49m[43m [49m[43mresponse[49m[43m)[49m
+[32m    523[39m [38;5;28;01mreturn[39;00m response
 
-File [0;32m/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py:531[0m, in [0;36mOpenerDirector.open[0;34m(self, fullurl, data, timeout)[0m
-[1;32m    529[0m [38;5;28;01mfor[39;00m processor [38;5;129;01min[39;00m [38;5;28mself[39m[38;5;241m.[39mprocess_response[38;5;241m.[39mget(protocol, []):
-[1;32m    530[0m     meth [38;5;241m=[39m [38;5;28mgetattr[39m(processor, meth_name)
-[0;32m--> 531[0m     response [38;5;241m=[39m [43mmeth[49m[43m([49m[43mreq[49m[43m,[49m[43m [49m[43mresponse[49m[43m)[49m
-[1;32m    533[0m [38;5;28;01mreturn[39;00m response
+[36mFile [39m[32m/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/urllib/request.py:630[39m, in [36mHTTPErrorProcessor.http_response[39m[34m(self, request, response)[39m
+[32m    627[39m [38;5;66;03m# According to RFC 2616, "2xx" code indicates that the client's[39;00m
+[32m    628[39m [38;5;66;03m# request was successfully received, understood, and accepted.[39;00m
+[32m    629[39m [38;5;28;01mif[39;00m [38;5;129;01mnot[39;00m ([32m200[39m <= code < [32m300[39m):
+[32m--> [39m[32m630[39m     response = [38;5;28;43mself[39;49m[43m.[49m[43mparent[49m[43m.[49m[43merror[49m[43m([49m
+[32m    631[39m [43m        [49m[33;43m'[39;49m[33;43mhttp[39;49m[33;43m'[39;49m[43m,[49m[43m [49m[43mrequest[49m[43m,[49m[43m [49m[43mresponse[49m[43m,[49m[43m [49m[43mcode[49m[43m,[49m[43m [49m[43mmsg[49m[43m,[49m[43m [49m[43mhdrs[49m[43m)[49m
+[32m    633[39m [38;5;28;01mreturn[39;00m response
 
-File [0;32m/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py:640[0m, in [0;36mHTTPErrorProcessor.http_response[0;34m(self, request, response)[0m
-[1;32m    637[0m [38;5;66;03m# According to RFC 2616, "2xx" code indicates that the client's[39;00m
-[1;32m    638[0m [38;5;66;03m# request was successfully received, understood, and accepted.[39;00m
-[1;32m    639[0m [38;5;28;01mif[39;00m [38;5;129;01mnot[39;00m ([38;5;241m200[39m [38;5;241m<[39m[38;5;241m=[39m code [38;5;241m<[39m [38;5;241m300[39m):
-[0;32m--> 640[0m     response [38;5;241m=[39m [38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43mparent[49m[38;5;241;43m.[39;49m[43merror[49m[43m([49m
-[1;32m    641[0m [43m        [49m[38;5;124;43m'[39;49m[38;5;124;43mhttp[39;49m[38;5;124;43m'[39;49m[43m,[49m[43m [49m[43mrequest[49m[43m,[49m[43m [49m[43mresponse[49m[43m,[49m[43m [49m[43mcode[49m[43m,[49m[43m [49m[43mmsg[49m[43m,[49m[43m [49m[43mhdrs[49m[43m)[49m
-[1;32m    643[0m [38;5;28;01mreturn[39;00m response
+[36mFile [39m[32m/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/urllib/request.py:559[39m, in [36mOpenerDirector.error[39m[34m(self, proto, *args)[39m
+[32m    557[39m [38;5;28;01mif[39;00m http_err:
+[32m    558[39m     args = ([38;5;28mdict[39m, [33m'[39m[33mdefault[39m[33m'[39m, [33m'[39m[33mhttp_error_default[39m[33m'[39m) + orig_args
+[32m--> [39m[32m559[39m     [38;5;28;01mreturn[39;00m [38;5;28;43mself[39;49m[43m.[49m[43m_call_chain[49m[43m([49m[43m*[49m[43margs[49m[43m)[49m
 
-File [0;32m/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py:569[0m, in [0;36mOpenerDirector.error[0;34m(self, proto, *args)[0m
-[1;32m    567[0m [38;5;28;01mif[39;00m http_err:
-[1;32m    568[0m     args [38;5;241m=[39m ([38;5;28mdict[39m, [38;5;124m'[39m[38;5;124mdefault[39m[38;5;124m'[39m, [38;5;124m'[39m[38;5;124mhttp_error_default[39m[38;5;124m'[39m) [38;5;241m+[39m orig_args
-[0;32m--> 569[0m     [38;5;28;01mreturn[39;00m [38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43m_call_chain[49m[43m([49m[38;5;241;43m*[39;49m[43margs[49m[43m)[49m
+[36mFile [39m[32m/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/urllib/request.py:492[39m, in [36mOpenerDirector._call_chain[39m[34m(self, chain, kind, meth_name, *args)[39m
+[32m    490[39m [38;5;28;01mfor[39;00m handler [38;5;129;01min[39;00m handlers:
+[32m    491[39m     func = [38;5;28mgetattr[39m(handler, meth_name)
+[32m--> [39m[32m492[39m     result = [43mfunc[49m[43m([49m[43m*[49m[43margs[49m[43m)[49m
+[32m    493[39m     [38;5;28;01mif[39;00m result [38;5;129;01mis[39;00m [38;5;129;01mnot[39;00m [38;5;28;01mNone[39;00m:
+[32m    494[39m         [38;5;28;01mreturn[39;00m result
 
-File [0;32m/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py:502[0m, in [0;36mOpenerDirector._call_chain[0;34m(self, chain, kind, meth_name, *args)[0m
-[1;32m    500[0m [38;5;28;01mfor[39;00m handler [38;5;129;01min[39;00m handlers:
-[1;32m    501[0m     func [38;5;241m=[39m [38;5;28mgetattr[39m(handler, meth_name)
-[0;32m--> 502[0m     result [38;5;241m=[39m [43mfunc[49m[43m([49m[38;5;241;43m*[39;49m[43margs[49m[43m)[49m
-[1;32m    503[0m     [38;5;28;01mif[39;00m result [38;5;129;01mis[39;00m [38;5;129;01mnot[39;00m [38;5;28;01mNone[39;00m:
-[1;32m    504[0m         [38;5;28;01mreturn[39;00m result
+[36mFile [39m[32m/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/urllib/request.py:639[39m, in [36mHTTPDefaultErrorHandler.http_error_default[39m[34m(self, req, fp, code, msg, hdrs)[39m
+[32m    638[39m [38;5;28;01mdef[39;00m[38;5;250m [39m[34mhttp_error_default[39m([38;5;28mself[39m, req, fp, code, msg, hdrs):
+[32m--> [39m[32m639[39m     [38;5;28;01mraise[39;00m HTTPError(req.full_url, code, msg, hdrs, fp)
 
-File [0;32m/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py:649[0m, in [0;36mHTTPDefaultErrorHandler.http_error_default[0;34m(self, req, fp, code, msg, hdrs)[0m
-[1;32m    648[0m [38;5;28;01mdef[39;00m[38;5;250m [39m[38;5;21mhttp_error_default[39m([38;5;28mself[39m, req, fp, code, msg, hdrs):
-[0;32m--> 649[0m     [38;5;28;01mraise[39;00m HTTPError(req[38;5;241m.[39mfull_url, code, msg, hdrs, fp)
-
-[0;31mHTTPError[0m: HTTP Error 403: Forbidden
+[31mHTTPError[39m: HTTP Error 403: Forbidden
 
