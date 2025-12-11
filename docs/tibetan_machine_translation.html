@@ -434,14 +434,14 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#testing-current-large-language-models-and-translators">Testing current large language models and translators</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#refuge">2. Refuge<br/></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chatgpt-s-attempt">ChatGPT’s attempt</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bing-microsoft-translator">Bing Microsoft Translator</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bing-chat">Bing Chat</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gemini-3-0-response">Gemini 3.0 response</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#english-translation">🇬🇧 English Translation</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#current-status-of-translation-with-large-language-models-llms">Current status of translation with large language models (LLMs)</a></li>
 </ul>
             </nav>
         </div>
@@ -460,67 +460,27 @@ document.write(`
 </div></blockquote>
 <section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h2>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Date</p></th>
-<th class="head"><p>Language model</p></th>
-<th class="head"><p>Technology</p></th>
-<th class="head"><p>Rating</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>2023-05-20</p></td>
-<td><p>ChatGPT</p></td>
-<td><p>OpenAI GPT 3.5</p></td>
-<td><p>0/5</p></td>
-</tr>
-<tr class="row-odd"><td><p>2023-05-20</p></td>
-<td><p>Bing Microsoft Translator</p></td>
-<td><p>Microsoft legacy</p></td>
-<td><p>1/5</p></td>
-</tr>
-<tr class="row-even"><td><p>2023-05-20</p></td>
-<td><p>Bing Chat</p></td>
-<td><p>OpenAI GPT 4 + Web + MS</p></td>
-<td><p>3/5</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>None of the models is currently useful, but progress is fast.</p>
-</section>
-<section id="testing-current-large-language-models-and-translators">
-<h2>Testing current large language models and translators<a class="headerlink" href="#testing-current-large-language-models-and-translators" title="Link to this heading">#</a></h2>
-<p>Note: this test will be outdated very fast. Software versions from 2023-05-20 are use.</p>
-<p>The test-text are the refuge verses from the Longchen Nyingtik Ngöndro. For the reference translation, see <a class="reference external" href="https://www.lotsawahouse.org/tibetan-masters/dodrupchen-I/longchen-nyingtik-ngondro">Lotsawa House</a>, section 2. Refuge.</p>
-<section id="refuge">
-<h3>2. Refuge<br><a class="headerlink" href="#refuge" title="Link to this heading">#</a></h3>
+<p>Tibetan translation is now for the most part an almost solved problem (2025-12-11). Especially the Gemini 3.0 model can deliver good-quality raw translations of Dharma-Tibetan.</p>
+<p>The example, which failed completely in 2023, is now handled better (with some issues for the first verse, which would require providing the model with some kind of guidance) with the latest Gemini models:</p>
 <p>དཀོན་མཆོག་གསུམ་དངོས་བདེ་གཤེགས་རྩ་བ་གསུམ༔<br>
 རྩ་རླུང་ཐིག་ལེའི་རང་བཞིན་བྱང་ཆུབ་སེམས༔<br>
 ངོ་བོ་རང་བཞིན་ཐུགས་རྗེའི་དཀྱིལ་འཁོར་ལ༔<br>
-བྱང་ཆུབ་སྙིང་པོའི་བར་དུ་སྐྱབས་སུ་མཆི༔<br></p>
+བྱང་ཆུབ་སྙིང་པོའི་བར་དུ་སྐྱབས་སུ་མཆི༔</p>
+<section id="gemini-3-0-response">
+<h3>Gemini 3.0 response<a class="headerlink" href="#gemini-3-0-response" title="Link to this heading">#</a></h3>
+<p>The Tibetan text is a traditional Buddhist refuge prayer. Here is the translation into English:</p>
+<section id="english-translation">
+<h4>🇬🇧 English Translation<a class="headerlink" href="#english-translation" title="Link to this heading">#</a></h4>
+<p>The three Jewels (Buddha, Dharma, Sangha) are the actual, the three Roots (Guru, Deva, Dakini) are the Sugata (Buddha),
+The nature of tsa, lung, and tiklé is the Bodhicitta (Enlightenment Mind),
+In the Mandala of the Nature, Characteristic, and Compassion,
+I take refuge until I reach the essence of Enlightenment.</p>
 </section>
-<section id="chatgpt-s-attempt">
-<h3>ChatGPT’s attempt<a class="headerlink" href="#chatgpt-s-attempt" title="Link to this heading">#</a></h3>
-<p><a class="reference internal" href="#chat.openai.com"><span class="xref myst">ChatGPT</span></a> presents us with a halicunation completely free of reference to the source text:</p>
-<p><img alt="ChatGPT on refuge" src="../_images/translate_ngondro_chatgpt.png" /></p>
-<p>ChatGPT obviously thinks Longchen Nyingtik Ngöndro requires a complete rework. Not helpful.</p>
 </section>
-<section id="bing-microsoft-translator">
-<h3>Bing Microsoft Translator<a class="headerlink" href="#bing-microsoft-translator" title="Link to this heading">#</a></h3>
-<p><a class="reference external" href="https://www.bing.com/TRANSLATOR">Bing Microsoft Translator</a> seems to at least recognise a word or two, but the result is still gibberish.</p>
-<p><img alt="Bing Microsoft Translator" src="../_images/translate_ngondro_microsoft_bing_translator.png" /></p>
 </section>
-<section id="bing-chat">
-<h3>Bing Chat<a class="headerlink" href="#bing-chat" title="Link to this heading">#</a></h3>
-<p>The most advanced Large Language Model that is freely available is (at the time of this writing 2023-05) Bing chat:</p>
-<p><img alt="Bing chat" src="../_images/translate_ngondro_bingchat.png" /></p>
-<p>While the translation is still quite far off, it is a significant progress compared to he two older models above.</p>
-<p>Since the last verse got skipped, asking it again yields:</p>
-<p><img alt="Bing chat" src="../_images/translate_ngondro_bingchat_2.png" /></p>
-<p>Again, one step further.</p>
-<p>It is just a matter of time, more training data, and further refinement on this task, until there will be useful context-aware translations from large language models available.</p>
-</section>
+<section id="current-status-of-translation-with-large-language-models-llms">
+<h2>Current status of translation with large language models (LLMs)<a class="headerlink" href="#current-status-of-translation-with-large-language-models-llms" title="Link to this heading">#</a></h2>
+<p>Models like Gemini 3.0 now can translate entire treatises in one go. The translations are Dharma-context aware, and while not without mistakes, can produce a fast raw translation of large corpora. However, proof-reading and human editing is still required!</p>
 </section>
 </section>
 
@@ -588,14 +548,14 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#testing-current-large-language-models-and-translators">Testing current large language models and translators</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#refuge">2. Refuge<br/></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chatgpt-s-attempt">ChatGPT’s attempt</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bing-microsoft-translator">Bing Microsoft Translator</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bing-chat">Bing Chat</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gemini-3-0-response">Gemini 3.0 response</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#english-translation">🇬🇧 English Translation</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#current-status-of-translation-with-large-language-models-llms">Current status of translation with large language models (LLMs)</a></li>
 </ul>
   </nav></div>
 
